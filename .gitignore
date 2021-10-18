@@ -7,3 +7,4 @@ webapps/ROOT/WEB-INF/logs
 webapps/solr/data
 docs/build
 *.DS_Store
+.DS_Store
