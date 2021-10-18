@@ -207,6 +207,18 @@
                 <bibl xml:id="b0184"><bibl type="abbrev">Myts 2009</bibl> Myts, V.L. (2009) Каффа и Феодоро в XV в. Контакты и конфликты. Simferopol</bibl>
                 <bibl xml:id="b0217"><bibl type="abbrev">Stefani 1879</bibl> Stefani, L.E. (1879) "Объяснение некоторых художественных произведений, открытых в Южной России в 1875 году." ОАК за 1876 год, 5-225. </bibl>
                 <bibl xml:id="b0252"><bibl type="abbrev">Shlapak 2000</bibl> Shlapak, M.Ye. (2000) "Самая загадочная надпись Белгород-Днестровской крепости." Stratum plus 6:260-265. </bibl>
+                
+                
+                <bibl xml:id="gerasimou2005"><author><surname>Gerasimou</surname> Kostas</author> et al., <date>2005</date>. <title>The Churches of Pelendria. History, Architecture, Art</title>. Nicosia.</bibl>
+                <bibl xml:id="mango1990"><author><surname>Mango</surname> Cyril</author>, <author><surname>Hawkins</surname> Ernst J. W.</author>, <author><surname>Boyd</surname> Susan</author>, <date>1990</date>. <title level="a">The Monastery of St. Chrysostomos at Koutsovendis (Cyprus) and Its Wall Paintings. Part I: Description</title>. <title level="j">DOP</title> 44, 63-94.</bibl>
+                <bibl xml:id="mouriki1984"><author><surname>Mouriki</surname> Doula</author>, <date>1984</date>. <title level="a">The Wall Paintings of the Church of the Panagia at Moutoullas, Cyprus</title>. In <editor><surname>Hutter</surname> Irmgard</editor>, ed. <title>Byzanz und der Westen. Studien zur Kunst des europäischen Mittelalters</title>. Vienna, 171-213.</bibl>
+                <bibl xml:id="perdikismyriantheus2011"><author><surname>Perdikis</surname> Stylianos</author>, <author><surname>Myrianthefs</surname> Diomedes</author>, <date>2011</date>. <title>The Church of the Holy Virgin in Moutoullas</title>. Nicosia.</bibl>
+                <bibl xml:id="rhoby2009"><author><surname>Rhoby</surname> Andreas</author>, <date>2009</date>. <title>Byzantinische Epigramme auf Fresken und Mosaiken</title> (Byzantinische Epigramme in Inschriftlicher Überlieferung 1). Vienna.</bibl>    
+                
+                
+                <bibl xml:id="Nicolaides1996"><author><surname>Nicolaides</surname> <name>Andreas</name></author>, <date>1996</date>, <title level="a">L'église de la Panagia Arakiotissa à Lagoudéra, Chypre: Etude iconographique des fresques de 1192</title>, <title level="j">DOP</title> <biblScope unit="volume">50</biblScope>, <biblScope unit="page">1-137</biblScope></bibl>
+                <bibl xml:id="Winfield2003"><author><surname>Winfield</surname> <name>David</name></author> and <author><surname>Winfield</surname></author> <name>June</name>, <date>2003</date>, <title level="m">The Church of the Panaghia tou Arakos at Lagoudhera, Cyprus: The Paintings and Their Painterly Significance</title>, <placeName>Washington, D.C.</placeName></bibl>
+                <bibl xml:id="Konstantinidi2018"><author><surname>Konstantinidi</surname> <name>Chara</name></author>, <date>2018</date>, <title level="a">Byzantine Painting in the Church of the Panagia tou Arakos</title>, in<editor><surname>Papageorghiou </surname><name>A</name>.</editor>, <editor><surname>Bakirtzis</surname> <name>Ch</name>.</editor>,  <editor><surname>Hadjicristodoulou</surname> <name>Chr.</name></editor>, <date>2018</date>, <title level="m">The Church of Panagia tou Arakos</title>, <placeName>Nicosia</placeName>, <biblScope unit="page">49-88</biblScope></bibl>
                 </listBibl>
         </body>
     </text>
