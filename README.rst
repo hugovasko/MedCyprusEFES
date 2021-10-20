@@ -1,3 +1,10 @@
+MedCyprus: A Digital Corpus of Painted Greek Inscriptions from Medieval Cyprus (10th – 13th centuries AD)
+====
+
+MedCyprus constitutes the first comprehensive corpus of Greek painted ecclesiastical inscriptions for a defined geographical region -- Cyprus -- within the Byzantine world. It is certainly the first time that custom digital technologies -- EpiDoc and EFES -- are used for the publication of a corpus of Cypriot epigraphic material of the Byzantine and Medieval periods. Making use of these digital tools in order to achieve the objectives of MedCyprus is the best strategy to ensure not only that its outcomes are widely disseminated and easily accessible for free, but also that the corpus itself may continue to be improved and expanded in years to come. MedCyprus constitutes a significant addition to a constantly growing number of initiatives making use of digital technologies with the purpose of recording, analysing, and promoting the multi-faceted cultural heritage of Cyprus over its long history. 
+
+http://www.ucy.ac.cy/byz/documents/Documents/Projects_Summaries/MedCyprus_Research_Goals_ENG.pdf
+
 EFES: EpiDoc Front-End Services
 ====
 
