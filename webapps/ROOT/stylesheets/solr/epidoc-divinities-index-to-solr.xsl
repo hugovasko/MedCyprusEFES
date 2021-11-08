@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type=divinities][@ref][ancestor::tei:div/@type='edition']" group-by="@ref">
+      <xsl:for-each-group select="//tei:rs[@type='divinities'][@ref][ancestor::tei:div/@type='edition']" group-by="@ref">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -33,7 +33,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:persName">
+  <xsl:template match="tei:rs[@type='divinities'][@ref]">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
