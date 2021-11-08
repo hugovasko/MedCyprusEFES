@@ -11,7 +11,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus-MedCyprus</authority>
-                <idno type="filename">MedCY.28.001</idno>
+                <idno type="filename">MedCY.28.01</idno>
                <availability>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence>
                 </availability>
@@ -60,8 +60,8 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><g ref="#cross">+</g> <w lemma="ἀνιστοροῦμαι"></w>Ἀνιστορήσθ<supplied reason="omitted">η</supplied> <w lemma="ὁ">ὁ</w> <w lemma="πάνσεπτος">πάνσεπτος</w> <w lemma="ναός">ναός</w> <w lemma="τῆς"></w>τ<hi rend="ligature">ης</hi> <w lemma="ὑπεραγία"></w><expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan>  <rs type="divinities" ref="divinities.xml#Θεοτόκος"><persName type="divine" key="Theotokos"><name nymRef="#Θεοτόκος"></name></persName><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κ<hi rend="ligature">ου</hi></abbr></expan> <w lemma="τοῦ">τ<hi rend="ligature">οῦ</hi></w> </rs><w lemma="Ἄρακας">Ἄρακ<hi rend="ligature">ος</hi></w> 
-                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυρ<hi rend="ligature">οῦ</hi> <persName type="seignor"> <name nymRef="#Λέων Αυθέντης"></name> </persName> <expan><abbr>Λέωντ</abbr><ex>ος</ex></expan> τ<hi rend="ligature">οῦ</hi> <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
+                    <lb n="1"/><g ref="#cross">+</g> <w lemma="ἀνιστοροῦμαι"></w>Ἀνιστορήσθ<supplied reason="omitted">η</supplied> ὁ <w lemma="πάνσεπτος">πάνσεπτος</w> <w lemma="ναός">ναός</w> της <w lemma="ὑπεραγία"></w><expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan>  <rs type="divinities" ref="divinities.xml#Θεοτόκος"><persName type="divine" key="Theotokos"><name nymRef="#Θεοτόκος"></name></persName><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κου</abbr></expan> τοῦ </rs><w lemma="Ἄρακας">Ἄρακος</w> 
+                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυροῦ <persName type="attested"> <name nymRef="#Λέων Αυθέντης"></name> </persName> <expan><abbr>Λέωντ</abbr><ex>ος</ex></expan> τοῦ <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
                     <lb n="3"/><expan><abbr>ινδ</abbr><ex>ικτιῶνος</ex></expan> <num value="11">ια</num> τω <num value="6701"></num><hi rend="ligature">&#x03DB;</hi>ψα’ ἔτους.
                 </ab>
             </div>
