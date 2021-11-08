@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title> First Donor's inscription </title>
+                <title> First Donor's (Eumathios Philokales) inscription </title>
                 <editor xml:id="mgp">Maria G. Parani</editor>
                 <editor xml:id="tp">Theocharis Petrou</editor>
             </titleStmt>
@@ -29,7 +29,7 @@
                                     <objectType/> Painted Inscription <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>Below the image of the Holy Tile, within the same frame</layout>
+                                <layout>Below the image of the Holy Tile, within the same panel</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
