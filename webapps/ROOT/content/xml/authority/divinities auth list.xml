@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Authority list of divine names and epithets in MedCY</title>
+            </titleStmt>
+            <publicationStmt><ab/></publicationStmt>
+            <sourceDesc><ab/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list>
+                <item xml:id="Θεοτόκος">
+                    <name xml:lang="grc"></name>
+                    <name xml:lang="en">Virgin Mary</name>
+                </item>
+            </list>
+            
+        </body>
+    </text>
+</TEI>
