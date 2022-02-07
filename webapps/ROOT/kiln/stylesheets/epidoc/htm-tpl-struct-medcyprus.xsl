@@ -276,6 +276,11 @@
      </xsl:choose>
    </xsl:template>
   
+  <!-- NB: this should be moved into the EpiDoc stylesheets handling @rend: htm-teihi.xsl/teihi.xsl and...? -->
+  <xsl:template priority="10" match="//t:*[@rend='ligature']">
+    <span class="ligature"><xsl:apply-templates/></span>
+  </xsl:template>
+  
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
     <xsl:template name="medcyprus-title">
      <xsl:choose>

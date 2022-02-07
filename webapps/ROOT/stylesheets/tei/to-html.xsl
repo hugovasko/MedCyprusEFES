@@ -9,5 +9,9 @@
        to-html.xsl (which should not be changed). -->
 
   <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl" />
+  
+  <xsl:template priority="10" match="//tei:*[@rend='ligature']">
+    <span class="ligature"><xsl:apply-templates/></span>
+  </xsl:template>
 
 </xsl:stylesheet>
