@@ -189,16 +189,12 @@
                     
                     <bibl xml:id="Procopiou2014"><author><surname>Procopiou</surname> <forename>E.</forename></author>, <date>2014</date>, <title level="a">Η αρχιτεκτονική του ναού της Παναγίας Κοφίνου</title>, in <title level="m">Ευμάθιος Φιλοκάλης. Ανάδειξη βυζαντινών μνημείων Κρήτης και Κύπρου</title>, ed. <editor><forename>E. </forename><surname>Procopiou</surname></editor>and <editor><forename>N.</forename> <surname>Pyrrou</surname></editor> <pubPlace>Rethymno</pubPlace>, <biblScope unit="page">220-39</biblScope>.</bibl>
                     
-                    <bibl xml:id="ProcopiouDemetriou2014"><author><surname>Procopiou</surname> <forename>E.</forename></author> and<author> <surname>Demetriou</surname> <forename>D.</forename></author>, <date>2014</date>, <title level="a">Ανασκαφική έρευνα στην Παναγία της Κοφίνου</title>, in <title level="m">Ευμάθιος Φιλοκάλης. Ανάδειξη βυζαντινών μνημείων Κρήτης και Κύπρου</title>, ed. <editor><forename>E.</forename> <surname>Procopiou</surname></editor>, <editor><forename>N.</forename> <surname>Pyrrou</surname></editor>, <pubPlace>Rethymno</pubPlace>, <biblScope unit="page">240-9</biblScope>.</bibl>
-                    
-                    <!-->WHY IS THIS INCLUDED HERE? <bibl xml:id="Rhoby2009"><author><surname>Rhoby</surname> <forename>A.</forename></author>, <date>2009</date>, <title>Byzantinische Epigramme auf Fresken und Mosaiken</title>, <pubPlace>Vienna</pubPlace>. </bibl><-->
-                    
+                    <bibl xml:id="ProcopiouDemetriou2014"><author><surname>Procopiou</surname> <forename>E.</forename></author> and<author> <surname>Demetriou</surname> <forename>D.</forename></author>, <date>2014</date>, <title level="a">Ανασκαφική έρευνα στην Παναγία της Κοφίνου</title>, in <title level="m">Ευμάθιος Φιλοκάλης. Ανάδειξη βυζαντινών μνημείων Κρήτης και Κύπρου</title>, ed. <editor><forename>E.</forename> <surname>Procopiou</surname></editor>, <editor><forename>N.</forename> <surname>Pyrrou</surname></editor>, <pubPlace>Rethymno</pubPlace>, <biblScope unit="page">240-9</biblScope>.</bibl>                    
+                                   
                     <bibl xml:id="Sacopoulo1966"><author><surname>Sacopoulo</surname> <forename>M.</forename></author>, <date>1966</date>, <title level="m">Asinou en 1106 et sa contribution à l’iconographie</title>, <pubPlace>Brussels</pubPlace>.</bibl>
                     
                     <bibl xml:id="Ševčenko2012"><author><surname>Ševčenko</surname> <forename>N.</forename></author>, <date>2012</date>, <title level="a">The Metrical Inscriptions in the Murals of the Panagia Phorbiotissa</title>, in <title level="m">Asinou Across Time. Studies in the Architecture and Murals of the Panagia Phorbiotissa, Cyprus</title>, ed.<editor> <forename>A.</forename><surname> Weyl Carr</surname></editor>and <editor><forename>A.</forename> <surname>Nicolaïdès</surname></editor>, <pubPlace>Washington, DC</pubPlace>, <biblScope unit="page">69-90</biblScope>.</bibl>
-                    
-                    <!-->WHY IS THIS INCLUDED HERE? <bibl xml:id="Sophocleous1993"><author><surname>Sophocleous</surname> <forename>S.</forename></author>, <date>1993</date>, <title level="a">H εικόνα της Κυκκώτισσας στον Άγιο Θεόδωρο Αγρού</title>, <title level="j">Eπετηρίδα Kέντρου Mελετών Iεράς Mονής Kύκκου</title> <biblScope unit="volume">2</biblScope>, <biblScope unit="page">329-48</biblScope>.</bibl><-->
-                    
+                                        
                     <bibl xml:id="Sophocleous1998"><author><surname>Sophocleous</surname> <forename>S.</forename></author>, <date>1998</date>, <title level="m">Panagia Arakiotissa, Lagoudera, Cyprus</title>, <pubPlace>Nicosia</pubPlace>.</bibl>
                     
                     <bibl xml:id="Soteriou1937"><author><surname>Soteriou</surname> <forename>G.</forename></author>, <date>1935</date>, <title level="m">Τὰ βυζαντινὰ μνημεῖα τῆς Κύπρου</title>, <pubPlace>Athens</pubPlace>. </bibl>
@@ -251,52 +247,99 @@
         <listBibl>
             
             <head>The Inscriptions</head>
+            
             <bibl copyOf="#Bakirtzis2019"></bibl>
+            
             <bibl copyOf="#Bordne2015"></bibl>
+            
             <bibl copyOf="#Boyd1974"></bibl>
+            
             <bibl copyOf="#Chotzakoglou2010a"></bibl>
+            
             <bibl copyOf="#Foulias2010"></bibl>
+            
             <bibl copyOf="#Gabelić1984"></bibl>
+            
             <bibl copyOf="#Gagoshidze2014a"></bibl>
+            
             <bibl copyOf="#Gerasimou2005"></bibl>
+            
             <bibl copyOf="#Hadjichristodoulou2017"></bibl>
+            
             <bibl copyOf="#HadjichristodoulouFoulias2020"></bibl>
+            
             <bibl copyOf="#HadjichristodoulouMyriantheus2002"></bibl>
+            
             <bibl copyOf="#HatfieldYoung1978"></bibl>
+            
             <bibl copyOf="#Kalopissi-Verti2012"></bibl>
+            
             <bibl copyOf="#Konstantinidi2008"></bibl>
+            
             <bibl copyOf="#Konstantinidi2018"></bibl>
+            
             <bibl copyOf="#MangoHawkins1964"></bibl>
+            
             <bibl copyOf="#MangoHawkins1966"></bibl>
+            
             <bibl copyOf="#MangoHawkinsBoyd1990"></bibl>
+            
             <bibl copyOf="#MegawHawkins1962"></bibl>
+            
             <bibl copyOf="#MegawHawkins1977"></bibl>
+            
             <bibl copyOf="#Mouriki1984"></bibl>
+            
             <bibl copyOf="#Myriantheus2012"></bibl>
+            
             <bibl copyOf="#Nicolaïdès1996"></bibl>
+            
             <bibl copyOf="#Panayotidi-Kesisiglou2015"></bibl>
+            
             <bibl copyOf="#Papacostas2002"></bibl>
+            
             <bibl copyOf="#Papageorghiou1999"></bibl>
+            
             <bibl copyOf="#Papageorghiou2010"></bibl>
+            
             <bibl copyOf="#Papageorgiou1975"></bibl>
+            
             <bibl copyOf="#Nicolaïdès1996"></bibl>
+            
             <bibl copyOf="#Papageorgiou1990"></bibl>
+            
             <bibl copyOf="#Papageorgiou1999"></bibl>
+            
             <bibl copyOf="#Papageorgiou2003"></bibl>
+            
             <bibl copyOf="#Papageorgiou2008"></bibl>
+            
             <bibl copyOf="#Papageorgiou2012"></bibl>
+            
             <bibl copyOf="#Perdiki2014a"></bibl>
+            
             <bibl copyOf="#Perdiki2014b"></bibl>
+            
             <bibl copyOf="#PerdikisMyrianthefs2011"></bibl>
-            <bibl copyOf="#Rhoby2009"></bibl>
+            
+            <bibl xml:id="Rhoby2009"><author><surname>Rhoby</surname> <forename>A.</forename></author>, <date>2009</date>, <title>Byzantinische Epigramme auf Fresken und Mosaiken</title>, <pubPlace>Vienna</pubPlace>. </bibl>
+            
             <bibl copyOf="#Sacopoulo1966"></bibl>
+            
             <bibl copyOf="#Ševčenko2012"></bibl>
+            
             <bibl copyOf="#StylianouStylianou1946"></bibl>
+            
             <bibl copyOf="#StylianouStylianou1960"></bibl>
+            
             <bibl copyOf="#StylianouStylianou1973"></bibl>
+            
             <bibl copyOf="#Vorkas2004"></bibl>
+            
             <bibl copyOf="#WeylCarrMorrocco1991"></bibl>
+            
             <bibl copyOf="#WinfieldWinfield2003"></bibl>
+            
             <bibl copyOf="#Zarras2010"></bibl>
             
              </listBibl>
