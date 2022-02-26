@@ -280,30 +280,5 @@
   <xsl:template priority="10" match="//t:*[@rend='ligature']">
     <span class="ligature"><xsl:apply-templates/></span>
   </xsl:template>
-  
-  <!--  old code for inscription numbers now in <idno type="ircyr2012">:
-    <xsl:template name="medcyprus-title">
-     <xsl:choose>
-       <xsl:when test="//t:titleStmt/t:title/text() and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
-         <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename'],1,1)"/> 
-         <xsl:text>. </xsl:text>
-         <xsl:value-of select="number(substring(//t:publicationStmt/t:idno[@type='filename'],2,5)) div 100"/> 
-         <xsl:text>. </xsl:text>
-         <xsl:value-of select="//t:titleStmt/t:title"/>
-       </xsl:when>
-       <xsl:when test="//t:titleStmt/t:title/text()">
-         <xsl:value-of select="//t:titleStmt/t:title"/>
-       </xsl:when>
-       <xsl:when test="//t:sourceDesc//t:bibl/text()">
-         <xsl:value-of select="//t:sourceDesc//t:bibl"/>
-       </xsl:when>
-       <xsl:when test="//t:idno[@type='filename']/text()">
-         <xsl:value-of select="//t:idno[@type='filename']"/>
-       </xsl:when>
-       <xsl:otherwise>
-         <xsl:text>EpiDoc example output, medcyprus style</xsl:text>
-       </xsl:otherwise>
-     </xsl:choose>
-   </xsl:template> -->
 
  </xsl:stylesheet>
