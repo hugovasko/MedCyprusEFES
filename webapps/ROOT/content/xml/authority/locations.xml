@@ -21,6 +21,7 @@
                     <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
                     <placeName type="district">Paphos</placeName>
                     <placeName type="diocese">Bishopric of Paphos</placeName>
+                    <location><geo><!--34.73045, 32.4807--></geo></location>
                     <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
                     <desc type="context">Rural</desc>
@@ -33,14 +34,19 @@
                     <desc type="conservation">Fragmentary</desc>
                     <desc type="donors">Unknown</desc>
                     <desc type="painter">Unknown</desc>
-                    <!--><desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc><!-->
-                    <!--><desc type="edition">Unpublished</desc><!-->
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
                     <idno type="IBCC">Not included</idno>
                     <idno type="HGC">http://www.cyprusgazetteer.org/hu/281/</idno>
-                    <listBibl>
-                        <!--><bibl><ptr target="bibliography.xml:id=ARDAC"/>ARDAC<citedRange></citedRange></bibl><!-->
-                        <bibl><ptr target="bibliography.xml:id=Papageorgiou1996"/>Papageorgiou 1996<citedRange> 63, 74, 91, 94</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml:id=Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>407-8</citedRange></bibl>
+                    <idno type="geonames">https://www.geonames.org/10347045/acheleia.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Papageorgiou1996"/>Papageorgiou 1996<citedRange> 63, 74, 91, 94</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>407-8</citedRange></bibl>
                     </listBibl>
                 </place>
                 
@@ -53,23 +59,27 @@
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Rock-cut, single-nave, roughly orthogonal (CHECK!)</desc>
-                    <!-->   <desc type="mural">
-                        1st layer: 10th century (nave, north wall, eastern side)
-                        2nd layer: ? (nave, north wall, eastern side)
-                        3rd layer: 13th-14th c.? First half of the 14th c.? (bema, nave)
-                        CHECK DATES. SOME OF THE PAINTINGS HAVE BEEN REMOVED. WHICH LAYER? CHECK                   
-                    </desc><!-->
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: 10th century (nave, north wall, eastern side).
+                            Some of the paintings are held by the <rs ref="#rep1">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</rs> 
+                            <!--CHECK DATES. SOME OF THE PAINTINGS HAVE BEEN REMOVED. WHICH LAYER? CHECK-->
+                        </desc>
+                        <desc>2nd layer: ? (nave, north wall, eastern side)</desc>
+                        <desc>3rd layer: 13th-14th c.? First half of the 14th c.? (bema, nave)</desc>
+                    </desc>
                     <desc type="conservation">Fragmentary; condition poor</desc>
                     <desc type="donors">Unknown</desc>
                     <desc type="painter">Unknown</desc>
-                    <!--><desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc><!-->
-                    <!--><desc type="edition">Bakirtzis 2019, 83-100; Papageorgiou 1999, 47-52;</desc><!-->
+                    <!--<desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc>-->
                     <idno type="IBCC">Not included</idno>
                     <idno type="HGC">Not included</idno>
-                    <listBibl>
-                        <!--> <bibl><ptr target="bibliography.xml:id=ARDAC"/>ARDAC<citedRange></citedRange></bibl><!-->
-                        <bibl><ptr target="bibliography.xml:id=Papageorgiou1999"/>Papageorgiou 1999<citedRange> 47-52</citedRange></bibl>
-                        <bibl><ptr target="bibliographyxml:id=Bakirtzis2019"/>Bakirtzis 2019<citedRange>83-100</citedRange></bibl>
+                    <listBibl type="inscriptions">
+                        <bibl type="edition">Bakirtzis 2019, 83-100; Papageorgiou 1999, 47-52;</bibl>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Papageorgiou1999"/>Papageorgiou 1999<citedRange> 47-52</citedRange></bibl>
+                        <bibl><ptr target="bibliographyxml#Bakirtzis2019"/>Bakirtzis 2019<citedRange>83-100</citedRange></bibl>
                     </listBibl>
                 </place>
             </listPlace>
@@ -77,8 +87,7 @@
             <listPlace type="repositories">
                 <place xml:id="rep1">
                     <placeName xml:lang="en">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</placeName>
-                    <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>                     <!--><placeName type="location">Nicosia</placeName><!-->
-                    <!--><idno type="ror">https://ror.org/ {…}NOT REGISTERED</idno><!-->
+                    <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>                                <location><placeName>Nicosia</placeName></location>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q42883662</idno>
                     <bibl><ref type="website">http://www.makariosfoundation.org.cy/</ref></bibl>
                 </place>
