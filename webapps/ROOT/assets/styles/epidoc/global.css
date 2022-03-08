@@ -54,7 +54,7 @@
     text-decoration: underline;
     }
     
-.ligature {
+.inslibligature {
       border-top: 2px solid black;
       border-radius: 6px;
       padding: 1px 2px 0px 2px;
@@ -128,3 +128,6 @@ div.iospe {
     margin-left:165px;
     }
 
+.no-space {
+    margin-bottom: -1.9em;
+}
