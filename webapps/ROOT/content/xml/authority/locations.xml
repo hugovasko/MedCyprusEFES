@@ -18,21 +18,58 @@
             <listPlace type="monuments">
                 <place xml:id="mon1">
                     <placeName xml:lang="en">Acheleia, St. Theodosiοs</placeName>
-                    <placeName xml:lang="el"></placeName>
-                    <placeName type="district"></placeName>
-                    <placeName type="diocese"></placeName>
-                    <desc type="contruction"><date when="0999">999 CE</date></desc>
-                    <desc type="function"></desc>
-                    <desc type="context"></desc>
-                    <desc type="architectural"></desc>
-                    <desc type="mural"></desc>
-                    <desc type="conservation"></desc>
-                    <desc type="donors"></desc>
-                    <desc type="painter"></desc>
-                    <idno type="IBCC"></idno>
-                    <idno type="HGC"></idno>
+                    <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
+                    <placeName type="district">Paphos</placeName>
+                    <placeName type="diocese">Bishopric of Paphos</placeName>
+                    <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
+                    <desc type="function">Parochial(?), funerary(?)</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Free-cross domed church</desc>
+                    <desc type="mural">
+                        1st layer: late 12th century (WHERE?)
+                        2nd layer: 13th century (WHERE?)
+                        3rd layer: second half of the 15th century (western bay, north wall)
+                    </desc>
+                    <desc type="conservation">Fragmentary</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <!--><desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc><!-->
+                    <!--><desc type="edition">Unpublished</desc><!-->
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/hu/281/</idno>
                     <listBibl>
-                        <bibl><ptr target="bibliography.xml#Aristeidou2010"/><!-- e.g. --> <citedRange>{pages or catalogue number}</citedRange></bibl>
+                        <!--><bibl><ptr target="bibliography.xml:id=ARDAC"/>ARDAC<citedRange></citedRange></bibl><!-->
+                        <bibl><ptr target="bibliography.xml:id=Papageorgiou1996"/>Papageorgiou 1996<citedRange> 63, 74, 91, 94</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml:id=Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>407-8</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="mon2">
+                    <placeName xml:lang="en">Agios Sozomenos, St. Sozomenos</placeName>
+                    <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
+                    <placeName type="district">Nicosia</placeName>
+                    <placeName type="diocese">Bishopric of Trimythous</placeName>
+                    <desc type="contruction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
+                    <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Rock-cut, single-nave, roughly orthogonal (CHECK!)</desc>
+                    <!-->   <desc type="mural">
+                        1st layer: 10th century (nave, north wall, eastern side)
+                        2nd layer: ? (nave, north wall, eastern side)
+                        3rd layer: 13th-14th c.? First half of the 14th c.? (bema, nave)
+                        CHECK DATES. SOME OF THE PAINTINGS HAVE BEEN REMOVED. WHICH LAYER? CHECK                   
+                    </desc><!-->
+                    <desc type="conservation">Fragmentary; condition poor</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <!--><desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc><!-->
+                    <!--><desc type="edition">Bakirtzis 2019, 83-100; Papageorgiou 1999, 47-52;</desc><!-->
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">Not included</idno>
+                    <listBibl>
+                        <!--> <bibl><ptr target="bibliography.xml:id=ARDAC"/>ARDAC<citedRange></citedRange></bibl><!-->
+                        <bibl><ptr target="bibliography.xml:id=Papageorgiou1999"/>Papageorgiou 1999<citedRange> 47-52</citedRange></bibl>
+                        <bibl><ptr target="bibliographyxml:id=Bakirtzis2019"/>Bakirtzis 2019<citedRange>83-100</citedRange></bibl>
                     </listBibl>
                 </place>
             </listPlace>
@@ -40,9 +77,9 @@
             <listPlace type="repositories">
                 <place xml:id="rep1">
                     <placeName xml:lang="en">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</placeName>
-                    <placeName xml:lang="el"></placeName>
-                    <idno type="ror">https://ror.org/ {…}</idno>
-                    <idno type="wikidata"></idno>
+                    <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>                     <!--><placeName type="location">Nicosia</placeName><!-->
+                    <!--><idno type="ror">https://ror.org/ {…}NOT REGISTERED</idno><!-->
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q42883662</idno>
                     <bibl><ref type="website">http://www.makariosfoundation.org.cy/</ref></bibl>
                 </place>
             </listPlace>
