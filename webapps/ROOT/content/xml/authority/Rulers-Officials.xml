@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Authority list of rulers in IOSPE</title>
+            </titleStmt>
+            <publicationStmt><ab/></publicationStmt>
+            <sourceDesc><ab/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list>
+                <item xml:id="δοὺξ">
+                <name xml:lang="grc">δοὺξ</name>
+                <name xml:lang="en">duke</name>
+                    <name xml:lang="lat">dux</name>
+            </item>
+            </list>
+        </body>
+    </text>
+</TEI>

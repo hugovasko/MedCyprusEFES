@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href=tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href=tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Philokales first inscription</title>
+                <author xml:id="tp">Theocharis Petrou</author>
+                <editor xml:id="mgp"> Maria G. Parani</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>University of Cyprus - MedCyprus</authority>
+                <idno type="filename">MedCY.028.001</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>n/a</repository>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Painted Inscription<objectType/> Naos, southeast pier, west face, lower register<dimensions unit="cm"><height>67 cm (panel)</height><width>88 cm (panel)</width></dimensions></support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>description of text field/campus</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>White letters against blue background. The inscription is written entirely in majuscule. Lines are ruled top and bottom. Accents and breathings non systematic. The end of each verse is marked with a dot. The inscription, after the conservation of the wall paintings between 1963-1968, is clear, legible and consists of bold letters. However, the size as well as the thickness of the letters in some places varies, while all seven lines have a slight slope to the right. The letters of the words: Tη̣ν ἐν προcώ̣πω̣̣ τριcὶ (L. 1), τὸν νεων ἤγειρε cοι·(L. 6), κακῶc παρεcφάλη·(L. 7), in relation with the rest, are thinner and slightly compressed for space reasons. Throughout the inscription there are ligatures of the letters ΟΥ, ΗΝ, ΤΡ, ΠΡ. The letter ε of the word νωβε̣λλιcίμων (L. 5) was lost, while the letters ω and β at the beginning of the word are faded. Very good preservation condition. Two letters of the last word at the end of the fifth line are faded and one other is completely lost. <height unit="cm">5 cm</height>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>chapel of the Holy Trinity, monastery of Saint John Chrysostom, Koutsovendis</origPlace>
+                            <origDate precision="medium">ca. 1100</origDate>
+                        </origin>
+                        <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Figs. 83, 84 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
+                        </provenance>
+                        <provenance type="observed">n/a
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="photograph of text or monument"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:id="grc">
+              <!--<lg met="Dodecasyllable"></lg>-->
+                  <ab>
+                    <lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οc<choice><orig>ώ</orig><reg>ώ</reg></choice>πω <hi rend="ligature">τρ</hi>ιc<choice><orig>ὶ</orig><reg>ὶ</reg></choice> προcκυν<hi rend="ligature"><choice><orig>ου</orig><reg>οῦ</reg></choice></hi>μένην 
+<lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύcιν· 
+<lb n="3"/>ἄμαχον ἀλκὴν ὑπερούcιον μόνην· 
+<lb n="4"/>ποθῶν cφόδρα cε <rs type="rulers-officials" ref="Rulers-Officials.xml#δοὺξ">δ<hi rend="ligature">οὺ</hi>ξ</rs> <placeName ref="https://pleiades.stoa.org/places/707498">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάληc" type="cognomen">Φιλοκάλ<supplied reason="omitted">ηc</supplied></name>
+<lb n="5"/><name nymRef="#Ευμάθιοc" type="praenomen" >Ευμάθιοc</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ώτιcτοc</rs> νωβ<supplied reason="lost">ε</supplied>λλιcίμων·
+<lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ cοι·
+<lb n="7"/>πρὸc ἐξιλαcμὸν ὧν κακῶc παρεcφάλη· 
+                </ab>
+            </div>
+            <div type="apparatus">
+                <head>Apparatus</head>
+                <listApp>
+                    <app loc="1"><rdg resp="MangoHawkins1964">προσώ̣πο[ις]</rdg><rdg resp="MangoHawkinsBoyd1990">προσώπω̣̣ (note 49, προσώποις)</rdg><rdg resp="MangoHawkins1964">προσκυ[νουμέν[η]ν </rdg></app>
+                    <app loc="2"><rdg resp="MangoHawkins1964">[ἄν]αρχον </rdg><rdg resp="MangoHawkins1964">ἀρχὴν</rdg></app>
+                    <app loc="3"><rdg resp="MangoHawkins1964">ἀλκήν</rdg></app>
+                    <app loc="4"><rdg resp="MangoHawkins1964">Φιλο[κάλ[ης]</rdg><rdg resp="Rhoby2009"><!-->Φιλοκάλ<ης>--></rdg></app>
+                    <app loc="5"><rdg resp="MangoHawkins1964">νω[βε]λλισίμων</rdg><rdg resp="MangoHawkinsBoyd1990">νωβε̣λλισίμων </rdg><rdg resp="Rhoby2009">νω[βε]λλισίμων· </rdg></app>
+                    <app loc="6"><rdg resp="MangoHawkinsBoyd1990">βά̣θρων </rdg><rdg resp="MangoHawkinsBoyd1990">νεων </rdg><rdg resp="MangoHawkinsBoyd1990">ἤγειρε </rdg></app>
+                    <app loc="7"><rdg resp="MangoHawkins1964">ἐξιλασμόν </rdg><rdg resp="MangoHawkins1964">ὧ̣ν </rdg></app>
+<!--<app> <note>The Mango, Hawkins’s Report 1964 was written before the completion of the conservation of the murals of the chapel</note></app>-->
+                </listApp> </div>
+            <div type="translation">
+                <p>
+Desiring you too much, 
+the principle without beginning, the nature that is above every principle and worships three persons, 
+the only irresistible force that transcends every substance, 
+the Duke of Cyprus Eumathios Philokales, 
+the first among the nobles, 
+built this church for you from the foundations 
+to atone for the sins he made wrongly.
+</p> 
+ <!--><div type="text-constituted-from">
+<p>Text Constituted from Mango, Hawkins, Boyd 1990 </p>
+</div>-->
+            </div>
+            <div type="commentary">
+                <p>The inscription begins with the symbol of a cross (ht.:?, w.:?).
+The words ἄναρχον ἀρχὴν ὑπεράρχιον φύσιν in the 2nd line create the rhetorical figure of figura etymologica.
+On the 4th line there is an abbreviation of the name Φιλοκάλης (Philokales). Rhoby writes Φιλοκάλ<!--<ης>--> considering that the painter deliberately omitted the non-writing of the letters ης due to lack of space. On the other hand Mango, Hawkings, Boys, took it as an abbreviation. 
+The epithets ὑπεράρχιον, ̣ἄναρχον, ὑπερούσιον, are used to characterize Holy Trinity and are found in 4th century Church fathers such as Gregory of Nazianzus, Athanasius the Great, Cyril of Alexandria as well as Symeon the New Theologian (10th c.) and many others. 
+Regarding the content of the inscription, it is a foundation inscription of the Dux of Cyprus Eumathios Philokales, a military governor of Cyprus from 1093 to ca. 1112 https://pbw2016.kdl.kcl.ac.uk/person/120119/. As the inscription refers, Philokales built the chapel of the Holy Trinity in order to atone for the sins he made in his life. </p>
+            </div>
+            <div type="bibliography">
+                <listBibl><bibl><ptr target="Stylianou1997"/></bibl>
+                <bibl><ptr target="Chotzakoglou2005"/></bibl>
+                <!-- How do we write specific pages of each bibliography reference? I tried this: <bibl><ptr target="#Chotzakoglou2005"/>,<citedRange>596</citedRange></bibl>but it shows me also the whole pages of the reference -->
+                <bibl><ptr target="Kotoula2007"/></bibl>
+                <bibl><ptr target="Procopiou2007"/></bibl>
+                <bibl><ptr target="Papacostas2007"/></bibl>
+                <bibl><ptr target="Papageorghiou2010"/></bibl>
+                <bibl><ptr target="Parani2018"/></bibl>
+                </listBibl>
+                <p>bibliography of previous editions, discussion, etc.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
