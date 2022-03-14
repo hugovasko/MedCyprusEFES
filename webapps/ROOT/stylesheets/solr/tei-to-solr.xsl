@@ -34,8 +34,8 @@
     </field>
   </xsl:template>
   
-  <xsl:template match="tei:persName[@type='divine']" mode="facet_mentioned_divinities">
-    <field name="mentioned_divinities">
+  <xsl:template match="tei:persName[@type='divine']" mode="facet_Ecclesiastical_diocese">
+    <field name="Ecclesiastical_diocese">
       <xsl:value-of select="@key"/>
     </field>
   </xsl:template>
@@ -53,7 +53,7 @@
   <xsl:template name="extra_fields">
     <xsl:call-template name="field_inscription_type"/>
     <xsl:call-template name="field_mentioned_institutions"/>
-    <xsl:call-template name="field_mentioned_divinities"/>
+    <xsl:call-template name="field_Ecclesiastical_diocese"/>
     <xsl:call-template name="field_person_name"/>
   </xsl:template>
   
@@ -65,8 +65,8 @@
     <xsl:apply-templates mode="facet_mentioned_institutions" select="//tei:text/tei:body/tei:div[@type='edition']"/>
   </xsl:template>
   
-   <xsl:template name="field_mentioned_divinities">
-    <xsl:apply-templates mode="facet_mentioned_divinities" select="//tei:text/tei:body/tei:div[@type='edition']" />
+   <xsl:template name="field_Ecclesiastical_diocese">
+    <xsl:apply-templates mode="facet_Ecclesiastical_diocese" select="//tei:text/tei:body/tei:div[@type='edition']" />
   </xsl:template>
   
   <xsl:template name="field_person_name">
