@@ -151,7 +151,9 @@
           multiValued="true" stored="true" required="false" />
    <field name="source_repository" type="string" required="false"
           multiValued="true" stored="true" indexed="true" />
-   <field name="mentioned_divinities" stored="true" indexed="true"
+   <!--<field name="mentioned_divinities" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />-->
+   <field name="Ecclesiastical_diocese" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="person_name" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />   
