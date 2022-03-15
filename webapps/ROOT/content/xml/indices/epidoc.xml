@@ -200,6 +200,18 @@
           <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
         </div>
       </div>
+      <div xml:id="Rulers-Officials">
+        <head>Rulers and Officials</head>
+        <div type="Rulers-Officials">
+          <list>
+            <item>Name</item>
+            <item>References</item>
+          </list>
+        </div>
+        <div type="notes">
+          <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
+        </div> 
+      </div>
     </body>
   </text>
 </TEI>
