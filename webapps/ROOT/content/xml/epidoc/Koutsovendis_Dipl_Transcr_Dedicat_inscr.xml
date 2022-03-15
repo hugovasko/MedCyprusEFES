@@ -55,13 +55,13 @@
         <body>
             <div type="edition" xml:space="preserve" xml:id="grc">
               <lg met="Dodecasyllable">
-                    <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οc<choice><orig>ώ</orig><reg>ώ</reg></choice>πω <hi rend="ligature">τρ</hi>ιc<choice><orig>ὶ</orig><reg>ὶ</reg></choice> προcκυν<hi rend="ligature"><choice><orig>ου</orig><reg>οῦ</reg></choice></hi>μένην</l>
-<l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύcιν· </l>
-<l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούcιον μόνην· </l>
-<l><lb n="4"/>ποθῶν cφόδρα cε <rs type="rulers-officials" ref="Rulers-Officials.xml#δοὺξ">δ<hi rend="ligature">οὺ</hi>ξ</rs> <placeName ref="https://pleiades.stoa.org/places/707498">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάληc" type="surname">Φιλοκάλ<supplied reason="omitted">ηc</supplied></name></persName></l>
-<l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιοc</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ώτιcτοc</rs> νωβ<supplied reason="lost">ε</supplied>λλιcίμων·</l>
-<l><lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ cοι·</l>
-<l><lb n="7"/>πρὸc ἐξιλαcμὸν ὧν κακῶc παρεcφάλη· </l></lg>
+                    <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπω <hi rend="ligature">τρ</hi>ισί προσκυν<hi rend="ligature">ου</hi>μένην</l>
+<l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύσιν· </l>
+<l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
+<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="ruler" ref="Rulers-Officials.xml#δούξ">δ<hi rend="ligature">οὺ</hi>ξ</rs> <placeName ref="https://pleiades.stoa.org/places/707498">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
+<l><lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ σοι·</l>
+<l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
             </div>
             <div type="apparatus">
                 <head>Apparatus</head>
