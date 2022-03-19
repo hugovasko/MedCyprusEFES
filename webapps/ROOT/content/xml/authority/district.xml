@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Controlled vocabulary for districts in MedCyprus project</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listDistrict>                
+                <district xml:id="famagusta">
+                    <districtName xml:lang="en">Famagusta</districtName>
+                    <districtName xml:lang="el">Επαρχία Αμμοχώστου</districtName>                    
+                </district>
+                
+                <district xml:id="kyrenia">
+                    <districtName xml:lang="en">Kyrenia</districtName>
+                    <districtName xml:lang="el">Επαρχία Κερύνειας</districtName>                    
+                </district>
+                
+                <district xml:id="larnaca">
+                    <districtName xml:lang="en">Larnaca</districtName>
+                    <districtName xml:lang="el">Επαρχία Λάρνακας</districtName>                    
+                </district>
+                
+                <district xml:id="limassol">
+                    <districtName xml:lang="en">Limassol</districtName>
+                    <districtName xml:lang="el">Επαρχία Λεμεσού</districtName>                    
+                </district>                
+                
+                <district xml:id="nicosia">
+                    <districtName xml:lang="en">Nicosia</districtName>
+                    <districtName xml:lang="el">Επαρχία Λευκωσίας</districtName>                    
+                </district>
+                
+                <district xml:id="paphos">
+                    <districtName xml:lang="en">Paphos</districtName>
+                    <districtName xml:lang="el">Επαρχία Πάφου</districtName>                    
+                </district>             
+                               
+            </listDistrict>
+        </body>
+    </text>
+</TEI>

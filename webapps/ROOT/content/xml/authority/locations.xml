@@ -20,7 +20,7 @@
                     <placeName xml:lang="en">Acheleia, St. Theodosiοs</placeName>
                     <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
                     <placeName type="district">Paphos</placeName>
-                    <placeName type="diocese">Bishopric of Paphos</placeName>
+                    <!-- <placeName diocese.xml#"paphos">Bishopric of Paphos</placeName>-->
                     <location><geo><!--34.73045, 32.4807--></geo></location>
                     <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
@@ -54,7 +54,7 @@
                     <placeName xml:lang="en">Agios Sozomenos, St. Sozomenos</placeName>
                     <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
                     <placeName type="district">Nicosia</placeName>
-                    <placeName type="diocese">Bishopric of Trimythous</placeName>
+                    <!-- <placeName diocese.xml#"trimythous">Bishopric of Trimythous</placeName>-->
                     <desc type="contruction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
