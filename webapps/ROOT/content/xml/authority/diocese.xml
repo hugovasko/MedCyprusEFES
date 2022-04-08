@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Controlled vocabulary for ecclesiastical dioceses in MedCyprus project</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listDiocese>                
+                <diocese xml:id="archbishopric">
+                    <dioceseName xml:lang="en">Archbishopric of Cyprus</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Αρχιεπισκοπή Κύπρου</dioceseName>
+                    <diocese ref="https://churchofcyprus.org.cy/"></diocese>
+                
+                <diocese xml:id="arsinoe">
+                    <dioceseName xml:lang="en">Bishopric of Arsinoe</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Επισκοπή Αρσινόης</dioceseName>
+                    <diocese ref="https://www.impaphou.org/xwrepiskopi_arsinois.aspx"></diocese>
+                
+                <diocese xml:id="constantia">
+                    <dioceseName xml:lang="en">Bishopric of Constantia and Famagusta</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κωνσταντίας και Αμμοχώστου</dioceseName>
+                    <diocese ref="https://www.imconstantias.org.cy/"></diocese>
+                
+                <diocese xml:id="karpasia">
+                    <dioceseName xml:lang="en">Bishopric of Karpasia</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Επισκοπή Καρπασίας</dioceseName>
+                    <diocese ref="https://churchofcyprus.org.cy/stixia-epkarpasias"></diocese>
+                
+                <diocese xml:id="kition">
+                    <dioceseName xml:lang="en">Bishopric of Kition</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κιτίου</dioceseName>
+                    <diocese ref="https://imkitiou.org/"></diocese>
+                
+                <diocese xml:id="kyrenia">
+                    <dioceseName xml:lang="en">Bishopric of Kyrenia</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κυρηνείας</dioceseName>
+                    <diocese ref="https://www.metropolisofkyrenia.org/"></diocese>
+                
+                <diocese xml:id="limassol">
+                    <dioceseName xml:lang="en">Bishopric of Limassol</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Λεμεσού</dioceseName>
+                    <diocese ref="http://www.imlemesou.org/"></diocese>
+                
+                <diocese xml:id="morphou">
+                    <dioceseName xml:lang="en">Bishopric of Morphou</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Μόρφου</dioceseName>
+                    <diocese ref="https://immorfou.org.cy/"></diocese>
+                
+                <diocese xml:id="paphos">
+                    <dioceseName xml:lang="en">Bishopric of Paphos</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Πάφου</dioceseName>
+                    <diocese ref="https://www.impaphou.org/default.aspx/"></diocese>
+                
+                <diocese xml:id="tamasos">
+                    <dioceseName xml:lang="en">Bishopric of Tamasos and Oreine</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Ταμασού και Ορεινής</dioceseName>
+                    <diocese ref="https://www.imtamasou.org.cy/"></diocese>
+                
+                <diocese xml:id="trimythous">
+                    <dioceseName xml:lang="en">Bishopric of Trimythous</dioceseName>
+                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Τριμυθούντος</dioceseName>
+                    <diocese ref="https://imtrimythountos.org.cy/"></diocese>
+                    
+            </listDiocese>
+        </body>
+    </text>
+</TEI>
