@@ -3,7 +3,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Controlled vocabulary for ecclesiastical dioceses in MedCyprus project</title>
+                <title>Controlled vocabulary for Ecclesiastical Dioceses in MedCyprus project</title>
             </titleStmt>
             <publicationStmt>
                 <p/>
@@ -15,63 +15,74 @@
     </teiHeader>
     <text>
         <body>
-            <listDiocese>                
-                <diocese xml:id="archbishopric">
-                    <dioceseName xml:lang="en">Archbishopric of Cyprus</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Αρχιεπισκοπή Κύπρου</dioceseName>
-                    <diocese ref="https://churchofcyprus.org.cy/"></diocese>
+            <listPlace>                
+                <place xml:id="archbishopric">
+                    <placeName xml:lang="en">Archbishopric of Cyprus</placeName>
+                    <placeName xml:lang="el">Ιερά Αρχιεπισκοπή Κύπρου</placeName>
+                    <bibl><ref type="website">https://www.imconstantias.org.cy/</ref></bibl>
+                        </place>
                 
-                <diocese xml:id="arsinoe">
-                    <dioceseName xml:lang="en">Bishopric of Arsinoe</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Επισκοπή Αρσινόης</dioceseName>
-                    <diocese ref="https://www.impaphou.org/xwrepiskopi_arsinois.aspx"></diocese>
+                <place xml:id="arsinoe">
+                    <placeName xml:lang="en">Bishopric of Arsinoe</placeName>
+                    <placeName xml:lang="el">Ιερά Επισκοπή Αρσινόης</placeName>
+                    <bibl><ref type="website">https://www.impaphou.org/xwrepiskopi_arsinois.aspx</ref></bibl></place>
+
                 
-                <diocese xml:id="constantia">
-                    <dioceseName xml:lang="en">Bishopric of Constantia and Famagusta</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κωνσταντίας και Αμμοχώστου</dioceseName>
-                    <diocese ref="https://www.imconstantias.org.cy/"></diocese>
+                <place xml:id="constantia">
+                    <placeName xml:lang="en">Bishopric of Constantia and Famagusta</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κωνσταντίας και Αμμοχώστου</placeName>
+                    <bibl><ref type="website">https://www.imconstantias.org.cy/</ref></bibl></place>
+
                 
-                <diocese xml:id="karpasia">
-                    <dioceseName xml:lang="en">Bishopric of Karpasia</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Επισκοπή Καρπασίας</dioceseName>
-                    <diocese ref="https://churchofcyprus.org.cy/stixia-epkarpasias"></diocese>
+                <place xml:id="karpasia">
+                    <placeName xml:lang="en">Bishopric of Karpasia</placeName>
+                    <placeName xml:lang="el">Ιερά Επισκοπή Καρπασίας</placeName>
+                    <bibl><ref type="website">https://churchofcyprus.org.cy/stixia-epkarpasias</ref></bibl></place>
+
                 
-                <diocese xml:id="kition">
-                    <dioceseName xml:lang="en">Bishopric of Kition</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κιτίου</dioceseName>
-                    <diocese ref="https://imkitiou.org/"></diocese>
+                <place xml:id="kition">
+                    <placeName xml:lang="en">Bishopric of Kition</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κιτίου</placeName>
+                    <bibl><ref type="website">https://imkitiou.org/</ref></bibl></place>
+
                 
-                <diocese xml:id="kyrenia">
-                    <dioceseName xml:lang="en">Bishopric of Kyrenia</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Κυρηνείας</dioceseName>
-                    <diocese ref="https://www.metropolisofkyrenia.org/"></diocese>
+                <place xml:id="kyrenia">
+                    <placeName xml:lang="en">Bishopric of Kyrenia</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κυρηνείας</placeName>
+                    <bibl><ref type="website">https://www.metropolisofkyrenia.org/</ref></bibl></place>
+
                 
-                <diocese xml:id="limassol">
-                    <dioceseName xml:lang="en">Bishopric of Limassol</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Λεμεσού</dioceseName>
-                    <diocese ref="http://www.imlemesou.org/"></diocese>
+                <place xml:id="limassol">
+                    <placeName xml:lang="en">Bishopric of Limassol</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Λεμεσού</placeName>
+                    <bibl><ref type="website">http://www.imlemesou.org/</ref></bibl></place>
+
                 
-                <diocese xml:id="morphou">
-                    <dioceseName xml:lang="en">Bishopric of Morphou</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Μόρφου</dioceseName>
-                    <diocese ref="https://immorfou.org.cy/"></diocese>
+                <place xml:id="morphou">
+                    <placeName xml:lang="en">Bishopric of Morphou</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Μόρφου</placeName>
+                    <bibl><ref type="website">https://immorfou.org.cy/</ref></bibl></place>
+
                 
-                <diocese xml:id="paphos">
-                    <dioceseName xml:lang="en">Bishopric of Paphos</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Πάφου</dioceseName>
-                    <diocese ref="https://www.impaphou.org/default.aspx/"></diocese>
+                <place xml:id="paphos">
+                    <placeName xml:lang="en">Bishopric of Paphos</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Πάφου</placeName>
+                    <bibl><ref type="website">https://www.impaphou.org/default.aspx/</ref></bibl></place>
+
                 
-                <diocese xml:id="tamasos">
-                    <dioceseName xml:lang="en">Bishopric of Tamasos and Oreine</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Ταμασού και Ορεινής</dioceseName>
-                    <diocese ref="https://www.imtamasou.org.cy/"></diocese>
+                <place xml:id="tamasos">
+                    <placeName xml:lang="en">Bishopric of Tamasos and Oreine</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Ταμασού και Ορεινής</placeName>
+                    <bibl><ref type="website">https://www.imtamasou.org.cy/</ref></bibl></place>
+
                 
-                <diocese xml:id="trimythous">
-                    <dioceseName xml:lang="en">Bishopric of Trimythous</dioceseName>
-                    <dioceseName xml:lang="el">Ιερά Μητρόπολις Τριμυθούντος</dioceseName>
-                    <diocese ref="https://imtrimythountos.org.cy/"></diocese>
+                <place xml:id="trimythous">
+                    <placeName xml:lang="en">Bishopric of Trimythous</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Τριμυθούντος</placeName>
+                    <bibl><ref type="website">https://imtrimythountos.org.cy/</ref></bibl></place>
+
                     
-            </listDiocese>
+            </listPlace>
         </body>
     </text>
 </TEI>

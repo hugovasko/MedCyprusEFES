@@ -15,38 +15,38 @@
     </teiHeader>
     <text>
         <body>
-            <listDistrict>                
-                <district xml:id="famagusta">
-                    <districtName xml:lang="en">Famagusta</districtName>
-                    <districtName xml:lang="el">Επαρχία Αμμοχώστου</districtName>                    
-                </district>
+            <listPlace>                
+                <place xml:id="famagusta">
+                    <placeName xml:lang="en">Famagusta</placeName>
+                    <placeName xml:lang="el">Επαρχία Αμμοχώστου</placeName>                    
+                </place>
                 
-                <district xml:id="kyrenia">
-                    <districtName xml:lang="en">Kyrenia</districtName>
-                    <districtName xml:lang="el">Επαρχία Κερύνειας</districtName>                    
-                </district>
+                <place xml:id="kyrenia">
+                    <placeName xml:lang="en">Kyrenia</placeName>
+                    <placeName xml:lang="el">Επαρχία Κερύνειας</placeName>                    
+                </place>
                 
-                <district xml:id="larnaca">
-                    <districtName xml:lang="en">Larnaca</districtName>
-                    <districtName xml:lang="el">Επαρχία Λάρνακας</districtName>                    
-                </district>
+                <place xml:id="larnaca">
+                    <placeName xml:lang="en">Larnaca</placeName>
+                    <placeName xml:lang="el">Επαρχία Λάρνακας</placeName>                    
+                </place>
                 
-                <district xml:id="limassol">
-                    <districtName xml:lang="en">Limassol</districtName>
-                    <districtName xml:lang="el">Επαρχία Λεμεσού</districtName>                    
-                </district>                
+                <place xml:id="limassol">
+                    <placeName xml:lang="en">Limassol</placeName>
+                    <placeName xml:lang="el">Επαρχία Λεμεσού</placeName>                    
+                </place>                
                 
-                <district xml:id="nicosia">
-                    <districtName xml:lang="en">Nicosia</districtName>
-                    <districtName xml:lang="el">Επαρχία Λευκωσίας</districtName>                    
-                </district>
+                <place xml:id="nicosia">
+                    <placeName xml:lang="en">Nicosia</placeName>
+                    <placeName xml:lang="el">Επαρχία Λευκωσίας</placeName>                    
+                </place>
                 
-                <district xml:id="paphos">
-                    <districtName xml:lang="en">Paphos</districtName>
-                    <districtName xml:lang="el">Επαρχία Πάφου</districtName>                    
-                </district>             
+                <place xml:id="paphos">
+                    <placeName xml:lang="en">Paphos</placeName>
+                    <placeName xml:lang="el">Επαρχία Πάφου</placeName>                    
+                </place>             
                                
-            </listDistrict>
+            </listPlace>
         </body>
     </text>
 </TEI>
