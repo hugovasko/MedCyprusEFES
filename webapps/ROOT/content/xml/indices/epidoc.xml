@@ -26,7 +26,17 @@
           </list>
         </div>
       </div>
-
+      
+      <div xml:id="district">
+        <head>District</head>
+        
+        <div type="notes">
+          <list>
+            <item></item>
+          </list>
+        </div>
+      </div>
+      
       <div xml:id="abbreviation">
         <head>Abbreviations</head>
 
@@ -159,7 +169,7 @@
         </div>
       </div>
       
-      <div xml:id="divinities">
+      <div xml:id="divine">
         <head>Divinities</head>
         <div type="headings">
           <list>
