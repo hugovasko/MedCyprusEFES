@@ -16,19 +16,24 @@
     <text>
         <body>
             <listPlace type="monuments">
-                <place xml:id="mon1">
+                <place xml:id="Acheleia">
                     <placeName xml:lang="en">Acheleia, St. Theodosiοs</placeName>
                     <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
                     <placeName type="district">Paphos</placeName>
+<<<<<<< Updated upstream
                     <!-- <placeName diocese.xml#"paphos">Bishopric of Paphos</placeName>-->
                     <location><geo><!--34.73045, 32.4807--></geo></location>
+=======
+                    <placeName type="diocese">Bishopric of Paphos</placeName>
+                    <location><geo>34.734564, 32.484430</geo></location>
+>>>>>>> Stashed changes
                     <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Free-cross domed church</desc>
                     <desc type="mural">
-                        1st layer: late 12th century (WHERE?)
-                        2nd layer: 13th century (WHERE?)
+                        1st layer: late 12th century<!-- (WHERE?) -->
+                        2nd layer: 13th century<!-- (WHERE?) -->
                         3rd layer: second half of the 15th century (western bay, north wall)
                     </desc>
                     <desc type="conservation">Fragmentary</desc>
@@ -46,26 +51,31 @@
                     <listBibl type="monument">
                         <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
                         <bibl><ptr target="bibliography.xml#Papageorgiou1996"/>Papageorgiou 1996<citedRange> 63, 74, 91, 94</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>407-8</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>407-08</citedRange></bibl>
                     </listBibl>
                 </place>
                 
-                <place xml:id="mon2">
+                <place xml:id="Sozomenos">
                     <placeName xml:lang="en">Agios Sozomenos, St. Sozomenos</placeName>
                     <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
                     <placeName type="district">Nicosia</placeName>
+<<<<<<< Updated upstream
                     <!-- <placeName diocese.xml#"trimythous">Bishopric of Trimythous</placeName>-->
+=======
+                    <placeName type="diocese">Bishopric of Trimythous</placeName>
+                    <location><geo>35.067463, 33.436088</geo></location>
+>>>>>>> Stashed changes
                     <desc type="contruction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
-                    <desc type="architectural">Rock-cut, single-nave, roughly orthogonal (CHECK!)</desc>
+                    <desc type="architectural">Rock-cut, single-nave, <!--roughly orthogonal (CHECK!)--></desc>
                     <desc type="mural">
                         <desc type="layer" n="1">1st layer: 10th century (nave, north wall, eastern side).
                             Some of the paintings are held by the <rs ref="#rep1">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</rs> 
                             <!--CHECK DATES. SOME OF THE PAINTINGS HAVE BEEN REMOVED. WHICH LAYER? CHECK-->
                         </desc>
-                        <desc>2nd layer: ? (nave, north wall, eastern side)</desc>
-                        <desc>3rd layer: 13th-14th c.? First half of the 14th c.? (bema, nave)</desc>
+                        <desc>2nd layer: ? (naos, north wall, eastern side)</desc>
+                        <desc>3rd layer: 13th-14th c.? First half of the 14th c.? (bema, naos)</desc>
                     </desc>
                     <desc type="conservation">Fragmentary; condition poor</desc>
                     <desc type="donors">Unknown</desc>
@@ -73,8 +83,9 @@
                     <!--<desc type="graffiti">Unknown/Presence uncofirmed/Unpublished/linkGrafmedia</desc>-->
                     <idno type="IBCC">Not included</idno>
                     <idno type="HGC">Not included</idno>
+                    <idno type="geonames">http://www.geonames.org/20648/agios-sozomenos.html</idno>
                     <listBibl type="inscriptions">
-                        <bibl type="edition">Bakirtzis 2019, 83-100; Papageorgiou 1999, 47-52;</bibl>
+                       <!-- <bibl type="edition"><ptr target="bibliography.xml#Papageorgiou1999"/>Papageorgiou 1999<citedRange> 47-52</citedRange><ptr target="bibliography.xml#Papageorgiou1999"/>Papageorgiou 1999<citedRange> 47-52</citedRange></bibl>-->
                     </listBibl>
                     <listBibl type="monument">
                         <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
@@ -82,6 +93,76 @@
                         <bibl><ptr target="bibliographyxml#Bakirtzis2019"/>Bakirtzis 2019<citedRange>83-100</citedRange></bibl>
                     </listBibl>
                 </place>
+                
+                <place xml:id="Kivotos">
+                    <placeName xml:lang="en">Agios Theodoros, Panagia Kivotos</placeName>
+                    <placeName xml:lang="el">Άγιος Θεόδωρος, Παναγία Κιβωτός</placeName>
+                    <placeName type="district">Limassol</placeName>
+                    <placeName type="diocese">Bishopric of Limassol</placeName>
+                    <location><geo>34.891937, 33.032961</geo></location>
+                   <!-- <desc type="contruction"><date notBefore="1200" notAfter="1300" precision="low">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
+                    <desc type="function">Parochial</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Single-aisle timber-roofed church</desc>
+                    <desc type="mural">
+                        1st layer: 13th century (naos, west wall)
+                        <!-- IS THERE A LATER LAYER? -->
+                    </desc>
+                    <desc type="conservation">Fragmentary; badly damaged</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">Not included</idno>
+                    <idno type="geonames">http://www.geonames.org/12185/panagia-kivotos.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Gunnis1936"/>Gunnis 1936<citedRange> 207-08</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou1975"/>Papageorgiou 1975<citedRange> 362-63</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Agridia">
+                    <placeName xml:lang="en">Agridia (Rizokarpaso), St. Philon</placeName>
+                    <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγ. Φίλων</placeName>
+                    <placeName type="district">Famagusta</placeName>
+                    <placeName type="diocese">Bishopric of Karpasia</placeName>
+                    <location><geo>35.630966, 34.449377</geo></location>
+                    <desc type="contruction"><date notBefore="1100" notAfter="1200" precision="low">12th century</date></desc>
+                    <desc type="function">Parochial</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Single-aisled vaulted church, with a later south chapel and narthex</desc>
+                    <desc type="mural">
+                        1st layer: late 12th century (naos, western section of south wall, west wall)
+                        2nd layer: 13th century? (naos, west wall)
+<!--Naos, north wall, central recess: four supplicants at the feet of a saintly bishop. Does it belong to the 2nd layer or is it later? Meyer-Fernandez 2019, cat. 26, ascribes it a date ca 1300 -->                 
+                    </desc>
+                    <desc type="conservation">Fragmentary. Some of the murals were illegally detached from the walls following 1974; current location unknown.</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0093.html</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/146105/230/</idno>
+                    <idno type="geonames">http://www.geonames.org/19305/agios-fylon-agridia.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl type="edition"><ptr target="bibliography.xml#Chotzakoglou2010a"/>Chotzakoglou 2010a<citedRange> 442-44</citedRange></bibl>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Chotzakoglou2010a"/>Chotzakoglou 2010a<citedRange> 442-44</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010<citedRange> 397-403 <!-- or 349-55 PLEASE CHECK: DIFFERENCE BETWEEN GREEK AND ENGLISH VERSIONS OF BOOK --></citedRange></bibl>
+                    </listBibl>
+                </place>
+                
             </listPlace>
             
             <listPlace type="repositories">
