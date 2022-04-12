@@ -145,7 +145,7 @@
                     <idno type="HGC">http://www.cyprusgazetteer.org/146105/230/</idno>
                     <idno type="geonames">http://www.geonames.org/19305/agios-fylon-agridia.html</idno>
                     <listBibl type="inscriptions">
-                        <bibl type="edition"><ptr target="bibliography.xml#Chotzakoglou2010a"/>Chotzakoglou 2010a, <citedRange> 442-44</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Chotzakoglou2010a"/>Chotzakoglou 2010a, <citedRange> 442-44</citedRange></bibl>
                     </listBibl>
                     <listBibl type="monument">
                         <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
