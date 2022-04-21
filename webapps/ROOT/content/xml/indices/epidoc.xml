@@ -27,15 +27,15 @@
         </div>
       </div>
       
-      <div xml:id="district">
+      <!-- Do we want an index of districts or rather a search facet of districts? -->
+      <!--<div xml:id="district">
         <head>District</head>
-        
         <div type="notes">
           <list>
             <item></item>
           </list>
         </div>
-      </div>
+      </div>-->
       
       <div xml:id="abbreviation">
         <head>Abbreviations</head>
