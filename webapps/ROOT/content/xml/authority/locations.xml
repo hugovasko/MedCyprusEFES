@@ -263,7 +263,6 @@
                         <bibl><ptr target="bibliography.xmll#Zarras2010"/>Zarras 2010</bibl>
                     </listBibl>
                     <listBibl type="monument">
-                        <!--EMEINA ΕΔΩ<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1972-2008<citedRange></citedRange></bibl>-->
                         <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32 </citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4 </citedRange></bibl>
