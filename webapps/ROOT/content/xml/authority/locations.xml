@@ -50,52 +50,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Pelendri">
-                    <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
-                    <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
-                    <placeName type="district" ref="district.xml#paphos">Limassol</placeName>
-                    <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Limassol</placeName>
-                    <location><geo>34.893439822047185, 32.96689901007665</geo></location>
-                    <desc type="contruction"><date notBefore="1178" notAfter="1178" precision="high">Late 12th - Early 13th century</date></desc>
-                    <desc type="function">Funerary</desc>
-                    <desc type="context">Rural</desc>
-                    <desc type="architectural">three-aisled domed church
-                    </desc>
-                    <desc type="mural">
-                        <desc type="layer" n="1">1st layer: 1178 (bema apse). </desc>
-                            <desc type="layer" n="2">2nd layer: 13th century (bema:east wall)</desc>
-                            <desc type="layer" n="3">3rd layer: first half of the 14th century [bema (now in south apse), nave]</desc>
-                            <desc type="layer" n="4">4th layer: 3rd quarter of the 14th century (north aisle)</desc>
-                            <desc type="layer" n="5">5th layer: 15th century (west wall of the south aisle)</desc>
-                    </desc>
-                    <desc type="conservation">Good but with multiple hitmarks</desc>
-                    <desc type="donors">
-                        Priest Georgios </desc>
-                    <desc type="painter">Mon[o]machos (?)</desc>
-                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
-                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
-                    </desc>
-                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0061.html"</idno>
-                    <idno type="HGC">http://www.cyprusgazetteer.org/146198/217/</idno>
-                    <idno type="geonames">https://www.geonames.org/12522/timios-stavros.html</idno>
-                    <listBibl type="inscriptions">
-                        <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003 <citedRange>111</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
-                        <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xmll#Zarras2010"/>Zarras 2010</bibl>
-                    </listBibl>
-                    <listBibl type="monument">
-                        <!--EMEINA ΕΔΩ<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1972-2008<citedRange></citedRange></bibl>-->
-                        <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32 </citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4 </citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003, <citedRange>111</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
-                        <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xmll#Zarras2010"/>Zarras 2010</bibl>
-                    </listBibl>
-                </place>
+              
                 
                 <place xml:id="Sozomenos">
                     <placeName xml:lang="en">Agios Sozomenos, St. Sozomenos</placeName>
@@ -198,19 +153,90 @@
                         <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
                         <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
                         <bibl><ptr target="bibliography.xml#Chotzakoglou2010a"/>Chotzakoglou 2010a, <citedRange>442-44</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange>397-403 <!-- or 349-55 PLEASE CHECK: DIFFERENCE BETWEEN GREEK AND ENGLISH VERSIONS OF BOOK --></citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange>397-403 <!-- or 349-55 PLEASE CHECK: DIFFERENCE BETWEEN GREEK AND ENGLISH VERSIONS OF BOOK --></citedRange></bibl>                    </listBibl>
+                </place>
+                
+                <place xml:id="Pelendri">
+                    <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
+                    <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
+                    <placeName type="district" ref="district.xml#paphos">Limassol</placeName>
+                    <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Limassol</placeName>
+                    <location><geo>34.893439822047185, 32.96689901007665</geo></location>
+                    <desc type="contruction"><date notBefore="1178" notAfter="1178" precision="high">Late 12th - Early 13th century</date></desc>
+                    <desc type="function">Funerary</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">three-aisled domed church
+                    </desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: 1178 (bema apse). </desc>
+                        <desc type="layer" n="2">2nd layer: 13th century (bema:east wall)</desc>
+                        <desc type="layer" n="3">3rd layer: first half of the 14th century [bema (now in south apse), nave]</desc>
+                        <desc type="layer" n="4">4th layer: 3rd quarter of the 14th century (north aisle)</desc>
+                        <desc type="layer" n="5">5th layer: 15th century (west wall of the south aisle)</desc>
+                    </desc>
+                    <desc type="conservation">Good but with multiple hitmarks</desc>
+                    <desc type="donors">
+                        Priest Georgios </desc>
+                    <desc type="painter">Mon[o]machos (?)</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0061.html"</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/146198/217/</idno>
+                    <idno type="geonames">https://www.geonames.org/12522/timios-stavros.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003 <citedRange>111</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
+                        <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xmll#Zarras2010"/>Zarras 2010</bibl>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--EMEINA ΕΔΩ<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1972-2008<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32 </citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4 </citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003, <citedRange>111</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
+                        <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xmll#Zarras2010"/>Zarras 2010</bibl>
                     </listBibl>
                 </place>
                 
             </listPlace>
             
             <listPlace type="repositories">
-                <place xml:id="rep1">
+                
+                <place xml:id="ByzantineMuseum">
                     <placeName xml:lang="en">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</placeName>
                     <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>                                <location><placeName>Nicosia</placeName></location>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q42883662</idno>
                     <bibl><ref type="website">http://www.makariosfoundation.org.cy/</ref></bibl>
                 </place>
+                
+                <place xml:id="PaphosMuseum">
+                    <placeName xml:lang="en">Ecclesiastical Museum of the Holy Bishopric of Paphos</placeName>
+                    <placeName xml:lang="el"> Εκκλησιαστικό Μουσείο Ιεράς Μητροπόλεως Πάφου</placeName>
+                    <location><placeName>Geroskepou</placeName></location>
+                   <!-- <idno type="wikidata"></idno> -->
+                    <bibl><ref type="website">https://www.impaphou.org/mouseio_impafou.aspx</ref></bibl>
+                </place>
+                
+                <place xml:id="ArsinoeMuseum">
+                    <placeName xml:lang="en">Local Archaeological Museum of Marion-Arsinoe</placeName>
+                    <placeName xml:lang="el"> Τοπικό Αρχαιολογικό Moυσείο Μαρίου-Αρσινόης</placeName>
+                    <location><placeName>Polis Chrysochous</placeName></location>
+                    <!-- <idno type="wikidata"></idno> -->
+                    <bibl><ref type="website">http://www.mcw.gov.cy/mcw/DA/DA.nsf/All/CAF4EC728ABCA91CC225719900208766?OpenDocument</ref></bibl>
+                </place>
+                
+                <place xml:id="KykkosMuseum">
+                    <placeName xml:lang="en">Museum of the Kykkos Monastery</placeName>
+                    <placeName xml:lang="el">Μουσείο Ιεράς Μονής Κύκκου</placeName>                                <location><placeName>Kykkos Monastery</placeName></location>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q225373</idno>
+                    <bibl><ref type="website">https://kykkos-museum.org.cy/</ref></bibl>
+                </place>
+                              
             </listPlace>
         </body>
     </text>
