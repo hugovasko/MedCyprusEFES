@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Placenames Authority list for IOSPE</title>
+                <title>Placenames Authority list for MedCyprus</title>
             </titleStmt>
             <publicationStmt>
                 <p>internal use only</p>
@@ -17,12 +17,13 @@
     <text>
         <body>
             <listPlace>
-                <place xml:id="apameia">
-                    <placeName xml:lang="grc">Ἀπάμεια</placeName>
-                    <placeName xml:lang="en">Pella</placeName>
-                    <idno type="pleiades">http://pleiades.stoa.org/places/668335</idno>
+                <place xml:id="Pelendri">
+                    <placeName xml:lang="grc">Πελένδρι</placeName>
+                    <placeName xml:lang="en">Pelendri</placeName>
+                    <idno type="cyprusgazetteer">https://cyprusgazetteer.org/hu/64/</idno>
                 </place>
-                <place xml:id="asten">
+                
+               <!-- <place xml:id="asten">
                     <placeName xml:lang="grc">Ἀστην</placeName>
                     <placeName xml:lang="ru">Астин</placeName>
                     <placeName xml:lang="en">Asten</placeName>
@@ -150,7 +151,7 @@
                     <placeName xml:lang="grc">Φούνα</placeName>
                     <placeName xml:lang="ru">Фуна</placeName>
                     <placeName xml:lang="en">Phouna</placeName>
-                </place>
+                </place>-->
             </listPlace>
         </body>
     </text>
