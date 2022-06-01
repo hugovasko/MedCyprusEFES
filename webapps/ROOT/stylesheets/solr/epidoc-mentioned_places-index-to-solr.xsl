@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:placeName[@ref][ancestor::tei:div/@type='edition']" group-by="concat(@ref,'-',@type)">
+      <xsl:for-each-group select="//tei:rs[@type='mentionedplaces'][ref][ancestor::tei:div/@type='edition']" group-by="concat(@ref,'-',@type)">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +25,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="@ref" />
+            <xsl:value-of select="substring-after(@ref, '#')"/>
           </field>
           <field name="index_item_type">
             <xsl:choose>
