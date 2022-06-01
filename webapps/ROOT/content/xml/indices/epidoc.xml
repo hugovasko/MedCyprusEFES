@@ -27,15 +27,15 @@
         </div>
       </div>
       
-      <!-- Do we want an index of districts or rather a search facet of districts? -->
-      <!--<div xml:id="district">
+      <div xml:id="district">
         <head>District</head>
+        
         <div type="notes">
           <list>
             <item></item>
           </list>
         </div>
-      </div>-->
+      </div>
       
       <div xml:id="abbreviation">
         <head>Abbreviations</head>
@@ -213,6 +213,18 @@
       <div xml:id="Rulers-Officials">
         <head>Rulers and Officials</head>
         <div type="Rulers-Officials">
+          <list>
+            <item>Name</item>
+            <item>References</item>
+          </list>
+        </div>
+        <div type="notes">
+          <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
+        </div> 
+      </div>
+      <div xml:id="Placenamesmentioned">
+        <head>Placenamesmentioned</head>
+        <div type="Placenamesmentioned">
           <list>
             <item>Name</item>
             <item>References</item>
