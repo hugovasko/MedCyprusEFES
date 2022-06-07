@@ -23,7 +23,7 @@
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
                     <location><geo>34.734564, 32.484430</geo></location>
-                    <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
+                    <desc type="construction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Free-cross domed church</desc>

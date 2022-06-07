@@ -153,7 +153,15 @@
           multiValued="true" stored="true" indexed="true" />
    <!--<field name="mentioned_divinities" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />-->
-   <field name="Ecclesiastical_diocese" stored="true" indexed="true"
+   <field name="ecclesiastical_diocese" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="administrative_district" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="monument_context" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="monument_function" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="architectural_context" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="person_name" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />   

@@ -3,6 +3,7 @@
                 version="2.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- This XSLT transforms a TEI document into a Solr index
@@ -169,10 +170,20 @@
   </xsl:template>
 
   <xsl:template match="tei:origPlace[@ref]" mode="facet_origin_place">
+    <xsl:variable name="id" select="substring-after(@ref, '#')"/>
+    <xsl:variable name="locationsAL" select="'../../../content/xml/authority/locations.xml'"/>
     <!-- This does nothing to prevent duplicate instances of the same
          @ref value being recorded. -->
     <field name="origin_place">
-      <xsl:value-of select="@ref" />
+      <xsl:choose>
+        <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
+          <!--<xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='diocese'], '/', '／'), '_', ' '), '?', ''))"/>-->
+          <xsl:value-of select="document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@xml:lang='en']"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$id" />
+        </xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
   
