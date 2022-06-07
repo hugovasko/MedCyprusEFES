@@ -53,7 +53,7 @@
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <ab>
                   <lg met="Verse">
                     <l><lb n="1"/>Πολλοῖς τεθηλ<choice><orig>ῶ</orig><reg>ὼ</reg></choice>ς</l>
@@ -67,7 +67,6 @@
               </ab>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
                     <app>
                         

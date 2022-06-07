@@ -53,7 +53,7 @@
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <ab>
                     <lb n="1"/>Ὁ
                     <lb n="2"/>ἅ
@@ -68,7 +68,6 @@
               </ab>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
                     <app>
                         

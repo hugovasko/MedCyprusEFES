@@ -53,14 +53,13 @@
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <ab>
                     <lb n="1"/>κ<unclear>α</unclear><unclear>ὶ</unclear><space quantity="3" unit="character"></space> προ <space quantity="3" unit="character"></space> σκυ<space quantity="3" unit="character"></space>  νη <space quantity="3" unit="character"></space> σ<supplied reason="lost">άτ <space quantity="3" unit="character"></space> ωσαν<space quantity="3" unit="character"></space>  αὐτ<space quantity="3" unit="character"></space> </supplied><unclear>ῷ</unclear><space quantity="3" unit="character"></space>  πάν <space quantity="3" unit="character"></space> τες <space quantity="3" unit="character"></space> ἄ <space quantity="3" unit="character"></space> γγε <space quantity="3" unit="character"></space> λοι <space quantity="3" unit="character"></space> <expan><abbr>Θ</abbr><ex>εο</ex>ῦ</expan>
                    
               </ab>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
                     <app>
                         

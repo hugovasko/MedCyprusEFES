@@ -53,7 +53,7 @@
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <lg met="Dodecasyllable">
                     <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπω <hi rend="ligature">τρ</hi>ισί προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύσιν· </l>
@@ -64,7 +64,6 @@
 <l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
            <app><note>The Mango, Hawkins’s Report 1964 was written before the completion of the conservation of the murals of the chapel</note></app>              
                     <app loc="1"><rdg resp="MangoHawkins1964">προσώ̣πο[ις]</rdg><rdg resp="MangoHawkinsBoyd1990">προσώπω̣̣ (note 49, προσώποις)</rdg><rdg resp="MangoHawkins1964">προσκυ[νουμέν[η]ν </rdg></app>
