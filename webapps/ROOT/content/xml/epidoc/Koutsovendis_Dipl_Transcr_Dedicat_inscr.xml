@@ -35,7 +35,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>chapel of the Holy Trinity, monastery of Saint John Chrysostom, Koutsovendis</origPlace>
+                            <origPlace ref="locations.xml#Koutsovendis">chapel of the Holy Trinity, monastery of Saint John Chrysostom, Koutsovendis</origPlace>
                             <origDate precision="medium">ca. 1100</origDate>
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Figs. 83, 84 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.

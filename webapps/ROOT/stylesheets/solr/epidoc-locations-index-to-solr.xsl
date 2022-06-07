@@ -27,12 +27,16 @@
           <field name="index_item_name">
             <xsl:value-of select="substring-after(@ref, '#')"/>
           </field>
+          <field name="index_id">
+            <xsl:value-of select="translate(substring-after(@ref, '#'), ' ', '_')"/>
+          </field>
           <field name="index_item_type">
             <xsl:text>Monument</xsl:text>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>
+      
       <xsl:for-each-group select="//tei:repository[@ref]" group-by="@ref">
         <doc>
           <field name="document_type">
@@ -44,6 +48,9 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:value-of select="substring-after(@ref, '#')"/>
+          </field>
+          <field name="index_id">
+            <xsl:value-of select="translate(substring-after(@ref, '#'), ' ', '_')"/>
           </field>
           <field name="index_item_type">
             <xsl:text>Repository</xsl:text>

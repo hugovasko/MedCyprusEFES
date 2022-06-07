@@ -35,7 +35,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>church of Holy Apostles, Pera Chorio</origPlace>
+                            <origPlace ref="locations.xml#PeraChorio">church of Holy Apostles, Pera Chorio</origPlace>
                             <origDate precision="high">1060-1080</origDate>
                         </origin>
                         <provenance when="2022">

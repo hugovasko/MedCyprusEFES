@@ -35,7 +35,7 @@
   </xsl:template>
 
   <xsl:template match="result/doc">
-    <tr>
+    <tr id="{str[@name='index_id']}">
       <xsl:apply-templates select="str[@name='index_item_name']" />
       <xsl:apply-templates select="str[@name='index_surname']" />
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
@@ -171,6 +171,12 @@
     <li>
       <xsl:value-of select="."/>
     </li>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_id']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
   </xsl:template>
 
   <xsl:template match="arr[@name='index_epithet']">

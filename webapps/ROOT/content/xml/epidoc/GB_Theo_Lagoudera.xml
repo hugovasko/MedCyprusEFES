@@ -39,7 +39,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Lagoudera, church of Panagia (Our Lady) Arakiotissa</origPlace>
+                            <origPlace ref="locations.xml#Lagoudera">Lagoudera, church of Panagia (Our Lady) Arakiotissa</origPlace>
                             <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192</origDate>
                         </origin>
                         <provenance when="2021"> Findspot and circumstances/context

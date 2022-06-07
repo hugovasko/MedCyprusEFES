@@ -37,7 +37,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Moutoullas, Panagia Church</origPlace>
+                            <origPlace ref="locations.xml#Moutoullas">Moutoullas, Panagia Church</origPlace>
                             <origDate when="1280-07-30" evidence="internal-date">July 30, 1280</origDate>
                         </origin>                        
                         <provenance type="observed">Modern location(s) (if different from repository, above)

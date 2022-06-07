@@ -37,7 +37,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel</origPlace>
+                            <origPlace ref="locations.xml#Koutsovendis">Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel</origPlace>
                             <origDate notBefore="1095" notAfter="1103-08-31" precision="medium" evidence="prosopography titulature">ca 1100</origDate>
                         </origin>
                          <provenance>

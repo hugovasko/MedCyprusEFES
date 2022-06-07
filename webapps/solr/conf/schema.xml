@@ -205,6 +205,8 @@
      multiValued="false" required="false" type="string" />
    <field name="index_inscription_date" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
+   <field name="index_id" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />
