@@ -10,82 +10,90 @@
    <!-- Called from htm-tpl-structure.xsl -->
 
    <xsl:template name="medcyprus-body-structure">
-     <p><b><i18n:text i18n:key="epidoc-xslt-medcyprus-description">Description</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:support/t:p/text()">
-         <xsl:apply-templates select="//t:support/t:p" mode="medcyprus-dimensions"/>
-       </xsl:when>
-       <xsl:when test="//t:support//text()">
-         <xsl:apply-templates select="//t:support" mode="medcyprus-dimensions"/>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text></xsl:otherwise>
-     </xsl:choose>
-
-     <br />
-     <b><i18n:text i18n:key="epidoc-xslt-medcyprus-text">Text</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:layoutDesc/t:layout//text()">
-         <xsl:value-of select="//t:layoutDesc/t:layout"/>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text>.</xsl:otherwise>
-     </xsl:choose>
-     <br />
-     <b><i18n:text i18n:key="epidoc-xslt-medcyprus-letters">Letters</i18n:text>: </b>
-     <xsl:if test="//t:handDesc/t:handNote/text()">
-       <xsl:value-of select="//t:handDesc/t:handNote"/>
+     <xsl:variable name="editor" select="//t:titleStmt/t:author|//t:titleStmt/t:editor"/>
+     
+     <p>
+       <b>License: </b> <xsl:apply-templates select="//t:licence"/>
+       <br/><b>Authority: </b> <xsl:apply-templates select="//t:publicationStmt/t:authority"/>
+       <br/><b>Identification number: </b> <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']"/>
+       <br/><b>Editor(s): </b> <xsl:for-each select="//t:titleStmt/t:author|//t:titleStmt/t:editor">
+         <xsl:value-of select="."/><xsl:if test="position()!=last()">, </xsl:if>
+       </xsl:for-each>
+     </p>
+     
+     <p>
+       <b>Location: </b>
+       <xsl:choose>
+         <xsl:when test="//t:origin/t:origPlace/text()">
+           <xsl:apply-templates select="//t:origin/t:origPlace" mode="medcyprus-location"/>
+         </xsl:when>
+         <xsl:otherwise>Unknown</xsl:otherwise>
+       </xsl:choose>
+       
+       <xsl:if test="//t:repository/text()!='n/a' and //t:repository/text()!=''">
+       <br/><b>Repository: </b>
+         <xsl:for-each select="//t:msIdentifier//t:repository">
+           <xsl:apply-templates select="." mode="medcyprus-location"/>
+         </xsl:for-each>
+           <!-- Named template found below. -->
+           <xsl:call-template name="medcyprus-invno"/>
+       </xsl:if>
+       
+       <br/><b>Date: </b>
+         <xsl:choose>
+           <xsl:when test="//t:origin/t:origDate/text()">
+             <xsl:value-of select="//t:origin/t:origDate"/>
+             <xsl:if test="//t:origin/t:origDate[@evidence]">
+               <xsl:text>(</xsl:text>
+               <xsl:for-each select="tokenize(//t:origin/t:origDate[@evidence],' ')">
+                 <xsl:value-of select="translate(.,'-',' ')"/>
+                 <xsl:if test="position()!=last()">
+                   <xsl:text>, </xsl:text>
+                 </xsl:if>
+               </xsl:for-each>
+               <xsl:text>)</xsl:text>
+             </xsl:if>
+           </xsl:when>
+           <xsl:otherwise>Unknown.</xsl:otherwise>
+         </xsl:choose>
+     </p>
+     
+     <p>
+       <b>Description of inscription: </b>
+       <xsl:apply-templates select="//t:supportDesc" mode="medcyprus-dimensions"/>
+       <br/><b>Articulation of inscription in relation to the murals: </b>
+       <xsl:apply-templates select="//t:layoutDesc" mode="medcyprus-dimensions"/>
+       <br/><b>Letters: </b>
+       <xsl:apply-templates select="//t:handDesc" mode="medcyprus-dimensions"/>
+     </p>
+     
+     <p><b>Visit to the monument: </b>
+       <xsl:choose>
+         <xsl:when test="//t:provenance[@type='observed']/text()!='n/a'">
+           <xsl:apply-templates select="//t:provenance[@type='observed']"/>
+         </xsl:when>
+         <xsl:otherwise>
+           <xsl:apply-templates select="//t:provenance[not(@type='observed')]"/>
+         </xsl:otherwise>
+       </xsl:choose>
+     
+     <xsl:if test="//t:profileDesc/t:creation">
+       <br/><b>Text constituted from: </b> 
+       <xsl:apply-templates select="//t:profileDesc/t:creation"/> 
+       <xsl:apply-templates select="//t:div[@type='edition']/@source"/> <!-- transform into link to bibliography -->
      </xsl:if>
      </p>
-
-     <p><b><i18n:text i18n:key="epidoc-xslt-medcyprus-date">Date</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:origin/t:origDate/text()">
-         <xsl:value-of select="//t:origin/t:origDate"/>
-         <xsl:if test="//t:origin/t:origDate[@type='evidence']">
-           <xsl:text>(</xsl:text>
-           <xsl:for-each select="tokenize(//t:origin/t:origDate[@evidence],' ')">
-             <xsl:value-of select="translate(.,'-',' ')"/>
-             <xsl:if test="position()!=last()">
-               <xsl:text>, </xsl:text>
-             </xsl:if>
-           </xsl:for-each>
-           <xsl:text>)</xsl:text>
-         </xsl:if>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text>.</xsl:otherwise>
-     </xsl:choose>
+     
+     <p><b>Type of text: </b>
+       <xsl:apply-templates select="//t:term[@type='textType']"/> <!-- adapt to actual markup -->
+       <xsl:if test="//t:div[@type='edition']//t:lg[@met]">
+         <xsl:text>; metre: </xsl:text>
+         <xsl:for-each select="//t:div[@type='edition']//t:lg/@met">
+           <xsl:value-of select="."/><xsl:if test="position()!=last()">, </xsl:if>
+         </xsl:for-each>
+       </xsl:if>
      </p>
-
-     <p><b><i18n:text i18n:key="epidoc-xslt-medcyprus-findspot">Findspot</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:provenance[@type='found'][string(translate(normalize-space(.),' ',''))]">
-         <xsl:apply-templates select="//t:provenance[@type='found']" mode="medcyprus-placename"/>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text></xsl:otherwise>
-     </xsl:choose>
-     <br/>
-     <b><i18n:text i18n:key="epidoc-xslt-medcyprus-original-location">Original location</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:origin/t:origPlace/text()">
-         <xsl:apply-templates select="//t:origin/t:origPlace" mode="medcyprus-placename"/>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text></xsl:otherwise>
-     </xsl:choose>
-     <br/>
-     <b><i18n:text i18n:key="epidoc-xslt-medcyprus-last-recorded-location">Last recorded location</i18n:text>: </b>
-     <xsl:choose>
-       <xsl:when test="//t:provenance[@type='observed'][string(translate(normalize-space(.),' ',''))]">
-         <xsl:apply-templates select="//t:provenance[@type='observed']" mode="medcyprus-placename"/>
-         <!-- Named template found below. -->
-         <xsl:call-template name="medcyprus-invno"/> 
-       </xsl:when>
-       <xsl:when test="//t:msIdentifier//t:repository[string(translate(normalize-space(.),' ',''))]">
-         <xsl:value-of select="//t:msIdentifier//t:repository[1]"/>
-         <!-- Named template found below. -->
-         <xsl:call-template name="medcyprus-invno"/>
-       </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-medcyprus-unknown">Unknown</i18n:text></xsl:otherwise>
-     </xsl:choose>
-     </p>
+     
 
      <div class="section-container tabs" data-section="tabs">
        <section>
@@ -126,17 +134,25 @@
      </div>
 
      <div id="translation">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-medcyprus-translation">Translation</i18n:text>:</h4>
+       <h4>English translation</h4>
+       <xsl:if test="//t:div[@type='translation']/@source">
+         <p><xsl:text>Translation source: </xsl:text> 
+           <xsl:value-of select="translate(//t:div[@type='translation']/@source, '#', '')"/></p> <!-- to be linked to bibliography.xml -->
+       </xsl:if>
+       <xsl:if test="//t:div[@type='translation']/@resp">
+         <p><xsl:text>Translation by: </xsl:text> 
+           <xsl:value-of select="translate(//t:div[@type='translation']/@resp, '#', '')"/></p> <!-- to be linked to $editor -->
+       </xsl:if>
        <!-- Translation text output -->
        <xsl:variable name="transtxt">
-         <xsl:apply-templates select="//t:div[@type='translation']//t:p"/>
+         <xsl:apply-templates select="//t:div[@type='translation']//t:p|//t:div[@type='translation']//t:ab"/>
        </xsl:variable>
        <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
        <xsl:apply-templates select="$transtxt" mode="sqbrackets"/>
      </div>
 
      <div id="commentary">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-medcyprus-commentary">Commentary</i18n:text>:</h4>
+       <h4>Commentary</h4>
        <!-- Commentary text output -->
        <xsl:variable name="commtxt">
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
@@ -146,10 +162,10 @@
      </div>
      
      <div id="bibliography">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-medcyprus-bibliography">Bibliography</i18n:text>:</h4>
+       <h4>Editions</h4>
        <xsl:for-each select="//t:div[@type='bibliography']//t:bibl">
          <p>
-           <xsl:if test="t:ptr[@target]">
+           <xsl:if test="t:ptr[@target]"> <!-- cf. InsLib specific behaviour in htm-teibibl.xsl -->
              <xsl:variable name="pointer" select="translate(t:ptr/@target, '#', '')"/>
              <xsl:choose>
                <xsl:when test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')) = fn:true()">
@@ -165,7 +181,7 @@
      </div>
      
      <div id="images">
-       <h4 class="slimmer">Images</h4>
+       <h4>Images</h4>
        <xsl:choose>
          <xsl:when test="//t:facsimile//t:graphic">
            <xsl:for-each select="//t:facsimile//t:graphic">
@@ -225,26 +241,18 @@
       </xsl:if>
    </xsl:template>
    
-   <xsl:template match="t:placeName|t:rs" mode="medcyprus-placename"> <!-- remove rs? -->
+  <xsl:template match="t:placeName|t:origPlace|t:repository" mode="medcyprus-location">
       <xsl:choose>
-        <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
-            <a>
-               <xsl:attribute name="href">
-                  <xsl:value-of select="@ref"/>
-               </xsl:attribute>
-               <xsl:apply-templates/>
-            </a>
-      </xsl:when>
-         <xsl:otherwise>
-            <xsl:apply-templates/>
-         </xsl:otherwise>
+        <xsl:when test="starts-with(@ref, 'locations.xml') or starts-with(@ref, '#')"><a href="../indices/epidoc/locations.html#{substring-after(@ref, '#')}"><xsl:apply-templates/></a></xsl:when>
+        <xsl:when test="starts-with(@ref, 'http')"><a href="{@ref}"><xsl:apply-templates/></a></xsl:when>
+         <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
       </xsl:choose>
    </xsl:template>
    
    <xsl:template name="medcyprus-invno">
-      <xsl:if test="//t:idno[@type='invNo'][string(translate(normalize-space(.),' ',''))]">
+     <xsl:if test="//t:msIdentifier//t:idno[string(translate(normalize-space(.),' ',''))]">
          <xsl:text> (Inv. no. </xsl:text>
-         <xsl:for-each select="//t:idno[@type='invNo'][string(translate(normalize-space(.),' ',''))]">
+       <xsl:for-each select="//t:msIdentifier//t:idno[string(translate(normalize-space(.),' ',''))]">
             <xsl:value-of select="."/>
             <xsl:if test="position()!=last()">
                <xsl:text>, </xsl:text>
@@ -255,25 +263,14 @@
    </xsl:template>
 
    <xsl:template name="medcyprus-title">
-     <xsl:choose>
-       <xsl:when test="//t:titleStmt/t:title/text() and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
-         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/> 
-         <xsl:text>. </xsl:text>
-         <xsl:value-of select="//t:titleStmt/t:title"/>
-       </xsl:when>
-       <xsl:when test="//t:titleStmt/t:title/text()">
-         <xsl:value-of select="//t:titleStmt/t:title"/>
-       </xsl:when>
-       <xsl:when test="//t:sourceDesc//t:bibl/text()">
-         <xsl:value-of select="//t:sourceDesc//t:bibl"/>
-       </xsl:when>
-       <xsl:when test="//t:idno[@type='filename']/text()">
-         <xsl:value-of select="//t:idno[@type='filename']"/>
-       </xsl:when>
-       <xsl:otherwise>
-         <xsl:text>EpiDoc example output, medcyprus style</xsl:text>
-       </xsl:otherwise>
-     </xsl:choose>
+     <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']"/>
+     <xsl:text> – </xsl:text>     
+     <xsl:value-of select="upper-case(substring(normalize-space(//t:origPlace), 1, 1))" />
+     <xsl:value-of select="substring(normalize-space(//t:origPlace), 2)" />
+     <xsl:text>. </xsl:text>
+     <xsl:value-of select="//t:titleStmt/t:title"/>
+     <xsl:text>, </xsl:text>
+     <xsl:value-of select="//t:origDate"/>
    </xsl:template>
 
  </xsl:stylesheet>

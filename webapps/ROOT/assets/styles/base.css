@@ -16,6 +16,10 @@ footer {
     padding: 1em;
 }
 
+h1 {
+    font-size: 26px;
+}
+
 /*Keyboard*/
 #keyboard_box {
     display:none;
