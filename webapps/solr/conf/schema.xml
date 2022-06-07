@@ -187,6 +187,24 @@
      multiValued="false" required="false" type="string" />
    <field name="origin_date_evidence" required="false" indexed="true"
           multiValued="true" stored="true" type="string" />
+   <field name="index_epithet" type="string" required="false"
+     multiValued="true" stored="true" indexed="true" />
+   <field name="index_surname" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_honorific" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_secular_office" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_dignity" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_ecclesiastical_office" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_occupation" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_relation" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_inscription_date" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />

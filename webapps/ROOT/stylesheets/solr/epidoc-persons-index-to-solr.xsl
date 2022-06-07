@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type!='divine'][ancestor::tei:div/@type='edition']" group-by="@key">
+      <xsl:for-each-group select="//tei:persName[not(@type='divine' or @type='sacred')][ancestor::tei:div/@type='edition']" group-by="concat(string-join(descendant::tei:name, ' '), '-', ancestor::tei:TEI/tei:teiHeader//tei:origDate)">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +25,34 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="@key" />
+            <xsl:value-of select="string-join(descendant::tei:name[@type='forename'], ' ')" />
+          </field>
+          <field name="index_surname">
+            <xsl:value-of select="string-join(descendant::tei:name[@type='surname'], ' ')"/>
+          </field>
+          <field name="index_item_type">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_honorific">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_secular_office">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_dignity">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_ecclesiastical_office">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_occupation">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_relation">
+            <xsl:value-of select="'-'"/>
+          </field>
+          <field name="index_inscription_date">
+            <xsl:value-of select="ancestor::tei:TEI/tei:teiHeader//tei:origDate"/>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>

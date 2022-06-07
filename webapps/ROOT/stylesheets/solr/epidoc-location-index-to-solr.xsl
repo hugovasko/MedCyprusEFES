@@ -5,7 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of symbols in those
+       index document representing an index of locations of those
        documents. -->
 
   <xsl:import href="epidoc-index-utils.xsl" />
@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="@ref">
+      <xsl:for-each-group select="//tei:origPlace[@ref]" group-by="@ref">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,14 +25,28 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:choose>
-              <xsl:when test="contains(@ref, '#')">
-                <xsl:value-of select="substring-after(@ref, '#')"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="@ref"/>
-              </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="substring-after(@ref, '#')"/>
+          </field>
+          <field name="index_item_type">
+            <xsl:text>Monument</xsl:text>
+          </field>
+          <xsl:apply-templates select="current-group()" />
+        </doc>
+      </xsl:for-each-group>
+      <xsl:for-each-group select="//tei:repository[@ref]" group-by="@ref">
+        <doc>
+          <field name="document_type">
+            <xsl:value-of select="$subdirectory" />
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="$index_type" />
+            <xsl:text>_index</xsl:text>
+          </field>
+          <xsl:call-template name="field_file_path" />
+          <field name="index_item_name">
+            <xsl:value-of select="substring-after(@ref, '#')"/>
+          </field>
+          <field name="index_item_type">
+            <xsl:text>Repository</xsl:text>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
@@ -40,7 +54,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:g">
+  <xsl:template match="tei:origPlace|tei:repository">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 

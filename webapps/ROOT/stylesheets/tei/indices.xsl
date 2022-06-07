@@ -37,11 +37,20 @@
   <xsl:template match="result/doc">
     <tr>
       <xsl:apply-templates select="str[@name='index_item_name']" />
+      <xsl:apply-templates select="str[@name='index_surname']" />
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
+      <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_item_type']" />
       <xsl:apply-templates select="str[@name='index_item_role']" />
+      <xsl:apply-templates select="str[@name='index_honorific']" />
+      <xsl:apply-templates select="str[@name='index_secular_office']" />
+      <xsl:apply-templates select="str[@name='index_dignity']" />
+      <xsl:apply-templates select="str[@name='index_ecclesiastical_office']" />
+      <xsl:apply-templates select="str[@name='index_occupation']" />
+      <xsl:apply-templates select="str[@name='index_relation']" />
+      <xsl:apply-templates select="str[@name='index_inscription_date']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </tr>
   </xsl:template>
@@ -75,7 +84,55 @@
       </xsl:choose>
     </th>
   </xsl:template>
+  
+  <xsl:template match="str[@name='index_surname']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_honorific']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_secular_office']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_dignity']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
 
+  <xsl:template match="str[@name='index_ecclesiastical_office']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_occupation']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_relation']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_inscription_date']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
   <xsl:template match="arr[@name='index_instance_location']">
     <td>
       <ul class="index-instances inline-list">
@@ -116,6 +173,18 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="arr[@name='index_epithet']">
+    <td>
+      <xsl:variable name="epithets">
+        <xsl:for-each select="str">
+          <xsl:value-of select="."/>
+          <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:value-of select="string-join(distinct-values(tokenize($epithets, ', ')), ', ')"/>
+    </td>
+  </xsl:template>
+  
   <xsl:template match="arr[@name='index_instance_location']/str">
     <!-- This template must be defined in the calling XSLT (eg,
          indices-epidoc.xsl) since the format of the location data is
