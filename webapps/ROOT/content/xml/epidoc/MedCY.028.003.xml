@@ -45,6 +45,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>

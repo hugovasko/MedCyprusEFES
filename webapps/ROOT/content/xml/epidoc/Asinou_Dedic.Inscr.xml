@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -46,7 +46,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
-        <profileDesc><creation>Text Constituted from Ševčenko 2012</creation></profileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>Ševčenko 2012</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>

@@ -49,7 +49,14 @@ Very good preservation condition. <height unit="cm">? cm</height>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
-        <profileDesc><creation>Mango, Hawkins, Boyd 1990</creation></profileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>Mango, Hawkins, Boyd 1990</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
