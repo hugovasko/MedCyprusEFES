@@ -16,7 +16,7 @@
   <text>
     <body>
       <div xml:id="lemma">
-        <head>Greek words</head>
+        <head>Greek Words</head>
         
         <div type="headings">
           <list>
@@ -95,12 +95,12 @@
       </div>
       
       <div xml:id="persons">
-        <head>Persons attested</head>
+        <head>Persons Attested</head>
         <div type="headings">
           <list>
             <item>Forename</item>
             <item>Surname</item>
-            <item>Type</item>  <!--1) Rulers / Officials / Ecclesiastical officials; 2) Founders / Donors; 3) Painters -->
+            <item>Type</item>
             <item>Honorific</item>
             <item>Office (secular)</item>
             <item>Dignity</item>
@@ -131,22 +131,20 @@
         </div> 
       </div>
       
-      <!--<div xml:id="institutions">
-        <head>Offices and Dignities</head>
+      <div xml:id="epithets">
+        <head>Epithets</head>
         <div type="headings">
           <list>
-            <item>Office or Dignity</item>
-            <item>Type</item>
-            <item>Role</item>
+            <item>Epithet</item>
             <item>References</item>
           </list>
         </div>
         <div type="notes">
           <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
-        </div>
-      </div>-->
+        </div> 
+      </div>
       
-      <div xml:id="rulers-officials">
+      <div xml:id="offices">
         <head>Offices and Dignities</head>
         <div type="headings">
           <list>

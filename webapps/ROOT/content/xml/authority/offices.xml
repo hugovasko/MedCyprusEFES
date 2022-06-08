@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Controlled vocabulary of secular and ecclesiastical offices and dignities for MedCyprus</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list type="secular">
+                <head>Secular Offices and Dignities</head>
+                <item xml:id="doux"> 
+                    <term xml:lang="en">dux</term>
+                    <term xml:lang="la">dux</term>
+                    <term xml:lang="grc">δούξ</term>
+                </item>
+            </list>
+            
+            <list type="ecclesiastical">
+                <head>Ecclesiastical Offices</head>
+                <item xml:id="something..."> 
+                    <term xml:lang="en">...</term>
+                    <term xml:lang="la">...</term>
+                    <term xml:lang="grc">...</term>
+                </item>
+            </list>
+        </body>
+    </text>
+</TEI>

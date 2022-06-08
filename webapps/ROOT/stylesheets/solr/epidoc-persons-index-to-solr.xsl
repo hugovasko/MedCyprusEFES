@@ -2,6 +2,7 @@
 <xsl:stylesheet exclude-result-prefixes="#all"
                 version="2.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
@@ -16,6 +17,18 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:persName[not(@type='divine' or @type='sacred')][ancestor::tei:div/@type='edition']" group-by="concat(string-join(descendant::tei:name, ' '), '-', ancestor::tei:TEI/tei:teiHeader//tei:origDate)">
+        <xsl:variable name="id">
+          <xsl:choose>
+            <xsl:when test="contains(@ref, '#')">
+              <xsl:value-of select="substring-after(@ref, '#')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="@ref"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="personsAL" select="'../../content/xml/authority/persons.xml'"/>
+        <xsl:variable name="idno" select="document($personsAL)//tei:person[@xml:id=$id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -31,6 +44,19 @@
             <xsl:value-of select="string-join(descendant::tei:name[@type='surname'], ' ')"/>
           </field>
           <field name="index_item_type">
+              <xsl:if test="doc-available($personsAL) = fn:true() and $idno">
+                <xsl:choose>
+                  <xsl:when test="$idno/ancestor::tei:list[@type='...']">
+                    <xsl:text>...</xsl:text>
+                  </xsl:when>
+                </xsl:choose>
+              </xsl:if>
+            <!-- the index should be divided in these categories of people, with some people belonging to more categories:
+            - Rulers / Officials / Ecclesiastical officials / monastics
+            - Founders / Donors
+            - Painters
+            - Other people: <persName type="attested">
+            -->
             <xsl:value-of select="'-'"/>
           </field>
           <field name="index_honorific">

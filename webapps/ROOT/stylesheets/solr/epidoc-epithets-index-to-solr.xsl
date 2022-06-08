@@ -16,18 +16,21 @@
   
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='divine' or @type='sacred']" group-by="concat(@ref, '-', @key, '-', string-join(descendant::tei:addName/@nymRef, ' '), '-', string-join(descendant::tei:addName/@key, ' '))">
+      <xsl:for-each-group select="//tei:addName" group-by="concat(@ref, '-', @key, '-', @nymRef)">
         <xsl:variable name="self" select="."/>
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">
               <xsl:value-of select="substring-after(@ref, '#')"/>
             </xsl:when>
+            <xsl:when test="@ref">
+              <xsl:value-of select="@ref"/>
+            </xsl:when>
             <xsl:when test="@key">
               <xsl:value-of select="@key"/>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="@ref"/>
+              <xsl:value-of select="@nymRef"/>
             </xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
@@ -55,36 +58,13 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
-          <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef or @key][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
-              <xsl:choose>
-                <xsl:when test="@nymRef">
-                  <xsl:value-of select="normalize-unicode(translate(translate(@nymRef, '_', '-'), '#', ''))" />
-                </xsl:when>
-                <xsl:when test="@key">
-                  <xsl:value-of select="normalize-unicode(translate(translate(@key, '_', '-'), '#', ''))" />
-                </xsl:when>
-              </xsl:choose>  
-              <xsl:if test="position()!=last()">, </xsl:if>
-            </xsl:for-each>
-          </field>
-          <field name="index_item_type">
-            <xsl:choose>
-              <xsl:when test="@subtype='depicted'">
-                <xsl:text>Depicted</xsl:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:text>Mentioned</xsl:text>
-              </xsl:otherwise>
-            </xsl:choose>
-          </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>
     </add>
   </xsl:template>
   
-  <xsl:template match="tei:persName[@type='divine' or @type='sacred']">
+  <xsl:template match="tei:addName">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
   

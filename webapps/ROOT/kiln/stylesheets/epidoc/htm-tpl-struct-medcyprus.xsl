@@ -13,7 +13,7 @@
      <xsl:variable name="editor" select="//t:titleStmt/t:author|//t:titleStmt/t:editor"/>
      
      <p>
-       <b>License: </b> <xsl:apply-templates select="//t:licence"/>
+       <b>License: </b> <a target="_blank" href="{//t:licence/@target}"><xsl:value-of select="//t:licence"/></a>
        <br/><b>Authority: </b> <xsl:apply-templates select="//t:publicationStmt/t:authority"/>
        <br/><b>Identification number: </b> <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']"/>
        <br/><b>Editor(s): </b> <xsl:for-each select="//t:titleStmt/t:author|//t:titleStmt/t:editor">

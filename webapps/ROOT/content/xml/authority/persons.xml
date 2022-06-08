@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Authority list of persons in MedCyprus</title>
+            </titleStmt>
+            <publicationStmt><ab/></publicationStmt>
+            <sourceDesc><ab/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="commentary">
+                <listPerson type="rome"> <!-- example from IOSPE -->
+                    <head xml:lang="en">Emperors of Rome/Byzantium</head>
+                    <person xml:id="vespasianus">
+                        <persName xml:lang="en">Vespasian</persName>
+                        <persName xml:lang="la">Titus Flavius Caesar Vespasianus Augustus</persName>
+                        <persName xml:lang="grc">Αὐτοκράτωρ Οὐεσπασιανὸς Καῖσαρ Σεβαστός</persName>
+                        <floruit>69-79</floruit>
+                        <idno type="wp">https://en.wikipedia.org/wiki/Vespasian</idno>
+                    </person>
+                </listPerson>
+            </div>
+        </body>
+    </text>
+</TEI>

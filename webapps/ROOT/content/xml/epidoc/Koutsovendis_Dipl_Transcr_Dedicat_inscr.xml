@@ -65,7 +65,7 @@
                     <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπω <hi rend="ligature">τρ</hi>ισί προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύσιν· </l>
 <l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
-<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="ruler" ref="rulers-officials.xml#δούξ">δ<hi rend="ligature">οὺ</hi>ξ</rs> <placeName ref="https://pleiades.stoa.org/places/707498">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="ruler" ref="offices.xml#doux"><!-- here do we want to up the office of dux (pointing to offices.xml) or the person in its role of being a ruler (pointing to persons.xml)? --><w lemma="δούξ">δ<hi rend="ligature">οὺ</hi>ξ</w></rs> <placeName ref="mentioned_places.xml#Cyprus">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
 <l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
 <l><lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ σοι·</l>
 <l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
