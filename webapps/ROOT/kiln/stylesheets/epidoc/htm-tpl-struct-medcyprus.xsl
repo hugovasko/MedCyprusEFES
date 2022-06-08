@@ -85,7 +85,7 @@
      </p>
      
      <p><b>Type of text: </b>
-       <xsl:apply-templates select="//t:term[@type='textType']"/> <!-- adapt to actual markup -->
+       <xsl:apply-templates select="//t:term[@type='textType']"/>
        <xsl:if test="//t:div[@type='edition']//t:lg[@met]">
          <xsl:text>; metre: </xsl:text>
          <xsl:for-each select="//t:div[@type='edition']//t:lg/@met">

@@ -177,8 +177,7 @@
     <field name="origin_place">
       <xsl:choose>
         <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
-          <!--<xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='diocese'], '/', '／'), '_', ' '), '?', ''))"/>-->
-          <xsl:value-of select="document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@xml:lang='en']"/>
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@xml:lang='en'], '/', '／'), '_', ' '), '?', ''))"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />

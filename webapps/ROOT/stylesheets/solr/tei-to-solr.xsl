@@ -24,14 +24,17 @@
   </xsl:template>
   
   <xsl:template match="//tei:term[@type='textType']" mode="facet_inscription_type">
+    <xsl:variable name="id" select="substring-after(@ref, '#')"/>
+    <xsl:variable name="text_typesAL" select="'../../content/xml/authority/text_types.xml'"/>
     <field name="inscription_type">
-      <xsl:value-of select="."/>
-    </field>
-  </xsl:template>
-  
-  <xsl:template match="tei:rs[@key]" mode="facet_mentioned_institutions">
-    <field name="mentioned_institutions">
-      <xsl:value-of select="@key"/>
+      <xsl:choose>
+        <xsl:when test="doc-available($text_typesAL) = fn:true() and document($text_typesAL)//tei:item[@xml:id=$id]">
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($text_typesAL)//tei:item[@xml:id=$id]/tei:term[@xml:lang='en'], '/', '／'), '_', ' '), '(?)', ''))"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="." />
+        </xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
   
@@ -41,7 +44,7 @@
     <field name="ecclesiastical_diocese">
       <xsl:choose>
         <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
-          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='diocese'], '/', '／'), '_', ' '), '?', ''))"/>
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='diocese'], '/', '／'), '_', ' '), '(?)', ''))"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />
@@ -56,7 +59,7 @@
     <field name="administrative_district">
       <xsl:choose>
         <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
-          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='district'], '/', '／'), '_', ' '), '?', ''))"/>
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:placeName[@type='district'], '/', '／'), '_', ' '), '(?)', ''))"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />
@@ -71,7 +74,7 @@
     <field name="monument_context">
       <xsl:choose>
         <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
-          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:desc[@type='context'], '/', '／'), '_', ' '), '?', ''))"/>
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:desc[@type='context'], '/', '／'), '_', ' '), '(?)', ''))"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />
@@ -86,7 +89,7 @@
     <field name="monument_function">
       <xsl:choose>
         <xsl:when test="doc-available($locationsAL) = fn:true() and document($locationsAL)//tei:place[@xml:id=$id]">
-          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:desc[@type='function'], '/', '／'), '_', ' '), '?', ''))"/>
+          <xsl:value-of select="normalize-space(translate(translate(translate(document($locationsAL)//tei:place[@xml:id=$id]/tei:desc[@type='function'], '/', '／'), '_', ' '), '(?)', ''))"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />
@@ -97,9 +100,15 @@
   
   <xsl:template match="tei:support" mode="facet_architectural_context">
     <field name="architectural_context">
-      <xsl:value-of select="."/>
+      <xsl:value-of select="normalize-space(translate(translate(translate(., '/', '／'), '_', ' '), '(?)', ''))"/>
     </field>
   </xsl:template>  
+  
+  <xsl:template match="tei:rs[@key]" mode="facet_mentioned_institutions">
+    <field name="mentioned_institutions">
+      <xsl:value-of select="@key"/>
+    </field>
+  </xsl:template>
   
   <xsl:template match="tei:persName/tei:name[@nymRef]" mode="facet_person_name">
     <field name="person_name">
