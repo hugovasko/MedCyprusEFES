@@ -16,8 +16,8 @@
     </teiHeader>
     <text>
         <body>
-            <list type="secular">
-                <head>Secular Offices and Dignities</head>
+            <list type="secular_offices">
+                <head>Secular Offices</head>
                 <item xml:id="doux"> 
                     <term xml:lang="en">dux</term>
                     <term xml:lang="la">dux</term>
@@ -25,9 +25,18 @@
                 </item>
             </list>
             
-            <list type="ecclesiastical">
-                <head>Ecclesiastical Offices</head>
+            <list type="secular_dignities">
+                <head>Secular Dignities</head>
                 <item xml:id="something..."> 
+                    <term xml:lang="en">...</term>
+                    <term xml:lang="la">...</term>
+                    <term xml:lang="grc">...</term>
+                </item>
+            </list>
+            
+            <list type="ecclesiastical_offices">
+                <head>Ecclesiastical Offices</head>
+                <item xml:id="something_else..."> 
                     <term xml:lang="en">...</term>
                     <term xml:lang="la">...</term>
                     <term xml:lang="grc">...</term>

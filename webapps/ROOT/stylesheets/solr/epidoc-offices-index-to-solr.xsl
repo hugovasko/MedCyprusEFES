@@ -16,7 +16,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type='title'][ancestor::tei:div/@type='edition']" group-by=".">
+      <xsl:for-each-group select="//tei:rs[@type='title' or @type='office' or @type='dignity'][ancestor::tei:div/@type='edition']" group-by=".">
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">
@@ -48,17 +48,19 @@
             </xsl:choose>
           </field>
           <field name="index_item_type">
-            <xsl:choose>
-              <xsl:when test="@subtype='office'">Office</xsl:when>
-              <xsl:when test="@subtype='dignity'">Dignity</xsl:when>
-            </xsl:choose>
-            <!--<xsl:if test="doc-available($officesAL) = fn:true() and $idno">
+            <xsl:if test="doc-available($officesAL) = fn:true() and $idno">
               <xsl:choose>
-                <xsl:when test="$idno/ancestor::tei:list[@type='...']">
-                  <xsl:text>...</xsl:text>
+                <xsl:when test="$idno/ancestor::tei:list[@type='secular_offices']">
+                  <xsl:text>Secular Office</xsl:text>
+                </xsl:when>
+                <xsl:when test="$idno/ancestor::tei:list[@type='secular_dignities']">
+                  <xsl:text>Secular Dignity</xsl:text>
+                </xsl:when>
+                <xsl:when test="$idno/ancestor::tei:list[@type='ecclesiastical_offices']">
+                  <xsl:text>Ecclesiastical Office</xsl:text>
                 </xsl:when>
               </xsl:choose>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
@@ -66,7 +68,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:rs[@type='title']">
+  <xsl:template match="tei:rs[@type='title' or @type='office' or @type='dignity']">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 

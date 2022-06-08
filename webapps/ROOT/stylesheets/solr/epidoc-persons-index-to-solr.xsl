@@ -44,20 +44,21 @@
             <xsl:value-of select="string-join(descendant::tei:name[@type='surname'], ' ')"/>
           </field>
           <field name="index_item_type">
-              <xsl:if test="doc-available($personsAL) = fn:true() and $idno">
-                <xsl:choose>
-                  <xsl:when test="$idno/ancestor::tei:list[@type='...']">
-                    <xsl:text>...</xsl:text>
-                  </xsl:when>
-                </xsl:choose>
-              </xsl:if>
-            <!-- the index should be divided in these categories of people, with some people belonging to more categories:
+            <!--To pick data from AL:-->
+            <!--<xsl:if test="doc-available($personsAL) = fn:true() and $idno">
+              <xsl:choose>
+                <xsl:when test="$idno/ancestor::tei:list[@type='...']">
+                  <xsl:text>...</xsl:text>
+                </xsl:when>
+              </xsl:choose>
+            </xsl:if>-->
+            <xsl:value-of select="'-'"/>
+            <!-- the index should be divided in these categories, with some people belonging to more categories:
             - Rulers / Officials / Ecclesiastical officials / monastics
             - Founders / Donors
             - Painters
-            - Other people: <persName type="attested">
-            -->
-            <xsl:value-of select="'-'"/>
+            - Other people
+            -->    
           </field>
           <field name="index_honorific">
             <xsl:value-of select="'-'"/>
