@@ -40,7 +40,7 @@
       <!--<xsl:apply-templates mode="text-index" select="str[@name='document_id']" />-->
       <xsl:apply-templates mode="text-index" select="arr[@name='document_title']" />
       <xsl:apply-templates mode="text-index" select="arr[@name='origin_place']" />
-      <xsl:apply-templates mode="text-index" select="arr[@name='origin_date']" />
+      <xsl:apply-templates mode="text-index" select="arr[@name='textual_origin_date']" />
       <!--<xsl:apply-templates mode="text-index" select="arr[@name='author']" />-->
       <!--<xsl:apply-templates mode="text-index" select="arr[@name='editor']" />-->
       <!--<xsl:apply-templates mode="text-index" select="str[@name='publication_date']" />-->
@@ -87,7 +87,7 @@
     <td><xsl:value-of select="string-join(str, '; ')" /></td>
   </xsl:template>
   
-  <xsl:template match="arr[@name='origin_date']" mode="text-index">
+  <xsl:template match="arr[@name='textual_origin_date']" mode="text-index">
     <td><xsl:value-of select="string-join(str, '; ')" /></td>
   </xsl:template>
 

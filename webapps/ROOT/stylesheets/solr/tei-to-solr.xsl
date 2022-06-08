@@ -107,6 +107,12 @@
     </field>
   </xsl:template>
   
+  <xsl:template match="tei:origDate" mode="facet_textual_origin_date">
+    <field name="textual_origin_date">
+      <xsl:value-of select="."/>
+    </field>
+  </xsl:template>
+  
   <!-- This template is called by the Kiln tei-to-solr.xsl as part of
        the main doc for the indexed file. Put any code to generate
        additional Solr field data (such as new facets) here. -->
@@ -120,6 +126,7 @@
     <xsl:call-template name="field_monument_function"/>
     <xsl:call-template name="field_architectural_context"/>
     <xsl:call-template name="field_person_name"/>
+    <xsl:call-template name="field_textual_origin_date"/>
   </xsl:template>
   
   <xsl:template name="field_inscription_type">
@@ -152,6 +159,10 @@
   
   <xsl:template name="field_person_name">
     <xsl:apply-templates mode="facet_person_name" select="//tei:text/tei:body/tei:div[@type='edition']" />
+  </xsl:template>
+  
+  <xsl:template name="field_textual_origin_date">
+    <xsl:apply-templates mode="facet_textual_origin_date" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origDate" />
   </xsl:template>
   
 </xsl:stylesheet>

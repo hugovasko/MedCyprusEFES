@@ -123,6 +123,8 @@
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="true" name="origin_date"
           required="false" stored="false" type="int" />
+   <field name="textual_origin_date" type="string" indexed="true"
+     multiValued="true" stored="true" required="false" />
    <field indexed="true" multiValued="false" name="file_path"
           required="false" stored="true" type="string" />
    <field indexed="false" multiValued="false" name="document_id"
