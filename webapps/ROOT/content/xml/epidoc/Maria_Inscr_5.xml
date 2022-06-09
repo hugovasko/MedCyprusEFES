@@ -9,7 +9,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority></authority>
-                <idno type="filename"></idno>
+                <idno type="filename">MedCY.000.005</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -34,7 +34,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace ref="locations.xml#...">Place of origin</origPlace>
+                            <origPlace ref="locations.xml#place_here">Place of origin</origPlace>
                             <origDate>Date of origin</origDate>
                         </origin>
                         <provenance type="found"> Findspot and circumstances/context

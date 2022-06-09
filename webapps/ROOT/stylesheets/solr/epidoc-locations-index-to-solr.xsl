@@ -40,7 +40,7 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="doc-available($locationsAL) = fn:true() and $idno">
-                <xsl:value-of select="$idno//tei:placeName[1]" /> 
+                <xsl:value-of select="normalize-space(translate(translate(translate($idno//tei:placeName[@xml:lang='en'], '/', '／'), '_', ' '), '(?)', ''))" /> 
                 <!--<xsl:value-of select="$idno//tei:place" />--> <!-- to be displayed here all data about monuments in a  structured way -->
               </xsl:when>
               <xsl:otherwise>
