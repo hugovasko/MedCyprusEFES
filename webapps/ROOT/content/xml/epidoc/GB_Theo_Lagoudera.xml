@@ -76,20 +76,20 @@
             <div type="apparatus">
                 <listApp>
                     <app loc="1">
-                        <rdg resp="#Nicolaides1996, 4">Ἀνιστορήσθ(η)</rdg></app>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->Ἀνιστορήσθ(η)</rdg></app>
                     <app loc="2">
-                        <rdg resp="#Nicolaides 1996, 4">Λέοντ(ος) τοῦ Αὐθέ(ν)τ(ου) ou (ος)· μηνι Δεκεμβρίω </rdg></app>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->Λέοντ(ος) τοῦ Αὐθέ(ν)τ(ου) ou (ος)· μηνι Δεκεμβρίω </rdg></app>
                     <app loc="3">
-                        <rdg resp="#Nicolaides 1996, 4">τοῦ</rdg>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->τοῦ</rdg>
                     </app>
                     </listApp>
                 <p></p>
             </div>
             <div type="bibliography">
                 <listBibl>
-                    <bibl><ptr target="#Nicolaides1996"/><citedRange>1-137</citedRange></bibl>
-                    <bibl><ptr target="#Winfield2003"/></bibl>
-                    <bibl><ptr target="#Konstantinidi2018"/><citedRange>49-88</citedRange></bibl></listBibl>
+                    <bibl><ptr target="#Nicolaïdès1996"/>, <citedRange>1-137</citedRange></bibl>
+                    <bibl><ptr target="#WinfieldWinfield2003"/></bibl>
+                    <bibl><ptr target="#Konstantinidi2018"/>, <citedRange>49-88</citedRange></bibl></listBibl>
             </div>
         </body>
     </text>

@@ -19,7 +19,8 @@
     </teiHeader>
     <text>
         <body>
-                <listBibl> <head>The Monuments</head>
+                <listBibl xml:id="monuments">
+                    <head>The Monuments</head>
                     
                     <bibl xml:id="Aristeidou2010"><author><surname>Aristeidou</surname> <forename>Ch.</forename></author>,<date> 2010</date>, <title level="m">Οι Αρόδες από την αρχαιότητα μέχρι σήμερα: με αναφορές στην πολιτική, κοινωνική, οικονομική ιστορία της Κύπρου γενικότερα</title>, <pubPlace>Nicosia</pubPlace>.</bibl>
                     
@@ -252,8 +253,8 @@
                     <bibl xml:id="Zarras2010"><author><surname>Zarras</surname> <forename>N.</forename></author>, <date>2010</date>, <title level="m">The Church of the Holy Cross at Pelendri</title>, <pubPlace>Nicosia</pubPlace>.</bibl>
                     
                 </listBibl>  
-        <listBibl>
             
+        <listBibl xml:id="inscriptions">
             <head>The Inscriptions</head>
             
             <bibl copyOf="#Bakirtzis2019"></bibl>

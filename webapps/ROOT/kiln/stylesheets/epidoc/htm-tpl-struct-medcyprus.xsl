@@ -10,7 +10,9 @@
    <!-- Called from htm-tpl-structure.xsl -->
 
    <xsl:template name="medcyprus-body-structure">
-     <xsl:variable name="editor" select="//t:titleStmt/t:author|//t:titleStmt/t:editor"/>
+     <xsl:variable name="editor" select="//t:titleStmt/t:author|//t:titleStmt/t:editor"/>  
+     <!-- if you are running this template outside EFES, change the path to the bibliography authority list accordingly -->
+     <xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
      
      <p>
        <b>License: </b> <a target="_blank" href="{//t:licence/@target}"><xsl:value-of select="//t:licence"/></a>
@@ -80,7 +82,32 @@
      <xsl:if test="//t:profileDesc/t:creation">
        <br/><b>Text constituted from: </b> 
        <xsl:apply-templates select="//t:profileDesc/t:creation"/> 
-       <xsl:apply-templates select="//t:div[@type='edition']/@source"/> <!-- transform into link to bibliography -->
+       <xsl:if test="//t:div[@type='edition']/@source">
+         <xsl:variable name="source-id" select="substring-after(//t:div[@type='edition'][1]/@source, '#')"/> 
+           <xsl:choose>
+             <xsl:when test="doc-available($bibliography-al) = fn:true() and document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]">
+               <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
+               <a href="{concat('../concordance/bibliography/',$source-id,'.html')}" target="_blank">
+                 <xsl:choose>
+                   <xsl:when test="$source//t:surname and $source//t:date">
+                     <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title)]">
+                       <xsl:apply-templates select="."/>
+                       <xsl:if test="position()!=last()"> – </xsl:if>
+                     </xsl:for-each>
+                     <xsl:text> </xsl:text>
+                     <xsl:apply-templates select="$source//t:date"/>
+                   </xsl:when>
+                   <xsl:otherwise>
+                     <xsl:apply-templates select="$source-id"/>
+                   </xsl:otherwise>
+                 </xsl:choose>
+               </a>
+             </xsl:when>
+             <xsl:otherwise>
+               <xsl:value-of select="$source-id"/>
+             </xsl:otherwise>
+           </xsl:choose>
+       </xsl:if>
      </xsl:if>
      </p>
      
@@ -136,13 +163,49 @@
      <div id="translation">
        <h4>English translation</h4>
        <xsl:if test="//t:div[@type='translation']/@source">
-         <p><xsl:text>Translation source: </xsl:text> 
-           <xsl:value-of select="translate(//t:div[@type='translation']/@source, '#', '')"/></p> <!-- to be linked to bibliography.xml -->
+         <xsl:variable name="source-id" select="substring-after(//t:div[@type='translation'][1]/@source, '#')"/>
+             <p><xsl:text>Translation source: </xsl:text> 
+               <xsl:choose>
+                 <xsl:when test="doc-available($bibliography-al) = fn:true() and document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]">
+                   <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
+                   <a href="{concat('../concordance/bibliography/',$source-id,'.html')}" target="_blank">
+                     <xsl:choose>
+                       <xsl:when test="$source//t:surname and $source//t:date">
+                         <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title)]">
+                           <xsl:apply-templates select="."/>
+                           <xsl:if test="position()!=last()"> – </xsl:if>
+                         </xsl:for-each>
+                         <xsl:text> </xsl:text>
+                         <xsl:apply-templates select="$source//t:date"/>
+                       </xsl:when>
+                       <xsl:otherwise>
+                         <xsl:apply-templates select="$source-id"/>
+                       </xsl:otherwise>
+                     </xsl:choose>
+                   </a>
+                 </xsl:when>
+                 <xsl:otherwise>
+                   <xsl:value-of select="$source-id"/>
+                 </xsl:otherwise>
+               </xsl:choose>
+             </p>
        </xsl:if>
+       
        <xsl:if test="//t:div[@type='translation']/@resp">
+         <xsl:variable name="resp-id" select="substring-after(//t:div[@type='translation'][1]/@resp, '#')"/>
+         <xsl:variable name="resp" select="$editor[@xml:id=$resp-id]"/>
          <p><xsl:text>Translation by: </xsl:text> 
-           <xsl:value-of select="translate(//t:div[@type='translation']/@resp, '#', '')"/></p> <!-- to be linked to $editor -->
+           <xsl:choose>
+             <xsl:when test="$resp">
+               <xsl:value-of select="$resp"/>
+             </xsl:when>
+             <xsl:otherwise>
+               <xsl:value-of select="$resp-id"/> 
+             </xsl:otherwise>
+           </xsl:choose>
+         </p>
        </xsl:if>
+       
        <!-- Translation text output -->
        <xsl:variable name="transtxt">
          <xsl:apply-templates select="//t:div[@type='translation']//t:p|//t:div[@type='translation']//t:ab"/>
@@ -164,18 +227,7 @@
      <div id="bibliography">
        <h4>Editions</h4>
        <xsl:for-each select="//t:div[@type='bibliography']//t:bibl">
-         <p>
-           <xsl:if test="t:ptr[@target]"> <!-- cf. InsLib specific behaviour in htm-teibibl.xsl -->
-             <xsl:variable name="pointer" select="translate(t:ptr/@target, '#', '')"/>
-             <xsl:choose>
-               <xsl:when test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')) = fn:true()">
-                 <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$pointer][not(@sameAs)]"/>
-                 <xsl:apply-templates select="$source"/></xsl:when>
-               <xsl:otherwise><xsl:value-of select="translate(@target, '#', '')"/></xsl:otherwise>
-             </xsl:choose>
-             <xsl:text> </xsl:text></xsl:if>
-           <xsl:apply-templates select="."/>
-         </p>
+         <p><xsl:apply-templates/></p>
        </xsl:for-each>
        
      </div>
