@@ -57,7 +57,7 @@
                     <placeName type="district" ref="district.xml#nicosia">Nicosia</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
                     <location><geo>35.067463, 33.436088</geo></location>
-                    <desc type="contruction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
+                    <desc type="construction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Rock-cut, single-nave, <!--roughly orthogonal (CHECK!)--></desc>
@@ -93,7 +93,7 @@
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
                     <location><geo>34.891937, 33.032961</geo></location>
-                   <!-- <desc type="contruction"><date notBefore="1200" notAfter="1300" precision="low">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
+                   <!-- <desc type="construction"><date notBefore="1200" notAfter="1300" precision="low">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisle timber-roofed church</desc>
@@ -127,7 +127,7 @@
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.630966, 34.449377</geo></location>
-                    <desc type="contruction"><date notBefore="1100" notAfter="1200" precision="low">12th century</date></desc>
+                    <desc type="construction"><date notBefore="1100" notAfter="1200" precision="low">12th century</date></desc>
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisled vaulted church, with a later south chapel and narthex</desc>
@@ -161,7 +161,7 @@
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.53513, 34.18944</geo></location>
-                    <desc type="contruction"><date notBefore="1050" notAfter="1150" precision="low">Late 11th - Early 12th century</date></desc>
+                    <desc type="construction"><date notBefore="1050" notAfter="1150" precision="low">Late 11th - Early 12th century</date></desc>
                     <desc type="function">Unknown</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">single-aisled barrel-vaulted church; narthex with drumless dome subsequently added to the west</desc>
@@ -199,7 +199,7 @@
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.404899, 33.782537</geo></location>
-                    <desc type="contruction"><date notBefore="1000" notAfter="1100" precision="low">11th century</date></desc>
+                    <desc type="construction"><date notBefore="1000" notAfter="1100" precision="low">11th century</date></desc>
                     <desc type="function">Parochial(?)</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">domed pier cross-in-square church</desc>
@@ -233,7 +233,7 @@
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
                     <location><geo>34.8931046,  32.9662704</geo></location>
-                    <desc type="contruction"><date notBefore="1178" notAfter="1178" precision="high">Late 12th - Early 13th century</date></desc>
+                    <desc type="construction"><date notBefore="1178" notAfter="1178" precision="high">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Funerary</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">three-aisled domed church
@@ -264,8 +264,8 @@
                     </listBibl>
                     <listBibl type="monument">
                         <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32 </citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4 </citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003, <citedRange>111</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
                         <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>

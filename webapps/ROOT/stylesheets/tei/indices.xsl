@@ -54,10 +54,10 @@
         <br/><b>Conservation: </b><xsl:value-of select="string-join(arr[@name='index_conservation']/str, '; ')"/>
         <br/><b>Donors: </b><xsl:value-of select="string-join(arr[@name='index_donors']/str, '; ')"/>
         <br/><b>Painter: </b><xsl:value-of select="string-join(arr[@name='index_painter']/str, '; ')"/>
-        <br/><b>Graffiti: </b><xsl:value-of select="string-join(arr[@name='index_graffiti']/str, '; ')"/>
-        <br/><b>External resource: </b><xsl:value-of select="string-join(arr[@name='index_external_resource']/str, '; ')"/>
-        <br/><b>Inscriptions bibliography: </b><xsl:value-of select="string-join(arr[@name='index_inscriptions_bibl']/str, '; ')"/>
-        <br/><b>Monument bibliography: </b><xsl:value-of select="string-join(arr[@name='index_monument_bibl']/str, '; ')"/>
+        <br/><b>Graffiti: </b><xsl:apply-templates select="arr[@name='index_graffiti']"/>
+        <br/><b>External resources: </b><xsl:apply-templates select="arr[@name='index_external_resource']"/>
+        <br/><b>Inscriptions bibliography: </b><xsl:apply-templates select="arr[@name='index_inscriptions_bibl']"/>
+        <br/><b>Monument bibliography: </b><xsl:apply-templates select="arr[@name='index_monument_bibl']"/>
       </p>
       <h3>Inscriptions: </h3>
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
@@ -214,7 +214,7 @@
       <xsl:value-of select="."/>
     </td>
   </xsl:template>
-
+  
   <xsl:template match="arr[@name='index_epithet']">
     <td>
       <xsl:variable name="epithets">
@@ -226,6 +226,59 @@
       <xsl:value-of select="string-join(distinct-values(tokenize($epithets, ', ')), ', ')"/>
     </td>
   </xsl:template>
+  
+  <xsl:template match="arr[@name='index_inscriptions_bibl']|arr[@name='index_monument_bibl']">
+    <xsl:for-each select="str[.='unpublished']"><xsl:value-of select="."/></xsl:for-each>  
+    <xsl:for-each select="str[.!='unpublished']">
+        <xsl:variable name="bibl-id">
+          <xsl:choose>
+            <xsl:when test="contains(., ',')">
+              <xsl:value-of select="substring-before(., ',')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="."/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
+        <xsl:variable name="bibl" select="document($bibliography-al)//tei:bibl[@xml:id=$bibl-id][not(@sameAs)]"/>
+        <a href="{concat('../../concordance/bibliography/',$bibl-id,'.html')}" target="_blank">
+          <xsl:choose>
+            <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:surname and $bibl//tei:date">
+              <xsl:for-each select="$bibl//tei:surname[not(parent::*/preceding-sibling::tei:title)]">
+                <xsl:apply-templates select="."/>
+                <xsl:if test="position()!=last()"> – </xsl:if>
+              </xsl:for-each>
+              <xsl:text> </xsl:text>
+              <xsl:apply-templates select="$bibl//tei:date"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$bibl-id"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </a>
+      <xsl:if test="contains(., ',')">
+        <xsl:text>, </xsl:text>
+        <xsl:value-of select="substring-after(., ',')"/>
+      </xsl:if>
+        <xsl:if test="position()!=last()">; </xsl:if>
+      </xsl:for-each>
+  </xsl:template>
+  
+  
+  <xsl:template match="arr[@name='index_graffiti']|arr[@name='index_external_resource']">
+    <xsl:for-each select="str">
+      <xsl:analyze-string select="." regex="(http:|https:)(\S+?)(\.|\)|\]|;|,|\?|!|:)?(\s|$)">
+        <xsl:matching-substring>
+          <a target="_blank" href="{concat(regex-group(1),regex-group(2))}"><xsl:value-of select="concat(regex-group(1),regex-group(2))"/></a>
+          <xsl:value-of select="concat(regex-group(3),regex-group(4))"/>
+        </xsl:matching-substring>
+        <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+      </xsl:analyze-string>
+      <xsl:if test="position()!=last()">; </xsl:if>
+    </xsl:for-each>  
+  </xsl:template>
+  
   
   <xsl:template match="arr[@name='index_instance_location']/str">
     <!-- This template must be defined in the calling XSLT (eg,
