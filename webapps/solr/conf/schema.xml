@@ -209,6 +209,38 @@
      multiValued="false" required="false" type="string" />
    <field name="index_id" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
+   <field name="index_item_alt_name" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_district" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_diocese" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_coordinates" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_construction" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_function" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_context" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_architectural_context" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_mural" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_conservation" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_donors" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_painter" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_graffiti" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_external_resource" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_inscriptions_bibl" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_monument_bibl" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />

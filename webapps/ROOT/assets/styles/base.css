@@ -20,6 +20,25 @@ h1 {
     font-size: 26px;
 }
 
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.monument {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
 /*Keyboard*/
 #keyboard_box {
     display:none;

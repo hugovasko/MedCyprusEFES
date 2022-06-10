@@ -3,7 +3,10 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- XSLT to convert index metadata and index Solr results into
        HTML. This is the common functionality for both TEI and EpiDoc
@@ -33,9 +36,36 @@
       </tr>
     </thead>
   </xsl:template>
+  
+  <xsl:template match="result/doc[arr[@name='index_coordinates']]"> <!-- i.e. locations index -->
+    <div id="{str[@name='index_id']}" class="monument">
+      <h2><xsl:apply-templates select="str[@name='index_item_name']" /></h2>
+      <p>
+        <b>Type: </b><xsl:value-of select="str[@name='index_item_type']" />
+        <br/><b>Greek name: </b><xsl:value-of select="string-join(arr[@name='index_item_alt_name']/str, '; ')"/>
+        <br/><b>District: </b><xsl:value-of select="string-join(arr[@name='index_district']/str, '; ')"/>
+        <br/><b>Diocese: </b><xsl:value-of select="string-join(arr[@name='index_diocese']/str, '; ')"/>
+        <br/><b>Coordinates: </b><xsl:value-of select="string-join(arr[@name='index_coordinates']/str, '; ')"/>
+        <br/><b>Construction: </b><xsl:value-of select="string-join(arr[@name='index_construction']/str, '; ')"/>
+        <br/><b>Function: </b><xsl:value-of select="string-join(arr[@name='index_function']/str, '; ')"/>
+        <br/><b>Context: </b><xsl:value-of select="string-join(arr[@name='index_context']/str, '; ')"/>
+        <br/><b>Architectural context: </b><xsl:value-of select="string-join(arr[@name='index_architectural_context']/str, '; ')"/>
+        <br/><b>Mural: </b><xsl:value-of select="string-join(arr[@name='index_mural']/str, '; ')"/>
+        <br/><b>Conservation: </b><xsl:value-of select="string-join(arr[@name='index_conservation']/str, '; ')"/>
+        <br/><b>Donors: </b><xsl:value-of select="string-join(arr[@name='index_donors']/str, '; ')"/>
+        <br/><b>Painter: </b><xsl:value-of select="string-join(arr[@name='index_painter']/str, '; ')"/>
+        <br/><b>Graffiti: </b><xsl:value-of select="string-join(arr[@name='index_graffiti']/str, '; ')"/>
+        <br/><b>External resource: </b><xsl:value-of select="string-join(arr[@name='index_external_resource']/str, '; ')"/>
+        <br/><b>Inscriptions bibliography: </b><xsl:value-of select="string-join(arr[@name='index_inscriptions_bibl']/str, '; ')"/>
+        <br/><b>Monument bibliography: </b><xsl:value-of select="string-join(arr[@name='index_monument_bibl']/str, '; ')"/>
+      </p>
+      <h3>Inscriptions: </h3>
+      <xsl:apply-templates select="arr[@name='index_instance_location']" />
+    </div>
+  </xsl:template>
 
-  <xsl:template match="result/doc">
-    <tr id="{str[@name='index_id']}">
+  <xsl:template match="result/doc[not(arr[@name='index_coordinates'])]"> <!-- i.e. all indices excluded locations -->
+    <tr>
       <xsl:apply-templates select="str[@name='index_item_name']" />
       <xsl:apply-templates select="str[@name='index_surname']" />
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
@@ -55,7 +85,13 @@
     </tr>
   </xsl:template>
 
-  <xsl:template match="response/result">
+  <xsl:template match="response/result[descendant::doc[arr[@name='index_coordinates']]]"> <!-- i.e. locations index -->
+    <div>
+        <xsl:apply-templates select="doc"><xsl:sort select="lower-case(.)"/></xsl:apply-templates>
+    </div>
+  </xsl:template>
+  
+  <xsl:template match="response/result[not(descendant::arr[@name='index_coordinates'])]"> <!-- i.e. all indices excluded locations -->
     <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>

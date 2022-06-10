@@ -41,7 +41,6 @@
             <xsl:choose>
               <xsl:when test="doc-available($locationsAL) = fn:true() and $idno">
                 <xsl:value-of select="normalize-space(translate(translate(translate($idno//tei:placeName[@xml:lang='en'], '/', '／'), '_', ' '), '(?)', ''))" /> 
-                <!--<xsl:value-of select="$idno//tei:place" />--> <!-- to be displayed here all data about monuments in a  structured way -->
               </xsl:when>
               <xsl:otherwise>
                 <xsl:value-of select="$id" />
@@ -57,6 +56,104 @@
               <xsl:when test="self::tei:repository"><xsl:text>Repository</xsl:text></xsl:when>
             </xsl:choose>
           </field>
+          
+          <!--<xsl:if test="doc-available($locationsAL) = fn:true() and $idno">-->
+          <field name="index_item_alt_name">
+            <xsl:value-of select="$idno//tei:placeName[@xml:lang='el']"/>
+          </field>
+          <field name="index_district">
+            <xsl:choose>
+              <xsl:when test="contains($idno//tei:placeName[@type='district'][1]/@ref, '#')">
+                <xsl:value-of select="substring-after($idno//tei:placeName[@type='district'][1]/@ref, '#')"/> 
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$idno//tei:placeName[@type='district']"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_diocese">
+            <xsl:choose>
+              <xsl:when test="contains($idno//tei:placeName[@type='diocese'][1]/@ref, '#')">
+                <xsl:value-of select="substring-after($idno//tei:placeName[@type='diocese'][1]/@ref, '#')"/> 
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$idno//tei:placeName[@type='diocese']"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_coordinates">
+            <xsl:value-of select="$idno//tei:location/tei:geo"/>
+          </field>
+            <field name="index_construction">
+              <xsl:value-of select="$idno//tei:desc[@type='construction']"/>
+            </field>
+            <field name="index_function">
+              <xsl:value-of select="$idno//tei:desc[@type='function']"/>
+            </field>
+            <field name="index_context">
+              <xsl:value-of select="$idno//tei:desc[@type='context']"/>
+            </field>
+            <field name="index_architectural_context">
+              <xsl:value-of select="$idno//tei:desc[@type='architectural']"/>
+          </field>
+            <field name="index_mural">
+              <xsl:value-of select="$idno//tei:desc[@type='mural']"/>
+          </field>
+            <field name="index_conservation">
+              <xsl:value-of select="$idno//tei:desc[@type='conservation']"/>
+          </field>
+            <field name="index_donors">
+              <xsl:value-of select="$idno//tei:desc[@type='donors']"/>
+            </field>
+            <field name="index_painter">
+              <xsl:value-of select="$idno//tei:desc[@type='painter']"/>
+            </field>
+            <field name="index_graffiti">
+              <xsl:value-of select="$idno//tei:desc[@type='graffiti']"/> <!-- <ref target="URL">...</ref> -->
+            </field>
+            <xsl:for-each select="$idno//tei:idno[@type]">
+                <field name="index_external_resource">
+                  <xsl:value-of select="@type"/>: <xsl:value-of select="."/>
+                </field>
+              </xsl:for-each>
+              <xsl:choose>
+                <xsl:when test="$idno//tei:listBibl[@type='inscriptions']/tei:bibl[@ana='unpublished']">
+                  <field name="index_inscriptions_bibl">
+                    <xsl:text>unpublished</xsl:text>
+                  </field>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:for-each select="$idno//tei:listBibl[@type='inscriptions']/tei:bibl/tei:ptr">
+                    <field name="index_inscriptions_bibl">
+                    <xsl:value-of select="substring-after(@target, '#')"/>
+                    <xsl:if test="following-sibling::tei:citedRange">
+                    <xsl:text>, </xsl:text>
+                      <xsl:value-of select="following-sibling::tei:citedRange"/>
+                    </xsl:if>
+                    </field>
+                  </xsl:for-each>
+                </xsl:otherwise>
+              </xsl:choose>
+            
+            <xsl:choose>
+              <xsl:when test="$idno//tei:listBibl[@type='monument']/tei:bibl[@ana='unpublished']">
+                <field name="index_monument_bibl">
+                  <xsl:text>unpublished</xsl:text>
+                </field>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:for-each select="$idno//tei:listBibl[@type='monument']/tei:bibl/tei:ptr">
+                  <field name="index_monument_bibl">
+                    <xsl:value-of select="substring-after(@target, '#')"/>
+                    <xsl:if test="following-sibling::tei:citedRange">
+                      <xsl:text>, </xsl:text>
+                      <xsl:value-of select="following-sibling::tei:citedRange"/>
+                    </xsl:if>
+                  </field>
+                </xsl:for-each>
+              </xsl:otherwise>
+            </xsl:choose>
+          <!--</xsl:if>-->
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>

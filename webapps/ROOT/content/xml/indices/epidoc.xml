@@ -206,13 +206,12 @@
           <list>
             <item>Name</item>
             <item>Type</item>
+            <item>Info</item>
             <item>References</item>
           </list>
         </div>
         <div type="notes">
-          <list>
-            <item>Index of monuments and repositories of the inscriptions.</item>
-          </list>
+          <p>Index of monuments and repositories of the inscriptions.</p>
         </div>
       </div>
       
