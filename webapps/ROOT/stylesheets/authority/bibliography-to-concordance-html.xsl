@@ -91,6 +91,14 @@
             <xsl:when test="ancestor::tei:div[@xml:id='series_collections']">
               <i><xsl:value-of select="@xml:id"/></i>
             </xsl:when>
+            <xsl:when test="descendant::tei:surname and descendant::tei:date">
+              <xsl:for-each select="descendant::tei:surname[not(parent::*/preceding-sibling::tei:title)]">
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()"> – </xsl:if>
+              </xsl:for-each>
+              <xsl:if test="descendant::tei:date/text()"><xsl:text> </xsl:text>
+                <xsl:value-of select="descendant::tei:date"/></xsl:if>
+            </xsl:when>
           </xsl:choose>
         </xsl:otherwise>
       </xsl:choose>
