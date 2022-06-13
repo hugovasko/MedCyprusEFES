@@ -24,7 +24,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support><objectType/> Painted inscription. Bema, north pilaster, east face, lower register <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted inscription</objectType>.
+                                    <rs type="placement">Bema, north pilaster, east face, lower register</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>On either side and in-between the arms of a patriarchal cross.</layout>

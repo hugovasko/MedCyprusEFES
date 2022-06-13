@@ -22,7 +22,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Painted Inscription<objectType/> Dome, lower register <dimensions unit="cm"><height>? cm </height> <width>? cm</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted Inscription</objectType>
+                                    <rs type="placement">Dome, lower register</rs>
+                                    <dimensions unit="cm"><height>? cm </height> <width>? cm</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>around Pantocrator medallion</layout>

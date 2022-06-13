@@ -24,7 +24,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support> <objectType/> Painted inscription. Bema, north wall, upper register <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted inscription</objectType>
+                                    <rs type="placement">Bema, north wall, upper register</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>description of text field/campus</layout>

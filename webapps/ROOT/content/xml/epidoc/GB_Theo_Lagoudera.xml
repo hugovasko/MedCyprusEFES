@@ -25,8 +25,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Nave, north wall, above the lintel of the north door
-                                    <objectType/> Painted Inscription <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted Inscription</objectType>
+                                    <rs type="placement">Nave, north wall, above the lintel of the north door</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>Below the image of the Holy Tile, within the same panel</layout>

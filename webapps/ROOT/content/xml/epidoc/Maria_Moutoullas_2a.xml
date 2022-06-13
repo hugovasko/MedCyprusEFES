@@ -26,7 +26,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Bema, north pilaster, east face, lower register <objectType/> Painted inscription <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted inscription</objectType>
+                                    <rs type="placement">Bema, north pilaster, east face, lower register</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>On either side and in-between the arms of a patriarchal cross</layout>
@@ -36,16 +40,17 @@
                             <handNote>Black letters against a white background <height>?</height>
                             </handNote>
                         </handDesc>
+                        <decoDesc>
+                            <p>... <rs type="iconography" ref="iconography.xml#cross">patriarchal cross</rs> ...</p>
+                        </decoDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace ref="locations.xml#Moutoullas">Moutoullas, Panagia Church</origPlace>
                             <origDate when="1280" evidence="internal-date">1280</origDate>
                         </origin>
-                        <provenance type="found"> Findspot and circumstances/context
-                        </provenance>
-                        <provenance type="observed">Modern location(s) (if different from repository, above)
-                        </provenance>
+                        <provenance type="found"> Findspot and circumstances/context</provenance>
+                        <provenance type="observed">Modern location(s) (if different from repository, above)</provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
