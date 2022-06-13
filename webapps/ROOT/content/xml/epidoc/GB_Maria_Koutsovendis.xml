@@ -69,8 +69,8 @@
                 <l n="1"><lb n="1"/> <g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπ<choice><corr source="#mango1990">οις</corr><sic>ω</sic></choice> <hi rend="ligature">τρ</hi>ισὶ προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l n="2"><lb n="2"/>αναρχον ἀρχ<hi rend="ligature">ην</hi> υπεράρχιον φυσιν·</l>
 <l n="3"><lb n="3"/>αμαχον ἀλκὴν ὑπερούσιον μόνην·</l>
-<l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="mentioned_places.xml#Cyprus">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
-<l n="5"><lb n="5"/><persName type="attested"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ωτιστος νω<supplied reason="lost">βε</supplied>λισίμων</rs>·</l>
+<l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou" sameAs="#Philokales">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="mentioned_places.xml#Cyprus">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" xml:id="Philokales" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ωτιστος νω<supplied reason="lost">βε</supplied>λισίμων</rs>·</l>
 <l n="6"><lb n="6"/>βάθρων απ’αὐτῶν τὸν νεων ἤγειρε σοι·</l>
 <l n="7"><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη·</l>
                </lg>
