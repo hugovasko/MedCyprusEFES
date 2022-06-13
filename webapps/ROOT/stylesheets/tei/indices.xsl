@@ -49,7 +49,7 @@
         <br/><b>Construction: </b><xsl:value-of select="string-join(arr[@name='index_construction']/str, '; ')"/>
         <br/><b>Function: </b><xsl:value-of select="string-join(arr[@name='index_function']/str, '; ')"/>
         <br/><b>Context: </b><xsl:value-of select="string-join(arr[@name='index_context']/str, '; ')"/>
-        <br/><b>Architectural context: </b><xsl:value-of select="string-join(arr[@name='index_architectural_context']/str, '; ')"/>
+        <br/><b>Architectural type: </b><xsl:value-of select="string-join(arr[@name='index_architectural_type']/str, '; ')"/>
         <br/><b>Mural: </b><xsl:value-of select="string-join(arr[@name='index_mural']/str, '; ')"/>
         <br/><b>Conservation: </b><xsl:value-of select="string-join(arr[@name='index_conservation']/str, '; ')"/>
         <br/><b>Donors: </b><xsl:value-of select="string-join(arr[@name='index_donors']/str, '; ')"/>

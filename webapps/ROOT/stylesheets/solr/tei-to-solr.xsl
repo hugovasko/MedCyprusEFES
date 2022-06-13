@@ -98,8 +98,8 @@
     </field>
   </xsl:template>
   
-  <xsl:template match="tei:support" mode="facet_architectural_context">
-    <field name="architectural_context">
+  <xsl:template match="//tei:rs[@type='placement']" mode="facet_placement">
+    <field name="placement">
       <xsl:value-of select="normalize-space(translate(translate(translate(., '/', '／'), '_', ' '), '(?)', ''))"/>
     </field>
   </xsl:template>  
@@ -133,7 +133,7 @@
     <xsl:call-template name="field_administrative_district"/>
     <xsl:call-template name="field_monument_context"/>
     <xsl:call-template name="field_monument_function"/>
-    <xsl:call-template name="field_architectural_context"/>
+    <xsl:call-template name="field_placement"/>
     <xsl:call-template name="field_person_name"/>
     <xsl:call-template name="field_textual_origin_date"/>
   </xsl:template>
@@ -162,8 +162,8 @@
     <xsl:apply-templates mode="facet_monument_function" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origPlace" />
   </xsl:template>
   
-  <xsl:template name="field_architectural_context">
-    <xsl:apply-templates mode="facet_architectural_context" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support" />
+  <xsl:template name="field_placement">
+    <xsl:apply-templates mode="facet_placement" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support" />
   </xsl:template>
   
   <xsl:template name="field_person_name">

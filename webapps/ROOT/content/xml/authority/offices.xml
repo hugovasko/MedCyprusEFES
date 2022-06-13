@@ -18,10 +18,9 @@
         <body>
             <list type="secular_offices">
                 <head>Secular Offices</head>
-                <item xml:id="doux"> 
-                    <term xml:lang="en">dux</term>
-                    <term xml:lang="la">dux</term>
-                    <term xml:lang="grc">δούξ</term>
+                <item xml:id="doux_Kyprou"> 
+                    <term xml:lang="en">dux of Cyprus</term>
+                    <term xml:lang="grc">δούξ Κύπρου</term>
                 </item>
             </list>
             
@@ -29,7 +28,6 @@
                 <head>Secular Dignities</head>
                 <item xml:id="something..."> 
                     <term xml:lang="en">...</term>
-                    <term xml:lang="la">...</term>
                     <term xml:lang="grc">...</term>
                 </item>
             </list>
@@ -38,7 +36,6 @@
                 <head>Ecclesiastical Offices</head>
                 <item xml:id="something_else..."> 
                     <term xml:lang="en">...</term>
-                    <term xml:lang="la">...</term>
                     <term xml:lang="grc">...</term>
                 </item>
             </list>

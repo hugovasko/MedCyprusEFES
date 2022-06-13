@@ -61,12 +61,20 @@
      </p>
      
      <p>
-       <b>Description of inscription: </b>
-       <xsl:apply-templates select="//t:supportDesc" mode="medcyprus-dimensions"/>
+       <!--<b>Description of inscription: </b>
+         <xsl:apply-templates select="//t:supportDesc" mode="medcyprus-dimensions"/>-->
+       <b>Type of inscription support: </b>
+       <xsl:apply-templates select="//t:objectType"/>
+       <br/><b>Placement in the monument: </b>
+       <xsl:apply-templates select="//t:support//t:rs[@type='placement']"/>
+       <br/><b>Dimensions: </b>
+       <xsl:apply-templates select="//t:support//t:dimensions" mode="medcyprus-dimensions"/>
        <br/><b>Articulation of inscription in relation to the murals: </b>
        <xsl:apply-templates select="//t:layoutDesc" mode="medcyprus-dimensions"/>
        <br/><b>Letters: </b>
        <xsl:apply-templates select="//t:handDesc" mode="medcyprus-dimensions"/>
+       <br/><b>Iconography: </b>
+       <xsl:apply-templates select="//t:decoDesc" mode="medcyprus-dimensions"/>
      </p>
      
      <p><b>Visit to the monument: </b>

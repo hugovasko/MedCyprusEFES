@@ -163,7 +163,7 @@
      multiValued="true" required="false" type="string" />
    <field name="monument_function" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
-   <field name="architectural_context" stored="true" indexed="true"
+   <field name="placement" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="person_name" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />   
@@ -223,7 +223,7 @@
      multiValued="true" required="false" type="string" />
    <field name="index_context" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
-   <field name="index_architectural_context" stored="true" indexed="true"
+   <field name="index_architectural_type" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="index_mural" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />

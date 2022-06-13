@@ -69,14 +69,7 @@
             </xsl:for-each>
           </field>
           <field name="index_item_type">
-            <xsl:choose>
-              <xsl:when test="@subtype='depicted'">
-                <xsl:text>Depicted</xsl:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:text>Mentioned</xsl:text>
-              </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="@type"/>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>

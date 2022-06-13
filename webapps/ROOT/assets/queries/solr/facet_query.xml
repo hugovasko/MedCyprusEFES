@@ -17,7 +17,7 @@
   <facet.field>origin_place</facet.field>
   <facet.field>monument_context</facet.field>
   <facet.field>monument_function</facet.field>
-  <facet.field>architectural_context</facet.field>
+  <facet.field>placement</facet.field>
   <facet.field>inscription_type</facet.field>
   <facet.limit>-1</facet.limit>
   <facet.mincount>1</facet.mincount>

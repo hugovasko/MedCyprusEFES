@@ -45,6 +45,9 @@
             
             <list type="sacred_objects">
                 <head>Sacred objects</head>
+                <item xml:id="cross"> 
+                    <term xml:lang="en">Cross</term>
+                </item>
                 <item xml:id="keramidion"> 
                     <term xml:lang="en">Keramidion</term>
                 </item>

@@ -31,5 +31,5 @@
   <message key="facet-administrative_district">Administrative District</message>
   <message key="facet-monument_context">Context of Monument</message>
   <message key="facet-monument_function">Function of Monument</message>
-  <message key="facet-architectural_context">Architectural Context</message>
+  <message key="facet-placement">Placement</message>
 </catalogue>

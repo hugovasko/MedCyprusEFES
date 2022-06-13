@@ -93,7 +93,7 @@
             <field name="index_context">
               <xsl:value-of select="$idno//tei:desc[@type='context']"/>
             </field>
-            <field name="index_architectural_context">
+            <field name="index_architectural_type">
               <xsl:value-of select="$idno//tei:desc[@type='architectural']"/>
           </field>
             <field name="index_mural">

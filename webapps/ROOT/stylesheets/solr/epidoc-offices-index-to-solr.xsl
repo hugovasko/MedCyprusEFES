@@ -16,7 +16,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type='title' or @type='office' or @type='dignity'][ancestor::tei:div/@type='edition']" group-by=".">
+      <xsl:for-each-group select="//tei:rs[@type='office' or @type='dignity'][ancestor::tei:div/@type='edition']" group-by="@ref">
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">
@@ -42,8 +42,11 @@
               <xsl:when test="doc-available($officesAL) = fn:true() and $idno">
                 <xsl:value-of select="$idno//tei:term[1]" />
               </xsl:when>
-              <xsl:otherwise>
+              <xsl:when test="$id and not($idno)">
                 <xsl:value-of select="$id" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="." />
               </xsl:otherwise>
             </xsl:choose>
           </field>
@@ -68,7 +71,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:rs[@type='title' or @type='office' or @type='dignity']">
+  <xsl:template match="tei:rs[@type='office' or @type='dignity']">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
