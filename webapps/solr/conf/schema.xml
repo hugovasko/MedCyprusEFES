@@ -240,7 +240,11 @@
    <field name="index_inscriptions_bibl" stored="true" indexed="true"
    multiValued="true" required="false" type="string" />
    <field name="index_monument_bibl" stored="true" indexed="true"
-   multiValued="true" required="false" type="string" />
+     multiValued="true" required="false" type="string" />
+   <field name="index_map_points" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_map_labels" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />

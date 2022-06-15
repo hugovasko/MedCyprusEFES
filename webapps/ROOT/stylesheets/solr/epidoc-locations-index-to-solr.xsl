@@ -13,6 +13,32 @@
 
   <xsl:param name="index_type" />
   <xsl:param name="subdirectory" />
+  
+  <!-- START MAP POINTS -->
+  <xsl:variable name="locationsAL" select="'../../content/xml/authority/locations.xml'"/>
+  <xsl:variable name="map_points">
+    <xsl:text>{</xsl:text>
+    <xsl:for-each select="document($locationsAL)//tei:place[matches(normalize-space(descendant::tei:geo), '\d{1,2}(\.\d+){0,1},\s+?\d{1,2}(\.\d+){0,1}')]">
+      <xsl:variable name="id" select="@xml:id"/>
+      <xsl:variable name="counter" select="count(collection('../../content/xml/epidoc/?select=*.xml;recurse=yes')//tei:origPlace[substring-after(@ref, '#')=$id])"/>
+      <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(translate(tei:placeName[1], ',', '; '))"/>
+      <xsl:text>#</xsl:text><xsl:value-of select="$counter"/>
+      <xsl:text>@</xsl:text><xsl:value-of select="$id"/>
+      <xsl:text>": "</xsl:text><xsl:value-of select="normalize-space(descendant::tei:geo[1])"/>
+      <xsl:text>"</xsl:text>
+      <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+    </xsl:for-each>
+    <xsl:text>}</xsl:text>
+  </xsl:variable>
+  
+  <xsl:variable name="map_labels">
+    <xsl:text>[</xsl:text>
+    <xsl:for-each select="document($locationsAL)//tei:place[matches(normalize-space(descendant::tei:geo), '\d{1,2}(\.\d+){0,1},\s+?\d{1,2}(\.\d+){0,1}')]">
+      <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(translate(tei:placeName[1], ',', '; '))"/><xsl:text>"</xsl:text><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+    </xsl:for-each>
+    <xsl:text>]</xsl:text>
+  </xsl:variable>
+  <!-- END MAP POINTS -->
 
   <xsl:template match="/">
     <add>
@@ -27,7 +53,6 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="locationsAL" select="'../../content/xml/authority/locations.xml'"/>
         <xsl:variable name="idno" select="document($locationsAL)//tei:place[@xml:id=$id]"/>
         <doc>
           <field name="document_type">
@@ -37,6 +62,12 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path" />
+          
+          <xsl:if test="position()=1"> <!--TO GENERATE MAP, preventing having this indexed for all locations -->
+            <field name="index_map_points"><xsl:value-of select="normalize-space($map_points)"/></field>
+            <field name="index_map_labels"><xsl:value-of select="normalize-space($map_labels)"/></field>
+          </xsl:if>
+          
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="doc-available($locationsAL) = fn:true() and $idno">
@@ -56,7 +87,6 @@
               <xsl:when test="self::tei:repository"><xsl:text>Repository</xsl:text></xsl:when>
             </xsl:choose>
           </field>
-          
           <!--<xsl:if test="doc-available($locationsAL) = fn:true() and $idno">-->
           <field name="index_item_alt_name">
             <xsl:value-of select="$idno//tei:placeName[@xml:lang='el']"/>

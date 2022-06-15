@@ -22,19 +22,21 @@
             <kiln:block name="title">EFES: </kiln:block>
           </title>
           <kiln:block name="css">
-            <link href="{$kiln:assets-path}/foundation/css/normalize.css"
-                  rel="stylesheet" type="text/css" />
-            <link href="{$kiln:assets-path}/foundation/css/foundation.min.css"
-                  rel="stylesheet" type="text/css" />
-            <link href="{$kiln:assets-path}/styles/base.css" rel="stylesheet"
-                  type="text/css" />
-            <link href="{$kiln:assets-path}/styles/site.css" rel="stylesheet"
-                  type="text/css" />
+            <link href="{$kiln:assets-path}/foundation/css/normalize.css" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/foundation/css/foundation.min.css" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/base.css" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/site.css" rel="stylesheet" type="text/css" />
             <link href="{$kiln:assets-path}/images/favicon.png" rel="shortcut icon" type="image/png"/>
+            <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/Control.Geocoder.css" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/leaflet.fullscreen.css" rel="stylesheet" type="text/css" />
           </kiln:block>
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/foundation/js/vendor/custom.modernizr.js">&#160;</script>
             <script src="{$kiln:assets-path}/scripts/cookieinfo.min.js" type="text/javascript" id="cookieinfo"></script>
+            <script src="{$kiln:assets-path}/foundation/js/vendor/jquery.js"></script>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            <script src="{$kiln:assets-path}/scripts/leaflet-providers.js"></script>
           </kiln:block>
           <kiln:block name="head-extra"></kiln:block>
         </head>

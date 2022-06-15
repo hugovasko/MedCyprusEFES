@@ -87,7 +87,22 @@
 
   <xsl:template match="response/result[descendant::doc[arr[@name='index_coordinates']]]"> <!-- i.e. locations index -->
     <div>
-        <xsl:apply-templates select="doc"><xsl:sort select="lower-case(.)"/></xsl:apply-templates>
+      <xsl:if test="doc/str[@name='index_map_points']">
+        <div class="row map_box">
+        <div id="mapid" class="map"></div>
+        <script type="text/javascript">
+          var points = <xsl:value-of select="doc/str[@name='index_map_points']"/>;
+          var map_labels = <xsl:value-of select="doc/str[@name='index_map_labels']"/>;
+          <xsl:value-of select="fn:doc(concat('file:',system-property('user.dir'),'/webapps/ROOT/assets/scripts/maps.js'))"/>
+          var mymap = L.map('mapid', { center: [35.15, 33.45], zoom: 8.5, fullscreenControl: true, layers: layers });
+          L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+          L.control.scale().addTo(mymap);
+          L.Control.geocoder().addTo(mymap);
+          toggle_places.addTo(mymap); 
+        </script>
+      </div>
+      </xsl:if>
+      <xsl:apply-templates select="doc"><xsl:sort select="lower-case(.)"/></xsl:apply-templates>
     </div>
   </xsl:template>
   
