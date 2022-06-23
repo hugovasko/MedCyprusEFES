@@ -17,9 +17,7 @@
       <div class="row">
         <div class="large-12 columns text-center">
           <h1>
-            <span class="round label">
-              <i18n:text i18n:key="home-title">Welcome to MedCyprus!</i18n:text>
-            </span>
+              <i18n:text i18n:key="home-title">Digital Corpus of Painted Greek Inscriptions from Medieval Cyprus<br/>(10th – 13th centuries AD)</i18n:text>
           </h1>
         </div>
       </div>
@@ -29,9 +27,7 @@
       <main>
         <div class="row">
           <div class="small-6 large-centered columns">
-            <p>Now that you have EFES up and running, it's time to
-            start building your project. Start with one of the options
-            listed below and go from there.</p>
+            <p>A description of the project here.</p>
           </div>
         </div>
         <div class="row">
@@ -53,8 +49,7 @@
 
               <p>Change the look of this site by modifying the templates
               in webapps/ROOT/assets/templates. The template for this
-              page is home.xml, and it builds on the base template
-              base.xml.</p>
+              page is home.xml.</p>
             </div>
           </div>
           <div class="large-4 columns">
@@ -62,11 +57,9 @@
               <p><strong>Read the documentation</strong></p>
 
               <p>The documentation and User Guide for  
-                EFES can be found on the project's <a href="https://github.com/EpiDoc/EFES/wiki/">GitHub Wiki pages</a>. 
-                Documentation for Kiln, the platform that EFES is based on, can be found both <a
-                  href="http://kiln.readthedocs.org/en/latest/">online</a>, and in source form, in the docs directory of your
-              installation. It explains how you can modify everything
-              about your project.</p>
+                EFES can be found <a href="https://github.com/EpiDoc/EFES/wiki/">here</a>. 
+                Documentation for Kiln can be found both <a
+                  href="http://kiln.readthedocs.org/en/latest/">online</a>, and in source form.</p>
             </div>
           </div>
         </div>

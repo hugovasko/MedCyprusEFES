@@ -176,7 +176,7 @@
                <xsl:choose>
                  <xsl:when test="doc-available($bibliography-al) = fn:true() and document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]">
                    <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
-                   <a href="{concat('../concordance/bibliography/',$source-id,'.html')}" target="_blank">
+                   <a href="../concordance/bibliography/{$source-id}.html" target="_blank">
                      <xsl:choose>
                        <xsl:when test="$source//t:surname and $source//t:date">
                          <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title)]">
@@ -187,7 +187,7 @@
                          <xsl:apply-templates select="$source//t:date"/>
                        </xsl:when>
                        <xsl:otherwise>
-                         <xsl:apply-templates select="$source-id"/>
+                         <xsl:value-of select="$source-id"/>
                        </xsl:otherwise>
                      </xsl:choose>
                    </a>
