@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kiln:root xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
-           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-           xmlns:xi="http://www.w3.org/2001/XInclude"
-           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="base.xml"/>
   </kiln:parent>
 
   <kiln:child>
@@ -16,7 +15,10 @@
     <kiln:block name="page-header">
       <div class="row">
         <div class="large-12 columns text-center">
-          <h1 id="site-name"><a href="inscriptions/">Digital Corpus of Painted Greek Inscriptions from Medieval Cyprus<br/>(10th – 13th centuries AD)</a></h1>
+          <h1 id="site-name">
+            <a href="inscriptions/">Digital Corpus of Painted Greek Inscriptions from Medieval
+              Cyprus<br/>(10th – 13th centuries AD)</a>
+          </h1>
         </div>
       </div>
     </kiln:block>
@@ -25,16 +27,45 @@
       <main>
         <div class="row">
           <div class="large-12 columns text-center">
-            <p class="text-center"><a href="inscriptions/"><img alt="HomepageImage" title="https://commons.wikimedia.org/wiki/File:Church_of_Panagia_tou_Arakos,_triumphal_arch,_wall_paintings,_Lagoudera,_Cyprus_-_South_side,_St._Cosmas_the_Hymnographer_-_MSBZ004_BF_T_Lag_B_8_2_-_Dumbarton_Oaks.jpg" src="{$kiln:assets-path}/images/Lagoudera_Cosmas.png"/></a></p>
+            <p class="text-center">
+              <a href="inscriptions/">
+                <img alt="HomepageImage"
+                  title="https://commons.wikimedia.org/wiki/File:Church_of_Panagia_tou_Arakos,_triumphal_arch,_wall_paintings,_Lagoudera,_Cyprus_-_South_side,_St._Cosmas_the_Hymnographer_-_MSBZ004_BF_T_Lag_B_8_2_-_Dumbarton_Oaks.jpg"
+                  src="{$kiln:assets-path}/images/Lagoudera_Cosmas.png"/>
+              </a>
+            </p>
           </div>
-          
+
           <div class="large-12 columns">
             <div class="panel radius">
-              <p>The "Digital Corpus of Painted Greek Inscriptions from Medieval Cyprus (10th – 13th centuries AD)" is an EpiDoc collection of the painted Greek inscriptions from Medieval Cyprus. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <p>The "Digital Corpus of Painted Greek Inscriptions from Medieval Cyprus (10th –
+                  13th centuries AD)" is an EpiDoc collection of the painted Greek inscriptions from
+                  Medieval Cyprus. The majority of the monuments included in the corpus come from the 
+                  12th and the 13th centuries, i.e. they fall on either side of the divide of AD 1191, when began the 
+                  gradual transformation of Cyprus from a Byzantine province into a Frankish kingdom. The 
+                  proposed corpus was conceived thus in order to provide specialists with much-needed material to
+                  gauge the impact of this transition on epigraphic practices and on the evolution of (written
+                  and spoken) Greek on the island. Furthermore, epigraphic data can offer additional evidence
+                  for a more secure dating for a number of these ensembles, which are currently loosely
+                  ascribed to the late 12 th or the early 13 th century primarily on stylistic grounds. </p>
+              </div>
+
+              <div id="team">
+                <h4>Research Team</h4>
+                <ul>
+                  <li>Maria Parani (University of Cyprus) - Principal Investigator</li>
+                  <li>Maria Xenaki (Ministry of Culture and Sports, Greece)</li>
+                  <li>Theocharis Petrou (University of Cyprus)</li>
+                  <li>Charlotte Roueché (King’s College London)</li>
+                  <li>Gabriel Bodard (University of London)</li>
+                  <li>Irene Vagionakis (University of Bologna)</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        
+
       </main>
     </kiln:block>
   </kiln:child>
