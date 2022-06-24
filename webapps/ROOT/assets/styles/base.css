@@ -19,6 +19,22 @@ ul.index-instances { }
   font-size: 24px;
   text-align: center;
   padding: 0.5em;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+#site-name {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      color: black;
+      font-size: 30px;
+      font-variant: small-caps;
+      font-weight: 300;
+}
+
+#site-name a {
+      color: black;
 }
 
 footer {
@@ -48,6 +64,33 @@ h3 {
 
 h4 {
     font-size: 18px;
+}
+
+p, li {
+    text-align: justify;
+}
+
+td * {
+    line-height: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+nav.top-bar, nav.top-bar ul.right li, nav.top-bar ul.left * {
+    background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, li, ul, tr, td {
+    font-family: "Open Sans", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active { color: #637893; }
+a:hover { color: #45658B; }
+
+body{
+    background-color: #fbfbfa;
 }
 
 .monument {
@@ -131,6 +174,48 @@ div#full_map {
 }
 
 /*Fonts*/
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans700.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensansItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans700Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans300Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
 @font-face {
     font-family: "New Athena Unicode";
     src: url('fonts/nau.woff') format('woff');
