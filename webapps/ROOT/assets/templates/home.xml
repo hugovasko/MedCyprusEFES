@@ -14,7 +14,7 @@
 
     <kiln:block name="page-header">
       <div class="row">
-        <div class="large-12 columns text-center">
+        <div class="small-12 small-centered columns">
           <h1 id="site-name">
             <a href="inscriptions/">Digital Corpus of Painted Greek Inscriptions from Medieval
               Cyprus<br/>(10th – 13th centuries AD)</a>
@@ -26,7 +26,7 @@
     <kiln:block name="content-section">
       <main>
         <div class="row">
-          <div class="large-12 columns text-center">
+          <div class="small-8 small-centered columns">
             <p class="text-center">
               <a href="inscriptions/">
                 <img alt="HomepageImage"
