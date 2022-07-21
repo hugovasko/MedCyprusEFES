@@ -227,6 +227,40 @@
                     </listBibl>
                 </place>
                 
+                <place xml:id="Chlorakas">
+                    <placeName xml:lang="en">Chlorakas, Saint Nicholas</placeName>
+                    <placeName xml:lang="el">Χλώρακας, Άγιος Νικόλαος</placeName>
+                    <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
+                    <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
+                    <location><geo>34.793439, 32.412865</geo></location>
+                    <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">12th century</date></desc>
+                    <desc type="function">Parochial(?), pilgrimage(?)</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">cross-in-square church; narthex added later</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, nave)</desc><!--IS THERE ANOTHER LAYER?-->
+                   </desc>
+                    <desc type="conservation">Partially preserved</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/146490/154/</idno>
+                    <idno type="geonames">https://www.geonames.org/146490/chlorakas.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ2 2011<citedRange>14: 24</citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 622</citedRange></bibl>                        
+                        <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 114</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 389-99</citedRange></bibl>                        
+                    </listBibl>
+                </place>
+                
                 <place xml:id="Pelendri">
                     <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
                     <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
