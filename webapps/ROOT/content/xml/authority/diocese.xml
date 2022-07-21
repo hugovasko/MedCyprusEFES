@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Controlled vocabulary for Ecclesiastical Dioceses in MedCyprus project</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>                
+                <place xml:id="archbishopric">
+                    <placeName xml:lang="en">Archbishopric of Cyprus</placeName>
+                    <placeName xml:lang="el">Ιερά Αρχιεπισκοπή Κύπρου</placeName>
+                    <bibl><ref type="website">https://churchofcyprus.org.cy/</ref></bibl>
+                        </place>
+                
+                <place xml:id="arsinoe">
+                    <placeName xml:lang="en">Bishopric of Arsinoe</placeName>
+                    <placeName xml:lang="el">Ιερά Επισκοπή Αρσινόης</placeName>
+                    <bibl><ref type="website">https://www.impaphou.org/xwrepiskopi_arsinois.aspx</ref></bibl></place>
+
+                
+                <place xml:id="constantia">
+                    <placeName xml:lang="en">Bishopric of Constantia and Famagusta</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κωνσταντίας και Αμμοχώστου</placeName>
+                    <bibl><ref type="website">https://www.imconstantias.org.cy/</ref></bibl></place>
+
+                
+                <place xml:id="karpasia">
+                    <placeName xml:lang="en">Bishopric of Karpasia</placeName>
+                    <placeName xml:lang="el">Ιερά Επισκοπή Καρπασίας</placeName>
+                    <bibl><ref type="website">https://churchofcyprus.org.cy/stixia-epkarpasias</ref></bibl></place>
+
+                
+                <place xml:id="kition">
+                    <placeName xml:lang="en">Bishopric of Kition</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κιτίου</placeName>
+                    <bibl><ref type="website">https://imkitiou.org/</ref></bibl></place>
+
+                
+                <place xml:id="kyrenia">
+                    <placeName xml:lang="en">Bishopric of Kyrenia</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Κυρηνείας</placeName>
+                    <bibl><ref type="website">https://www.metropolisofkyrenia.org/</ref></bibl></place>
+
+                
+                <place xml:id="limassol">
+                    <placeName xml:lang="en">Bishopric of Limassol</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Λεμεσού</placeName>
+                    <bibl><ref type="website">http://www.imlemesou.org/</ref></bibl></place>
+
+                
+                <place xml:id="morphou">
+                    <placeName xml:lang="en">Bishopric of Morphou</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Μόρφου</placeName>
+                    <bibl><ref type="website">https://immorfou.org.cy/</ref></bibl></place>
+
+                
+                <place xml:id="paphos">
+                    <placeName xml:lang="en">Bishopric of Paphos</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Πάφου</placeName>
+                    <bibl><ref type="website">https://www.impaphou.org/default.aspx/</ref></bibl></place>
+
+                
+                <place xml:id="tamasos">
+                    <placeName xml:lang="en">Bishopric of Tamasos and Oreine</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Ταμασού και Ορεινής</placeName>
+                    <bibl><ref type="website">https://www.imtamasou.org.cy/</ref></bibl></place>
+
+                
+                <place xml:id="trimythous">
+                    <placeName xml:lang="en">Bishopric of Trimythous</placeName>
+                    <placeName xml:lang="el">Ιερά Μητρόπολις Τριμυθούντος</placeName>
+                    <bibl><ref type="website">https://imtrimythountos.org.cy/</ref></bibl></place>
+
+                    
+            </listPlace>
+        </body>
+    </text>
+</TEI>
