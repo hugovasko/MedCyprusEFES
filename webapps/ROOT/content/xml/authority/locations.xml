@@ -238,7 +238,7 @@
                     <desc type="context">Rural</desc>
                     <desc type="architectural">cross-in-square church; narthex added later</desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, nave)</desc><!--IS THERE ANOTHER LAYER?-->
+                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, naos)</desc><!--IS THERE ANOTHER LAYER?-->
                    </desc>
                     <desc type="conservation">Partially preserved</desc>
                     <desc type="donors">Unknown</desc>
@@ -258,6 +258,47 @@
                         <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 622</citedRange></bibl>                        
                         <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 114</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 389-99</citedRange></bibl>                        
+                    </listBibl>
+                </place>                
+                
+                <place xml:id="Choirokoitia">
+                    <placeName xml:lang="en">Choirokoitia, Panagia tou Kampou</placeName>
+                    <placeName xml:lang="el">Χοιροκοιτία, Παναγία του Κάμπου</placeName>
+                    <placeName type="district" ref="district.xml#larnaca">Larnaca</placeName>
+                    <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
+                    <location><geo>34.797600, 33.329086</geo></location>
+                    <!--<desc type="construction"><date notBefore="0967" notAfter="1200" precision="medium">Procopiou:
+                        late 10th century - early 11th century; Papacostas: 12th century</date></desc>-->
+                    <desc type="function">Parochial</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">domed-hall church with a later extension to the west, built on the ruins of a 7th-century three-aisled basilica</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date notBefore="1101" notAfter="1200" precision="medium">12th century</date> (bema, naos)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1501" notAfter="1600" precision="medium">first half of the 16th century</date> (bema, dome, naos)</desc>
+                    </desc>
+                    <desc type="conservation">Badly damaged; very fragmentary</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0069.html</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/4867/155/</idno>
+                    <idno type="geonames">https://www.geonames.org/4821/panagia-tou-kampou.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ2 2011<citedRange>8: 141-42</citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Enlart1987"/>Enlart 1987, <citedRange> 336-37</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 526</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999, <citedRange> 2: 50</citedRange></bibl> 
+                        <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 178-90</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Procopiou2018"/>Procopiou 2018, <citedRange> 80-81</citedRange></bibl>                        
+                    <bibl><ptr target="bibliography.xml#Soteriou1937"/>Soteriou 1937, <citedRange> 42-43</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Spanou2002"/>Spanou 2002, <citedRange> 31</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stewart2020"/>Stewart 2020, <citedRange> 173</citedRange></bibl>
                     </listBibl>
                 </place>
                 
