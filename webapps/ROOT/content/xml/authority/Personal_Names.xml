@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Authority list of Personal Names in MedCyprus project</title>
+            </titleStmt>
+            <publicationStmt><ab/></publicationStmt>
+            <sourceDesc><ab/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+                <listPerson type="PersonalName">
+                <person xml:id="Ιωάννηςκτήτωρ">
+                    <persName xml:lang="en">Ioannis, founder of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
+                    <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
+                </person>
+                    
+                    
+                <!--<listPerson type="Names">
+                    <head xml:lang="en">Emperors of Rome/Byzantium</head>
+                    <head xml:lang="grc">Императоры Рима и Византии</head>
+                    <person xml:id="hadrian">
+                        <persName xml:lang="en">Hadrian</persName>
+                        <persName xml:lang="la">Caesar Publius Aelius Traianus Hadrianus Augustus</persName>
+                        <persName xml:lang="grc">Αὐτοκράτωρ Τραιανός Ἁδριανός Καῖσαρ Σεβαστός</persName>
+                        <floruit>117-138</floruit>
+                        <idno type="wp">https://en.wikipedia.org/wiki/Hadrian</idno>
+                    </person>
+                    <person xml:id="maximianus">
+                        <persName xml:lang="en">Maximianus</persName>
+                        <persName xml:lang="ru">Максимиан</persName>
+                        <persName xml:lang="la">Caesar Marcus Aurelius Valerius Maximianus Augustus</persName>
+                        <floruit>286-305</floruit>
+                        <idno type="wp">https://en.wikipedia.org/wiki/Maximian</idno>
+                        <idno type="wp-ru">https://ru.wikipedia.org/wiki/Максимиан</idno>
+                        <idno type="snap">http://data.snapdrgn.net/person/6</idno>
+                    </person>
+                    <person xml:id="helena">
+                        <persName xml:lang="en">Helen</persName>
+                        <persName xml:lang="ru">Елена</persName>
+                        <persName xml:lang="la">Flavia Iulia Helena Augusta</persName>
+                        <floruit>293-306</floruit>
+                    </person>
+                    <person xml:id="constantinus1">
+                        <persName xml:lang="en">Constantine I</persName>
+                        <persName xml:lang="ru">Константин I</persName>
+                        <persName xml:lang="la">Caesar Gaius Flavius Valerius Constantinus Augustus</persName>
+                       <floruit>306-337</floruit>
+                        <idno type="wp">https://en.wikipedia.org/wiki/Constantine_the_Great</idno>
+                        <idno type="wp-ru">https://ru.wikipedia.org/wiki/Константин_I_Великий</idno>
+                    </person>
+                    <person xml:id="severus2">
+                        <persName xml:lang="en">Severus II</persName>
+                        <persName xml:lang="ru">Север II</persName>
+                        <persName xml:lang="la">Flavius Valerius Severus Augustus</persName>
+                        <floruit>306-307</floruit>
+                    </person>
+                    <person xml:id="maximinus">
+                        <persName xml:lang="en">Maximinus II</persName>
+                        <persName xml:lang="ru">Максимин II Даза</persName>
+                        <persName xml:lang="la">Gaius Valerius Galerius Maximinus Daia Augustus</persName>
+                       <floruit>308-313</floruit>
+                    </person>
+                    <person xml:id="constantius2">
+                        <persName xml:lang="en">Constantius II</persName>
+                        <persName xml:lang="ru">Констанций II</persName>
+                        <persName xml:lang="la">Flavius Julius Constantius Augustus</persName>
+                        <floruit>337-361</floruit>
+                    </person>
+                    <person xml:id="theodosius1">
+                        <persName xml:lang="en">Theodosius I</persName>
+                        <persName xml:lang="ru">Феодосий I</persName>
+                        <persName xml:lang="la">Flavius Theodosius Augustus</persName>
+                        <floruit>347-395</floruit>
+                    </person>
+                    </person>-->
+                </listPerson>
+        </body>
+    </text>
+</TEI>
