@@ -307,7 +307,7 @@
                     <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
-                    <location><geo>34.8931046,  32.9662704</geo></location>
+                    <location><geo>34.8931046, 32.9662704</geo></location>
                     <desc type="construction"><date notBefore="1167" notAfter="1178" precision="high" evidence="inscription">late 12th century</date></desc>
                     <desc type="function">Funerary</desc>
                     <desc type="context">Rural</desc>
@@ -321,10 +321,9 @@
                         <desc type="layer" n="5">5th layer: <date notBefore="1401" notAfter="1500" precision="medium">15th century</date> (west wall of the south aisle)</desc>
                     </desc>
                     <desc type="conservation">Good but with multiple hitmarks</desc> <!--TO WHICH LAYER ARE YOU REFERRING TO HERE?-->
-                    <desc type="donors">
-                        Priest Georgios </desc><!--SPECIFY LAYER-->
+                    <desc type="donors">Priest Georgios </desc><!--SPECIFY LAYER-->
                     <desc type="painter">Mon[o]machos (?)</desc><!--DITTO-->
-                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                    <desc type="graffiti">See Grafmedia: http://grafmedia.cy.example.com/id/01010101
                         <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
                     </desc>
                     <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0061.html</idno>

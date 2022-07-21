@@ -40,25 +40,25 @@
   <xsl:template match="result/doc[arr[@name='index_coordinates']]"> <!-- i.e. locations index -->
     <div id="{str[@name='index_id']}" class="monument">
       <h2><xsl:apply-templates select="str[@name='index_item_name']" /></h2>
-      <p>
-        <b>Type: </b><xsl:value-of select="str[@name='index_item_type']" />
-        <br/><b>Greek name: </b><xsl:value-of select="string-join(arr[@name='index_item_alt_name']/str, '; ')"/>
-        <br/><b>District: </b><xsl:value-of select="string-join(arr[@name='index_district']/str, '; ')"/>
-        <br/><b>Diocese: </b><xsl:value-of select="string-join(arr[@name='index_diocese']/str, '; ')"/>
-        <br/><b>Coordinates: </b><xsl:value-of select="string-join(arr[@name='index_coordinates']/str, '; ')"/>
-        <br/><b>Construction: </b><xsl:value-of select="string-join(arr[@name='index_construction']/str, '; ')"/>
-        <br/><b>Function: </b><xsl:value-of select="string-join(arr[@name='index_function']/str, '; ')"/>
-        <br/><b>Context: </b><xsl:value-of select="string-join(arr[@name='index_context']/str, '; ')"/>
-        <br/><b>Architectural type: </b><xsl:value-of select="string-join(arr[@name='index_architectural_type']/str, '; ')"/>
-        <br/><b>Mural: </b><xsl:value-of select="string-join(arr[@name='index_mural']/str, '; ')"/>
-        <br/><b>Conservation: </b><xsl:value-of select="string-join(arr[@name='index_conservation']/str, '; ')"/>
-        <br/><b>Donors: </b><xsl:value-of select="string-join(arr[@name='index_donors']/str, '; ')"/>
-        <br/><b>Painter: </b><xsl:value-of select="string-join(arr[@name='index_painter']/str, '; ')"/>
-        <br/><b>Graffiti: </b><xsl:apply-templates select="arr[@name='index_graffiti']"/>
-        <br/><b>External resources: </b><xsl:apply-templates select="arr[@name='index_external_resource']"/>
-        <br/><b>Inscriptions bibliography: </b><xsl:apply-templates select="arr[@name='index_inscriptions_bibl']"/>
-        <br/><b>Monument bibliography: </b><xsl:apply-templates select="arr[@name='index_monument_bibl']"/>
-      </p>
+      <p><xsl:value-of select="string-join(arr[@name='index_item_alt_name']/str, '; ')"/></p>
+      <!--<p><b>Type: </b><xsl:value-of select="str[@name='index_item_type']" /></p>-->
+      <p><b>District: </b><xsl:value-of select="string-join(arr[@name='index_district']/str, '; ')"/>
+        <b> &#xA0;&#xA0;&#xA0;&#xA0; Diocese: </b><xsl:value-of select="string-join(arr[@name='index_diocese']/str, '; ')"/></p>
+      <p><b>Context: </b><xsl:value-of select="string-join(arr[@name='index_context']/str, '; ')"/>
+        <b> &#xA0;&#xA0;&#xA0;&#xA0; Function: </b><xsl:value-of select="string-join(arr[@name='index_function']/str, '; ')"/></p>
+      <!--<p><b>Coordinates: </b><xsl:value-of select="string-join(arr[@name='index_coordinates']/str, '; ')"/></p>-->
+      <p><b>Architectural type: </b><xsl:value-of select="string-join(arr[@name='index_architectural_type']/str, '; ')"/></p>
+      <p><b>Date of construction: </b><xsl:value-of select="string-join(arr[@name='index_construction']/str, '; ')"/></p>
+      <p><b>Date of painted decoration: </b></p>  
+      <ul><xsl:for-each select="arr[@name='index_mural']/str"><li><xsl:value-of select="."/></li></xsl:for-each></ul>
+      <p><b>State of preservation of the murals: </b><xsl:value-of select="string-join(arr[@name='index_conservation']/str, '; ')"/></p>
+      <p><b>Donor(s): </b><xsl:value-of select="string-join(arr[@name='index_donors']/str, '; ')"/></p>
+      <p><b>Painter(s): </b><xsl:value-of select="string-join(arr[@name='index_painter']/str, '; ')"/></p>
+      <p><b>Graffiti: </b><xsl:apply-templates select="arr[@name='index_graffiti']"/></p>
+      <p><b>External resources: </b></p>
+      <ul><xsl:for-each select="arr[@name='index_external_resource']/str"><li><xsl:apply-templates select="."/></li></xsl:for-each></ul>
+      <p><b>Edition(s) of inscriptions: </b><xsl:apply-templates select="arr[@name='index_inscriptions_bibl']"/></p>
+      <p><b>Monument bibliography: </b><xsl:apply-templates select="arr[@name='index_monument_bibl']"/></p>
       <h3>Inscriptions: </h3>
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </div>
@@ -281,7 +281,12 @@
   </xsl:template>
   
   
-  <xsl:template match="arr[@name='index_graffiti']|arr[@name='index_external_resource']">
+  <xsl:template match="arr[@name='index_external_resource']/str">
+    <xsl:value-of select="substring-before(., ': ')"/><xsl:text>: </xsl:text>
+    <a target="_blank" href="{substring-after(., ': ')}"><xsl:value-of select="substring-after(., ': ')"/></a>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_graffiti']">
     <xsl:for-each select="str">
       <xsl:analyze-string select="." regex="(http:|https:)(\S+?)(\.|\)|\]|;|,|\?|!|:)?(\s|$)">
         <xsl:matching-substring>

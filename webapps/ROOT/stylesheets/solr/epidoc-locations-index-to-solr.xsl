@@ -92,24 +92,24 @@
             <xsl:value-of select="$idno//tei:placeName[@xml:lang='el']"/>
           </field>
           <field name="index_district">
-            <xsl:choose>
+            <!--<xsl:choose>
               <xsl:when test="contains($idno//tei:placeName[@type='district'][1]/@ref, '#')">
                 <xsl:value-of select="substring-after($idno//tei:placeName[@type='district'][1]/@ref, '#')"/> 
               </xsl:when>
-              <xsl:otherwise>
+              <xsl:otherwise>-->
                 <xsl:value-of select="$idno//tei:placeName[@type='district']"/>
-              </xsl:otherwise>
-            </xsl:choose>
+              <!--</xsl:otherwise>
+            </xsl:choose>-->
           </field>
           <field name="index_diocese">
-            <xsl:choose>
+            <!--<xsl:choose>
               <xsl:when test="contains($idno//tei:placeName[@type='diocese'][1]/@ref, '#')">
                 <xsl:value-of select="substring-after($idno//tei:placeName[@type='diocese'][1]/@ref, '#')"/> 
               </xsl:when>
-              <xsl:otherwise>
+              <xsl:otherwise>-->
                 <xsl:value-of select="$idno//tei:placeName[@type='diocese']"/>
-              </xsl:otherwise>
-            </xsl:choose>
+              <!--</xsl:otherwise>
+            </xsl:choose>-->
           </field>
           <field name="index_coordinates">
             <xsl:value-of select="$idno//tei:location/tei:geo"/>
@@ -126,9 +126,11 @@
             <field name="index_architectural_type">
               <xsl:value-of select="$idno//tei:desc[@type='architectural']"/>
           </field>
-            <field name="index_mural">
-              <xsl:value-of select="$idno//tei:desc[@type='mural']"/>
-          </field>
+              <xsl:for-each select="$idno//tei:desc[@type='mural']//tei:desc[@type='layer']">
+                <field name="index_mural">
+                  <xsl:value-of select="."/>
+                </field>
+              </xsl:for-each>
             <field name="index_conservation">
               <xsl:value-of select="$idno//tei:desc[@type='conservation']"/>
           </field>
@@ -143,7 +145,14 @@
             </field>
             <xsl:for-each select="$idno//tei:idno[@type]">
                 <field name="index_external_resource">
-                  <xsl:value-of select="@type"/>: <xsl:value-of select="."/>
+                  <xsl:choose>
+                    <xsl:when test="@type='geonames'">
+                      <xsl:text>GeoNames</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="@type"/>
+                    </xsl:otherwise>
+                  </xsl:choose>: <xsl:value-of select="."/>
                 </field>
               </xsl:for-each>
               <xsl:choose>
