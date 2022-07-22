@@ -122,8 +122,8 @@
                 </place>
                 
                 <place xml:id="Agridia">
-                    <placeName xml:lang="en">Agridia (Rizokarpaso), St. Philon</placeName>
-                    <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγ. Φίλων</placeName>
+                    <placeName xml:lang="en">Agridia (Rizokarpaso), Saint Philon</placeName>
+                    <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγιος Φίλων</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.630966, 34.449377</geo></location>
@@ -238,7 +238,7 @@
                     <desc type="context">Rural</desc>
                     <desc type="architectural">cross-in-square church; narthex added later</desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, naos)</desc><!--IS THERE ANOTHER LAYER?-->
+                        <desc type="layer" n="1"><date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, naos)</desc><!--IS THERE ANOTHER LAYER?-->
                    </desc>
                     <desc type="conservation">Partially preserved</desc>
                     <desc type="donors">Unknown</desc>
@@ -267,8 +267,10 @@
                     <placeName type="district" ref="district.xml#larnaca">Larnaca</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
                     <location><geo>34.797600, 33.329086</geo></location>
-                    <!--<desc type="construction"><date notBefore="0967" notAfter="1200" precision="medium">Procopiou:
-                        late 10th century - early 11th century; Papacostas: 12th century</date></desc>-->
+                    <desc type="construction">
+                        <date notBefore="0967" notAfter="1033" precision="medium" source="bibliography.xml#Procopiou2018">Procopiou: late 10th century - early 11th century</date>
+                        <date notBefore="1101" notAfter="1200" precision="medium" source="bibliography.xml#Papacostas1999">Papacostas: 12th century</date>                        
+                        </desc>
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">domed-hall church with a later extension to the west, built on the ruins of a 7th-century three-aisled basilica</desc>
