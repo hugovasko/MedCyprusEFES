@@ -71,7 +71,7 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="doc-available($locationsAL) = fn:true() and $idno">
-                <xsl:value-of select="normalize-space(translate(translate(translate($idno//tei:placeName[@xml:lang='en'], '/', '／'), '_', ' '), '(?)', ''))" /> 
+                <xsl:value-of select="normalize-space(translate(translate(translate($idno//tei:placeName[@xml:lang='en'][1], '/', '／'), '_', ' '), '(?)', ''))" /> 
               </xsl:when>
               <xsl:otherwise>
                 <xsl:value-of select="$id" />
@@ -79,7 +79,7 @@
             </xsl:choose>
           </field>
           <field name="index_id">
-            <xsl:value-of select="translate($id, ' ', '_')"/>
+            <xsl:value-of select="translate(string-join($id, ''), ' ', '_')"/>
           </field>
           <field name="index_item_type">
             <xsl:choose>
@@ -146,12 +146,9 @@
             <xsl:for-each select="$idno//tei:idno[@type]">
                 <field name="index_external_resource">
                   <xsl:choose>
-                    <xsl:when test="@type='geonames'">
-                      <xsl:text>GeoNames</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:value-of select="@type"/>
-                    </xsl:otherwise>
+                    <xsl:when test="@type='geonames'"><xsl:text>GeoNames</xsl:text></xsl:when>
+                    <xsl:when test="@type='wikidata'"><xsl:text>WikiData</xsl:text></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="@type"/></xsl:otherwise>
                   </xsl:choose>: <xsl:value-of select="."/>
                 </field>
               </xsl:for-each>

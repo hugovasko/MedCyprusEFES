@@ -112,6 +112,10 @@ body{
     list-style: circle inside;
 }
 
+.monument h3 {
+    font-weight: normal;
+}
+
 #team * {
     text-align: center;
 }
@@ -124,6 +128,17 @@ body{
 
 .map {
     height: 550px;
+}
+
+.mini-map {
+    width: 400px;
+    height: 190px;
+}
+
+@media (max-width: 500px) {
+   .mini-map {
+   width: 100%;
+   }
 }
 
 .legend p {

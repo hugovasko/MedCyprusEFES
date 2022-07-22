@@ -38,7 +38,7 @@
     var markerIcon = new LeafIcon({iconUrl: '../../../assets/images/marker-icon.png'});
     
     for (var [key, value] of Object.entries(points)) {
-    all_places.push(L.marker([value.substring(0, value.lastIndexOf(",")), value.substring(value.lastIndexOf(",") +1)], {icon: markerIcon, id:key.substring(key.lastIndexOf("@") +1)}).bindPopup('&lt;a target="_blank" href="../epidoc/locations.html#0"&gt;'.replace("0", key.substring(key.lastIndexOf("@") +1)) + key.substring(0, key.indexOf("#")) + '&lt;/a&gt; &lt;span class="block"&gt;Inscriptions: ' + key.substring(key.indexOf("#") +1, key.lastIndexOf("@")) + '&lt;/span&gt;'));
+    all_places.push(L.marker([value.substring(0, value.lastIndexOf(",")), value.substring(value.lastIndexOf(",") +1)], {icon: markerIcon, id:key.substring(key.lastIndexOf("@") +1)}).bindPopup('&lt;a target="_blank" href="../epidoc/locations.html#0"&gt;'.replace("0", key.substring(key.lastIndexOf("@") +1)) + key.substring(0, key.indexOf("#")) + '&lt;/a&gt; &lt;span class="block"&gt;Inscriptions: ' + key.substring(key.indexOf("#") +1, key.lastIndexOf("@")) + '&lt;/span&gt; &lt;span class="block"&gt;Coordinates: ' + value + '&lt;/span&gt;'));
     };
      
     var toggle_places = L.layerGroup(all_places);
