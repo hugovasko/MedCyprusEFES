@@ -6,9 +6,9 @@
         <fileDesc>
             <titleStmt>
                 <title>Dedicatory Inscription</title>
-                <author xml:id="tp"></author> 
-                <author xml:id="mx"></author>
-                <editor xml:id="mp"></editor>
+                <author xml:id="tp">Theocharis Petrou</author> 
+                <author xml:id="mx">Maria Xenaki</author>
+                <editor xml:id="mgp">Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
