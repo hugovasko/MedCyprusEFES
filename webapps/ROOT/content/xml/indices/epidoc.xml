@@ -27,7 +27,7 @@
         </div>
       </div>
       
-      <div xml:id="district">
+      <!--<div xml:id="district">
         <head>District</head>
         
         <div type="notes">
@@ -35,7 +35,7 @@
             <item></item>
           </list>
         </div>
-      </div>
+      </div>-->
       
       <div xml:id="abbreviation">
         <head>Abbreviations</head>
@@ -137,7 +137,7 @@
         </div>
       </div>
 
-      <div xml:id="PersonalName">
+      <div xml:id="person_name">
         <head>Personal Names</head>
 
         <div type="headings">
@@ -210,6 +210,7 @@
           <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
         </div>
       </div>
+      
       <div xml:id="Rulers-Officials">
         <head>Rulers and Officials</head>
         <div type="Rulers-Officials">
@@ -217,9 +218,6 @@
             <item>Name</item>
             <item>References</item>
           </list>
-        </div>
-        <div type="notes">
-          <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
         </div> 
         <div type="notes">
           <p>Square brackets [ ] indicate that the name/word is partially or completely restored in this inscription.</p>
