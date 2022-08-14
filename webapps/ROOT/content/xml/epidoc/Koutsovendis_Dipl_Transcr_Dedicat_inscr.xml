@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -22,7 +22,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Painted Inscription<objectType/> Naos, southeast pier, west face, lower register<dimensions unit="cm"><height>67 cm (panel)</height><width>88 cm (panel)</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted Inscription</objectType>
+                                    <rs type="placement">Naos, southeast pier, west face, lower register</rs>
+                                    <dimensions unit="cm"><height>67 cm (panel)</height><width>88 cm (panel)</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>description of text field/campus</layout>
@@ -35,7 +39,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>chapel of the Holy Trinity, monastery of Saint John Chrysostom, Koutsovendis</origPlace>
+                            <origPlace ref="locations.xml#Koutsovendis">chapel of the Holy Trinity, monastery of Saint John Chrysostom, Koutsovendis</origPlace>
                             <origDate precision="medium">ca. 1100</origDate>
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Figs. 83, 84 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
@@ -46,25 +50,31 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
-        <profileDesc><creation>Text Constituted from Mango, Hawkins, Boyd 1990 </creation></profileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>Mango, Hawkins, Boyd 1990 </creation>            
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <lg met="Dodecasyllable">
                     <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπω <hi rend="ligature">τρ</hi>ισί προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύσιν· </l>
 <l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
-<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="ruler" ref="Rulers-Officials.xml#δούξ">δ<hi rend="ligature">οὺ</hi>ξ</rs> <placeName ref="https://pleiades.stoa.org/places/707498">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
-<l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
+<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou"><w lemma="δούξ">δ<hi rend="ligature">οὺ</hi>ξ</w></rs> <placeName ref="mentioned_places.xml#Cyprus">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
 <l><lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ σοι·</l>
 <l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
            <app><note>The Mango, Hawkins’s Report 1964 was written before the completion of the conservation of the murals of the chapel</note></app>              
                     <app loc="1"><rdg resp="MangoHawkins1964">προσώ̣πο[ις]</rdg><rdg resp="MangoHawkinsBoyd1990">προσώπω̣̣ (note 49, προσώποις)</rdg><rdg resp="MangoHawkins1964">προσκυ[νουμέν[η]ν </rdg></app>

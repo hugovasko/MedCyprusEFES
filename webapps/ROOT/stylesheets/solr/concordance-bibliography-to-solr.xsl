@@ -72,6 +72,14 @@
                         <xsl:if test="$bibl//tei:date/text()"><xsl:text> </xsl:text>
                           <xsl:value-of select="$bibl//tei:date"/></xsl:if>
                       </xsl:when>
+                      <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:surname and $bibl//tei:date">
+                        <xsl:for-each select="$bibl//tei:surname[not(parent::*/preceding-sibling::tei:title)]">
+                          <xsl:value-of select="."/>
+                          <xsl:if test="position()!=last()"> – </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="$bibl//tei:date/text()"><xsl:text> </xsl:text>
+                          <xsl:value-of select="$bibl//tei:date"/></xsl:if>
+                      </xsl:when>
                       <xsl:otherwise>
                         <xsl:value-of select="$target"/>
                       </xsl:otherwise>
@@ -134,6 +142,14 @@
                     <xsl:choose>
                       <xsl:when test="ancestor::tei:div[@xml:id='authored_editions']">
                         <xsl:for-each select="descendant::tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                          <xsl:value-of select="."/>
+                          <xsl:if test="position()!=last()"> – </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="descendant::tei:date/text()"><xsl:text> </xsl:text>
+                          <xsl:value-of select="descendant::tei:date"/></xsl:if>
+                      </xsl:when>
+                      <xsl:when test="descendant::tei:surname and descendant::tei:date">
+                        <xsl:for-each select="descendant::tei:surname[not(parent::*/preceding-sibling::tei:title)]">
                           <xsl:value-of select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>

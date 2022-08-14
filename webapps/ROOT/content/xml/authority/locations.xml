@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -23,14 +25,14 @@
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
                     <location><geo>34.734564, 32.484430</geo></location>
-                    <desc type="contruction"><date notBefore="1150" notAfter="1250" precision="low">Late 12th - Early 13th century</date></desc>
+                    <desc type="construction"><date notBefore="1167" notAfter="1233" precision="medium">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Free-cross domed church</desc>
                     <desc type="mural">
-                        1st layer: late 12th century<!-- (WHERE?) -->
-                        2nd layer: 13th century<!-- (WHERE?) -->
-                        3rd layer: second half of the 15th century (western bay, north wall)
+                        <desc type="layer" n="1">1st layer: <date notBefore="1167" notAfter="1200" precision="medium">late 12th century</date> <!-- (WHERE?) --></desc>
+                            <desc type="layer" n="2">2nd layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> <!-- (WHERE?) --></desc>
+                                <desc type="layer" n="3">3rd layer: <date notBefore="1451" notAfter="1500" precision="medium">second half of the 15th century</date> (western bay, north wall)</desc>
                     </desc>
                     <desc type="conservation">Fragmentary</desc>
                     <desc type="donors">Unknown</desc>
@@ -57,17 +59,17 @@
                     <placeName type="district" ref="district.xml#nicosia">Nicosia</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
                     <location><geo>35.067463, 33.436088</geo></location>
-                    <desc type="contruction"><date notBefore="0900" notAfter="1000" precision="low">10th century</date></desc>
+                    <desc type="construction"><date notBefore="0901" notAfter="1000" precision="medium">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Rock-cut, single-nave, <!--roughly orthogonal (CHECK!)--></desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: 10th century (nave, north wall, eastern side).
+                        <desc type="layer" n="1">1st layer: <date notBefore="0901" notAfter="1000" precision="medium">10th century</date> (nave, north wall, eastern side)
                             Some of the paintings are held by the <rs ref="#rep1">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</rs> 
                             <!--CHECK DATES. SOME OF THE PAINTINGS HAVE BEEN REMOVED. WHICH LAYER? CHECK-->
                         </desc>
-                        <desc>2nd layer: ? (naos, north wall, eastern side)</desc>
-                        <desc>3rd layer: 13th-14th c.? First half of the 14th c.? (bema, naos)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1001" notAfter="1200" precision="medium">?</date><!--CHECK DATE OF SECOND LAYER--> (naos, north wall, eastern side)</desc>
+                        <desc type="layer" n="3">3rd layer: <date notBefore="1201" notAfter="1400" precision="medium"> 13th-14th c.? First half of the 14th c.?</date> (bema, naos)</desc>
                     </desc>
                     <desc type="conservation">Fragmentary; condition poor</desc>
                     <desc type="donors">Unknown</desc>
@@ -93,12 +95,12 @@
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
                     <location><geo>34.891937, 33.032961</geo></location>
-                   <!-- <desc type="contruction"><date notBefore="1200" notAfter="1300" precision="low">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
+                   <!-- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisle timber-roofed church</desc>
                     <desc type="mural">
-                        1st layer: 13th century (naos, west wall)
+                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> (naos, west wall)</desc>
                         <!-- IS THERE A LATER LAYER? -->
                     </desc>
                     <desc type="conservation">Fragmentary; badly damaged</desc>
@@ -122,18 +124,18 @@
                 </place>
                 
                 <place xml:id="Agridia">
-                    <placeName xml:lang="en">Agridia (Rizokarpaso), St. Philon</placeName>
-                    <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγ. Φίλων</placeName>
+                    <placeName xml:lang="en">Agridia (Rizokarpaso), Saint Philon</placeName>
+                    <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγιος Φίλων</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.630966, 34.449377</geo></location>
-                    <desc type="contruction"><date notBefore="1100" notAfter="1200" precision="low">12th century</date></desc>
+                    <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">12th century</date></desc>
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisled vaulted church, with a later south chapel and narthex</desc>
                     <desc type="mural">
-                        1st layer: late 12th century (naos, western section of south wall, west wall)
-                        2nd layer: 13th century? (naos, west wall)
+                        <desc type="layer" n="1">1st layer: <date notBefore="1167" notAfter="1200" precision="medium">late 12th century</date> (naos, western section of south wall, west wall)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century?</date> (naos, west wall)</desc>
 <!--Naos, north wall, central recess: four supplicants at the feet of a saintly bishop. Does it belong to the 2nd layer or is it later? Meyer-Fernandez 2019, cat. 26, ascribes it a date ca 1300 -->                 
                     </desc>
                     <desc type="conservation">Fragmentary. Some of the murals were illegally detached from the walls following 1974; current location unknown.</desc>
@@ -161,13 +163,13 @@
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.53513, 34.18944</geo></location>
-                    <desc type="contruction"><date notBefore="1050" notAfter="1150" precision="low">Late 11th - Early 12th century</date></desc>
+                    <desc type="construction"><date notBefore="1067" notAfter="1133" precision="medium">Late 11th - Early 12th century</date></desc>
                     <desc type="function">Unknown</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">single-aisled barrel-vaulted church; narthex with drumless dome subsequently added to the west</desc>
                     <desc type="mural">
-                        1st layer: early 13th century (nave, north and south wall)
-                        2nd layer: late 13th century(?) (nave, south wall)
+                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1233" precision="medium">early 13th century</date> (nave, north and south wall)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1267" notAfter="1300" precision="medium">late 13th century(?)</date> (nave, south wall)</desc>
                     </desc>
                     <desc type="conservation">Fragmentary; badly preserved</desc>
                     <desc type="donors">Unknown</desc>
@@ -199,13 +201,13 @@
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
                     <location><geo>35.404899, 33.782537</geo></location>
-                    <desc type="contruction"><date notBefore="1000" notAfter="1100" precision="low">11th century</date></desc>
+                    <desc type="construction"><date notBefore="1001" notAfter="1100" precision="medium">11th century</date></desc>
                     <desc type="function">Parochial(?)</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">domed pier cross-in-square church</desc>
                     <desc type="mural">
-                        1st layer: 11th century (bema)
-                        2nd layer: early 12th century (bema)
+                        <desc type="layer" n="1">1st layer: <date notBefore="1001" notAfter="1100" precision="medium">11th century</date> (bema)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1101" notAfter="1133" precision="medium">early 12th century</date> (bema)</desc>
                     </desc>
                     <desc type="conservation">Partially preserved; after 1974, mutilated, some detached</desc>
                     <desc type="donors">Unknown</desc>
@@ -227,32 +229,108 @@
                     </listBibl>
                 </place>
                 
+                <place xml:id="Chlorakas">
+                    <placeName xml:lang="en">Chlorakas, Saint Nicholas</placeName>
+                    <placeName xml:lang="el">Χλώρακας, Άγιος Νικόλαος</placeName>
+                    <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
+                    <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
+                    <location><geo>34.793439, 32.412865</geo></location>
+                    <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">12th century</date></desc>
+                    <desc type="function">Parochial(?), pilgrimage(?)</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">cross-in-square church; narthex added later</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1"><date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, naos)</desc><!--IS THERE ANOTHER LAYER?-->
+                   </desc>
+                    <desc type="conservation">Partially preserved</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/146490/154/</idno>
+                    <idno type="geonames">https://www.geonames.org/146490/chlorakas.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ2 2011<citedRange>14: 24</citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 622</citedRange></bibl>                        
+                        <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 114</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 389-99</citedRange></bibl>                        
+                    </listBibl>
+                </place>                
+                
+                <place xml:id="Choirokoitia">
+                    <placeName xml:lang="en">Choirokoitia, Panagia tou Kampou</placeName>
+                    <placeName xml:lang="el">Χοιροκοιτία, Παναγία του Κάμπου</placeName>
+                    <placeName type="district" ref="district.xml#larnaca">Larnaca</placeName>
+                    <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
+                    <location><geo>34.797600, 33.329086</geo></location>
+                    <desc type="construction">
+                        <date notBefore="0967" notAfter="1033" precision="medium" source="bibliography.xml#Procopiou2018">Procopiou: late 10th century - early 11th century</date>
+                        <date notBefore="1101" notAfter="1200" precision="medium" source="bibliography.xml#Papacostas1999">Papacostas: 12th century</date>                        
+                        </desc>
+                    <desc type="function">Parochial</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">domed-hall church with a later extension to the west, built on the ruins of a 7th-century three-aisled basilica</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date notBefore="1101" notAfter="1200" precision="medium">12th century</date> (bema, naos)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1501" notAfter="1600" precision="medium">first half of the 16th century</date> (bema, dome, naos)</desc>
+                    </desc>
+                    <desc type="conservation">Badly damaged; very fragmentary</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0069.html</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/4867/155/</idno>
+                    <idno type="geonames">https://www.geonames.org/4821/panagia-tou-kampou.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ2 2011<citedRange>8: 141-42</citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Enlart1987"/>Enlart 1987, <citedRange> 336-37</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 526</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999, <citedRange> 2: 50</citedRange></bibl> 
+                        <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 178-90</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Procopiou2018"/>Procopiou 2018, <citedRange> 80-81</citedRange></bibl>                        
+                    <bibl><ptr target="bibliography.xml#Soteriou1937"/>Soteriou 1937, <citedRange> 42-43</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Spanou2002"/>Spanou 2002, <citedRange> 31</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stewart2020"/>Stewart 2020, <citedRange> 173</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
                 <place xml:id="Pelendri">
                     <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
                     <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
-                    <location><geo>34.8931046,  32.9662704</geo></location>
-                    <desc type="contruction"><date notBefore="1178" notAfter="1178" precision="high">Late 12th - Early 13th century</date></desc>
+                    <location><geo>34.8931046, 32.9662704</geo></location>
+                    <desc type="construction"><date notBefore="1167" notAfter="1178" precision="high" evidence="inscription">late 12th century</date></desc>
                     <desc type="function">Funerary</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">three-aisled domed church
                     </desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: 1178 (bema apse). </desc>
-                        <desc type="layer" n="2">2nd layer: 13th century (bema: east wall)</desc>
-                        <desc type="layer" n="3">3rd layer: first half of the 14th century [bema (now in south apse), nave]</desc>
-                        <desc type="layer" n="4">4th layer: 3rd quarter of the 14th century (north aisle)</desc>
-                        <desc type="layer" n="5">5th layer: 15th century (west wall of the south aisle)</desc>
+                        <desc type="layer" n="1">1st layer: <date precision="high" evidence="inscription">1178</date> (bema apse)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> (bema: east wall)</desc>
+                        <desc type="layer" n="3">3rd layer: <date notBefore="1301" notAfter="1350" precision="medium">first half of 14th century</date> (bema [now in south apse], nave)</desc>
+                        <desc type="layer" n="4">4th layer: <date notBefore="1351" notAfter="1375" precision="medium">3rd quarter of the 14th century</date> (north aisle)</desc>
+                        <desc type="layer" n="5">5th layer: <date notBefore="1401" notAfter="1500" precision="medium">15th century</date> (west wall of the south aisle)</desc>
                     </desc>
-                    <desc type="conservation">Good but with multiple hitmarks</desc>
-                    <desc type="donors">
-                        Priest Georgios </desc>
-                    <desc type="painter">Mon[o]machos (?)</desc>
-                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                    <desc type="conservation">Good but with multiple hitmarks</desc> <!--TO WHICH LAYER ARE YOU REFERRING TO HERE?-->
+                    <desc type="donors">Priest Georgios </desc><!--SPECIFY LAYER-->
+                    <desc type="painter">Mon[o]machos (?)</desc><!--DITTO-->
+                    <desc type="graffiti">See Grafmedia: http://grafmedia.cy.example.com/id/01010101
                         <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
                     </desc>
-                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0061.html"</idno>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0061.html</idno>
                     <idno type="HGC">http://www.cyprusgazetteer.org/146198/217/</idno>
                     <idno type="geonames">https://www.geonames.org/12522/timios-stavros.html</idno>
                     <listBibl type="inscriptions">
@@ -264,8 +342,8 @@
                     </listBibl>
                     <listBibl type="monument">
                         <bibl><ptr target="bibliography.xml#Stylianou1960"/>Stylianou 1960, <citedRange>107-109</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32 </citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4 </citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997, <citedRange>223-32</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999<biblScope unit="2"></biblScope><citedRange>43-4</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papageorgiou2003"/>Papageorgiou 2003, <citedRange>111</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Gerasimou2005"/>Gerasimou et. al. 2005</bibl>
                         <bibl><ptr target="bibliography.xmll#Rhoby2009"/>Rhoby 2009, <citedRange>367-369</citedRange></bibl>

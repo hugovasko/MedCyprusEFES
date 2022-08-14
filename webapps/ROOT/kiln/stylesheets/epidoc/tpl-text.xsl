@@ -6,7 +6,8 @@
 
   <xsl:template match="text()[not(ancestor::t:note)]">
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
-      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+     <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+     <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
       <xsl:choose>
          <!-- strip all spaces and punctuation in diplomatic edition -->
          
@@ -28,7 +29,15 @@
             <xsl:variable name="apos">
                <xsl:text><![CDATA[']]></xsl:text>
             </xsl:variable>
-             <xsl:value-of select="upper-case(translate(normalize-unicode(translate(translate(translate(.,'&#x03f2;','&#x03f9;'),$apos,''), '··&#xA; ,.;‘’', ''),'NFD'),'&#x0300;&#x0301;&#x0308;&#x0313;&#x0314;&#x0342;&#x0345;',''))"/>
+             <xsl:choose>
+                <!-- in MedCyprus diplomatic edition keep diacritics and transform sigma in lunate sigma -->
+                <xsl:when test="$parm-edn-structure='medcyprus'">
+                   <xsl:value-of select="upper-case(normalize-unicode(translate(translate(translate(.,'&#x03f2;σςΣ','&#x03f9;&#x03f9;&#x03f9;&#x03f9;'),$apos,''), '··&#xA; ,.;‘’', ''),'NFD'))"/>
+                </xsl:when>
+                <xsl:otherwise>
+                   <xsl:value-of select="upper-case(translate(normalize-unicode(translate(translate(translate(.,'&#x03f2;','&#x03f9;'),$apos,''), '··&#xA; ,.;‘’', ''),'NFD'),'&#x0300;&#x0301;&#x0308;&#x0313;&#x0314;&#x0342;&#x0345;',''))"/>
+                </xsl:otherwise>
+             </xsl:choose>
             <!--<xsl:value-of select="translate(translate(translate(.,$apos,''), '··&#xA; ,.;‘’', ''), $all-grc, $grc-upper-strip)"/>-->
              <!-- &#x02bc;&#x02bd;&#x0301;&#x0302;&#x0303;&#x0308;&#x0340;&#x0341;&#x0342;&#x0343;&#x0344;&#x0345; -->
          </xsl:when>

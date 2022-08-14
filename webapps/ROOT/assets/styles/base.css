@@ -8,12 +8,172 @@ ul.index-instances { }
 
 .index-instance-line { }
 
+#site-heading {
+  background: black;
+  height: 5.5em;
+  padding-top: 1em;
+}
+
+#site-title {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 0.5em;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+#site-name {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      color: black;
+      font-size: 30px;
+      font-variant: small-caps;
+      font-weight: 300;
+}
+
+#site-name a {
+      color: black;
+}
+
+#home {
+    font-size: 13px;
+}
+
 footer {
     background: none repeat scroll 0 0 #fafafa;
     border-top: 1px solid #eeeeee;
     color: #777777;
     font-size: 80%;
     padding: 1em;
+}
+
+footer p { 
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p, li {
+    text-align: justify;
+}
+
+td * {
+    line-height: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+nav.top-bar, nav.top-bar ul.right li, nav.top-bar ul.left * {
+    background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, li, ul, tr, td {
+    font-family: "Open Sans", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active { color: #637893; }
+a:hover { color: #45658B; }
+
+body{
+    background-color: #fbfbfa;
+}
+
+.monument {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
+.monument p, .monument ul {
+    margin: 0;
+}
+
+.monument ul li {
+    list-style: circle inside;
+}
+
+.monument h3 {
+    font-weight: normal;
+}
+
+#team * {
+    text-align: center;
+}
+
+/* Maps */
+.map_box {
+    padding: 0 1em 1em 1em;
+    width: 100%;
+}
+
+.map {
+    height: 550px;
+}
+
+.mini-map {
+    width: 400px;
+    height: 190px;
+}
+
+@media (max-width: 500px) {
+   .mini-map {
+   width: 100%;
+   }
+}
+
+.legend p {
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.mapicon {
+    height: 17px;
+    margin: 5px;
+    padding-bottom:3px;
+}
+
+#inputSearch {
+    width: 300px;
+    display: inline;
+}
+
+.block {
+    display:block;
+}
+
+.button, .button:hover, .button:enabled {
+    background-color: #f6f6f6;
+    border-style: none;
+    padding: 7px;
+    color: black;
+    margin: 4px;
+}
+
+div#full_map {
+    width: 100%;
 }
 
 /*Keyboard*/
@@ -45,6 +205,48 @@ footer {
 }
 
 /*Fonts*/
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans700.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensansItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans700Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/opensans300Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
 @font-face {
     font-family: "New Athena Unicode";
     src: url('fonts/nau.woff') format('woff');

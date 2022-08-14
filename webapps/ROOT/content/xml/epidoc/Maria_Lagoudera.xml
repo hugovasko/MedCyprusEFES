@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -24,7 +24,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support><objectType/> Painted inscription. Nave, north wall, above the lintel of the north door<dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted inscription</objectType>.
+                                    <rs type="placement">Nave, north wall, above the lintel of the north door</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>Below the image of the Holy Tile, within the same frame</layout>
@@ -37,7 +41,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Lagoudera, Panagia Arakiotissa Church</origPlace>
+                            <origPlace ref="locations.xml#Lagoudera">Lagoudera, Panagia Arakiotissa Church</origPlace>
                             <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192 (though the indiction year actually corresponds to 1193)</origDate>
                         </origin>                        
                         <provenance type="observed">Modern location(s) (if different from repository, above)
@@ -46,6 +50,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
@@ -54,8 +66,8 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><g ref="#cross">+</g> Ἀνιστορή<surplus>σ</surplus>θ<supplied reason="omitted">η</supplied> ὁ πανσεπτος ναὸς <hi rend="ligature">της</hi> <expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan> <persName type="sacred" key="Mother of God"><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κ<hi rend="ligature">ου</hi></abbr></expan></persName> <rs type="epithet" subtype="Virgin">τ<hi rend="ligature">οῦ</hi> <hi rend="ligature">Ἄρ</hi>α<hi rend="ligature">κος</hi></rs> 
-                        <lb n="2"/>διὰ <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan> κα<supplied reason="lost">ι</supplied> <expan><abbr>πολλ</abbr><ex>οῦ</ex></expan> <expan><abbr>πόθ</abbr><ex>ου</ex></expan> <rs type="honorific">κυρ<hi rend="ligature">οῦ</hi></rs> <persName type="attested"><name nymRef="#Λέων"><expan><abbr>Λέ<choice><corr>o</corr><sic>ω</sic></choice>ντ</abbr><ex>ος</ex></expan></name> τ<hi rend="ligature">οῦ</hi> <name nymRef="#Αὐθέντης" ><expan><abbr>Αὐθέ</abbr><ex>ν</ex><abbr>τ</abbr><ex>ου</ex></expan></name></persName>·μηνι Δεκ<choice><corr>ε</corr><sic>αι</sic></choice><supplied reason="omitted">μ</supplied>βρί<choice><corr>ῳ</corr><sic>ο</sic></choice> 
+                    <lb n="1"/><g ref="#cross">+</g> Ἀνιστορή<surplus>σ</surplus>θ<supplied reason="omitted">η</supplied> ὁ πανσεπτος ναὸς <hi rend="ligature">της</hi> <expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan> <persName type="sacred" key="Mother of God"><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κ<hi rend="ligature">ου</hi></abbr></expan> <addName type="epithet" subtype="Virgin" key="Arakiotissa">τ<hi rend="ligature">οῦ</hi> <hi rend="ligature">Ἄρ</hi>α<hi rend="ligature">κος</hi></addName></persName>
+                        <lb n="2"/>διὰ <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan> κα<supplied reason="lost">ι</supplied> <expan><abbr>πολλ</abbr><ex>οῦ</ex></expan> <expan><abbr>πόθ</abbr><ex>ου</ex></expan> <rs type="honorific">κυρ<hi rend="ligature">οῦ</hi></rs> <persName type="attested"><name nymRef="#Λέων" type="forename"><expan><abbr>Λέ<choice><corr>o</corr><sic>ω</sic></choice>ντ</abbr><ex>ος</ex></expan></name> τ<hi rend="ligature">οῦ</hi> <name type="surname" nymRef="#Αὐθέντης" ><expan><abbr>Αὐθέ</abbr><ex>ν</ex><abbr>τ</abbr><ex>ου</ex></expan></name></persName>·μηνι Δεκ<choice><corr>ε</corr><sic>αι</sic></choice><supplied reason="omitted">μ</supplied>βρί<choice><corr>ῳ</corr><sic>ο</sic></choice> 
 <lb n="3"/><expan><abbr>ινδ</abbr><ex>ικτιῶνος</ex></expan> <num value="11">ια</num> τω <num value="6701"></num><hi rend="ligature">&#x03DB;</hi>ψα’ἔτους
                 </ab>
             </div>

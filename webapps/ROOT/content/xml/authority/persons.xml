@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Authority list of Personal Names in MedCyprus project</title>
+                <title>Authority list of persons in MedCyprus</title>
             </titleStmt>
             <publicationStmt><ab/></publicationStmt>
             <sourceDesc><ab/></sourceDesc>
@@ -12,17 +12,15 @@
     </teiHeader>
     <text>
         <body>
+            <div type="commentary">
                 <listPerson type="PersonalName">
-                <person xml:id="Ιωάννηςκτήτωρ">
-                    <persName xml:lang="en">Ioannis, founder of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
-                    <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
-                </person>
+                    <person xml:id="Ιωάννηςκτήτωρ">
+                        <persName xml:lang="en">Ioannis, founder of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
+                        <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
+                    </person>
                     
                     
-                <!--<listPerson type="Names">
-                    <head xml:lang="en">Emperors of Rome/Byzantium</head>
-                    <head xml:lang="grc">Императоры Рима и Византии</head>
-                    <person xml:id="hadrian">
+                    <!-- <person xml:id="hadrian">
                         <persName xml:lang="en">Hadrian</persName>
                         <persName xml:lang="la">Caesar Publius Aelius Traianus Hadrianus Augustus</persName>
                         <persName xml:lang="grc">Αὐτοκράτωρ Τραιανός Ἁδριανός Καῖσαρ Σεβαστός</persName>
@@ -75,9 +73,9 @@
                         <persName xml:lang="ru">Феодосий I</persName>
                         <persName xml:lang="la">Flavius Theodosius Augustus</persName>
                         <floruit>347-395</floruit>
-                    </person>
                     </person>-->
                 </listPerson>
+            </div>
         </body>
     </text>
 </TEI>

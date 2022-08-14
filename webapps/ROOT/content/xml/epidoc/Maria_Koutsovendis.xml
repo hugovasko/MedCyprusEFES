@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -24,7 +24,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                               <support> <objectType>Painted inscription </objectType> Naos, southeast pier, west face, lower register  <dimensions unit="cm"><height>37</height><width>88</width></dimensions></support>
+                               <support>
+                                   <objectType>Painted inscription</objectType>
+                                   <rs type="placement">Naos, southeast pier, west face, lower register</rs>
+                                   <dimensions unit="cm"><height>37</height><width>88</width></dimensions>
+                               </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>description of text field/campus</layout>
@@ -37,7 +41,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel</origPlace>
+                            <origPlace ref="locations.xml#Koutsovendis">Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel</origPlace>
                             <origDate notBefore="1095" notAfter="1103-08-31" precision="medium" evidence="prosopography titulature">ca 1100</origDate>
                         </origin>
                          <provenance>
@@ -46,6 +50,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
@@ -57,8 +69,8 @@
                 <l n="1"><lb n="1"/> <g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπ<choice><corr>οις</corr><sic>ω</sic></choice> <hi rend="ligature">τρ</hi>ισὶ προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l n="2"><lb n="2"/>αναρχον ἀρχ<hi rend="ligature">ην</hi> υπεράρχιον φυσιν·</l>
 <l n="3"><lb n="3"/>αμαχον ἀλκὴν ὑπερούσιον μόνην·</l>
-<l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="title" subtype="office">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="https://pleiades.stoa.org/places/707498">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
-<l n="5"><lb n="5"/><persName><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="title" subtype="dignity"><hi rend="ligature">πρ</hi>ωτιστος νω<supplied reason="lost">βε</supplied>λισίμων</rs>·</l>
+<l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou" sameAs="#Philokales">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="mentioned_places.xml#Cyprus">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" xml:id="Philokales" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ωτιστος νω<supplied reason="lost">βε</supplied>λισίμων</rs>·</l>
 <l n="6"><lb n="6"/>βάθρων απ’αὐτῶν τὸν νεων ἤγειρε σοι·</l>
 <l n="7"><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη·</l>
                </lg>

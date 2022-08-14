@@ -9,7 +9,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority></authority>
-                <idno type="filename"></idno>
+                <idno type="filename">MedCY.028.003</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -34,7 +34,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Place of origin</origPlace>
+                            <origPlace ref="locations.xml#place_here">Place of origin</origPlace>
                             <origDate>Date of origin</origDate>
                         </origin>
                         <provenance type="found"> Findspot and circumstances/context
@@ -45,6 +45,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
@@ -62,7 +70,6 @@
                     <lb n="7" break="no"/>πτος·οὗ τὸ
                     <lb n="8"/>ἔλεος ἀμέ-
                     <lb n="9" break="no"/>τρητον·
-
                 </ab>
             </div>
             <div type="apparatus">

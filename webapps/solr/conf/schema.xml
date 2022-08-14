@@ -123,6 +123,8 @@
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="true" name="origin_date"
           required="false" stored="false" type="int" />
+   <field name="textual_origin_date" type="string" indexed="true"
+     multiValued="true" stored="true" required="false" />
    <field indexed="true" multiValued="false" name="file_path"
           required="false" stored="true" type="string" />
    <field indexed="false" multiValued="false" name="document_id"
@@ -153,7 +155,15 @@
           multiValued="true" stored="true" indexed="true" />
    <!--<field name="mentioned_divinities" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />-->
-   <field name="Ecclesiastical_diocese" stored="true" indexed="true"
+   <field name="ecclesiastical_diocese" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="administrative_district" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="monument_context" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="monument_function" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="placement" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="person_name" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />   
@@ -179,6 +189,62 @@
      multiValued="false" required="false" type="string" />
    <field name="origin_date_evidence" required="false" indexed="true"
           multiValued="true" stored="true" type="string" />
+   <field name="index_epithet" type="string" required="false"
+     multiValued="true" stored="true" indexed="true" />
+   <field name="index_surname" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_honorific" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_secular_office" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_dignity" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_ecclesiastical_office" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_occupation" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_relation" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_inscription_date" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_id" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_item_alt_name" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_district" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_diocese" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_coordinates" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_construction" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_function" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_context" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_architectural_type" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_mural" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_conservation" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_donors" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_painter" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_graffiti" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_external_resource" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_inscriptions_bibl" stored="true" indexed="true"
+   multiValued="true" required="false" type="string" />
+   <field name="index_monument_bibl" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
+   <field name="index_map_points" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_map_labels" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />

@@ -22,13 +22,13 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance: </xsl:text>
+      <!--<xsl:text>Bibliographic Concordance: </xsl:text>-->
       <xsl:value-of select="$title" />
     </kiln:block>
 
     <kiln:block name="page-heading">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance: </xsl:text>
+      <!--<xsl:text>Bibliographic Concordance: </xsl:text>-->
       <xsl:value-of select="$title" />
     </kiln:block>
 

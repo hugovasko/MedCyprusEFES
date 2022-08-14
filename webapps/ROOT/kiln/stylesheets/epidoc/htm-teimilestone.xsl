@@ -56,6 +56,9 @@
                </xsl:when>
             </xsl:choose>
          </xsl:when>
+          <xsl:when test="$parm-edn-structure='medcyprus' and @unit=('column', 'surface')">
+             <xsl:text>/</xsl:text>
+          </xsl:when>
          <xsl:otherwise>
             <br/>
             <xsl:value-of select="@rend"/>
@@ -65,6 +68,7 @@
    
    <xsl:template match="t:cb">
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:if test="$parm-leiden-style='iospe'">
          <xsl:element name="span">
             <xsl:attribute name="class" select="'textpartnumber'"/>
@@ -73,6 +77,12 @@
             <xsl:value-of select="@n"/>
             <xsl:element name="br"/>
          </xsl:element>
+      </xsl:if>
+      <xsl:if test="$parm-edn-structure='medcyprus'">
+         <xsl:if test="preceding-sibling::t:*"><br/><br/></xsl:if>
+         <xsl:text>Column </xsl:text>
+         <xsl:value-of select="@n"/>
+         <xsl:if test="not(preceding-sibling::t:*) or following-sibling::node()[1]!=t:lb"><br/></xsl:if>
       </xsl:if>
    </xsl:template>
 

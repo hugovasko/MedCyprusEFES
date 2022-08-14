@@ -21,7 +21,7 @@
         <!-- Found in teig.xsl -->
         <xsl:call-template name="g-ddbdp"/>
          </xsl:when>
-         <xsl:when test="$parm-leiden-style = 'london'">
+         <xsl:when test="$parm-leiden-style = 'london' and $parm-edn-structure!='medcyprus'">
            <xsl:call-template name="g-london"/>
          </xsl:when>
          <xsl:when test="$parm-leiden-style = 'iospe'">

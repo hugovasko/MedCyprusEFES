@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -25,8 +25,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Nave, north wall, above the lintel of the north door
-                                    <objectType/> Painted Inscription <dimensions unit="cm"><height>?</height><width>?</width></dimensions></support>
+                                <support>
+                                    <objectType>Painted Inscription</objectType>
+                                    <rs type="placement">Nave, north wall, above the lintel of the north door</rs>
+                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>Below the image of the Holy Tile, within the same panel</layout>
@@ -39,7 +42,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Lagoudera, church of Panagia (Our Lady) Arakiotissa</origPlace>
+                            <origPlace ref="locations.xml#Lagoudera">Lagoudera, church of Panagia (Our Lady) Arakiotissa</origPlace>
                             <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192</origDate>
                         </origin>
                         <provenance when="2021"> Findspot and circumstances/context
@@ -50,6 +53,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="Lagoudera Inscription.jpg">
@@ -60,29 +71,28 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><g ref="#cross">+</g> <w lemma="ἀνιστοροῦμαι">Ἀνιστορήσθ<supplied reason="omitted">η</supplied></w> ὁ <w lemma="πάνσεπτος">πάνσεπτος</w> <w lemma="ναός">ναός</w> της <w lemma="ὑπεραγία"><expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan></w>  <rs type="divinities" ref="divinities.xml#Θεοτόκος"><persName type="divine" key="Theotokos"><name nymRef="#Θεοτόκος"></name></persName><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κου</abbr></expan> τοῦ </rs><w lemma="Ἄρακας">Ἄρακος</w> 
-                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυροῦ <persName type="attested"> <name nymRef="#Λέων Αυθέντης"></name> </persName> <expan><abbr>Λέωντ</abbr><ex>ος</ex></expan> τοῦ <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
+                    <lb n="1"/><g ref="#cross">+</g> <w lemma="ἀνιστοροῦμαι">Ἀνιστορήσθ<supplied reason="omitted">η</supplied></w> ὁ <w lemma="πάνσεπτος">πάνσεπτος</w> <w lemma="ναός">ναός</w> της <w lemma="ὑπεραγία"><expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan></w> <persName type="divine" key="Theotokos" ref="divinities.xml#Θεοτόκος"><name nymRef="#Θεοτόκος"></name></persName><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κου</abbr></expan> τοῦ <w lemma="Ἄρακας">Ἄρακος</w> 
+                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυροῦ <persName type="attested"><name nymRef="#Λέων" type="forename"><expan><abbr>Λέωντ</abbr><ex>ος</ex></expan></name> <name nymRef="#Αυθέντης" type="surname">τοῦ <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan></name></persName>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
                     <lb n="3"/><expan><abbr>ινδ</abbr><ex>ικτιῶνος</ex></expan> <num value="11">ια</num> τω <num value="6701"></num><hi rend="ligature">&#x03DB;</hi>ψα’ ἔτους.
                 </ab>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
                     <app loc="1">
-                        <rdg resp="#Nicolaides1996, 4">Ἀνιστορήσθ(η)</rdg></app>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->Ἀνιστορήσθ(η)</rdg></app>
                     <app loc="2">
-                        <rdg resp="#Nicolaides 1996, 4">Λέοντ(ος) τοῦ Αὐθέ(ν)τ(ου) ou (ος)· μηνι Δεκεμβρίω </rdg></app>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->Λέοντ(ος) τοῦ Αὐθέ(ν)τ(ου) ou (ος)· μηνι Δεκεμβρίω </rdg></app>
                     <app loc="3">
-                        <rdg resp="#Nicolaides 1996, 4">τοῦ</rdg>
+                        <rdg resp="#Nicolaïdès1996"><!-- Nicolaïdès1996, 4 -->τοῦ</rdg>
                     </app>
                     </listApp>
                 <p></p>
             </div>
             <div type="bibliography">
                 <listBibl>
-                    <bibl><ptr target="#Nicolaides1996"/><citedRange>1-137</citedRange></bibl>
-                    <bibl><ptr target="#Winfield2003"/></bibl>
-                    <bibl><ptr target="#Konstantinidi2018"/><citedRange>49-88</citedRange></bibl></listBibl>
+                    <bibl><ptr target="#Nicolaïdès1996"/>, <citedRange>1-137</citedRange></bibl>
+                    <bibl><ptr target="#WinfieldWinfield2003"/></bibl>
+                    <bibl><ptr target="#Konstantinidi2018"/>, <citedRange>49-88</citedRange></bibl></listBibl>
             </div>
         </body>
     </text>

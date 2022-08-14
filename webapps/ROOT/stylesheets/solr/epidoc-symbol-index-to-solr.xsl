@@ -25,7 +25,14 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="concat($base-uri, @ref)" />
+            <xsl:choose>
+              <xsl:when test="contains(@ref, '#')">
+                <xsl:value-of select="substring-after(@ref, '#')"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="@ref"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href=tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -22,7 +22,10 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Painted Inscription<objectType/> Naos, central bay, south wall, <dimensions unit="cm"><height>? cm </height> <width>? cm</width></dimensions></support>
+                                <support><objectType>Painted Inscription</objectType>
+                                    <rs type="placement">Naos, central bay, south wall</rs>,
+                                    <dimensions unit="cm"><height>? cm </height> <width>? cm</width></dimensions>
+                                </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>between Christ and Virgin Mary</layout>
@@ -35,7 +38,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>church of Panagia (Our Lady) of Asinou, Niketari</origPlace>
+                            <origPlace ref="locations.xml#Niketari">church of Panagia (Our Lady) of Asinou, Niketari</origPlace>
                             <origDate precision="medium">14th c.</origDate>
                         </origin>
                         <provenance when="2012"> Fig. 3.8 by Ševčenko 2012, 79 (photo courtesy of Dumbarton Oaks, As.L.67.203
@@ -46,14 +49,21 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
-        <profileDesc><creation>Text Constituted from Ševčenko 2012</creation></profileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#...">...</term>
+                </keywords>
+            </textClass>
+            <creation>Ševčenko 2012</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="photograph of text or monument"/>
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
               <ab>
                   <lg met="Verse">
                     <l><lb n="1"/>Πολλοῖς τεθηλ<choice><orig>ῶ</orig><reg>ὼ</reg></choice>ς</l>
@@ -67,7 +77,6 @@
               </ab>
             </div>
             <div type="apparatus">
-                <head>Apparatus</head>
                 <listApp>
                     <app>
                         
