@@ -14,7 +14,7 @@
         <body>
             <div type="commentary">
                 <listPerson type="PersonalName">
-                    <person xml:id="Ιωάννηςκτήτωρ">
+                    <person xml:id="Ιωάννης">
                         <persName xml:lang="en">Ioannis, founder of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
                         <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
                     </person>
