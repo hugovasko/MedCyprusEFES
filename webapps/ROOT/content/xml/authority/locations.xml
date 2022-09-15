@@ -306,18 +306,18 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="KatoPafos">
+                <place xml:id="Solomoni">
                     <placeName xml:lang="en">Kato Pafos, Saint Solomoni</placeName>
                     <placeName xml:lang="el">Κάτω Πάφος, Αγία Σολομονή</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
-                    <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Pafos</placeName>
-                    <location><geo>34.76138313281389, 32.4123872854924</geo></location>
-                    <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">late 12th century</date></desc>
-                    <desc type="function">monastic; funerary</desc>
+                    <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
+                    <location><geo>34.761383, 32.412387</geo></location>
+                  <!-- <desc type="construction"><date notAfter="1167"precision="medium">late 12th century</date></desc>-->
+                    <desc type="function">Monastic; funerary</desc>
                     <desc type="context">Urban</desc>
-                    <desc type="architectural">Rock-cut chapel </desc>
+                    <desc type="architectural">Chamber of a Hellenestic(?) rock-cut tomb, converted into a chapel</desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: <date notBefore="1197" notAfter="1200" precision="medium">late 12th century</date> (bema)</desc>
+                        <desc type="layer" n="1">1st layer: <date notBefore="1167" notAfter="1200" precision="medium">late 12th century</date> (bema)</desc>
                         <desc type="layer" n="2">2nd layer: <date notBefore="1301" notAfter="1400" precision="medium">14th century</date> (nave)</desc>
                     </desc>
                     <desc type="conservation">Poor condition; badly damaged</desc>
