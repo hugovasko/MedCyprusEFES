@@ -306,13 +306,14 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Solomoni">
+                <place xml:id="Solomone">
                     <placeName xml:lang="en">Kato Pafos, Saint Solomoni</placeName>
+                    <placeName xml:lang="en">Kato Paphos, Saint Solomone</placeName>
                     <placeName xml:lang="el">Κάτω Πάφος, Αγία Σολομονή</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
                     <location><geo>34.761383, 32.412387</geo></location>
-                  <desc type="construction"><date notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
+                  <desc type="construction"><date notBefore="0201" notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
                     <desc type="function">Monastic; funerary</desc>
                     <desc type="context">Urban</desc>
                     <desc type="architectural">Chamber of a Hellenestic(?) rock-cut tomb, converted into a chapel</desc>
