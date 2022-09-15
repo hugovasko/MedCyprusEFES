@@ -39,8 +39,8 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace ref="locations.xml#KatoPafos"></origPlace>
-                            <origDate notBefore="1101" notAfter="1200" precision="medium"></origDate>
+                            <origPlace ref="locations.xml#KatoPafos">Kato Pafos, Saint Solomoni catacomb</origPlace>
+                            <origDate notBefore="1101" notAfter="1200" precision="medium">12th century</origDate>
                         </origin>
                         <provenance when="2022">
                         </provenance>
@@ -58,7 +58,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:id="grc">
                 <ab>
-                    <lb n="1"/><milestone unit="column" n="left"/><expan><abbr>Φ</abbr><ex>ως</ex></expan> <persName type="divine" key="Christ"><expan><abbr>Χ</abbr><ex>ριστού</ex></expan></persName> <expan><abbr>Ι</abbr><ex>ησοῦ</ex>ς </expan> 
+                    <lb n="1"/><milestone unit="column" n="left"/><expan><abbr>Φ</abbr><ex>ῶς</ex></expan> <persName type="divine" key="Christ"><expan><abbr>Χ</abbr><ex>ριστού</ex></expan></persName> <expan><abbr>Ι</abbr><ex>ησοῦ</ex>ς </expan> 
                     <lb n="2"/><milestone unit="column" n="right"/><expan><abbr>Χ</abbr><ex>ριστὸ</ex>ς </expan><expan><abbr>Φ</abbr><ex>αίνει</ex> </expan><expan><abbr>Π</abbr><ex>άσι</ex></expan>
                     <lb n="3"/><milestone unit="column" n="left"/><supplied reason="lost"><expan><abbr>Ē</abbr><ex>λένη</ex></expan></supplied> <expan><abbr>Ē</abbr><ex>ὕρεν</ex> </expan>
                     <lb n="4"/><milestone unit="column" n="right"/><expan><abbr>Ē</abbr><ex>λέους</ex></expan><expan> <abbr>Ē</abbr><ex>ρεισμα</ex></expan>
