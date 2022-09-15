@@ -312,7 +312,7 @@
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
                     <location><geo>34.761383, 32.412387</geo></location>
-                  <!-- <desc type="construction"><date notAfter="1167"precision="medium">late 12th century</date></desc>-->
+                  <desc type="construction"><date notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
                     <desc type="function">Monastic; funerary</desc>
                     <desc type="context">Urban</desc>
                     <desc type="architectural">Chamber of a Hellenestic(?) rock-cut tomb, converted into a chapel</desc>
