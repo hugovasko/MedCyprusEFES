@@ -306,6 +306,40 @@
                     </listBibl>
                 </place>
                 
+                <place xml:id="KatoPafos">
+                    <placeName xml:lang="en">Kato Pafos, Saint Solomoni</placeName>
+                    <placeName xml:lang="el">Κάτω Πάφος, Αγία Σολομονή</placeName>
+                    <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
+                    <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Pafos</placeName>
+                    <location><geo>34.76138313281389, 32.4123872854924</geo></location>
+                    <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">late 12th century</date></desc>
+                    <desc type="function">monastic; funerary</desc>
+                    <desc type="context">Urban</desc>
+                    <desc type="architectural">Rock-cut chapel </desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date notBefore="1197" notAfter="1200" precision="medium">late 12th century</date> (bema)</desc>
+                        <desc type="layer" n="2">2nd layer: <date notBefore="1301" notAfter="1400" precision="medium">14th century</date> (nave)</desc>
+                    </desc>
+                    <desc type="conservation">Poor condition; badly damaged</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">Not included</idno>
+                    <idno type="geonames">https://www.geonames.org/146272/kato-pafos.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="published"/>
+                    </listBibl>
+                    <!--<listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 591-94</citedRange></bibl>                        
+                        <bibl><ptr target="bibliography.xml#Papageorghiou2010"/>Papageorghiou 2010, <citedRange> 34-42</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#WeylCarr2014"/>Weyl Carr 2014, <citedRange> 167-85</citedRange></bibl>
+                    </listBibl>-->
+                </place>
+                
                 <place xml:id="Pelendri">
                     <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
                     <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
