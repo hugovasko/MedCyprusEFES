@@ -19,6 +19,11 @@
                         <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
                     </person>
                     
+                    <person xml:id="Γερμανός">
+                        <persName xml:lang="en">Germanos, monk of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
+                        <persName xml:lang="grc">Γερμανός, ιερομόναχος μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
+                    </person>
+                    
                     
                     <!-- <person xml:id="hadrian">
                         <persName xml:lang="en">Hadrian</persName>
