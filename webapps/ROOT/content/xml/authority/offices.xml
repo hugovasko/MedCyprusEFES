@@ -34,7 +34,23 @@
             
             <list type="ecclesiastical_offices">
                 <head>Ecclesiastical Offices</head>
-                <item xml:id="something_else..."> 
+                <item xml:id="hegoumenos"> 
+                    <term xml:lang="en">abbot</term>
+                    <term xml:lang="grc">ἡγούμενος</term>
+                </item>
+            </list>
+            
+            <list type="ecclesiastical_offices">
+                <head>Ecclesiastical Offices</head>
+                <item xml:id="hieromonachos"> 
+                    <term xml:lang="en">hieromonk</term>
+                    <term xml:lang="grc">ἱερομόναχος</term>
+                </item>
+            </list>
+            
+            <list type="ecclesiastical_offices">
+                <head>Ecclesiastical Offices</head>
+                <item xml:id="something_else.."> 
                     <term xml:lang="en">...</term>
                     <term xml:lang="grc">...</term>
                 </item>

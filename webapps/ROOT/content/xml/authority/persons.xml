@@ -20,9 +20,15 @@
                     </person>
                     
                     <person xml:id="Γερμανός">
-                        <persName xml:lang="en">Germanos, monk of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
+                        <persName xml:lang="en">Germanos, hieromonk of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
                         <persName xml:lang="grc">Γερμανός, ιερομόναχος μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
                     </person>
+                    
+                    <person xml:id="Λαυρέντιος">
+                        <persName xml:lang="en">Laurentios, hieromonk and abbot of the monastery of Saint Theomonianos at Lysi</persName>
+                        <persName xml:lang="grc">Λαυρέντιος, ιερομόναχος και ηγούμενος μονής Αγίου Θεμωνιανού, Λύση</persName>
+                    </person>    
+                
                     
                     
                     <!-- <person xml:id="hadrian">
