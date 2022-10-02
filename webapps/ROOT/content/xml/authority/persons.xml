@@ -28,7 +28,22 @@
                         <persName xml:lang="en">Laurentios, hieromonk and abbot of the monastery of Saint Theomonianos at Lysi</persName>
                         <persName xml:lang="grc">Λαυρέντιος, ιερομόναχος και ηγούμενος μονής Αγίου Θεμωνιανού, Λύση</persName>
                     </person>    
+                    
+                    <person xml:id="Θεόδωρος">
+                        <persName xml:lang="en">Theodore Apseudes, painter of the Hermitage of Saint Neophytos at Tala</persName>
+                        <persName xml:lang="grc">Θεόδωρος Αψευδής, ζωγράφος Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
+                        <floruit notBefore="1150" notAfter="1215"></floruit>
+                        <!--<occupation>painter</occupation>-->
+                        <idno type="https://en.wikipedia.org/wiki/Theodore_Apsevdis"></idno>
+                    </person>    
                 
+                    <person xml:id="Ἀψευδής">
+                        <persName xml:lang="en">Theodore Apseudes, painter of the Hermitage of Saint Neophytos at Tala</persName>
+                        <persName xml:lang="grc">Θεόδωρος Αψευδής, ζωγράφος Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
+                        <floruit notBefore="1150" notAfter="1215"></floruit>
+                        <!--<occupation>painter</occupation>-->
+                        <idno type="https://en.wikipedia.org/wiki/Theodore_Apsevdis"></idno>
+                    </person>    
                     
                     
                     <!-- <person xml:id="hadrian">

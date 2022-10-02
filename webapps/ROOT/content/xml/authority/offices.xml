@@ -32,6 +32,14 @@
                 </item>
             </list>
             
+            <list type="Painters">
+                <head>Painters</head>
+                <item xml:id="Theodoros_Apseudes"> 
+                    <term xml:lang="en">Theodore Aspevdis</term>
+                    <term xml:lang="grc">Θεόδωρος Αψευδής</term>
+                </item>
+            </list>
+            
             <list type="ecclesiastical_offices">
                 <head>Ecclesiastical Offices</head>
                 <item xml:id="hegoumenos"> 

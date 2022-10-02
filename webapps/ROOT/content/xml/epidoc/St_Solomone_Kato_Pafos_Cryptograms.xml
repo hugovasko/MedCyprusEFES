@@ -56,7 +56,7 @@
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" xml:id="grc">
+            <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
                     <lb n="1"/><milestone unit="column" n="left"/><expan><abbr>Φ</abbr><ex>ῶς</ex></expan> <persName type="divine" key="Christ"><expan><abbr>Χ</abbr><ex>ριστού</ex></expan></persName> <expan><abbr>Ι</abbr><ex>ησοῦ</ex>ς </expan> 
                     <lb n="2"/><milestone unit="column" n="right"/><expan><abbr>Χ</abbr><ex>ριστὸ</ex>ς </expan><expan><abbr>Φ</abbr><ex>αίνει</ex> </expan><expan><abbr>Π</abbr><ex>άσι</ex></expan>
