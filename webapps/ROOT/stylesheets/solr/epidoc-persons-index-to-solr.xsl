@@ -56,24 +56,6 @@
               </xsl:for-each>
             </xsl:if>
           </field>
-          <field name="index_item_type">
-            <!--To pick data from AL:-->
-            <!--<xsl:if test="doc-available($personsAL) = fn:true() and $idno">
-              <xsl:choose>
-                <xsl:when test="$idno/ancestor::tei:list[@type='...']">
-                  <xsl:text>...</xsl:text>
-                </xsl:when>
-              </xsl:choose>
-            </xsl:if>-->
-            <xsl:value-of select="'-'"/>
-            <!-- 4 categories:
-            - Rulers / Officials / Ecclesiastical officials / monastics: if <rs type="office">?
-            - Founders / Donors: if association is founder/donor'?
-            - Painters: if association or occupation is 'painter'?
-            - Other people: remaining people
-            [Or from AL, or from @type='ruler/official/founder/donor/painter/attested'?]
-            -->    
-          </field>
           
           <field name="index_honorific">
             <xsl:variable name="honorifics" select="descendant::tei:rs[@type='honorific']|ancestor::tei:rs[@type='honorific']|ancestor::tei:div[@type='edition']//tei:rs[@type='honorific'][@sameAs=concat('#',$xmlid)]"/>
@@ -93,7 +75,7 @@
             </xsl:for-each>
           </field>
           
-          <field name="index_secular_office">
+          <field name="index_secular_office"> <!-- from AL -->
             <xsl:variable name="offices" select="descendant::tei:rs[@type='office']|ancestor::tei:rs[@type='office']|ancestor::tei:div[@type='edition']//tei:rs[@type='office'][@sameAs=concat('#',$xmlid)]"/>
             <xsl:variable name="rs-id">
               <xsl:choose>
@@ -115,7 +97,7 @@
             </xsl:for-each>
           </field>
           
-          <field name="index_dignity">
+          <field name="index_dignity"> <!-- from AL -->
             <xsl:variable name="dignities" select="descendant::tei:rs[@type='dignity']|ancestor::tei:rs[@type='dignity']|ancestor::tei:div[@type='edition']//tei:rs[@type='dignity'][@sameAs=concat('#',$xmlid)]"/>
             <xsl:variable name="rs-id">
               <xsl:choose>
@@ -137,7 +119,7 @@
             </xsl:for-each>
           </field>
           
-          <field name="index_ecclesiastical_office">
+          <field name="index_ecclesiastical_office"> <!-- from AL -->
             <xsl:variable name="offices" select="descendant::tei:rs[@type='office']|ancestor::tei:rs[@type='office']|ancestor::tei:div[@type='edition']//tei:rs[@type='office'][@sameAs=concat('#',$xmlid)]"/>
             <xsl:variable name="rs-id">
               <xsl:choose>
@@ -160,11 +142,18 @@
           </field>
           
           <field name="index_occupation">
-            <xsl:value-of select="'-'"/> <!-- from AL or <rs type="occupation"> or @role -->
+            <xsl:value-of select="'-'"/> <!-- from AL -->
           </field>
           
           <field name="index_relation">
-            <xsl:value-of select="'-'"/> <!-- from AL or <rs type="???"> or @role -->
+            <xsl:choose>
+              <xsl:when test="@role">
+                <xsl:value-of select="@role"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="'-'"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           
           <field name="index_inscription_date">
