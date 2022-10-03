@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of divinities in those
+       index document representing an index of sacred figures and divinities in those
        documents. -->
   
   <xsl:import href="epidoc-index-utils.xsl" />
@@ -31,7 +31,7 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="divineAL" select="'../../content/xml/authority/divinities.xml'"/>
+        <xsl:variable name="divineAL" select="'../../content/xml/authority/sacred.xml'"/>
         <xsl:variable name="idno" select="document($divineAL)//tei:person[@xml:id=$id]"/>
         <doc>
           <field name="document_type">
