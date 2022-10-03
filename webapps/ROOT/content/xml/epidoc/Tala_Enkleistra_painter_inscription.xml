@@ -37,7 +37,7 @@
                     <history>
                         <origin>
                             <origPlace>hermitage of Saint Neophytos, Tala</origPlace>
-                            <origDate notBefore="1151" notAfter="1200" precision="medium"></origDate>
+                            <origDate notBefore="1151" notAfter="1200" precision="medium">ca 1151-1200</origDate>
                         </origin>
                         <provenance when="2022">
                         </provenance>
@@ -55,7 +55,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                   <lb n="1"/><w lemma="ἱστοροῦμαι"><unclear>Ιστοριθ</unclear><supplied reason="lost">η</supplied> </w><gap reason="lost" extent="unknown" unit="character"></gap> <w lemma="ἐγκλείστρα"><supplied reason="lost">εγκ</supplied><unclear>λ</unclear>ειστρα</w> δι̣α <w lemma="χεὶρ"><unclear>χει̣ρο</unclear><supplied reason="lost">ς</supplied></w> <w lemma="ἐγὼ"><unclear>εμο</unclear>υ </w><persName type="attested"><name nymRef="#Θεόδωρος" type="forename">Θεοδώρ<hi rend="ligature">ου</hi></name></persName> <rs type="occupation" ref="offices.xml#Theodoros_Apseudes"></rs> τ<hi rend="ligature">ου</hi> <persName type="attested"><name nymRef="#Αψευδής" type="surname"></name>Αψευδ<hi rend="ligature">ου</hi>ς </persName> <rs type="occupation" ref="offices.xml#Theodoros_Apseudes"></rs>
+                   <lb n="1"/><w lemma="ἱστοροῦμαι"><unclear>Ιστοριθ</unclear><supplied reason="lost">η</supplied> </w><gap reason="lost" extent="unknown" unit="character"></gap> <w lemma="ἐγκλείστρα"><supplied reason="lost">εγκ</supplied><unclear>λ</unclear>ειστρα</w> δι̣α <w lemma="χεὶρ"><unclear>χει̣ρο</unclear><supplied reason="lost">ς</supplied></w> <w lemma="ἐγὼ"><unclear>εμο</unclear>υ </w><persName type="attested" ref="persons.xml#TheodoreApseudes"><name nymRef="#Θεόδωρος" type="forename">Θεοδώρ<hi rend="ligature">ου</hi></name> τ<hi rend="ligature">ου</hi> <name nymRef="#Αψευδής" type="surname">Αψευδ<hi rend="ligature">ου</hi>ς</name></persName>
                    <lb n="2"/><supplied reason="lost">ἔτ</supplied>ει <num value="6691"><hi rend="ligature">&#x03DB;</hi >χ<hi rend="ligature">&#x03DE;</hi></num><hi rend="ligature">α'</hi> (ινδικτίωνος)<unclear>α</unclear>'
 
                     
