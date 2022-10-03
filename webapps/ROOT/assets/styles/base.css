@@ -121,6 +121,9 @@ body{
 }
 
 /* Maps */
+#mapid {
+    z-index: 1;
+}
 .map_box {
     padding: 0 1em 1em 1em;
     width: 100%;

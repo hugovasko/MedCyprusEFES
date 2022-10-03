@@ -12,6 +12,13 @@
     }
     
     /*Maps layers*/
+    var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data: &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'
+    }); 
+    var terrain = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles and source: Esri',
+    maxZoom: 13
+    });
     var dare = L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
     minZoom: 4,
     maxZoom: 11,
@@ -55,9 +62,9 @@ var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles
      
     var toggle_places = L.layerGroup(all_places);
     var toggle_select_linked_places = L.layerGroup(select_linked_places);
-    var baseMaps = {"Stamen Terrain": Stamen_Terrain, "Esri World Street Map": Esri_WorldStreetMap, "Esri World Topo Map": Esri_WorldTopoMap, "Carto Positron": CartoDB_Positron, "Carto Voyager": CartoDB_Voyager, "Esri Satellite": Esri_WorldImagery, "DARE": dare};
+    var baseMaps = {"Carto Voyager": CartoDB_Voyager, "OSM": osm, "Terrain": terrain, "Esri Satellite": Esri_WorldImagery};
     var overlayMaps = { };
-    var layers = [Stamen_Terrain, Esri_WorldStreetMap, Esri_WorldTopoMap, CartoDB_Positron, CartoDB_Voyager, Esri_WorldImagery, dare];
+    var layers = [CartoDB_Voyager, osm, terrain, Esri_WorldImagery];
     var markers = all_places;
     
     function openPopupById(id){ for(var i = 0; i &lt; markers.length; ++i) { if (markers[i].options.id == id){ markers[i].openPopup(); }; }}
