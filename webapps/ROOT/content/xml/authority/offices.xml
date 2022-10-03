@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Controlled vocabulary of secular and ecclesiastical offices and dignities for MedCyprus</title>
+                <title>Controlled vocabulary of secular and ecclesiastical offices, dignities, honorifics and occupations for MedCyprus</title>
             </titleStmt>
             <publicationStmt>
                 <p/>
@@ -16,6 +16,19 @@
     </teiHeader>
     <text>
         <body>
+            
+            <list type="ecclesiastical_offices">
+                <head>Ecclesiastical Offices</head>
+                <item xml:id="hegoumenos"> 
+                    <term xml:lang="en">abbot</term>
+                    <term xml:lang="grc">ἡγούμενος</term>
+                </item>
+                <item xml:id="hieromonachos"> 
+                    <term xml:lang="en">hieromonk</term>
+                    <term xml:lang="grc">ἱερομόναχος</term>
+                </item>
+            </list>
+            
             <list type="secular_offices">
                 <head>Secular Offices</head>
                 <item xml:id="doux_Kyprou"> 
@@ -24,53 +37,34 @@
                 </item>
             </list>
             
-            <list type="secular_dignities">
-                <head>Secular Dignities</head>
+            <list type="dignities">
+                <head>Dignities</head>
                 <item xml:id="something..."> 
                     <term xml:lang="en">...</term>
                     <term xml:lang="grc">...</term>
                 </item>
             </list>
             
-            <list type="Painters">
-                <head>Painters</head>
-                <item xml:id="Theodoros_Apseudes"> 
-                    <term xml:lang="en">Theodore Aspevdis</term>
-                    <term xml:lang="grc">Θεόδωρος Αψευδής</term>
-                </item>
-            </list>
-            
-            <list type="ecclesiastical_offices">
-                <head>Ecclesiastical Offices</head>
-                <item xml:id="hegoumenos"> 
-                    <term xml:lang="en">abbot</term>
-                    <term xml:lang="grc">ἡγούμενος</term>
-                </item>
-            </list>
-            
-            <list type="founders">
-                <head>founders</head>
-                <item xml:id="ktetor"> 
-                    <term xml:lang="en">founder</term>
-                    <term xml:lang="grc">κτήτωρ</term>
-                </item>
-            </list>
-            
-            <list type="ecclesiastical_offices">
-                <head>Ecclesiastical Offices</head>
-                <item xml:id="hieromonachos"> 
-                    <term xml:lang="en">hieromonk</term>
-                    <term xml:lang="grc">ἱερομόναχος</term>
-                </item>
-            </list>
-            
-            <list type="ecclesiastical_offices">
-                <head>Ecclesiastical Offices</head>
-                <item xml:id="something_else.."> 
+            <list type="honorifics">
+                <head>Honorifics</head>
+                <item xml:id="something_else..."> 
                     <term xml:lang="en">...</term>
                     <term xml:lang="grc">...</term>
                 </item>
             </list>
+            
+            <list type="occupations">
+                <head>Occupations</head>
+                <item xml:id="ktetor">  <!-- is it an occupation or rather an "association with a monument"? -->
+                    <term xml:lang="en">founder</term>
+                    <term xml:lang="grc">κτήτωρ</term>
+                </item>
+                <item xml:id="something_different..."> 
+                    <term xml:lang="en">...</term>
+                    <term xml:lang="grc">...</term>
+                </item>
+            </list>
+            
         </body>
     </text>
 </TEI>
