@@ -5,9 +5,8 @@
                 xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of rulers and officials in those
-       documents. -->
+  <!-- This XSLT transforms a set of EpiDoc documents into a Solr index document representing 
+    an index of offices, dignities, honorifics and occupations in those documents. -->
 
   <xsl:import href="epidoc-index-utils.xsl" />
 
@@ -16,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type='office' or @type='dignity'][ancestor::tei:div/@type='edition']" group-by="@ref">
+      <xsl:for-each-group select="//tei:rs[@type='office' or @type='dignity' or @type='honorific' or @type='occupation'][ancestor::tei:div/@type='edition']" group-by="@ref">
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">
@@ -53,14 +52,20 @@
           <field name="index_item_type">
             <xsl:if test="doc-available($officesAL) = fn:true() and $idno">
               <xsl:choose>
+                <xsl:when test="$idno/ancestor::tei:list[@type='ecclesiastical_offices']">
+                  <xsl:text>Ecclesiastical Office</xsl:text>
+                </xsl:when>
                 <xsl:when test="$idno/ancestor::tei:list[@type='secular_offices']">
                   <xsl:text>Secular Office</xsl:text>
                 </xsl:when>
-                <xsl:when test="$idno/ancestor::tei:list[@type='secular_dignities']">
-                  <xsl:text>Secular Dignity</xsl:text>
+                <xsl:when test="$idno/ancestor::tei:list[@type='dignities']">
+                  <xsl:text>Dignity</xsl:text>
                 </xsl:when>
-                <xsl:when test="$idno/ancestor::tei:list[@type='ecclesiastical_offices']">
-                  <xsl:text>Ecclesiastical Office</xsl:text>
+                <xsl:when test="$idno/ancestor::tei:list[@type='honorifics']">
+                  <xsl:text>Honorific</xsl:text>
+                </xsl:when>
+                <xsl:when test="$idno/ancestor::tei:list[@type='occupations']">
+                  <xsl:text>Occupation</xsl:text>
                 </xsl:when>
               </xsl:choose>
             </xsl:if>
@@ -71,7 +76,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:rs[@type='office' or @type='dignity']">
+  <xsl:template match="tei:rs[@type='office' or @type='dignity' or @type='honorific' or @type='occupation']">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
