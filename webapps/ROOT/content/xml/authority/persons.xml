@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -35,10 +34,10 @@
                     </person>    
                     
                     <person xml:id="Θεόδωρος">
-                        <persName xml:lang="en">Theodore Apseudes, painter of the Hermitage of Saint Neophytos at Tala</persName>
-                        <persName xml:lang="grc">Θεόδωρος Αψευδής, ζωγράφος Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
-                        <floruit notBefore="1150" notAfter="1215"></floruit>
-                        <!--<occupation>painter</occupation>-->
+                        <persName xml:lang="en">Theodore Apseudes</persName>
+                        <persName xml:lang="grc">Θεόδωρος Αψευδής</persName>
+                        <floruit notBefore="1150" notAfter="1215"></floruit><note>painter of the Hermitage of Saint Neophytos at Tala</note>
+                        <occupation>painter</occupation>
                         <idno type="https://en.wikipedia.org/wiki/Theodore_Apsevdis"></idno>
                     </person>    
                 

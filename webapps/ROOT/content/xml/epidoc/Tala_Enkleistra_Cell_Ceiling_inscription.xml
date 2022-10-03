@@ -55,7 +55,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"></gap> <persName type="attested" xml:id="Neophytos"><name nymRef="#Νεόφυτος" type="forename"><rs type="ktetor"></rs></name>Ṇεοφυε</persName> <gap reason="lost" unit="character"></gap> εκτεν τῶ Κουτζου
+                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"></gap> <persName type="attested" ref="#Neophytos" role="founder"><name nymRef="#Νεόφυτος" type="forename"><rs type="ktetor"></rs></name>Ṇεοφυε</persName> <gap reason="lost" unit="character"></gap> εκτεν τῶ Κουτζου
                    <lb n="2" break="no"/><supplied reason="lost">βένδη</supplied><supplied reason="lost"></supplied><supplied reason="lost">θ</supplied><unclear>ε</unclear>ίας μονῆς εις το φρού
                    <lb n="3" break="no"/><supplied reason="lost">ριον</supplied><gap reason="lost" extent="unknown" unit="character"></gap>ἡσυχίας ἀπο
                    <lb n="4" break="no"/><gap reason="lost" extent="unknown" unit="character"></gap>ὡς δὲ κε
