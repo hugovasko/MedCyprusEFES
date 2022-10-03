@@ -24,6 +24,11 @@
                         <persName xml:lang="grc">Γερμανός, ιερομόναχος μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
                     </person>
                     
+                    <person xml:id="Νεόφυτος">
+                        <persName xml:lang="en">Neophytos, hieromonk, ascetic and founder of the hermitage of Saint Neophytos at Tala</persName>
+                        <persName xml:lang="grc">Νεόφυτος, ιερομόναχος, ασκητής και ιδρυτής Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
+                    </person>
+                    
                     <person xml:id="Λαυρέντιος">
                         <persName xml:lang="en">Laurentios, hieromonk and abbot of the monastery of Saint Theomonianos at Lysi</persName>
                         <persName xml:lang="grc">Λαυρέντιος, ιερομόναχος και ηγούμενος μονής Αγίου Θεμωνιανού, Λύση</persName>

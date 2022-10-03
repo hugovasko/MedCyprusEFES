@@ -48,6 +48,14 @@
                 </item>
             </list>
             
+            <list type="founders">
+                <head>founders</head>
+                <item xml:id="ktetor"> 
+                    <term xml:lang="en">founder</term>
+                    <term xml:lang="grc">κτήτωρ</term>
+                </item>
+            </list>
+            
             <list type="ecclesiastical_offices">
                 <head>Ecclesiastical Offices</head>
                 <item xml:id="hieromonachos"> 
