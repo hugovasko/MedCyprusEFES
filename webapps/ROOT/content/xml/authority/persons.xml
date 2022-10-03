@@ -29,25 +29,21 @@
                     </person>
                     
                     <person xml:id="Λαυρέντιος">
-                        <persName xml:lang="en">Laurentios, hieromonk and abbot of the monastery of Saint Theomonianos at Lysi</persName>
-                        <persName xml:lang="grc">Λαυρέντιος, ιερομόναχος και ηγούμενος μονής Αγίου Θεμωνιανού, Λύση</persName>
+                        <persName xml:lang="en">Laurentios</persName>
+                        <persName xml:lang="grc">Λαυρέντιος</persName>
                     </person>    
                     
-                    <person xml:id="Θεόδωρος">
+                    <person xml:id="TheodoreApseudes">
                         <persName xml:lang="en">Theodore Apseudes</persName>
                         <persName xml:lang="grc">Θεόδωρος Αψευδής</persName>
-                        <floruit notBefore="1150" notAfter="1215"></floruit><note>painter of the Hermitage of Saint Neophytos at Tala</note>
-                        <occupation>painter</occupation>
-                        <idno type="https://en.wikipedia.org/wiki/Theodore_Apsevdis"></idno>
-                    </person>    
-                
-                    <person xml:id="Ἀψευδής">
-                        <persName xml:lang="en">Theodore Apseudes, painter of the Hermitage of Saint Neophytos at Tala</persName>
-                        <persName xml:lang="grc">Θεόδωρος Αψευδής, ζωγράφος Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
-                        <floruit notBefore="1150" notAfter="1215"></floruit>
-                        <!--<occupation>painter</occupation>-->
-                        <idno type="https://en.wikipedia.org/wiki/Theodore_Apsevdis"></idno>
-                    </person>    
+                        <note>painter of the cell and bema (1183), Hermitage of Saint Neophytos, Tala</note>
+                        <floruit notBefore="1167" notAfter="1233">Late 12th-early 13th century</floruit>
+                        <!--<floruit from=”” to=””>beginning and end dates of life/reign/etc.</floruit>-->
+                            <occupation type="occupation">painter</occupation>
+                                <idno type="Wikidata">https://www.wikidata.org/wiki/Q108041020</idno>
+                                    <idno type="PBW"></idno>
+                    </person>
+                 
                     
                     
                     <!-- <person xml:id="hadrian">
