@@ -58,91 +58,73 @@
           </field>
           
           <field name="index_honorific">
-            <xsl:variable name="honorifics" select="descendant::tei:rs[@type='honorific']|ancestor::tei:rs[@type='honorific']|ancestor::tei:div[@type='edition']//tei:rs[@type='honorific'][@sameAs=concat('#',$xmlid)]"/>
-            <xsl:for-each select="$honorifics">
-                <xsl:choose>
-                  <xsl:when test="@ref">
-                    <xsl:value-of select="@ref"/>
-                  </xsl:when>
-                  <xsl:when test="@key">
-                    <xsl:value-of select="@key"/>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="."/>
-                  </xsl:otherwise>
-                </xsl:choose>
-              <xsl:if test="position()!=last()">; </xsl:if>
-            </xsl:for-each>
+            <xsl:choose>
+              <xsl:when test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type='honorific']">
+                <xsl:for-each select="$idno//tei:occupation[@type='honorific']">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()">; </xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="'-'"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           
-          <field name="index_secular_office"> <!-- from AL -->
-            <xsl:variable name="offices" select="descendant::tei:rs[@type='office']|ancestor::tei:rs[@type='office']|ancestor::tei:div[@type='edition']//tei:rs[@type='office'][@sameAs=concat('#',$xmlid)]"/>
-            <xsl:variable name="rs-id">
-              <xsl:choose>
-                <xsl:when test="contains($offices/@ref, '#')">
-                  <xsl:value-of select="substring-after($offices/@ref, '#')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:value-of select="$offices/@ref"/>
-                </xsl:otherwise>
-              </xsl:choose>
-            </xsl:variable>
-            <xsl:variable name="officesAL" select="'../../content/xml/authority/offices.xml'"/>
-            <xsl:variable name="rs-idno" select="document($officesAL)//tei:item[@xml:id=$rs-id]"/>
-            <xsl:for-each select="$offices">
-              <xsl:if test="doc-available($officesAL) = fn:true() and $rs-idno/ancestor::tei:list[@type='secular_offices']">
-                <xsl:value-of select="$rs-idno//tei:term[1]" />
-              </xsl:if>
-              <xsl:if test="position()!=last()">; </xsl:if>
-            </xsl:for-each>
+          <field name="index_secular_office">
+            <xsl:choose>
+              <xsl:when test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type='office-secular']">
+                <xsl:for-each select="$idno//tei:occupation[@type='office-secular']">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()">; </xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="'-'"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           
-          <field name="index_dignity"> <!-- from AL -->
-            <xsl:variable name="dignities" select="descendant::tei:rs[@type='dignity']|ancestor::tei:rs[@type='dignity']|ancestor::tei:div[@type='edition']//tei:rs[@type='dignity'][@sameAs=concat('#',$xmlid)]"/>
-            <xsl:variable name="rs-id">
-              <xsl:choose>
-                <xsl:when test="contains($dignities/@ref, '#')">
-                  <xsl:value-of select="substring-after($dignities/@ref, '#')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:value-of select="$dignities/@ref"/>
-                </xsl:otherwise>
-              </xsl:choose>
-            </xsl:variable>
-            <xsl:variable name="officesAL" select="'../../content/xml/authority/offices.xml'"/>
-            <xsl:variable name="rs-idno" select="document($officesAL)//tei:item[@xml:id=$rs-id]"/>
-            <xsl:for-each select="$dignities">
-              <xsl:if test="doc-available($officesAL) = fn:true() and $rs-idno/ancestor::tei:list[@type='secular_dignities']">
-                <xsl:value-of select="$rs-idno//tei:term[1]" />
-              </xsl:if>
-              <xsl:if test="position()!=last()">; </xsl:if>
-            </xsl:for-each>
+          <field name="index_dignity">
+            <xsl:choose>
+              <xsl:when test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type='dignity']">
+                <xsl:for-each select="$idno//tei:occupation[@type='dignity']">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()">; </xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="'-'"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           
-          <field name="index_ecclesiastical_office"> <!-- from AL -->
-            <xsl:variable name="offices" select="descendant::tei:rs[@type='office']|ancestor::tei:rs[@type='office']|ancestor::tei:div[@type='edition']//tei:rs[@type='office'][@sameAs=concat('#',$xmlid)]"/>
-            <xsl:variable name="rs-id">
-              <xsl:choose>
-                <xsl:when test="contains($offices/@ref, '#')">
-                  <xsl:value-of select="substring-after($offices/@ref, '#')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:value-of select="$offices/@ref"/>
-                </xsl:otherwise>
-              </xsl:choose>
-            </xsl:variable>
-            <xsl:variable name="officesAL" select="'../../content/xml/authority/offices.xml'"/>
-            <xsl:variable name="rs-idno" select="document($officesAL)//tei:item[@xml:id=$rs-id]"/>
-            <xsl:for-each select="$offices">
-              <xsl:if test="doc-available($officesAL) = fn:true() and $rs-idno/ancestor::tei:list[@type='ecclesiastical_offices']">
-                <xsl:value-of select="$rs-idno//tei:term[1]" />
-              </xsl:if>
-              <xsl:if test="position()!=last()">; </xsl:if>
-            </xsl:for-each>
+          <field name="index_ecclesiastical_office">
+            <xsl:choose>
+              <xsl:when test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type='office-ecclesiastical']">
+                <xsl:for-each select="$idno//tei:occupation[@type='office-ecclesiastical']">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()">; </xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="'-'"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           
           <field name="index_occupation">
-            <xsl:value-of select="'-'"/> <!-- from AL -->
+            <xsl:choose>
+              <xsl:when test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type='occupation']">
+                <xsl:for-each select="$idno//tei:occupation[@type='occupation']">
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()">; </xsl:if>
+              </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="'-'"/>
+            </xsl:otherwise>
+          </xsl:choose>
           </field>
           
           <field name="index_relation">
