@@ -55,10 +55,7 @@
             
             <list type="occupations">
                 <head>Occupations</head>
-                <item xml:id="ktetor">  <!-- is it an occupation or rather an "association with a monument"? -->
-                    <term xml:lang="en">founder</term>
-                    <term xml:lang="grc">κτήτωρ</term>
-                </item>
+               
                 <item xml:id="something_different..."> 
                     <term xml:lang="en">...</term>
                     <term xml:lang="grc">...</term>
