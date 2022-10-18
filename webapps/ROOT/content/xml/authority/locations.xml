@@ -19,8 +19,8 @@
         <body>
             <listPlace type="monuments">
                 
-                <place xml:id="Acheleia">
-                    <placeName xml:lang="en">Acheleia, St. Theodosiοs</placeName>
+                <place xml:id="Acheleia" n="1">
+                    <placeName xml:lang="en">Acheleia, Saint Theodosios</placeName>
                     <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
@@ -53,8 +53,9 @@
                     </listBibl>
                 </place>
                            
-                <place xml:id="Sozomenos">
-                    <placeName xml:lang="en">Agios Sozomenos, St. Sozomenos</placeName>
+                <place xml:id="Sozomenos" n="2">
+                    <placeName xml:lang="en">Agios Sozomenos, Saint Sozomenos</placeName>
+                    <placeName xml:lang="en">Hagios Sozomenos, Saint Sozomenos</placeName>
                     <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
                     <placeName type="district" ref="district.xml#nicosia">Nicosia</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
@@ -89,41 +90,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Kivotos">
-                    <placeName xml:lang="en">Agios Theodoros, Panagia Kivotos</placeName>
-                    <placeName xml:lang="el">Άγιος Θεόδωρος, Παναγία Κιβωτός</placeName>
-                    <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
-                    <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
-                    <location><geo>34.891937, 33.032961</geo></location>
-                   <!-- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
-                    <desc type="function">Parochial</desc>
-                    <desc type="context">Rural</desc>
-                    <desc type="architectural">Single-aisle timber-roofed church</desc>
-                    <desc type="mural">
-                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> (naos, west wall)</desc>
-                        <!-- IS THERE A LATER LAYER? -->
-                    </desc>
-                    <desc type="conservation">Fragmentary; badly damaged</desc>
-                    <desc type="donors">Unknown</desc>
-                    <desc type="painter">Unknown</desc>
-                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
-                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
-                    </desc>
-                    <idno type="IBCC">Not included</idno>
-                    <idno type="HGC">Not included</idno>
-                    <idno type="geonames">http://www.geonames.org/12185/panagia-kivotos.html</idno>
-                    <listBibl type="inscriptions">
-                        <bibl ana="unpublished"/>
-                    </listBibl>
-                    <listBibl type="monument">
-                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
-                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
-                        <bibl><ptr target="bibliography.xml#Gunnis1936"/>Gunnis 1936, <citedRange>207-08</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papageorgiou1975"/>Papageorgiou 1975, <citedRange>362-63</citedRange></bibl>
-                    </listBibl>
-                </place>
-                
-                <place xml:id="Agridia">
+                <place xml:id="Agridia" n="3">
                     <placeName xml:lang="en">Agridia (Rizokarpaso), Saint Philon</placeName>
                     <placeName xml:lang="el">Αγρίδια Ριζοκαρπάσου, Άγιος Φίλων</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
@@ -136,7 +103,7 @@
                     <desc type="mural">
                         <desc type="layer" n="1">1st layer: <date notBefore="1167" notAfter="1200" precision="medium">late 12th century</date> (naos, western section of south wall, west wall)</desc>
                         <desc type="layer" n="2">2nd layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century?</date> (naos, west wall)</desc>
-<!--Naos, north wall, central recess: four supplicants at the feet of a saintly bishop. Does it belong to the 2nd layer or is it later? Meyer-Fernandez 2019, cat. 26, ascribes it a date ca 1300 -->                 
+                        <!--Naos, north wall, central recess: four supplicants at the feet of a saintly bishop. Does it belong to the 2nd layer or is it later? Meyer-Fernandez 2019, cat. 26, ascribes it a date ca 1300 -->                 
                     </desc>
                     <desc type="conservation">Fragmentary. Some of the murals were illegally detached from the walls following 1974; current location unknown.</desc>
                     <desc type="donors">Unknown</desc>
@@ -157,8 +124,38 @@
                         <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange>397-403 <!-- or 349-55 PLEASE CHECK: DIFFERENCE BETWEEN GREEK AND ENGLISH VERSIONS OF BOOK --></citedRange></bibl>                    </listBibl>
                 </place>
                 
-                <place xml:id="Sakkas">
-                    <placeName xml:lang="en">Aigialousa, Saint Georgios Sakkas</placeName>
+                <place xml:id="AigialousaMichael" n="4">
+                    <placeName xml:lang="en">Aigialousa, Archangel Michael</placeName>
+                    <placeName xml:lang="en">Gialousa, Archangel Michael</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="AigialousaSakkas" n="5">
+                    <placeName xml:lang="en">Aigialousa, Saint George Sakkas</placeName>
+                    <placeName xml:lang="en">Gialousa, Saint George Sakkas</placeName>
                     <placeName xml:lang="el">Αιγιαλούσα, Άγιος Γεώργιος Σακκάς</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
@@ -177,7 +174,7 @@
                     <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
                         <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
                     </desc>
-                   <!-- <idno type="MedCY">XXX</idno>-->
+                    <!-- <idno type="MedCY">XXX</idno>-->
                     <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0044.html</idno>
                     <idno type="HGC">http://www.cyprusgazetteer.org/145955/144/</idno>
                     <idno type="geonames">https://www.geonames.org/145955/aigialousa.html</idno>
@@ -196,7 +193,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Akanthou">
+                <place xml:id="Akanthou" n="6">
                     <placeName xml:lang="en">Akanthou, Panagia Pergameniotissa</placeName>
                     <placeName xml:lang="el">Ακανθού, Παναγία Περγαμηνιώτισσα</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
@@ -230,7 +227,35 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Chlorakas">
+                <place xml:id="ChlorakasPanagia" n="7">
+                    <placeName xml:lang="en">Chlorakas, Panagia Chrysoaimatousa or Chryseleousa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="ChlorakasNicholas" n="8">
                     <placeName xml:lang="en">Chlorakas, Saint Nicholas</placeName>
                     <placeName xml:lang="el">Χλώρακας, Άγιος Νικόλαος</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
@@ -242,7 +267,7 @@
                     <desc type="architectural">cross-in-square church; narthex added later</desc>
                     <desc type="mural">
                         <desc type="layer" n="1"><date notBefore="1201" notAfter="1250" precision="medium">first half of the 13th century</date> (bema, naos)</desc><!--IS THERE ANOTHER LAYER?-->
-                   </desc>
+                    </desc>
                     <desc type="conservation">Partially preserved</desc>
                     <desc type="donors">Unknown</desc>
                     <desc type="painter">Unknown</desc>
@@ -262,9 +287,9 @@
                         <bibl><ptr target="bibliography.xml#Kaffenberger2020"/>Kaffenberger 2020, <citedRange> 2: 114</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 389-99</citedRange></bibl>                        
                     </listBibl>
-                </place>                
+                </place>
                 
-                <place xml:id="Choirokoitia">
+                <place xml:id="Choirokoitia" n="9">
                     <placeName xml:lang="en">Choirokoitia, Panagia tou Kampou</placeName>
                     <placeName xml:lang="el">Χοιροκοιτία, Παναγία του Κάμπου</placeName>
                     <placeName type="district" ref="district.xml#larnaca">Larnaca</placeName>
@@ -273,7 +298,7 @@
                     <desc type="construction">
                         <date notBefore="0967" notAfter="1033" precision="medium" source="bibliography.xml#Procopiou2018">Procopiou: late 10th century - early 11th century</date>
                         <date notBefore="1101" notAfter="1200" precision="medium" source="bibliography.xml#Papacostas1999">Papacostas: 12th century</date>                        
-                        </desc>
+                    </desc>
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">domed-hall church with a later extension to the west, built on the ruins of a 7th-century three-aisled basilica</desc>
@@ -301,20 +326,472 @@
                         <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999, <citedRange> 2: 50</citedRange></bibl> 
                         <bibl><ptr target="bibliography.xml#Procopiou2007"/>Procopiou 2007, <citedRange> 178-90</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Procopiou2018"/>Procopiou 2018, <citedRange> 80-81</citedRange></bibl>                        
-                    <bibl><ptr target="bibliography.xml#Soteriou1937"/>Soteriou 1937, <citedRange> 42-43</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Soteriou1937"/>Soteriou 1937, <citedRange> 42-43</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Spanou2002"/>Spanou 2002, <citedRange> 31</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Stewart2020"/>Stewart 2020, <citedRange> 173</citedRange></bibl>
                     </listBibl>
                 </place>
                 
-                <place xml:id="Solomone">
-                    <placeName xml:lang="en">Kato Pafos, Saint Solomoni</placeName>
+                <place xml:id="Chortakia" n="10">
+                    <placeName xml:lang="en">Chortakia, Saint Theodore</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="ChoulouGeorge" n="11">
+                    <placeName xml:lang="en">Choulou, Saint George</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="ChoulouTheodore" n="12">
+                    <placeName xml:lang="en">Choulou, Saint Theodore</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Chrysokava" n="13">
+                    <placeName xml:lang="en">Chrysokava, Saint Mavra</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Empa" n="14">
+                    <placeName xml:lang="en">Empa, Panagia Chryseleousa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Geroskipou" n="15">
+                    <placeName xml:lang="en">Geroskipou, Saint Paraskeve</placeName>
+                    <placeName xml:lang="en">Geroskepou, Saint Paraskeve</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="GialiaKatholikon" n="16">
+                    <placeName xml:lang="en">Gialia, Monastery of Panagia Chrysogialiotissa, katholikon</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="GialiaChapel" n="17">
+                    <placeName xml:lang="en">Gialia, Monastery of Panagia Chrysogialiotissa, Saint George chapel</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kakopetria" n="18">
+                    <placeName xml:lang="en">Kakopetria, Saint Nicholas of the Roof</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kaliana" n="19">
+                    <placeName xml:lang="en">Kaliana, Saints Joachim and Anne</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kalograia" n="20">
+                    <placeName xml:lang="en">Kalograia, Antiphonetes</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KalopanagiotisChapel" n="21">
+                    <placeName xml:lang="en">Kalopanagiotis, Monastery of Saint John Lampadistes, chapel of Saint John Lampadistes</placeName>
+                    <placeName xml:lang="en">Kalopanagiotes, Monastery of Saint John Lampadistes, chapel of Saint John Lampadistes</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KalopanagiotisKatholikon" n="22">
+                    <placeName xml:lang="en">Kalopanagiotis, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
+                    <placeName xml:lang="en">Kalopanagiotes, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Karavas" n="23">
+                    <placeName xml:lang="en">Karavas, Panagia Galaterousa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KatoDeftera" n="24">
+                    <placeName xml:lang="en">Kato Deftera, Panagia Chrysospeliotissa</placeName>
+                    <placeName xml:lang="en">Kato Deutera, Panagia Chrysospeliotissa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KatoLefkara" n="25">
+                    <placeName xml:lang="en">Kato Lefkara, Archangel Michael</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Solomone" n="26">
+                    <placeName xml:lang="en">Kato Pafos, Saint Solomone</placeName>
                     <placeName xml:lang="en">Kato Paphos, Saint Solomone</placeName>
                     <placeName xml:lang="el">Κάτω Πάφος, Αγία Σολομονή</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
                     <location><geo>34.761383, 32.412387</geo></location>
-                  <desc type="construction"><date notBefore="0201" notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
+                    <desc type="construction"><date notBefore="0201" notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
                     <desc type="function">Monastic; funerary</desc>
                     <desc type="context">Urban</desc>
                     <desc type="architectural">Chamber of a Hellenestic(?) rock-cut tomb, converted into a chapel</desc>
@@ -342,7 +819,632 @@
                     </listBibl>-->
                 </place>
                 
-                <place xml:id="Pelendri">
+                <place xml:id="Kellia" n="27">
+                    <placeName xml:lang="en">Kellia, Saint Anthony</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kiti" n="28">
+                    <placeName xml:lang="en">Kiti, Panagia Angeloktiste</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kofinou" n="29">
+                    <placeName xml:lang="en">Kofinou, Panagia</placeName>
+                    <placeName xml:lang="en">Kophinou, Panagia</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KomaGialouNicholas" n="30">
+                    <placeName xml:lang="en">Koma tou Gialou, Saint Nicholas</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KomaGialouSolomone" n="31">
+                    <placeName xml:lang="en">Koma tou Gialou, Saint Solomone</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kouklia" n="32">
+                    <placeName xml:lang="en">Kouklia, Panagia Katholike</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KoutsoventisTrinity" n="33">
+                    <placeName xml:lang="en">Koutsoventis, Monastery of St John Chrysostom, Holy Trinity chapel</placeName>
+                    <placeName xml:lang="en">Koutsovendes, Monastery of Saint John Chrysostom, Holy Trinity chapel</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KoutsoventisPanagia" n="34">
+                    <placeName xml:lang="en">Koutsoventis, Monastery of Saint John Chrysostom, Panagia Aphendrika</placeName>
+                    <placeName xml:lang="en">Koutsovendes, Monastery of Saint John Chrysostom, Panagia Aphendrika</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KoutsoventisSaviour" n="35">
+                    <placeName xml:lang="en">Koutsoventis, Monastery of Saint John Chrysostom, Saviour</placeName>
+                    <placeName xml:lang="en">Koutsovendes, Monastery of Saint John Chrysostom, Saviour</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Lagoudera" n="36">
+                    <placeName xml:lang="en">Lagoudera, Panagia tou Araka or Arakiotissa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Lampousa" n="37">
+                    <placeName xml:lang="en">Lampousa, Panagia Acheiropoietos</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Letymvou" n="38">
+                    <placeName xml:lang="en">Letymvou, Saints Kyrikos and Julitta</placeName>
+                    <placeName xml:lang="en">Letympou, Saints Kyrikos and Julitta</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Lysi" n="39">
+                    <placeName xml:lang="en">Lysi, Saint Ephemianos or Themonianos</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Lythragkomi" n="40">
+                    <placeName xml:lang="en">Lythragkomi, Panagia Kanakaria</placeName>
+                    <placeName xml:lang="en">Lythrankomi, Panagia Kanakaria</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Menogeia" n="41">
+                    <placeName xml:lang="en">Menogeia, Saints Athanasios and Cyril</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Monagri" n="42">
+                    <placeName xml:lang="en">Monagri, Monastery of Panagia Amasgou, katholikon</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Moutoullas" n="43">
+                    <placeName xml:lang="en">Moutoullas, Panagia</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Menas" n="44">
+                    <placeName xml:lang="en">Neo Chorio (Pafou), Saint Menas</placeName>
+                    <placeName xml:lang="en">Neo Chorio (Paphos), Saint Menas</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Asinou" n="45">
+                    <placeName xml:lang="en">Nikitari, Panagia Phorbiotissa or Asinou</placeName>
+                    <placeName xml:lang="en">Niketari, Panagia Phorbiotissa or Asinou</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Ormideia" n="46">
+                    <placeName xml:lang="en">Ormideia, Saint George of Agkona</placeName>
+                    <placeName xml:lang="en">Ormedeia, Saint George of Ankona</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="PanoLefkara" n="47">
+                    <placeName xml:lang="en">Pano Lefkara, Holy Cross</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="PanoPyrgos" n="48">
+                    <placeName xml:lang="en">Pano Pyrgos, Panagia Galoktiste</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Pelendri" n="49">
                     <placeName xml:lang="en">Pelendri, Holy Cross</placeName>
                     <placeName xml:lang="el">Πελένδρι, Τίμιος Σταυρός</placeName>
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
@@ -387,13 +1489,445 @@
                     </listBibl>
                 </place>
                 
+                <place xml:id="PeraChorio" n="50">
+                    <placeName xml:lang="en">Pera Chorio, Holy Apostles</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Peristerona" n="51">
+                    <placeName xml:lang="en">Peristerona (Lefkosias), Saints Barnabas and Hilarion</placeName>
+                    <placeName xml:lang="en">Peristerona (Nicosia), Saints Barnabas and Hilarion</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Polemi" n="52">
+                    <placeName xml:lang="en">Polemi, Panagia Chryseleousa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Rizokarpaso" n="53">
+                    <placeName xml:lang="en">Rizokarpaso, Saint Mavra</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="SichariKatholikon" n="54">
+                    <placeName xml:lang="en">Sichari, Monastery of Panagia Apsinthiotissa, katholikon</placeName>
+                    <placeName xml:lang="en">Sychari, Monastery of Panagia Apsinthiotissa, katholikon</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="SichariRefectory" n="55">
+                    <placeName xml:lang="en">Sichari, Monastery of Panagia Apsinthiotissa, refectory</placeName>
+                    <placeName xml:lang="en">Sychari, Monastery of Panagia Apsinthiotissa, refectory</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Sotira" n="56">
+                    <placeName xml:lang="en">Sotira (Ammochostou), Transfiguration</placeName>
+                    <placeName xml:lang="en">Sotera (Famagusta), Transfiguration</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Steni" n="57">
+                    <placeName xml:lang="en">Steni, Panagia Chrysolakourna</placeName>
+                    <placeName xml:lang="el">Stene, Panagia Chrysolakourna</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Strovolos" n="58">
+                    <placeName xml:lang="en">Strovolos, Panagia Chryseleousa</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Sygkrasi" n="59">
+                    <placeName xml:lang="en">Sygkrasi, Saint Prokopios</placeName>
+                    <placeName xml:lang="en">Synkrasi, Saint Prokopios</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Tala" n="60">
+                    <placeName xml:lang="en">Tala, Hermitage of Saint Neophytos</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Tera" n="61">
+                    <placeName xml:lang="en">Tera, Saint George</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Trikomo" n="62">
+                    <placeName xml:lang="en">Trikomo, Panagia</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Xylotymvou" n="63">
+                    <placeName xml:lang="en">Xylotymvou, Saint Basil</placeName>
+                    <placeName xml:lang="en">Xylotympou, Saint Basil</placeName>
+                    <placeName xml:lang="el">...</placeName>
+                    <placeName type="district" ref="district.xml#...">...</placeName>
+                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <location><geo>...</geo></location>
+                    <desc type="construction"><date>...</date></desc>
+                    <desc type="function">...</desc>
+                    <desc type="context">...</desc>
+                    <desc type="architectural">...</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                    </desc>
+                    <desc type="conservation">...</desc>
+                    <desc type="donors">...</desc>
+                    <desc type="painter">...</desc>
+                    <desc type="graffiti">...</desc>
+                    <idno type="IBCC">...</idno>
+                    <idno type="HGC">...</idno>
+                    <idno type="geonames">...</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <bibl><ptr target="bibliography.xml#..."/>... <citedRange>...</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kivotos">
+                    <placeName xml:lang="en">Agios Theodoros, Panagia Kivotos</placeName>
+                    <placeName xml:lang="el">Άγιος Θεόδωρος, Παναγία Κιβωτός</placeName>
+                    <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
+                    <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
+                    <location><geo>34.891937, 33.032961</geo></location>
+                   <!-- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
+                    <desc type="function">Parochial</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Single-aisle timber-roofed church</desc>
+                    <desc type="mural">
+                        <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> (naos, west wall)</desc>
+                        <!-- IS THERE A LATER LAYER? -->
+                    </desc>
+                    <desc type="conservation">Fragmentary; badly damaged</desc>
+                    <desc type="donors">Unknown</desc>
+                    <desc type="painter">Unknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
+                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                    </desc>
+                    <idno type="IBCC">Not included</idno>
+                    <idno type="HGC">Not included</idno>
+                    <idno type="geonames">http://www.geonames.org/12185/panagia-kivotos.html</idno>
+                    <listBibl type="inscriptions">
+                        <bibl ana="unpublished"/>
+                    </listBibl>
+                    <listBibl type="monument">
+                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
+                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
+                        <bibl><ptr target="bibliography.xml#Gunnis1936"/>Gunnis 1936, <citedRange>207-08</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou1975"/>Papageorgiou 1975, <citedRange>362-63</citedRange></bibl>
+                    </listBibl>
+                </place>
+                
             </listPlace>
             
             <listPlace type="repositories">
-                
                 <place xml:id="ByzantineMuseum">
                     <placeName xml:lang="en">Byzantine Museum of the Cultural Foundation Archbishop Makarios III</placeName>
-                    <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>                                <location><placeName>Nicosia</placeName></location>
+                    <placeName xml:lang="el">Βυζαντινό Μουσείο Πολιτιστικού Ιδρύματος Αρχιεπισκόπου Μακαρίου Γ'</placeName>
+                    <location><placeName>Nicosia</placeName></location>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q42883662</idno>
                     <bibl><ref type="website">http://www.makariosfoundation.org.cy/</ref></bibl>
                 </place>
@@ -416,11 +1950,12 @@
                 
                 <place xml:id="KykkosMuseum">
                     <placeName xml:lang="en">Museum of the Kykkos Monastery</placeName>
-                    <placeName xml:lang="el">Μουσείο Ιεράς Μονής Κύκκου</placeName>                                <location><placeName>Kykkos Monastery</placeName></location>
+                    <placeName xml:lang="el">Μουσείο Ιεράς Μονής Κύκκου</placeName>
+                    <location><placeName>Kykkos Monastery</placeName></location>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q225373</idno>
                     <bibl><ref type="website">https://kykkos-museum.org.cy/</ref></bibl>
                 </place>
-                              
+
             </listPlace>
         </body>
     </text>
