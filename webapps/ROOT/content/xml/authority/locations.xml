@@ -24,7 +24,7 @@
                     <placeName xml:lang="el">Αχέλεια, Άγιος Θεοδόσιος</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
-                    <location><geo>34.734564, 32.484430</geo></location>
+                    <location><geo>34.734564431148705, 32.48443089411125</geo></location>
                     <desc type="construction"><date notBefore="1167" notAfter="1233" precision="medium">Late 12th - Early 13th century</date></desc>
                     <desc type="function">Parochial(?), funerary(?)</desc>
                     <desc type="context">Rural</desc>
@@ -59,7 +59,7 @@
                     <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
                     <placeName type="district" ref="district.xml#nicosia">Nicosia</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
-                    <location><geo>35.067463, 33.436088</geo></location>
+                    <location><geo>34.734564431148705, 32.48443089411125</geo></location>
                     <desc type="construction"><date notBefore="0901" notAfter="1000" precision="medium">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
@@ -130,7 +130,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.5366, 34.1870</geo></location> <!-- check -->
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -143,7 +143,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/145955/143/</idno> <!-- check -->
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -198,7 +198,7 @@
                     <placeName xml:lang="el">Ακανθού, Παναγία Περγαμηνιώτισσα</placeName>
                     <placeName type="district" ref="district.xml#famagusta">Famagusta</placeName>
                     <placeName type="diocese" ref="diocese.xml#karpasia">Bishopric of Karpasia</placeName>
-                    <location><geo>35.404899, 33.782537</geo></location>
+                    <location><geo>35.40489928111859, 33.78253726593481</geo></location>
                     <desc type="construction"><date notBefore="1001" notAfter="1100" precision="medium">11th century</date></desc>
                     <desc type="function">Parochial(?)</desc>
                     <desc type="context">Rural</desc>
@@ -232,7 +232,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.79957505912315, 32.40917428544697</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -260,7 +260,7 @@
                     <placeName xml:lang="el">Χλώρακας, Άγιος Νικόλαος</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
-                    <location><geo>34.793439, 32.412865</geo></location>
+                    <location><geo>34.79343900425516, 32.41286529226267</geo></location>
                     <desc type="construction"><date notBefore="1101" notAfter="1200" precision="medium">12th century</date></desc>
                     <desc type="function">Parochial(?), pilgrimage(?)</desc>
                     <desc type="context">Rural</desc>
@@ -294,7 +294,7 @@
                     <placeName xml:lang="el">Χοιροκοιτία, Παναγία του Κάμπου</placeName>
                     <placeName type="district" ref="district.xml#larnaca">Larnaca</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
-                    <location><geo>34.797600, 33.329086</geo></location>
+                    <location><geo>34.79760060573761, 33.32908687072699</geo></location>
                     <desc type="construction">
                         <date notBefore="0967" notAfter="1033" precision="medium" source="bibliography.xml#Procopiou2018">Procopiou: late 10th century - early 11th century</date>
                         <date notBefore="1101" notAfter="1200" precision="medium" source="bibliography.xml#Papacostas1999">Papacostas: 12th century</date>                        
@@ -337,7 +337,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.026683703231505, 33.932386603820234</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -365,7 +365,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.86560311978039, 32.55097098304513</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -393,7 +393,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.869318678489584, 32.55778272706452</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -421,7 +421,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.609, 34.379</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -434,7 +434,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146105/229/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -449,7 +449,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>34.8065598, 32.4246061</geo></location>
+                    <location><geo>34.80654276632326, 32.42457656171472</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -478,7 +478,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.75957696404033, 32.45294071825463</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -506,7 +506,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.089495642123936, 32.55495468191464</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -534,7 +534,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.089495642123936, 32.55495468191464</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -562,7 +562,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.9772493969261, 32.88949694061986</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -590,7 +590,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.01250894002986, 32.88420907848711</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -618,7 +618,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.327, 33.619</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -631,7 +631,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146575/170/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -647,7 +647,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.9922963016043, 32.83016674389524</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -676,7 +676,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.9922963016043, 32.83016674389524</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -704,7 +704,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.33701490, 33.19072294</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -733,7 +733,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.09181630165587, 33.28243320093297</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -761,7 +761,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.861755517715984, 33.31569740361403</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -790,7 +790,7 @@
                     <placeName xml:lang="el">Κάτω Πάφος, Αγία Σολομονή</placeName>
                     <placeName type="district" ref="district.xml#paphos">Paphos</placeName>
                     <placeName type="diocese" ref="diocese.xml#paphos">Bishopric of Paphos</placeName>
-                    <location><geo>34.761383, 32.412387</geo></location>
+                    <location><geo>34.76138313281389, 32.4123872854924</geo></location>
                     <desc type="construction"><date notBefore="0201" notAfter="1167" precision="medium" evidence="murals">Prior to the late 12th century (date of 1st layer of painted decoration)</date></desc>
                     <desc type="function">Monastic; funerary</desc>
                     <desc type="context">Urban</desc>
@@ -824,7 +824,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.9756699125121, 33.62078772500149</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -852,7 +852,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.847624209783056, 33.57104628466248</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -881,7 +881,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.82611384740893, 33.404161505366154</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -909,7 +909,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.43116200, 34.13146191</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -937,7 +937,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.434, 34.135</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -950,7 +950,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146450/184/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -965,7 +965,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.70725506117816, 32.57497772614671</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -994,7 +994,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.275, 33.418</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1007,7 +1007,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146427/189/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1023,7 +1023,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.272, 33.419</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1036,7 +1036,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146427/187/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1052,7 +1052,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.273, 33.419</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1065,7 +1065,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146427/191/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1080,7 +1080,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.965463638006405, 33.00726538918126</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1108,7 +1108,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.354, 33.202</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1121,7 +1121,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146545/173/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1137,7 +1137,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.85538148351664, 32.517262317783405</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1165,7 +1165,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.085577, 33.664674</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1194,7 +1194,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.47840280214003, 34.165321044361214</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1222,7 +1222,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.8440505493165, 33.44077077569953</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1250,7 +1250,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.799171828505585, 32.9091972716911</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1278,7 +1278,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.9826622, 32.8241501</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1307,7 +1307,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.02576667469851, 32.34057601592074</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1336,7 +1336,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.04630695352788, 32.97334536642621</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1365,7 +1365,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.008009885132566, 33.80438097011473</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1393,7 +1393,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.865852789923, 33.308484597778865</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1421,7 +1421,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.16641599509988, 32.67301295443099</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1494,7 +1494,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.01364828672783, 33.38463953453243</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1523,7 +1523,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.13032165298355, 33.08054486827337</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1551,7 +1551,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.88661858181086, 32.50745041244136</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1579,7 +1579,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.609, 34.379</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1592,7 +1592,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146105/229/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1608,7 +1608,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.2838334482225, 33.38907460140891</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1637,7 +1637,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.2838334482225, 33.38907460140891</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1666,7 +1666,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.02873782723978, 33.95298959004183</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1694,7 +1694,7 @@
                     <placeName xml:lang="el">Stene, Panagia Chrysolakourna</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.01200774055926, 32.47762381418622</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1722,7 +1722,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.14623829914817, 33.34058343986419</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1751,7 +1751,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.268, 33.855</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1764,7 +1764,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/146049/245/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1779,7 +1779,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.84692924848204, 32.44507332518793</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1807,7 +1807,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.96735762, 32.42950418</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1835,7 +1835,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.283, 33.889</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1848,7 +1848,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/252644/248/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1864,7 +1864,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>35.023, 33.736</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1877,7 +1877,7 @@
                     <desc type="painter">...</desc>
                     <desc type="graffiti">...</desc>
                     <idno type="IBCC">...</idno>
-                    <idno type="HGC">...</idno>
+                    <idno type="HGC">https://cyprusgazetteer.org/145971/250/</idno>
                     <idno type="geonames">...</idno>
                     <listBibl type="inscriptions">
                         <bibl ana="unpublished"/>
@@ -1892,7 +1892,7 @@
                     <placeName xml:lang="el">Άγιος Θεόδωρος, Παναγία Κιβωτός</placeName>
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
-                    <location><geo>34.891937, 33.032961</geo></location>
+                    <location><geo>34.89193748802995, 33.03296195816605</geo></location>
                    <!-- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
