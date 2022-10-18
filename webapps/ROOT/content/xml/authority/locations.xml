@@ -449,7 +449,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>...</geo></location>
+                    <location><geo>34.8065598, 32.4246061</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
