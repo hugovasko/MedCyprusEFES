@@ -1887,25 +1887,25 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="Kivotos">
+                <!--<place xml:id="Kivotos"> <!-\- excluded because there are no surviving inscriptions -\->
                     <placeName xml:lang="en">Agios Theodoros, Panagia Kivotos</placeName>
                     <placeName xml:lang="el">Άγιος Θεόδωρος, Παναγία Κιβωτός</placeName>
                     <placeName type="district" ref="district.xml#limassol">Limassol</placeName>
                     <placeName type="diocese" ref="diocese.xml#limassol">Bishopric of Limassol</placeName>
                     <location><geo>34.89193748802995, 33.03296195816605</geo></location>
-                   <!-- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-->
+                   <!-\- <desc type="construction"><date notBefore="1201" notAfter="1300" precision="medium">13th century</date></desc>  ARE WE CERTAIN? TO ME THIS CHURCH SEEMS LATER, AND I HAVE SEEN IT DATED TO THE 15TH CENTURY. PLEASE CHECK-\->
                     <desc type="function">Parochial</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisle timber-roofed church</desc>
                     <desc type="mural">
                         <desc type="layer" n="1">1st layer: <date notBefore="1201" notAfter="1300" precision="medium">13th century</date> (naos, west wall)</desc>
-                        <!-- IS THERE A LATER LAYER? -->
+                        <!-\- IS THERE A LATER LAYER? -\->
                     </desc>
                     <desc type="conservation">Fragmentary; badly damaged</desc>
                     <desc type="donors">Unknown</desc>
                     <desc type="painter">Unknown</desc>
                     <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/01010101">Grafmedia</ref>
-                        <!--Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-->
+                        <!-\-Unknown/Presence unconfirmed/Unpublished/linkGrafmedia-\->
                     </desc>
                     <idno type="IBCC">Not included</idno>
                     <idno type="HGC">Not included</idno>
@@ -1914,12 +1914,12 @@
                         <bibl ana="unpublished"/>
                     </listBibl>
                     <listBibl type="monument">
-                        <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
-                        <!--<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-->
+                        <!-\-<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-\->
+                        <!-\-<bibl><ptr target="bibliography.xml#MKE"/>ΜΚΕ<citedRange></citedRange></bibl>-\->
                         <bibl><ptr target="bibliography.xml#Gunnis1936"/>Gunnis 1936, <citedRange>207-08</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papageorgiou1975"/>Papageorgiou 1975, <citedRange>362-63</citedRange></bibl>
                     </listBibl>
-                </place>
+                </place>-->
                 
             </listPlace>
             
