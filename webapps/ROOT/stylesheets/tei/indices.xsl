@@ -143,17 +143,24 @@
   </xsl:template>
 
   <xsl:template match="str[@name='index_item_name']">
-    <th scope="row">
-      <!-- Look up the value in the RDF names, in case it's there. -->
-      <xsl:variable name="rdf-name" select="/aggregation/index_names/rdf:RDF/rdf:Description[@rdf:about=current()][1]/*[@xml:lang=$language][1]" />
-      <xsl:choose>
-        <xsl:when test="normalize-space($rdf-name)">
-          <xsl:value-of select="$rdf-name" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="."/>
-        </xsl:otherwise>
-      </xsl:choose>
+    <th scope="row" class="item_name">
+      <xsl:value-of select="."/>
+      <!-- if persons index: show popup with info from persons.xml AL -->
+      <xsl:if test="ancestor::doc[descendant::str[@name='index_surname']]">
+        <br/><button type="button" class="expander" onclick="$(this).next().toggleClass('shown'); $(this).text($(this).next().hasClass('shown') ? '[Collapse]' : '[Expand]');">[Expand]</button>
+        <span class="expanded">
+          <xsl:text>Forename: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_item_name']"/>
+          <br/><xsl:text>Surname: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_surname']"/>
+          <br/><xsl:text>Greek name: </xsl:text><xsl:for-each select="ancestor::doc/arr[@name='index_item_alt_name']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()">. </xsl:if></xsl:for-each>
+          <br/><xsl:text>Period: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_floruit']"/>
+          <br/><xsl:text>Secular office: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_secular_office']"/>
+          <br/><xsl:text>Ecclesiastical office: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_ecclesiastical_office']"/>
+          <br/><xsl:text>Occupation: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_occupation']"/>
+          <br/><xsl:text>Association with monument: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_relation']"/>
+          <br/><xsl:text>Notes: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_note']"/>
+          <br/><xsl:for-each select="ancestor::doc/arr[@name='index_external_resource']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()"><br/></xsl:if></xsl:for-each>
+        </span>
+      </xsl:if>
     </th>
   </xsl:template>
   

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -13,34 +14,84 @@
         <body>
             <div type="commentary">
                 <listPerson>
-                    <person xml:id="Ιωάννης">
-                        <persName xml:lang="en">Ioannis, founder of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
-                        <persName xml:lang="grc">Ιωάννης, κτήτωρ μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
+                    <person xml:id="Ioannis">
+                        <persName xml:lang="en"><forename>Ioannis</forename></persName>
+                        <persName xml:lang="grc">Ιωάννης</persName>
+                        <note>founder of the monastery of Saint Nicholas the Roof at Kakopetria</note>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation">...</occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
                     </person>
                     
-                    <person xml:id="Γερμανός">
-                        <persName xml:lang="en">Germanos, hieromonk of the monastery of Saint Nicholas the Roof at Kakopetria</persName>
-                        <persName xml:lang="grc">Γερμανός, ιερομόναχος μονής Αγίου Νικολάου της Στέγης, Κακοπετριά</persName>
+                    <person xml:id="Eumathios">
+                        <persName xml:lang="en"><forename>Eumathios</forename> <surname>Philokales</surname></persName>
+                        <persName xml:lang="grc">Ευμάθιος Φιλοκάλης</persName>
+                        <!--<note>...</note>
+                        <floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>-->
+                        <idno type="PBW">http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/</idno>
                     </person>
                     
-                    <person xml:id="Νεόφυτος">
-                        <persName xml:lang="en">Neophytos, hieromonk, ascetic and founder of the hermitage of Saint Neophytos at Tala</persName>
-                        <persName xml:lang="grc">Νεόφυτος, ιερομόναχος, ασκητής και ιδρυτής Εγκλείστρας Αγίου Νεοφύτου, Τάλα</persName>
+                    <person xml:id="Germanos">
+                        <persName xml:lang="en"><forename>Germanos</forename></persName>
+                        <persName xml:lang="grc">Γερμανός</persName>
+                        <note>hieromonk of the monastery of Saint Nicholas the Roof at Kakopetria</note>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
                     </person>
                     
-                    <person xml:id="Λαυρέντιος">
-                        <persName xml:lang="en">Laurentios</persName>
+                    <person xml:id="Georgios">
+                        <persName xml:lang="en"><forename>Georgios</forename></persName>
+                        <persName xml:lang="grc">Γεώργιος</persName>
+                        <!--<note>...</note>
+                        <floruit notBefore="..." notAfter="...">...</floruit>-->
+                        <occupation type="occupation">priest</occupation>
+                        <!--<idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
+                    </person>
+                    
+                    <person xml:id="Leon">
+                        <persName xml:lang="en"><forename>Leon</forename> <surname>Authentes</surname></persName>
+                        <persName xml:lang="grc">Λέων Αὐθέντης</persName>
+                        <!--<note>...</note>
+                        <floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
+                    </person>
+                    
+                    <person xml:id="Laurentios">
+                        <persName xml:lang="en"><forename>Laurentios</forename></persName>
                         <persName xml:lang="grc">Λαυρέντιος</persName>
+                        <!--<note>...</note>
+                        <floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
+                    </person>
+                    
+                    <person xml:id="Neophytos">
+                        <persName xml:lang="en"><forename>Neophytos</forename></persName>
+                        <persName xml:lang="grc">Νεόφυτος</persName>
+                        <note>hieromonk, ascetic and founder of the hermitage of Saint Neophytos at Tala</note>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
                     </person>    
                     
                     <person xml:id="TheodoreApseudes">
-                        <persName xml:lang="en">Theodore Apseudes</persName>
+                        <persName xml:lang="en"><forename>Theodore</forename> <surname>Apseudes</surname></persName>
                         <persName xml:lang="grc">Θεόδωρος Αψευδής</persName>
                         <note>painter of the cell and bema (1183), Hermitage of Saint Neophytos, Tala</note>
                         <floruit notBefore="1167" notAfter="1233">Late 12th-early 13th century</floruit>
                         <!--<floruit from="" to="">beginning and end dates of life/reign/etc.</floruit>-->
                         <occupation type="occupation">painter</occupation>
-                        <idno type="Wikidata">https://www.wikidata.org/wiki/Q108041020</idno>
+                        <idno type="wikidata">https://www.wikidata.org/wiki/Q108041020</idno>
                         <idno type="PBW"></idno>
                     </person>
                     
