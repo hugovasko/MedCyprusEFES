@@ -63,7 +63,7 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="Lagoudera Inscription.jpg">
+        <graphic url="Lagoudera_Inscription.jpg">
             <desc>Lagoudera Inscription</desc>
             </graphic>
     </facsimile>
@@ -72,7 +72,7 @@
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
                     <lb n="1"/><g ref="#cross">+</g> <w lemma="ἀνιστοροῦμαι">Ἀνιστορήσθ<supplied reason="omitted">η</supplied></w> ὁ <w lemma="πάνσεπτος">πάνσεπτος</w> <w lemma="ναός">ναός</w> της <w lemma="ὑπεραγία"><expan><abbr>ὑπ</abbr><ex>ε</ex><abbr>ρ</abbr><ex>αγίας</ex></expan></w> <persName type="divine" key="Theotokos" ref="sacred.xml#Θεοτόκος"><name nymRef="#Θεοτόκος"></name></persName><expan><abbr>Θ</abbr><ex>εοτό</ex><abbr>κου</abbr></expan> τοῦ <w lemma="Ἄρακας">Ἄρακος</w> 
-                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυροῦ <persName type="attested"><name nymRef="#Λέων" type="forename"><expan><abbr>Λέωντ</abbr><ex>ος</ex></expan></name> <name nymRef="#Αυθέντης" type="surname">τοῦ <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan></name></persName>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
+                    <lb n="2"/><w lemma="διὰ">διὰ</w> <w lemma="συνδρομή"> <expan><abbr>συνδρομ</abbr><ex>ῆς</ex></expan></w> <w lemma="καὶ">κα<supplied reason="lost">ι</supplied></w> <w lemma="πολὺς"><expan><abbr>πολλ</abbr><ex>οῦ</ex></expan></w> <w lemma="πόθος"><expan><abbr>πόθ</abbr><ex>ου</ex></expan></w> <w lemma="κύρ"></w>κυροῦ <persName type="attested" ref="#Leon"><name nymRef="#Λέων" type="forename"><expan><abbr>Λέωντ</abbr><ex>ος</ex></expan></name> <name nymRef="#Αυθέντης" type="surname">τοῦ <w lemma="αὐθέντης"></w><expan><abbr>Αὐθέ</abbr><ex>ν</ex></expan><expan><abbr>τ</abbr><ex>ου</ex></expan></name></persName>·<w lemma="μήν"></w>μηνι <w lemma="Δεκέμβριος"></w>Δεκαιβρίο 
                     <lb n="3"/><expan><abbr>ινδ</abbr><ex>ικτιῶνος</ex></expan> <num value="11">ια</num> τω <num value="6701"></num><hi rend="ligature">&#x03DB;</hi>ψα’ ἔτους.
                 </ab>
             </div>

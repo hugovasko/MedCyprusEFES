@@ -60,7 +60,7 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="photograph of text or monument"/>
+        <graphic url="..."/>
     </facsimile>
     <text>
         <body>
@@ -69,8 +69,8 @@
                     <l><lb n="1"/><g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπω <hi rend="ligature">τρ</hi>ισί προσκυν<hi rend="ligature">ου</hi>μένην</l>
 <l><lb n="2"/>ἄναρχον ἀρχ<hi rend="ligature">ὴν</hi> ὑπεράρχιον φύσιν· </l>
 <l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
-<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou"><w lemma="δούξ">δ<hi rend="ligature">οὺ</hi>ξ</w></rs> <placeName ref="mentioned_places.xml#Cyprus">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
-<l><lb n="5"/><persName  sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
+<l><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou"><w lemma="δούξ">δ<hi rend="ligature">οὺ</hi>ξ</w></rs> <placeName ref="mentioned_places.xml#Cyprus">Κύ<hi rend="ligature">πρ</hi><hi rend="ligature">ου</hi></placeName> <persName xml:id="Eumathios" type="attested" ref="#Eumathios"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
+<l><lb n="5"/><persName type="attested" sameAs="#Eumathios"><name nymRef="#Ευμάθιοc" type="forename" >Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος</rs> νωβ<supplied reason="lost">ε</supplied>λλισίμων·</l>
 <l><lb n="6"/>β̣άθρων ἀπ’αὐτῶν τὸν νεὼν ἤγειρέ σοι·</l>
 <l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
             </div>
