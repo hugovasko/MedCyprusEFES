@@ -28,6 +28,9 @@
                 <bibl xml:id="DOP"><title type="short">DOP</title><title level="j">Dumbarton Oaks Papers</title></bibl>
                 <bibl xml:id="EKMIMK"><title type="short">EKMIMK</title><title level="j">Επετηρίδα Κέντρου Μελετών Ιεράς Μονής Κύκκου</title></bibl>
                 <bibl xml:id="JÖBG"><title type="short">JÖBG</title><title level="j">Jahrbuch der Österreichischen Byzantinischen Gesellschaft</title></bibl>
+                <bibl xml:id="KS"><title type="short">KS</title><title level="j">Κυπριακαὶ Σπουδαί</title></bibl>
+               <!-- <bibl xml:id="MKE"><title type="short">MKE</title><title level="m">Μεγάλη Κυπριακή Εγκυκλοπαίδεια</title>, ed.<editor><forename>A. </forename><surname>Pavlides</surname></editor>, vols 20, 2nd ed., <pubPlace>Nicosia</pubPlace>, <date>2011-2012</date>.</bibl>-->
+                <bibl xml:id="RDAC"><title type="short">RDAC</title><title level="j">Report of the Department of Antiquities, Cyprus</title></bibl>
                 
             </listBibl>
             
