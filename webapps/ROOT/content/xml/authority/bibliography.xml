@@ -22,17 +22,17 @@
             <listBibl xml:id="abbreviations">
                 <head>Abbreviations</head>
                 
-                <bibl xml:id="ARDAC"><title type="short">ARDAC</title><title level="j">Annual Report of the Department of Antiquities, Cyprus</title></bibl>
-                <bibl xml:id="BBBS"><title type="short">BBBS</title><title level="j">Bulletin of British Byzantine Studies</title></bibl>
-                <bibl xml:id="BMGS"><title type="short">BMGS</title><title level="j">Byzantine and Modern Greek Studies</title></bibl>
-                <bibl xml:id="DOP"><title type="short">DOP</title><title level="j">Dumbarton Oaks Papers</title></bibl>
-                <!-- <bibl xml:id="EcclesMon"><title type="short">EcclesMon</title><author><surname>Bakirtzis</surname><forename> Ch.</forename></author>, <author><surname>Philotheou</surname><forename> G.</forename></author>, with <author><surname>Petrou</surname><forename> Th.</forename></author>, <date>2022</date>, <title level="m">Εκκλησιαστικά Μνημεία της Κύπρου. Κατάλογος εκκλησιών συντηρημένων από το Τμήμα Αρχαιοτήτων με χορηγία του Ιδρύματος Α. Γ. Λεβέντη</title>, 2 vols, <pubPlace>Nicosia</pubPlace>. [cited entries by Th. Petrou and G. Philotheou]</bibl>-->
-                 <bibl xml:id="EKMIMK"><title type="short">EKMIMK</title><title level="j">Επετηρίδα Κέντρου Μελετών Ιεράς Μονής Κύκκου</title></bibl>
-                <bibl xml:id="JÖBG"><title type="short">JÖBG</title><title level="j">Jahrbuch der Österreichischen Byzantinischen Gesellschaft</title></bibl>
-                <bibl xml:id="KS"><title type="short">KS</title><title level="j">Κυπριακαὶ Σπουδαί</title></bibl>
-                <!-- <bibl xml:id="MKE"><title type="short">MKE</title><title level="m">Μεγάλη Κυπριακή Εγκυκλοπαίδεια</title>, ed.<editor><forename>A. </forename><surname>Pavlides</surname></editor>, 20 vols, 2nd ed., <pubPlace>Nicosia</pubPlace>, <date>2011-2012</date>. [most cited entries by A. Papageorgiou]</bibl>-->
-                <bibl xml:id="RDAC"><title type="short">RDAC</title><title level="j">Report of the Department of Antiquities, Cyprus</title></bibl>
-                <!-- <bibl xml:id="VisCult"><title type="short">VisCult</title><title level="m">The Visual Culture of Later Byzantium (c. 1081- c. 1350)</title>, ed.<editor><forename>F. </forename><surname>Spingou</surname></editor>, 2 vols, <pubPlace>Cambridge</pubPlace>, <date>2022</date>. [cited entries by A. Weyl Carr]</bibl>-->                
+                <bibl xml:id="ARDAC"><title type="short">ARDAC</title>: <title level="j">Annual Report of the Department of Antiquities, Cyprus</title></bibl>
+                <bibl xml:id="BBBS"><title type="short">BBBS</title>: <title level="j">Bulletin of British Byzantine Studies</title></bibl>
+                <bibl xml:id="BMGS"><title type="short">BMGS</title>: <title level="j">Byzantine and Modern Greek Studies</title></bibl>
+                <bibl xml:id="DOP"><title type="short">DOP</title>: <title level="j">Dumbarton Oaks Papers</title></bibl>
+                <!-- <bibl xml:id="EcclesMon"><title type="short">EcclesMon</title>: <author><surname>Bakirtzis</surname><forename> Ch.</forename></author>, <author><surname>Philotheou</surname><forename> G.</forename></author>, with <author><surname>Petrou</surname><forename> Th.</forename></author>, <date>2022</date>, <title level="m">Εκκλησιαστικά Μνημεία της Κύπρου. Κατάλογος εκκλησιών συντηρημένων από το Τμήμα Αρχαιοτήτων με χορηγία του Ιδρύματος Α. Γ. Λεβέντη</title>, 2 vols, <pubPlace>Nicosia</pubPlace>. [cited entries by Th. Petrou and G. Philotheou]</bibl>-->
+                 <bibl xml:id="EKMIMK">: <title type="short">EKMIMK</title><title level="j">Επετηρίδα Κέντρου Μελετών Ιεράς Μονής Κύκκου</title></bibl>
+                <bibl xml:id="JÖBG">: <title type="short">JÖBG</title><title level="j">Jahrbuch der Österreichischen Byzantinischen Gesellschaft</title></bibl>
+                <bibl xml:id="KS">: <title type="short">KS</title><title level="j">Κυπριακαὶ Σπουδαί</title></bibl>
+                <!-- <bibl xml:id="MKE">: <title type="short">MKE</title><title level="m">Μεγάλη Κυπριακή Εγκυκλοπαίδεια</title>, ed.<editor><forename>A. </forename><surname>Pavlides</surname></editor>, 20 vols, 2nd ed., <pubPlace>Nicosia</pubPlace>, <date>2011-2012</date>. [most cited entries by A. Papageorgiou]</bibl>-->
+                <bibl xml:id="RDAC">: <title type="short">RDAC</title><title level="j">Report of the Department of Antiquities, Cyprus</title></bibl>
+                <!-- <bibl xml:id="VisCult">: <title type="short">VisCult</title><title level="m">The Visual Culture of Later Byzantium (c. 1081- c. 1350)</title>, ed.<editor><forename>F. </forename><surname>Spingou</surname></editor>, 2 vols, <pubPlace>Cambridge</pubPlace>, <date>2022</date>. [cited entries by A. Weyl Carr]</bibl>-->                
             </listBibl>
             
                 <listBibl xml:id="monuments">
@@ -74,9 +74,9 @@
                     
                     <bibl xml:id="Gabelić1984"><author><surname>Gabelić</surname> <forename>S.</forename></author>,<date>1984</date>, <title level="a">The Church of the Virgin near Kophinou, Cyprus</title>, <title level="j">Κυπριακαὶ Σπουδαί</title> <biblScope unit="volume">48</biblScope>, <biblScope unit="page">143-60</biblScope>.</bibl>    
                     
-                     <bibl xml:id="Gagoshidze2014a"><author><surname>Gagoshidze</surname><forename> I.</forename></author>, <author><surname>Mindorashvili</surname> <forename>D.</forename></author>, and <surname>Gadoshidze</surname> <forename>G.</forename>, <date>2014</date>, <title level="m">Gialia. Georgian Monastery of Cyprus</title>, <pubPlace>Tbilisi</pubPlace>.</bibl>
+                     <bibl xml:id="Gagoshidze2014a"><author><surname>Gagoshidze</surname><forename> I.</forename></author>, <author><surname>Mindorashvili</surname> <forename>D.</forename></author>, and <surname>Gadoshidze</surname> <forename>G.</forename>, <date>2014a</date>, <title level="m">Gialia. Georgian Monastery of Cyprus</title>, <pubPlace>Tbilisi</pubPlace>.</bibl>
                     
-                    <bibl xml:id="Gagoshidze2014b"><author><surname>Gagoshidze</surname><forename> I.</forename></author>, <author><surname>Mindorashvili</surname> <forename>D.</forename></author>, and <surname>Gadoshidze</surname> <forename>G.</forename>, <date>2014</date>, <title level="m">Georgian Monastery of Gialia on Cyprus. Archaeological Finds. Catalogue of Exhibition</title>, <pubPlace>Tbilisi</pubPlace>.</bibl>
+                    <bibl xml:id="Gagoshidze2014b"><author><surname>Gagoshidze</surname><forename> I.</forename></author>, <author><surname>Mindorashvili</surname> <forename>D.</forename></author>, and <surname>Gadoshidze</surname> <forename>G.</forename>, <date>2014b</date>, <title level="m">Georgian Monastery of Gialia on Cyprus. Archaeological Finds. Catalogue of Exhibition</title>, <pubPlace>Tbilisi</pubPlace>.</bibl>
                     
                     <bibl xml:id="Gerasimou2005"><author><surname>Gerasimou</surname> <forename>K.</forename> et al.</author>, <date>2005</date>, <title level="m">The Churches of Pelendria. History, Architecture, Art</title>, <pubPlace>Nicosia</pubPlace>.</bibl>
                     
