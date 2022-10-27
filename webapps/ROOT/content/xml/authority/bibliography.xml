@@ -19,6 +19,13 @@
     </teiHeader>
     <text>
         <body>
+            <listBibl xml:id="abbreviations">
+                <head>Abbreviations</head>
+                
+                <bibl xml:id="ARDAC"><title level="j">ARDAC: Annual Report of the Department of Antiquities, Cyprus</title></bibl>
+                
+            </listBibl>
+            
                 <listBibl xml:id="monuments">
                     <head>The Monuments</head>
                     
