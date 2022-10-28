@@ -253,6 +253,9 @@
                   <xsl:when test="$bibl//t:bibl[@type='abbrev']">
                     <xsl:apply-templates select="$bibl//t:bibl[@type='abbrev'][1]"/>
                   </xsl:when>
+                  <xsl:when test="$bibl//t:title[@type='short']">
+                    <xsl:apply-templates select="$bibl//t:title[@type='short'][1]"/>
+                  </xsl:when>
                   <xsl:otherwise>
                     <xsl:choose>
                       <xsl:when test="$bibl//t:*[@type='abbrev']">
@@ -262,7 +265,7 @@
                         <i><xsl:value-of select="$bibl/@xml:id"/></i>
                       </xsl:when>
                       <xsl:when test="$bibl[ancestor::t:div[@xml:id='authored_editions']] or ($bibl//t:name[@type='surname'] and $bibl//t:date)">
-                        <xsl:for-each select="$bibl//t:name[@type='surname'][not(parent::*/preceding-sibling::t:title)]">
+                        <xsl:for-each select="$bibl//t:name[@type='surname'][not(parent::*/preceding-sibling::t:title[not(@type='short')])]">
                           <xsl:apply-templates select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>
@@ -270,7 +273,7 @@
                         <xsl:apply-templates select="$bibl//t:date"/>
                       </xsl:when>
                       <xsl:when test="$bibl//t:surname and $bibl//t:date">
-                        <xsl:for-each select="$bibl//t:surname[not(parent::*/preceding-sibling::t:title)]">
+                        <xsl:for-each select="$bibl//t:surname[not(parent::*/preceding-sibling::t:title[not(@type='short')])]">
                           <xsl:apply-templates select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>

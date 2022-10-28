@@ -189,7 +189,7 @@
                         <bibl><ptr target="bibliography.xml#Eliades2010"/>Eliades 2010, <citedRange> 473-74</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Panayotidi-Kesisiglou2015"/>Panayotidi-Kesisoglou 2015, <citedRange> 357-66</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papacostas1999"/>Papacostas 1999, <!--<biblScope unit="volume">2</biblScope>-->, <citedRange> 32</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#Papageorghiou2010"/>Papageorghiou 2010, <citedRange> 453-56</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange> 453-56</citedRange></bibl>
                     </listBibl>
                 </place>
                 
@@ -222,7 +222,7 @@
                     <listBibl type="monument">
                         <!--<bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>-->
                         <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 591-94</citedRange></bibl>                        
-                        <bibl><ptr target="bibliography.xml#Papageorghiou2010"/>Papageorghiou 2010, <citedRange> 34-42</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange> 34-42</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#WeylCarr2014"/>Weyl Carr 2014, <citedRange> 167-85</citedRange></bibl>
                     </listBibl>
                 </place>
@@ -814,7 +814,7 @@
                     <!--<listBibl type="monument">
                         <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC<citedRange></citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Chotzakoglou2005"/>Chotzakoglou 2005, <citedRange> 591-94</citedRange></bibl>                        
-                        <bibl><ptr target="bibliography.xml#Papageorghiou2010"/>Papageorghiou 2010, <citedRange> 34-42</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#Papageorgiou2010"/>Papageorgiou 2010, <citedRange> 34-42</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#WeylCarr2014"/>Weyl Carr 2014, <citedRange> 167-85</citedRange></bibl>
                     </listBibl>-->
                 </place>

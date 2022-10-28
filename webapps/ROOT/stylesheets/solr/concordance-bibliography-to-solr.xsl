@@ -23,7 +23,7 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="bibl" select="document($bibliography-al)//tei:bibl[@xml:id=$target][not(@sameAs)]"/>
+        <xsl:variable name="bibl" select="document($bibliography-al)//tei:bibl[@xml:id=$target][not(@sameAs)][not(@copyOf)]"/>
         <xsl:for-each-group select="current-group()" group-by="../tei:citedRange">
           <doc>
             <field name="document_type">
@@ -37,7 +37,7 @@
             </field>
             <field name="concordance_bibliography_date"> 
               <xsl:if test="doc-available($bibliography-al) = fn:true()">
-                <xsl:value-of select="document($bibliography-al)//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
+                <xsl:value-of select="document($bibliography-al)//tei:bibl[not(@sameAs)][not(@copyOf)][@xml:id=$target]//tei:date[1]" />
               </xsl:if>
             </field>
             <field name="concordance_bibliography_cited_range">
@@ -45,9 +45,15 @@
             </field>
             <field name="concordance_bibliography_type">
               <xsl:choose>
-                <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl[ancestor::tei:div[@xml:id='authored_editions']]">authored_editions</xsl:when>
-                <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl[ancestor::tei:div[@xml:id='series_collections']]">series_collections</xsl:when>
+                <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl[ancestor::tei:div[@xml:id]]">
+                  <xsl:value-of select="$bibl/ancestor::tei:div[@xml:id][1]/@xml:id"/>
+                </xsl:when>
+                <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl[ancestor::tei:listBibl[@xml:id]]">
+                  <xsl:value-of select="$bibl/ancestor::tei:listBibl[@xml:id][1]/@xml:id"/>
+                </xsl:when>
               </xsl:choose>
+              <!-- the following is used in MedCyprus to be able to retrieve all entries that should be included both in the 'monuments' and 'inscriptions' sections -->
+              <xsl:if test="$bibl/ancestor::tei:body//tei:bibl[translate(@copyOf,'#','')=$target]">COPY</xsl:if>
             </field>
             <!-- the concordance_bibliography_listed field is used to display just one entry for each bibliographic reference in the bibl. list -->
             <xsl:if test="fn:position()=1">
@@ -62,10 +68,13 @@
                   <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:bibl[@type='abbrev']">
                     <xsl:value-of select="$bibl//tei:bibl[@type='abbrev'][1]"/>
                   </xsl:when>
+                  <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:title[@type='short']">
+                    <xsl:value-of select="$bibl//tei:title[@type='short'][1]"/>
+                  </xsl:when>
                   <xsl:otherwise>
                     <xsl:choose>
                       <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl[ancestor::tei:div[@xml:id='authored_editions']]">
-                        <xsl:for-each select="$bibl//tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                        <xsl:for-each select="$bibl//tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title[not(@type='short')])]">
                           <xsl:value-of select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>
@@ -73,7 +82,7 @@
                           <xsl:value-of select="$bibl//tei:date"/></xsl:if>
                       </xsl:when>
                       <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:surname and $bibl//tei:date">
-                        <xsl:for-each select="$bibl//tei:surname[not(parent::*/preceding-sibling::tei:title)]">
+                        <xsl:for-each select="$bibl//tei:surname[not(parent::*/preceding-sibling::tei:title[not(@type='short')])]">
                           <xsl:value-of select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>
@@ -98,6 +107,7 @@
       <xsl:if test="doc-available($bibliography-al) = fn:true()">
         <xsl:variable name="all_cited_bibl">
           <xsl:for-each select="$root//tei:div[@type='bibliography']//tei:bibl[descendant::tei:citedRange]/tei:ptr/@target">
+            <!--  -->
             <xsl:text> </xsl:text>
             <xsl:choose>
               <xsl:when test="contains(., '#')">
@@ -110,7 +120,7 @@
             <xsl:text> </xsl:text>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each-group select="document($bibliography-al)//tei:bibl[not(@sameAs)][not(contains($all_cited_bibl, concat(' ',@xml:id,' ')))]" group-by="@xml:id"> 
+        <xsl:for-each-group select="document($bibliography-al)//tei:bibl[not(@sameAs)][not(@copyOf)][not(contains($all_cited_bibl, concat(' ',@xml:id,' ')))]" group-by="@xml:id"> 
           <doc>
             <field name="document_type">
               <xsl:text>concordance_bibliography</xsl:text>
@@ -122,10 +132,13 @@
               <xsl:value-of select="descendant::tei:date[1]" />
             </field>
             <field name="concordance_bibliography_type">
-              <xsl:choose>
-                <xsl:when test="ancestor::tei:div[@xml:id='authored_editions']">authored_editions</xsl:when>
-                <xsl:when test="ancestor::tei:div[@xml:id='series_collections']">series_collections</xsl:when>
-              </xsl:choose>
+                <xsl:choose>
+                  <xsl:when test="ancestor::tei:div[@xml:id]"><xsl:value-of select="ancestor::tei:div[@xml:id][1]/@xml:id"/></xsl:when>
+                  <xsl:when test="ancestor::tei:listBibl[@xml:id]"><xsl:value-of select="ancestor::tei:listBibl[@xml:id][1]/@xml:id"/></xsl:when>
+                </xsl:choose>
+              <!-- the following is used in MedCyprus to be able to retrieve all entries that should be included both in the 'monuments' and 'inscriptions' sections -->
+              <xsl:variable name="id" select="@xml:id"/>
+              <xsl:if test="ancestor::tei:body//tei:bibl[translate(@copyOf,'#','')=$id]">COPY</xsl:if>
             </field>
             <!-- the concordance_bibliography_listed field is used to display just one entry for each bibliographic reference in the bibl. list -->
             <field name="concordance_bibliography_listed">
@@ -138,10 +151,13 @@
                   <xsl:when test="descendant::tei:bibl[@type='abbrev']">
                     <xsl:value-of select="descendant::tei:bibl[@type='abbrev'][1]"/>
                   </xsl:when>
+                  <xsl:when test="descendant::tei:title[@type='short']">
+                    <xsl:value-of select="descendant::tei:title[@type='short'][1]"/>
+                  </xsl:when>
                   <xsl:otherwise>
                     <xsl:choose>
                       <xsl:when test="ancestor::tei:div[@xml:id='authored_editions']">
-                        <xsl:for-each select="descendant::tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                        <xsl:for-each select="descendant::tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title[not(@type='short')])]">
                           <xsl:value-of select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>
@@ -149,7 +165,7 @@
                           <xsl:value-of select="descendant::tei:date"/></xsl:if>
                       </xsl:when>
                       <xsl:when test="descendant::tei:surname and descendant::tei:date">
-                        <xsl:for-each select="descendant::tei:surname[not(parent::*/preceding-sibling::tei:title)]">
+                        <xsl:for-each select="descendant::tei:surname[not(parent::*/preceding-sibling::tei:title[not(@type='short')])]">
                           <xsl:value-of select="."/>
                           <xsl:if test="position()!=last()"> – </xsl:if>
                         </xsl:for-each>

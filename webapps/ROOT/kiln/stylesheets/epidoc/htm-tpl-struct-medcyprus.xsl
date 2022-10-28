@@ -97,8 +97,11 @@
                <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
                <a href="{concat('../concordance/bibliography/',$source-id,'.html')}" target="_blank">
                  <xsl:choose>
+                   <xsl:when test="$source//t:title[@type='short']">
+                     <xsl:apply-templates select="$source//t:title[@type='short'][1]"/>
+                   </xsl:when>
                    <xsl:when test="$source//t:surname and $source//t:date">
-                     <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title)]">
+                     <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title[not(@type='short')])]">
                        <xsl:apply-templates select="."/>
                        <xsl:if test="position()!=last()"> – </xsl:if>
                      </xsl:for-each>
@@ -178,8 +181,11 @@
                    <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
                    <a href="../concordance/bibliography/{$source-id}.html" target="_blank">
                      <xsl:choose>
+                       <xsl:when test="$source//t:title[@type='short']">
+                         <xsl:apply-templates select="$source//t:title[@type='short'][1]"/>
+                       </xsl:when>
                        <xsl:when test="$source//t:surname and $source//t:date">
-                         <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title)]">
+                         <xsl:for-each select="$source//t:surname[not(parent::*/preceding-sibling::t:title[not(@type='short')])]">
                            <xsl:apply-templates select="."/>
                            <xsl:if test="position()!=last()"> – </xsl:if>
                          </xsl:for-each>

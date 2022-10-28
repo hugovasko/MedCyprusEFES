@@ -1,46 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<kiln:root xmlns:h="http://apache.org/cocoon/request/2.0"
-           xmlns:xi="http://www.w3.org/2001/XInclude"
-           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-           xmlns:tei="http://www.tei-c.org/ns/1.0"
-           xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
-           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<kiln:root xmlns:h="http://apache.org/cocoon/request/2.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Imports stylesheet to convert Solr results and bibliography
        authority TEI into HTML. -->
-  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/authority/bibliography-to-concordance-html.xsl" />
+  <xsl:import
+    href="cocoon://_internal/template/xsl/stylesheets/authority/bibliography-to-concordance-html.xsl"/>
 
   <kiln:parent>
-    <xi:include href="works.xml" />
+    <xi:include href="works.xml"/>
   </kiln:parent>
 
   <kiln:child>
     <kiln:block name="title">
-      <kiln:super />
+      <kiln:super/>
       <i18n:text i18n:key="menu-concordance-bibliography">Bibliographic Concordance</i18n:text>
     </kiln:block>
 
     <kiln:block name="page-heading">
-      <kiln:super />
+      <kiln:super/>
       <i18n:text i18n:key="menu-concordance-bibliography">Bibliographic Concordance</i18n:text>
     </kiln:block>
 
     <kiln:block name="content">
       <div class="row">
         <div class="large-12 columns">
+
+          <h2 id="abbreviations">Abbreviations</h2>
           <table class="tablesorter">
             <thead>
               <tr>
-            <th scope="col">Date</th>
-          <th scope="col">Bibliographic reference</th>
+                <!--<th scope="col">Date</th>-->
+                <th scope="col">Bibliographic reference</th>
               </tr>
-        </thead>
+            </thead>
             <tbody>
-            <xsl:apply-templates mode="bibl-list" select="/aggregation/response/result/doc">
-              <xsl:sort select="str[@name='concordance_bibliography_short']"/>
-            </xsl:apply-templates>
+              <xsl:apply-templates mode="bibl-list" select="/aggregation/response/result/doc[str[@name='concordance_bibliography_type']='abbreviations']">
+                <xsl:sort select="str[@name='concordance_bibliography_short']"/>
+              </xsl:apply-templates>
             </tbody>
           </table>
+
+          <h2 id="monuments">The Monuments</h2>
+          <table class="tablesorter">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Bibliographic reference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates mode="bibl-list" select="/aggregation/response/result/doc[str[@name='concordance_bibliography_type']=('monuments','monumentsCOPY')]">
+                <xsl:sort select="str[@name='concordance_bibliography_short']"/>
+              </xsl:apply-templates>
+            </tbody>
+          </table>
+
+          <h2 id="inscriptions">The Inscriptions</h2>
+          <table class="tablesorter">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Bibliographic reference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates mode="bibl-list" select="/aggregation/response/result/doc[str[@name='concordance_bibliography_type']=('inscriptions','monumentsCOPY')]">
+                <xsl:sort select="str[@name='concordance_bibliography_short']"/>
+              </xsl:apply-templates>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </kiln:block>
