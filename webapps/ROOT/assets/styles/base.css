@@ -8,6 +8,10 @@ ul.index-instances { }
 
 .index-instance-line { }
 
+#diplomatic *[lang="grc"], #diplomatic *[lang="la"] {
+    font-family: "Athena Ruby", "New Athena Unicode", "Lucida Grande", "Palatino Linotype", "Verdana", "Tahoma", serif !important;
+   }
+
 #site-heading {
   background: black;
   height: 5.5em;
@@ -306,4 +310,11 @@ div#full_map {
     src: url('fonts/nauBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: "Athena Ruby";
+    src: url('fonts/athenaruby.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
