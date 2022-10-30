@@ -30,9 +30,9 @@
                  <bibl xml:id="EKMIMK"><title type="short">EKMIMK</title> <title level="j">Επετηρίδα Κέντρου Μελετών Ιεράς Μονής Κύκκου</title></bibl>
                 <bibl xml:id="JÖBG"><title type="short">JÖBG</title> <title level="j">Jahrbuch der Österreichischen Byzantinischen Gesellschaft</title></bibl>
                 <bibl xml:id="KS"><title type="short">KS</title> <title level="j">Κυπριακαὶ Σπουδαί</title></bibl>
-                <bibl xml:id="MKE"> <title type="short">MKE</title><title level="m">Μεγάλη Κυπριακή Εγκυκλοπαίδεια</title>, ed.<editor><forename>A. </forename><surname>Pavlides</surname></editor>, 20 vols, 2nd ed., <pubPlace>Nicosia</pubPlace>, <date>2011-2012</date>. [most cited entries by A. Papageorgiou]</bibl>
+                <bibl xml:id="MKE"> <title type="short">MKE</title><title level="m">Μεγάλη Κυπριακή Εγκυκλοπαίδεια</title>, ed.<editor> <forename>A. </forename><surname>Pavlides</surname></editor>, 20 vols, 2nd ed., <pubPlace>Nicosia</pubPlace>, <date>2011-2012</date>. [most cited entries by A. Papageorgiou]</bibl>
                 <bibl xml:id="RDAC"><title type="short">RDAC</title> <title level="j">Report of the Department of Antiquities, Cyprus</title></bibl>
-                <bibl xml:id="VisCult"> <title type="short">VisCult</title><title level="m">The Visual Culture of Later Byzantium (c. 1081- c. 1350)</title>, ed.<editor><forename>F. </forename><surname>Spingou</surname></editor>, 2 vols, <pubPlace>Cambridge</pubPlace>, <date>2022</date>. [cited entries by A. Weyl Carr]</bibl>                
+                <bibl xml:id="VisCult"> <title type="short">VisCult</title><title level="m">The Visual Culture of Later Byzantium (c. 1081- c. 1350)</title>, ed.<editor> <forename>F. </forename><surname>Spingou</surname></editor>, 2 vols, <pubPlace>Cambridge</pubPlace>, <date>2022</date>. [cited entries by A. Weyl Carr]</bibl>                
             </listBibl>
             
                 <listBibl xml:id="monuments">
