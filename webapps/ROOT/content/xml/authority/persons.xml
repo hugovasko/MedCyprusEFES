@@ -31,8 +31,9 @@
                         <birth  notBefore="1050">Around the middle of the 11th century</birth>
                         <death notBefore="1118">After 1118</death>                        
                         <floruit from="1092" to="1118">1092-1118</floruit>
-                        <occupation type="occupation"></occupation>
-                        <idno type="wikidata"></idno>-->
+                        <occupation type="office-secular">doux (military governor) of Cyprus (δοὺξ Κύπρου)</occupation>
+                        <occupation type="dignity">protonobelissimos (πρώτιστος νωβελλισίμων)</occupation>
+                        <idno type="wikidata">https://www.wikidata.org/wiki/Q928648</idno>
                         <idno type="PBW">http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/</idno>
                     </person>
                     
