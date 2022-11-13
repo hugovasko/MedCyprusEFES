@@ -91,11 +91,10 @@
                         <persName xml:lang="en"><forename>Theodore</forename> <surname>Apseudes</surname></persName>
                         <persName xml:lang="grc">Θεόδωρος Αψευδής</persName>
                         <note>painter of the cell and bema (1183), Hermitage of Saint Neophytos, Tala</note>
-                        <floruit notBefore="1167" notAfter="1233">Late 12th-early 13th century</floruit>
-                        <!--<floruit from="" to="">beginning and end dates of life/reign/etc.</floruit>-->
+                        <floruit notBefore="1167" notAfter="1233">Late 12th-early 13th century</floruit>                        
                         <occupation type="occupation">painter</occupation>
                         <idno type="wikidata">https://www.wikidata.org/wiki/Q108041020</idno>
-                        <idno type="PBW"></idno>
+                        <idno type="PBW">Not included</idno>
                     </person>
                     
                 </listPerson>
