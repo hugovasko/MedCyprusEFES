@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Authority list of persons in MedCyprus</title>
+                <title>Authority List of Persons attested in MedCyprus</title>
             </titleStmt>
             <publicationStmt><ab/></publicationStmt>
             <sourceDesc><ab/></sourceDesc>
@@ -24,11 +24,13 @@
                         <idno type="PBW">...</idno>-->
                     </person>
                     
-                    <person xml:id="Eumathios">
+                    <person xml:id="EumathiosPhilokales">
                         <persName xml:lang="en"><forename>Eumathios</forename> <surname>Philokales</surname></persName>
-                        <persName xml:lang="grc">Ευμάθιος Φιλοκάλης</persName>
-                        <!--<note>...</note>
-                        <floruit notBefore="..." notAfter="...">...</floruit>
+                        <persName xml:lang="grc"><forename>Εὐμάθιος</forename> <surname>Φιλοκάλης</surname></persName>
+                        <note>Donor (construction and painted decoration) of the chapel of Holy Trinity, Monastery of St John Chrysostom, Koutsovendes</note>
+                        <birth  notBefore="1050">Around the middle of the 11th century</birth>
+                        <death notBefore="1118">After 1118</death>                        
+                        <floruit from="1092" to="1118">1092-1118</floruit>
                         <occupation type="occupation"></occupation>
                         <idno type="wikidata"></idno>-->
                         <idno type="PBW">http://pbw2016.kdl.kcl.ac.uk/person/Eumathios/102/</idno>
