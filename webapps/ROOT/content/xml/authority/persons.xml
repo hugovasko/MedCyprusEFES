@@ -85,7 +85,18 @@
                         <occupation type="occupation"></occupation>
                         <idno type="wikidata"></idno>
                         <idno type="PBW">...</idno>-->
-                    </person>    
+                    </person> 
+                    
+                    <person xml:id="NikephorosIschyrios">
+                        <persName xml:lang="en"><forename>Nikephoros</forename> <surname>Ischyrios</surname></persName>
+                        <persName xml:lang="grc"><forename>Νικηφόρος</forename> <surname>Ἰσχύριος (alternative spellings: Υσχύριος, Υσχίριος)</surname></persName>
+                        <note>Founder of the church of Panagia Phorbiotissa or Asinou, Niketari, and donor of its 1105/6 murals</note>
+                        <birth  notBefore="1050">Around the middle of the 11th century</birth>
+                        <death notAfter="1133">Early 12th century</death>                   
+                        <occupation type="dignity">magistros (μάγιστρος)</occupation>
+                        <idno type="wikidata">Not listed</idno>
+                        <idno type="PBW">Not included</idno>
+                    </person>
                     
                     <person xml:id="TheodoreApseudes">
                         <persName xml:lang="en"><forename>Theodore</forename> <surname>Apseudes</surname></persName>
