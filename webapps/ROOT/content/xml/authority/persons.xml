@@ -24,6 +24,15 @@
                         <idno type="PBW">...</idno>-->
                     </person>
                     
+                    <person xml:id="AnastasiaSaramalyna">
+                        <persName xml:lang="en"><forename>Anastasia</forename> <surname>Saramalyna</surname></persName>
+                        <persName xml:lang="grc"><forename>Ἀναστασία</forename> <surname>Σαραμαλύνα</surname></persName>
+                        <note>Donor of the mural panel of St Anastasia the Deliverer from Poisons in the narthex of Panagia Phorbiotissa or Asinou, Niketari</note>
+                        <floruit from="1200" to="1299">13th century</floruit>                
+                        <idno type="wikidata">Not listed</idno>
+                        <idno type="PBW">Not included</idno>
+                    </person>
+                    
                     <person xml:id="EumathiosPhilokales">
                         <persName xml:lang="en"><forename>Eumathios</forename> <surname>Philokales</surname></persName>
                         <persName xml:lang="grc"><forename>Εὐμάθιος</forename> <surname>Φιλοκάλης</surname></persName>
