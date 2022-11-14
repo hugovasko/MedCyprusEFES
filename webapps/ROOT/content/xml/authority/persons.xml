@@ -29,8 +29,8 @@
                         <persName xml:lang="grc"><forename>Ἀλέξιος</forename> <surname>Κομνηνός</surname></persName>       
                         <birth  notBefore="1050" notAfter="1057">Around 1057</birth>
                         <death when="1118">1118</death>                       
-                        <floruit from="1081" to="1118" ana="#reign">1081-1118</floruit>
-                        <occupation type="office-secular">Emperor</occupation>
+                        <floruit from="1081" to="1118">reign1081-1118</floruit>
+                        <occupation type="office-secular">emperor</occupation>
                         <note>The church of Panagia Phorbiotissa or Asinou, Niketari was constructed and first decorated with wall-paintings during his reign (acknowledged in the donor's inscription).</note>
                         <idno type="wikidata">https://www.wikidata.org/wiki/Q41600</idno>
                         <idno type="PBW">http://pbw2016.kdl.kcl.ac.uk/person/Alexios/1/</idno>
@@ -39,17 +39,15 @@
                     <person xml:id="AnastasiaSaramalyna">
                         <persName xml:lang="en"><forename>Anastasia</forename> <surname>Saramalyna</surname></persName>
                         <persName xml:lang="grc"><forename>Ἀναστασία</forename> <surname>Σαραμαλύνα</surname></persName>
+                        <floruit notBefore="1201" notAfter="1300">13th century</floruit>                
                         <note>Donor of the mural panel of St Anastasia the Deliverer from Poisons in the narthex of Panagia Phorbiotissa or Asinou, Niketari</note>
-                        <floruit from="1200" to="1299">13th century</floruit>                
-                        <idno type="wikidata">Not listed</idno>
-                        <idno type="PBW">Not included</idno>
                     </person>
                     
                     <person xml:id="EumathiosPhilokales">
                         <persName xml:lang="en"><forename>Eumathios</forename> <surname>Philokales</surname></persName>
                         <persName xml:lang="grc"><forename>Εὐμάθιος</forename> <surname>Φιλοκάλης</surname></persName>
-                        <birth  notBefore="1050" notAfter="1092">Around the middle of the 11th century</birth>
-                        <death notBefore="1118">After 1118</death>                        
+                        <birth  notBefore="1050" notAfter="1070">Around the middle of the 11th century</birth>
+                        <death notBefore="1118" notAfter="1150">After 1118</death>                        
                         <floruit from="1092" to="1118">1092-1118</floruit>
                         <occupation type="office-secular" xml:lang="en">doux (military governor) of Cyprus</occupation>
                         <occupation type="office-secular" xml:lang="grc">δοὺξ Κύπρου</occupation>
@@ -112,24 +110,22 @@
                     
                     <person xml:id="NikephorosIschyrios">
                         <persName xml:lang="en"><forename>Nikephoros</forename> <surname>Ischyrios</surname></persName>
-                        <persName xml:lang="grc"><forename>Νικηφόρος</forename> <surname>Ἰσχύριος</surname></persName>
+                        <persName xml:lang="grc"><forename>Νικηφόρος</forename> <surname>Ἰσχύριος</surname></persName>    
+                        <birth  notBefore="1034" notAfter="1067">Around the middle of the 11th century</birth>
+                        <death notBefore="1106" notAfter="1133">Early 12th century</death>                   
+                        <occupation type="dignity" xml:lang="en">magistros</occupation>                        
+                        <occupation type="dignity" xml:lang="grc">μάγιστρος</occupation>
                         <note>Founder of the church of Panagia Phorbiotissa or Asinou, Niketari, and donor of its 1105/6 murals</note>
-                        <birth  notBefore="1050">Around the middle of the 11th century</birth>
-                        <death notAfter="1133">Early 12th century</death>                   
-                        <occupation type="dignity">magistros (μάγιστρος)</occupation>
-                        <idno type="wikidata">Not listed</idno>
-                        <idno type="PBW">Not included</idno>
                     </person>
                     
                     <person xml:id="TheodoreApseudes">
                         <persName xml:lang="en"><forename>Theodore</forename> <surname>Apseudes</surname></persName>
                         <persName xml:lang="grc">Θεόδωρος Αψευδής</persName>
-                        <note>painter of the cell and bema (1183), Hermitage of Saint Neophytos, Tala</note>
                         <floruit notBefore="1167" notAfter="1233">Late 12th-early 13th century</floruit>                        
                         <occupation type="occupation">painter</occupation>
+                        <note>painter of the cell and bema (1183), Hermitage of Saint Neophytos, Tala</note>
                         <idno type="wikidata">https://www.wikidata.org/wiki/Q108041020</idno>
-                        <idno type="PBW">Not included</idno>
-                    </person>
+                       </person>
                     
                 </listPerson>
             </div>
