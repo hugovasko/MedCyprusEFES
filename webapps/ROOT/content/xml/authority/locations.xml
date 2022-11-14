@@ -529,12 +529,12 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="GialiaChapel" n="17"><!-- check coordinates -->
+                <place xml:id="GialiaChapel" n="17">
                     <placeName xml:lang="en">Gialia, Monastery of Panagia Chrysogialiotissa, Saint George chapel</placeName>
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>35.089495642123936, 32.5552</geo></location>
+                    <location><geo>35.0896, 32.55495468191464</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -670,7 +670,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="KalopanagiotisKatholikon" n="22"> <!-- check coordinates -->
+                <place xml:id="KalopanagiotisKatholikon" n="22">
                     <placeName xml:lang="en">Kalopanagiotis, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
                     <placeName xml:lang="en">Kalopanagiotes, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
                     <placeName xml:lang="el">...</placeName>
