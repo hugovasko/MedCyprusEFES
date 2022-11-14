@@ -59,8 +59,10 @@
             <creation>Mango, Hawkins, Boyd 1990 </creation>            
         </profileDesc>
     </teiHeader>
-    <facsimile>
-        <graphic url="..."/>
+    <facsimile><surface n="i"><desc>Southwest pier, west face</desc>
+        <graphic url="Koutsoventis_fig.1"><desc>Photograph (1969)</desc></graphic></surface>
+        <surface n="ii"><desc>Southewest pier, west face, inscription</desc>
+        <graphic url="Koutsoventis_fig.2"><desc>Photograph (1969)</desc></graphic></surface>
     </facsimile>
     <text>
         <body>
