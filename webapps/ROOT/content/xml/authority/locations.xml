@@ -529,7 +529,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="GialiaChapel" n="17">
+                <place xml:id="GialiaChapel" n="17"><!-- check coordinates -->
                     <placeName xml:lang="en">Gialia, Monastery of Panagia Chrysogialiotissa, Saint George chapel</placeName>
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
@@ -670,7 +670,7 @@
                     </listBibl>
                 </place>
                 
-                <place xml:id="KalopanagiotisKatholikon" n="22">
+                <place xml:id="KalopanagiotisKatholikon" n="22"> <!-- check coordinates -->
                     <placeName xml:lang="en">Kalopanagiotis, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
                     <placeName xml:lang="en">Kalopanagiotes, Monastery of Saint John Lampadistes, katholikon of Saint Herakleidios</placeName>
                     <placeName xml:lang="el">...</placeName>
@@ -1608,7 +1608,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>35.2838334482225, 33.38907460140891</geo></location>
+                    <location><geo>35.28375, 33.38907</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>
@@ -1637,7 +1637,7 @@
                     <placeName xml:lang="el">...</placeName>
                     <placeName type="district" ref="district.xml#...">...</placeName>
                     <placeName type="diocese" ref="diocese.xml#...">...</placeName>
-                    <location><geo>35.2838334482225, 33.3889</geo></location>
+                    <location><geo>35.2841, 33.388943</geo></location>
                     <desc type="construction"><date>...</date></desc>
                     <desc type="function">...</desc>
                     <desc type="context">...</desc>

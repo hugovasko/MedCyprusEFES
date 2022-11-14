@@ -81,6 +81,9 @@
           <field name="index_id">
             <xsl:value-of select="translate(string-join($id, ''), ' ', '_')"/>
           </field>
+          <field name="index_number">
+            <xsl:value-of select="$idno/@n"/>
+          </field>
           <field name="index_item_type">
             <xsl:choose>
               <xsl:when test="self::tei:origPlace"><xsl:text>Monument</xsl:text></xsl:when>

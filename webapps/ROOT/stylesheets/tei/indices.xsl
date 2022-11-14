@@ -39,7 +39,8 @@
   
   <xsl:template match="result/doc[arr[@name='index_coordinates']]"> <!-- i.e. locations index -->
     <div id="{str[@name='index_id']}" class="monument">
-      <h2><xsl:apply-templates select="str[@name='index_item_name']" /></h2>
+      <h2><xsl:if test="str[@name='index_number']!=''"><xsl:value-of select="str[@name='index_number']"/><xsl:text>. </xsl:text></xsl:if>
+        <xsl:apply-templates select="str[@name='index_item_name']"/></h2>
       <h3><xsl:value-of select="string-join(arr[@name='index_item_alt_name']/str, '; ')"/></h3>
       
       <xsl:if test="arr[@name='index_coordinates']">
@@ -97,7 +98,7 @@
       <xsl:apply-templates select="str[@name='index_ecclesiastical_office']" />
       <xsl:apply-templates select="str[@name='index_occupation']" />
       <xsl:apply-templates select="str[@name='index_relation']" />
-      <xsl:apply-templates select="str[@name='index_inscription_date']" />
+      <!--<xsl:apply-templates select="str[@name='index_inscription_date']" />-->
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </tr>
   </xsl:template>
@@ -149,64 +150,50 @@
       <xsl:if test="ancestor::doc[descendant::str[@name='index_surname']]">
         <br/><button type="button" class="expander" onclick="$(this).next().toggleClass('shown'); $(this).text($(this).next().hasClass('shown') ? '[Collapse]' : '[Expand]');">[Expand]</button>
         <span class="expanded">
-          <xsl:text>Forename: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_item_name']"/>
-          <br/><xsl:text>Surname: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_surname']"/>
-          <br/><xsl:text>Greek name: </xsl:text><xsl:for-each select="ancestor::doc/arr[@name='index_item_alt_name']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()">. </xsl:if></xsl:for-each>
-          <br/><xsl:text>Period: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_floruit']"/>
-          <br/><xsl:text>Secular office: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_secular_office']"/>
-          <br/><xsl:text>Ecclesiastical office: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_ecclesiastical_office']"/>
-          <br/><xsl:text>Occupation: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_occupation']"/>
-          <br/><xsl:text>Association with monument: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_relation']"/>
-          <br/><xsl:text>Notes: </xsl:text><xsl:value-of select="ancestor::doc/str[@name='index_note']"/>
-          <br/><xsl:for-each select="ancestor::doc/arr[@name='index_external_resource']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()"><br/></xsl:if></xsl:for-each>
+          <b>Name: </b><xsl:value-of select="ancestor::doc/str[@name='index_item_name']"/> <xsl:text> </xsl:text> <xsl:value-of select="ancestor::doc/str[@name='index_surname']"/>
+          <br/><b>Greek name: </b><xsl:for-each select="ancestor::doc/arr[@name='index_item_alt_name']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()">, </xsl:if></xsl:for-each>
+          
+          <xsl:if test="ancestor::doc/str[@name='index_birth']!=''">
+          <br/><b>Birth: </b><xsl:value-of select="ancestor::doc/str[@name='index_birth']"/>
+          </xsl:if>
+          
+          <xsl:if test="ancestor::doc/str[@name='index_death']!=''">
+          <br/><b>Death: </b><xsl:value-of select="ancestor::doc/str[@name='index_death']"/>
+          </xsl:if>
+          
+          <xsl:if test="ancestor::doc/str[@name='index_floruit']!=''">
+          <br/><b>Floruit: </b><xsl:value-of select="ancestor::doc/str[@name='index_floruit']"/>
+          </xsl:if>
+          
+          <xsl:if test="ancestor::doc/str[@name='index_secular_office']!=''">
+            <br/><b>Secular office: </b><xsl:value-of select="ancestor::doc/str[@name='index_secular_office']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/str[@name='index_ecclesiastical_office']!=''">
+            <br/><b>Ecclesiastical office: </b><xsl:value-of select="ancestor::doc/str[@name='index_ecclesiastical_office']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/str[@name='index_dignity']!=''">
+            <br/><b>Dignity: </b><xsl:value-of select="ancestor::doc/str[@name='index_dignity']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/str[@name='index_occupation']!=''">
+      <br/><b>Occupation: </b><xsl:value-of select="ancestor::doc/str[@name='index_occupation']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/str[@name='index_relation']!=''">
+      <br/><b>Association with monument: </b><xsl:value-of select="ancestor::doc/str[@name='index_relation']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/str[@name='index_note']!=''">
+      <br/><b>Notes: </b><xsl:value-of select="ancestor::doc/str[@name='index_note']"/>
+          </xsl:if>
+          <xsl:if test="ancestor::doc/arr[@name='index_external_resource']/str[.!='']">
+      <br/><xsl:for-each select="ancestor::doc/arr[@name='index_external_resource']/str">
+        <xsl:apply-templates select="."/><xsl:if test="position()!=last()"><br/></xsl:if>
+      </xsl:for-each>
+          </xsl:if>
         </span>
       </xsl:if>
     </th>
   </xsl:template>
   
-  <xsl:template match="str[@name='index_surname']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_honorific']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_secular_office']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_dignity']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-
-  <xsl:template match="str[@name='index_ecclesiastical_office']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_occupation']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_relation']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_inscription_date']">
+  <xsl:template match="str[@name=('index_surname', 'index_honorific', 'index_secular_office', 'index_dignity', 'index_ecclesiastical_office', 'index_occupation', 'index_relation', 'index_inscription_date', 'index_item_type', 'index_item_role', 'index_numeral_value', 'index_id')]">
     <td>
       <xsl:value-of select="."/>
     </td>
@@ -217,24 +204,6 @@
       <ul class="index-instances inline-list">
         <xsl:apply-templates select="str" />
       </ul>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_item_type']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_item_role']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-
-  <xsl:template match="str[@name='index_numeral_value']">
-    <td>
-      <xsl:value-of select="."/>
     </td>
   </xsl:template>
 
@@ -250,12 +219,6 @@
     <li>
       <xsl:value-of select="."/>
     </li>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_id']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
   </xsl:template>
   
   <xsl:template match="arr[@name='index_epithet']">
@@ -310,7 +273,7 @@
   
   
   <xsl:template match="arr[@name='index_external_resource']/str">
-    <xsl:value-of select="substring-before(., ': ')"/><xsl:text>: </xsl:text>
+    <b><xsl:value-of select="substring-before(., ': ')"/>: </b>
     <a target="_blank" href="{substring-after(., ': ')}"><xsl:value-of select="substring-after(., ': ')"/></a>
   </xsl:template>
   

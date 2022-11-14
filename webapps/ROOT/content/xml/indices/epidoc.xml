@@ -103,10 +103,10 @@
             <item>Honorific</item>
             <item>Office (secular)</item>
             <item>Dignity</item>
-            <item>Office (ecclesiastical / monastics)</item>
+            <item>Office (ecclesiastical)</item> <!--  / monastics -->
             <item>Occupation</item>
             <item>Association with monument</item>
-            <item>Inscription date</item>
+            <!--<item>Inscription date</item>-->
             <item>Refences</item>
           </list>
         </div>

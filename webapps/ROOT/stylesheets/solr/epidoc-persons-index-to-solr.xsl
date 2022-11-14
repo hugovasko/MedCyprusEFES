@@ -13,8 +13,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each
-        select="//tei:persName[@type!='divine'][@type!='sacred'][not(@sameAs)][ancestor::tei:div/@type = 'edition']">
+      <xsl:for-each-group select="//tei:persName[@type!='divine'][@type!='sacred'][not(@sameAs)][ancestor::tei:div/@type = 'edition']" group-by="concat(@ref,'-',@role)">
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">
@@ -36,157 +35,102 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path"/>
+          
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="$idno//tei:persName[@xml:lang = 'en'][1]/tei:forename">
-                <xsl:value-of select="$idno//tei:persName[@xml:lang = 'en'][1]/tei:forename"/>
+              <xsl:when test="$idno//tei:persName[@xml:lang='en'][1]/tei:forename">
+                <xsl:value-of select="$idno//tei:persName[@xml:lang='en'][1]/tei:forename"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of
-                  select="translate(string-join(descendant::tei:name[@type = 'forename']/@nymRef, ' '), '#', '')"/>
-                <xsl:if
-                  test="ancestor::tei:div[@type = 'edition']//tei:persName[@sameAs = concat('#', $xmlid)]">
-                  <xsl:for-each
-                    select="ancestor::tei:div[@type = 'edition']//tei:persName[@sameAs = concat('#', $xmlid)]/descendant::tei:name[@type = 'forename']/@nymRef">
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="translate(., '#', '')"/>
-                  </xsl:for-each>
-                </xsl:if>
+                <xsl:value-of select="$id"/>
               </xsl:otherwise>
             </xsl:choose>
           </field>
+          
           <field name="index_surname">
-            <xsl:choose>
-              <xsl:when test="$idno//tei:persName[@xml:lang = 'en'][1]/tei:surname">
-                <xsl:value-of select="$idno//tei:persName[@xml:lang = 'en'][1]/tei:surname"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of
-                  select="translate(string-join(descendant::tei:name[@type = 'surname']/@nymRef, ' '), '#', '')"/>
-                <xsl:if
-                  test="ancestor::tei:div[@type = 'edition']//tei:persName[@sameAs = concat('#', $xmlid)]">
-                  <xsl:for-each
-                    select="ancestor::tei:div[@type = 'edition']//tei:persName[@sameAs = concat('#', $xmlid)]/descendant::tei:name[@type = 'surname']/@nymRef">
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="translate(., '#', '')"/>
-                  </xsl:for-each>
-                </xsl:if>
-              </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="$idno//tei:persName[@xml:lang='en'][1]/tei:surname"/>
           </field>
+          
           <field name="index_item_alt_name">
-            <xsl:value-of select="$idno//tei:persName[@xml:lang='grc']"/>
+            <xsl:value-of select="$idno//tei:persName[@xml:lang='grc'][1]"/>
           </field>
+          
           <field name="index_note">
             <xsl:value-of select="$idno//tei:note[1]"/>
           </field>
+            
           <field name="index_floruit">
-            <xsl:value-of select="$idno//tei:floruit[1]"/>
+            <xsl:for-each select="$idno//tei:floruit">
+            <xsl:value-of select="."/>
+            <xsl:if test="@ana"><xsl:text> (</xsl:text><xsl:value-of select="translate(@ana, '#', '')"/><xsl:text>)</xsl:text></xsl:if>
+              <xsl:if test="position()!=last()">; </xsl:if>
+            </xsl:for-each>
           </field>
+          
+            <field name="index_birth">
+              <xsl:value-of select="$idno//tei:birth[1]"/>
+            </field> 
+         
+            <field name="index_death">
+              <xsl:value-of select="$idno//tei:death[1]"/>
+            </field>
+            
           <xsl:for-each select="$idno//tei:idno[@type]">
             <field name="index_external_resource">
               <xsl:choose>
                 <xsl:when test="lower-case(@type) = 'pbw'"><xsl:text>PBW</xsl:text></xsl:when>
-                <xsl:when test="lower-case(@type) = 'wikidata'"
-                  ><xsl:text>WikiData</xsl:text></xsl:when>
+                <xsl:when test="lower-case(@type) = 'wikidata'"><xsl:text>WikiData</xsl:text></xsl:when>
                 <xsl:otherwise><xsl:value-of select="@type"/></xsl:otherwise>
               </xsl:choose>: <xsl:value-of select="."/>
             </field>
           </xsl:for-each>
-
-          <field name="index_honorific">
-            <xsl:choose>
-              <xsl:when
-                test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type = 'honorific']">
+            
+              <field name="index_honorific">
                 <xsl:for-each select="$idno//tei:occupation[@type = 'honorific']">
                   <xsl:value-of select="."/>
                   <xsl:if test="position() != last()">; </xsl:if>
                 </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
           </field>
-
-          <field name="index_secular_office">
-            <xsl:choose>
-              <xsl:when
-                test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type = 'office-secular']">
-                <xsl:for-each select="$idno//tei:occupation[@type = 'office-secular']">
-                  <xsl:value-of select="."/>
-                  <xsl:if test="position() != last()">; </xsl:if>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
+            
+              <field name="index_secular_office">
+                  <xsl:for-each select="$idno//tei:occupation[@type = 'office-secular']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">; </xsl:if>
+                  </xsl:for-each>
           </field>
-
-          <field name="index_dignity">
-            <xsl:choose>
-              <xsl:when
-                test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type = 'dignity']">
-                <xsl:for-each select="$idno//tei:occupation[@type = 'dignity']">
-                  <xsl:value-of select="."/>
-                  <xsl:if test="position() != last()">; </xsl:if>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
+              
+                <field name="index_dignity">
+                  <xsl:for-each select="$idno//tei:occupation[@type = 'dignity']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">; </xsl:if>
+                  </xsl:for-each>
           </field>
-
-          <field name="index_ecclesiastical_office">
-            <xsl:choose>
-              <xsl:when
-                test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type = 'office-ecclesiastical']">
-                <xsl:for-each select="$idno//tei:occupation[@type = 'office-ecclesiastical']">
-                  <xsl:value-of select="."/>
-                  <xsl:if test="position() != last()">; </xsl:if>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
+              
+                <field name="index_ecclesiastical_office">
+                  <xsl:for-each select="$idno//tei:occupation[@type = 'office-ecclesiastical']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">; </xsl:if>
+                  </xsl:for-each>
           </field>
-
-          <field name="index_occupation">
-            <xsl:choose>
-              <xsl:when
-                test="doc-available($personsAL) = fn:true() and $idno//tei:occupation[@type = 'occupation']">
-                <xsl:for-each select="$idno//tei:occupation[@type = 'occupation']">
-                  <xsl:value-of select="."/>
-                  <xsl:if test="position() != last()">; </xsl:if>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
+              
+                <field name="index_occupation">
+                  <xsl:for-each select="$idno//tei:occupation[@type = 'occupation']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">; </xsl:if>
+                  </xsl:for-each>
           </field>
+             
+                <field name="index_relation">
+                  <xsl:value-of select="@role"/>
+          </field> 
 
-          <field name="index_relation">
-            <xsl:choose>
-              <xsl:when test="@role">
-                <xsl:value-of select="@role"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="'-'"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </field>
-
-          <field name="index_inscription_date">
+          <!--<field name="index_inscription_date">
             <xsl:value-of select="ancestor::tei:TEI/tei:teiHeader//tei:origDate"/>
-          </field>
+          </field>-->
 
-          <xsl:apply-templates select="current()"/>
+          <xsl:apply-templates select="current-group()"/>
         </doc>
-      </xsl:for-each>
+      </xsl:for-each-group>
     </add>
   </xsl:template>
 
