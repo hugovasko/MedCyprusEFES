@@ -60,15 +60,10 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="Koutsoventisfig.1.jpg"><desc>Southeast pier, west face (1969)</desc></graphic>
-        <graphic url="Koutsoventisfig.2.jpg"><desc>Southeast pier, west face, inscription (1969)</desc></graphic>
+        <graphic url="Koutsoventisfig.1.jpg"><desc>Southeast pier, west face (Mango, Hawkins, Boyd 1990, fig.83)</desc></graphic>
+        <graphic url="Koutsoventisfig.2.jpg"><desc>Southeast pier, west face, inscription (Mango, Hawkins, Boyd 1990, fig.84)</desc></graphic>
     </facsimile>
     
-    <!-- <facsimile><surface n="i"><desc>Southwest pier, west face</desc>
-        <graphic url="Koutsoventis_fig.1"><desc>Photograph (1969)</desc></graphic></surface>
-        <surface n="ii"><desc>Southewest pier, west face, inscription</desc>
-        <graphic url="Koutsoventis_fig.2"><desc>Photograph (1969)</desc></graphic></surface>
-    </facsimile>-->
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
