@@ -21,7 +21,7 @@
         <div type="headings">
           <list>
             <item>Lemma</item>
-            <item>Language code</item>
+            <!--<item>Language code</item>-->
             <item>References</item>
           </list>
         </div>

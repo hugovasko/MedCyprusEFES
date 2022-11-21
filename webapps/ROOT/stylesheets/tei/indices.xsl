@@ -148,7 +148,8 @@
       <xsl:value-of select="."/>
       <!-- if persons index: show popup with info from persons.xml AL -->
       <xsl:if test="ancestor::doc[descendant::str[@name='index_surname']]">
-        <br/><button type="button" class="expander" onclick="$(this).next().toggleClass('shown'); $(this).text($(this).next().hasClass('shown') ? '[Collapse]' : '[Expand]');">[Expand]</button>
+        <xsl:text> </xsl:text>
+        <button type="button" class="expander" onclick="$(this).next().toggleClass('shown'); $(this).text($(this).next().hasClass('shown') ? '[-]' : '[+]');">[+]</button>
         <span class="expanded">
           <b>Name: </b><xsl:value-of select="ancestor::doc/str[@name='index_item_name']"/> <xsl:text> </xsl:text> <xsl:value-of select="ancestor::doc/str[@name='index_surname']"/>
           <br/><b>Greek name: </b><xsl:for-each select="ancestor::doc/arr[@name='index_item_alt_name']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()">, </xsl:if></xsl:for-each>
