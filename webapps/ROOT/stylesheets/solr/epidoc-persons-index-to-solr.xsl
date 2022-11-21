@@ -38,7 +38,7 @@
           
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="$idno//tei:persName[@xml:lang='en'][1]/tei:forename">
+              <xsl:when test="$idno//tei:persName[@xml:lang='en']/tei:forename">
                 <xsl:value-of select="$idno//tei:persName[@xml:lang='en'][1]/tei:forename"/>
               </xsl:when>
               <xsl:otherwise>

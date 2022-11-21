@@ -81,6 +81,7 @@
         <div type="headings">
           <list>
             <item>Name</item>
+            <item>Type</item>
             <item>References</item>
           </list>
         </div>
@@ -107,7 +108,7 @@
             <item>Occupation</item>
             <item>Association with monument</item>
             <!--<item>Inscription date</item>-->
-            <item>Refences</item>
+            <item>References</item>
           </list>
         </div>
         <div type="notes">
