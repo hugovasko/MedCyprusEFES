@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Authority list of sacred and divine names and epithets in MedCY</title>
+                <title>Divine and Sacred Entities and Saints</title>
             </titleStmt>
             <publicationStmt><ab/></publicationStmt>
             <sourceDesc><ab/></sourceDesc>
@@ -13,10 +13,22 @@
     <text>
         <body>
             <listPerson>
-                <person xml:id="Θεοτόκος">
-                    <persName xml:lang="grc"></persName>
-                    <persName xml:lang="en">Virgin Mary</persName>
+                
+                <person xml:id="FortyMartyrs">
+                    <persName xml:lang="grc">οἱ Ἅγιοι Τεσσαράκοντα</persName>
+                    <persName xml:lang="en">the Forty Martyrs of Sebaste</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q931446</idno>
                 </person>
+                
+                <person xml:id="Theotokos">
+                    <persName xml:lang="grc">Θεοτόκος</persName>
+                    <persName xml:lang="en">The one who gave birth to God</persName>
+                    <persName type="epithet" subtype="Θεοτόκος" key="Arakiotissa" xml:lang="grc">τοῦ Άρακος</persName>
+                    <persName type="epithet" subtype="Θεοτόκος" key="Arakiotissa" xml:lang="en">of Arakas</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q208542</idno>
+                    <note>See also: Μήτηρ Θεοῦ, Mother of God, the Virgin</note>
+                </person>
+                
             </listPerson>
         </body>
     </text>
