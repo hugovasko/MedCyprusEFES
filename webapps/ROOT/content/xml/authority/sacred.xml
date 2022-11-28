@@ -15,6 +15,14 @@
         <body>
             <listPerson>
                 
+                <person xml:id="angel">
+                    <persName xml:lang="grc">ἄγγελος</persName>
+                    <persName xml:lang="en">angel</persName>                   
+                    <persName type="epithet" subtype="angel" key="ofGod" xml:lang="grc">Θεοῦ</persName>
+                    <persName type="epithet" subtype="angel" key="ofGod" xml:lang="en">of God</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q2619342</idno>                   
+                </person>
+                
                 <!--<person xml:id="Christ">
                     <persName xml:lang="grc">Χριστός</persName>
                     <persName xml:lang="en">Christ</persName>
@@ -26,7 +34,8 @@
                     <persName xml:lang="grc">Τίμιος Σταυρός</persName>
                     <persName xml:lang="en">True Cross</persName>
                     <persName type="epithet" subtype="TrueCross" key="worshipful" xml:lang="grc">προσκυνητός</persName>
-                    <persName type="epithet" subtype="TrueCross" key="worshipful" xml:lang="en">worshipful</persName><idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
+                    <persName type="epithet" subtype="TrueCross" key="worshipful" xml:lang="en">worshipful</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
                     <!--True - Timios is an adjective, but in this case it is actually part of the name of the entity-specific holy object. I'm not sure whether we should list it as an epithet or not. Not sure about worshipful either; it is an attribut of the Cross, but is it an epithet?-->
                 </person>
                 
