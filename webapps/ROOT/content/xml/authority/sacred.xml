@@ -15,6 +15,13 @@
         <body>
             <listPerson>
                 
+                <!--<person xml:id="Christ">
+                    <persName xml:lang="grc">Χριστός</persName>
+                    <persName xml:lang="en">Christ</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q642420</idno>
+                    <note>See also: Jesus Christ, Word</note>
+                </person>-->
+                
                 <person xml:id="Fathers">
                     <persName xml:lang="grc">τριακόσιοι δεκαοκτὼ θεοφόροι Πατέρες</persName>
                     <persName xml:lang="en">318 Godbearing Fathers (of the First Ecumenical Council) </persName>
@@ -25,6 +32,16 @@
                     <persName xml:lang="grc">οἱ Ἅγιοι Τεσσαράκοντα</persName>
                     <persName xml:lang="en">Forty Martyrs of Sebaste</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q931446</idno>
+                </person>
+                
+                <person xml:id="God">
+                    <persName xml:lang="grc">Θεός</persName>
+                    <persName xml:lang="en">God</persName>
+                    <persName type="epithet" subtype="God" key="Lord" xml:lang="grc">Κύριος</persName>
+                    <persName type="epithet" subtype="God" key="Lord" xml:lang="en">Lord</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q825</idno>                   
+                    <!--What do we do with Lord?-->
+                    <note>See also: Christ, Jesus Christ, Trinity, Word</note>
                 </person>
                 
                 <person xml:id="Helena">
@@ -40,14 +57,14 @@
                     <persName type="epithet" subtype="JesusChrist" key="SonofGod" xml:lang="en">Son of God</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q302</idno>
                     <!--This is very tricky. Jesus and Christ, together or separately? Or, together AND separately, depending on the content of the inscriptions. How about Son of God? Name or epithet?-->
-                    <note>See also: Word</note>
+                    <note>See also: Christ, Word</note>
                 </person>
                 
                 <person xml:id="MeterTheou">
                     <persName xml:lang="grc">Μήτηρ Θεοῦ</persName>
                     <persName xml:lang="en">Mother of God</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
-                    <note>See also: Θεοτόκος, Theotokos, the Virgin</note>
+                    <note>See also: Theotokos, the Virgin</note>
                 </person>
                 
                 <person xml:id="Nicholas">
@@ -68,7 +85,7 @@
                     <persName type="epithet" subtype="Theotokos" key="hyperagia" xml:lang="grc">ὑπεραγία</persName>
                     <persName type="epithet" subtype="Theotokos" key="hyperagia" xml:lang="en">most holy</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q208542</idno>
-                    <note>See also: Μήτηρ Θεοῦ, Mother of God, the Virgin</note>
+                    <note>See also: Mother of God, the Virgin</note>
                     <!--Theotokos is actually an epithet, but it is used often as a name for the Virgin Mary. List separately?-->
                 </person>
                 
