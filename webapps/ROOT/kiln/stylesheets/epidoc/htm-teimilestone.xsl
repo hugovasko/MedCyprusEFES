@@ -57,7 +57,7 @@
             </xsl:choose>
          </xsl:when>
           <xsl:when test="$parm-edn-structure='medcyprus' and @unit=('column', 'surface')">
-             <xsl:text>/</xsl:text>
+             <xsl:text>|</xsl:text>
           </xsl:when>
          <xsl:otherwise>
             <br/>

@@ -31,7 +31,7 @@
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
       <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
        <xsl:choose>
-          <xsl:when test="$parm-leiden-style=('ddbdp','dclp','sammelbuch')">
+          <xsl:when test="$parm-leiden-style=('ddbdp','dclp','sammelbuch') or ($parm-edn-structure='medcyprus' and $parm-edition-type!='diplomatic')">
             <xsl:choose>
                <xsl:when test="parent::t:subst"/>
                <xsl:when test="@place = 'above'">
@@ -53,7 +53,7 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:choose>
-               <xsl:when test="parent::t:subst and $parm-edn-structure='medcyprus' and $parm-edition-type='diplomatic'"/>
+               <xsl:when test="$parm-edn-structure='medcyprus' and $parm-edition-type='diplomatic'"/> <!-- and parent::t:subst ? -->
                <xsl:when test="parent::t:subst or @place='overstrike'">
                   <xsl:text>«</xsl:text>
                </xsl:when>
@@ -67,7 +67,7 @@
       <xsl:call-template name="cert-low"/>
 
       <xsl:choose>
-         <xsl:when test="$parm-leiden-style=('ddbdp','dclp','sammelbuch')">
+         <xsl:when test="$parm-leiden-style=('ddbdp','dclp','sammelbuch') or ($parm-edn-structure='medcyprus' and $parm-edition-type!='diplomatic')">
             <xsl:choose>
                <!-- if my parent is subst which in turn is in the appcrit-part of a further app-like element 
                   (i.e. my ancestor is reg, corr, rdg, or del[corrected]), then include value of my sibling del in parens -->
@@ -100,7 +100,7 @@
           <xsl:when test="$parm-leiden-style=('petrae','iospe')">
             <xsl:text>/</xsl:text>
          </xsl:when>
-         <xsl:when test="parent::t:subst and $parm-edn-structure='medcyprus' and $parm-edition-type='diplomatic'"/>
+         <xsl:when test="$parm-edn-structure='medcyprus' and $parm-edition-type='diplomatic'"/> <!-- and parent::t:subst ? -->
          <xsl:when test="parent::t:subst or @place='overstrike'">
             <xsl:text>»</xsl:text>
          </xsl:when>

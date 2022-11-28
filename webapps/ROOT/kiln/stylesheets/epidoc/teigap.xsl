@@ -20,7 +20,7 @@
                    <xsl:text>+</xsl:text>
                </xsl:when>
                <xsl:when test="$leidenStyle='london'">
-                   <xsl:text>&#xb7;</xsl:text>
+                  <xsl:text>.</xsl:text> <!-- changed for medcyprus, it was &#xb7; -->
                </xsl:when>
                <xsl:otherwise>
                    <xsl:text>.</xsl:text>
@@ -215,7 +215,7 @@
    <xsl:template name="extent-string">
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"/>
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
-      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/> <!-- added for creta -->
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:variable name="cur-dot" select="EDF:dotchar($parm-leiden-style,@reason)"/>
       <xsl:variable name="cur-max" select="EDF:dotmax($parm-leiden-style)"/>
       <!-- Precision of <gap> defined -->
@@ -289,7 +289,7 @@
                      </xsl:when>
                   </xsl:choose>
                </xsl:when>
-               <xsl:when test="$parm-edn-structure = 'creta'"> <!-- added for creta -->
+               <xsl:when test="$parm-edn-structure = 'creta'">
                   <xsl:text>- - -</xsl:text>
                </xsl:when>
                <xsl:otherwise>
@@ -300,6 +300,11 @@
 
          <xsl:when test="@quantity and @unit='character'">
             <xsl:choose>
+               <xsl:when test="$parm-edition-type = 'diplomatic' and $parm-edn-structure='medcyprus'">
+                  <xsl:variable name="dots"
+                     select="'............................................................................................................................................................'"/>
+                  <xsl:value-of select="substring($dots, 1, number(@quantity))"/>
+               </xsl:when>
                <xsl:when test="$parm-edition-type = 'diplomatic'">
                   <xsl:variable name="dots"
                      select="'····························································································································································'"/>

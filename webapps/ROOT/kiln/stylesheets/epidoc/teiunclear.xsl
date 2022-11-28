@@ -6,6 +6,7 @@
    <xsl:template match="t:unclear">
        <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="text-content">
          <xsl:choose>
             <xsl:when test="ancestor::t:orig[not(ancestor::t:choice)]">
@@ -45,7 +46,10 @@
             
             <xsl:for-each select="1 to $un-len-all">
                <xsl:choose>
-                   <xsl:when test="$parm-leiden-style='london'">
+                  <xsl:when test="$parm-edn-structure='medcyprus'">
+                     <xsl:text>.</xsl:text>
+                  </xsl:when>
+                  <xsl:when test="$parm-leiden-style='london'">
                      <xsl:text>·</xsl:text>
                   </xsl:when>
                   <xsl:when test="$parm-leiden-style=('ddbdp','dclp','sammelbuch')">
