@@ -25,8 +25,9 @@
                 <person xml:id="TrueCross">
                     <persName xml:lang="grc">Τίμιος Σταυρός</persName>
                     <persName xml:lang="en">True Cross</persName>
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
-                    <!--True - Timios is an adjective, but in this case it is actually part of the name of the entity-specific holy object. I'm not sure whether we should list it as an epithet or not-->
+                    <persName type="epithet" subtype="TrueCross" key="worshipful" xml:lang="grc">προσκυνητός</persName>
+                    <persName type="epithet" subtype="TrueCross" key="worshipful" xml:lang="en">worshipful</persName><idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
+                    <!--True - Timios is an adjective, but in this case it is actually part of the name of the entity-specific holy object. I'm not sure whether we should list it as an epithet or not. Not sure about worshipful either; it is an attribut of the Cross, but is it an epithet?-->
                 </person>
                 
                 <person xml:id="Fathers">
@@ -49,6 +50,12 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q825</idno>                   
                     <!--What do we do with Lord? It also occurs on its own, but it also occurs as Lord God - Kyrios o Theos-->
                     <note>See also: Christ, Jesus Christ, Lord, Trinity, Word</note>
+                </person>
+                
+                <person xml:id="GregoryNazianzenos">
+                    <persName xml:lang="grc">Ἅγιος Γρηγόριος</persName>
+                    <!--<persName xml:lang="en">Gregory, saint or Saint Gregory</persName>-->                   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q44011</idno>                   
                 </person>
                 
                 <person xml:id="Helena">
