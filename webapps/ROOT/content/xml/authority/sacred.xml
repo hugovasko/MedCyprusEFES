@@ -5,6 +5,7 @@
         <fileDesc>
             <titleStmt>
                 <title>Divine and Sacred Entities and Saints</title>
+                <!--here are also included epithets associated with specific entities in the inscriptions-->
             </titleStmt>
             <publicationStmt><ab/></publicationStmt>
             <sourceDesc><ab/></sourceDesc>
@@ -14,10 +15,22 @@
         <body>
             <listPerson>
                 
+                <person xml:id="Fathers">
+                    <persName xml:lang="grc">τριακόσιοι δεκαοκτὼ θεοφόροι Πατέρες</persName>
+                    <persName xml:lang="en">318 Godbearing Fathers (of the First Ecumenical Council) </persName>
+                    <!--<idno type="wikidata">Not listed</idno>-->
+                </person>
+                
                 <person xml:id="FortyMartyrs">
                     <persName xml:lang="grc">οἱ Ἅγιοι Τεσσαράκοντα</persName>
                     <persName xml:lang="en">Forty Martyrs of Sebaste</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q931446</idno>
+                </person>
+                
+                <person xml:id="Helena">
+                    <persName xml:lang="grc">Ἁγία Ἑλένη</persName>
+                    <!--<persName xml:lang="en">Helena, saint or Saint Helena</persName>-->                   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q170164</idno>                   
                 </person>
                 
                 <person xml:id="MeterTheou">
@@ -40,6 +53,10 @@
                     <persName xml:lang="en">The one who gave birth to God</persName>
                     <persName type="epithet" subtype="Theotokos" key="Arakiotissa" xml:lang="grc">τοῦ Άρακος</persName>
                     <persName type="epithet" subtype="Theotokos" key="Arakiotissa" xml:lang="en">of Arakas</persName>
+                    <persName type="epithet" subtype="Theotokos" key="despoina" xml:lang="grc">δέσποινα</persName>
+                    <persName type="epithet" subtype="Theotokos" key="despoina" xml:lang="en">lady</persName>
+                    <persName type="epithet" subtype="Theotokos" key="hyperagia" xml:lang="grc">ὑπεραγία</persName>
+                    <persName type="epithet" subtype="Theotokos" key="hyperagia" xml:lang="en">most holy</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q208542</idno>
                     <note>See also: Μήτηρ Θεοῦ, Mother of God, the Virgin</note>
                     <!--Theotokos is actually an epithet, but it is used often as a name for the Virgin Mary. List separately?-->
