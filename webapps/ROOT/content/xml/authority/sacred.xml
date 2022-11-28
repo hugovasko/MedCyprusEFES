@@ -40,8 +40,8 @@
                     <persName type="epithet" subtype="God" key="Lord" xml:lang="grc">Κύριος</persName>
                     <persName type="epithet" subtype="God" key="Lord" xml:lang="en">Lord</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q825</idno>                   
-                    <!--What do we do with Lord?-->
-                    <note>See also: Christ, Jesus Christ, Trinity, Word</note>
+                    <!--What do we do with Lord? It also occurs on its own, but it also occurs as Lord God - Kyrios o Theos-->
+                    <note>See also: Christ, Jesus Christ, Lord, Trinity, Word</note>
                 </person>
                 
                 <person xml:id="Helena">
@@ -49,6 +49,13 @@
                     <!--<persName xml:lang="en">Helena, saint or Saint Helena</persName>-->                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q170164</idno>                   
                 </person>
+                
+                <!--<person xml:id="Lord">
+                    <persName xml:lang="grc">Κύριος</persName>
+                    <persName xml:lang="en">Lord</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q12826225</idno>              
+                    <note>See also: Christ, God, Jesus Christ, Trinity, Word</note>
+                </person>-->
                 
                 <person xml:id="JesusChrist">
                     <persName xml:lang="grc">Ἰησοῦς Χριστός</persName>
@@ -74,6 +81,12 @@
                     <persName type="epithet" subtype="Nicholas" xml:lang="en">of the Roof</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q44269</idno>                   
                 </person>
+                
+                <person xml:id="Themonianos">
+                    <persName xml:lang="grc">Ὅσιος Θεμωνιανός</persName>
+                    <!--<persName xml:lang="en">Themonianos, saint or Saint Themonianos</persName>-->                   
+                    <idno type="wikidata">Not listed</idno>                   
+                </person>
                  
                 <person xml:id="Theotokos">
                     <persName xml:lang="grc">Θεοτόκος</persName>
@@ -90,7 +103,7 @@
                 </person>
                 
                 <person xml:id="Trinity">
-                    <persName xml:lang="grc">Ἁγία Τριὰς</persName>
+                    <persName xml:lang="grc">Ἁγία Τριάς</persName>
                     <persName xml:lang="en">Holy Trinity</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q37090</idno>
                 </person>
