@@ -134,10 +134,11 @@
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-verse-lines" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
        <xsl:choose>
          <xsl:when
             test="$parm-leiden-style = ('ddbdp','dclp','sammelbuch') and @unit = 'line' and @extent = 'unknown'"/>
-           <xsl:when test="$parm-leiden-style = 'panceira' and @unit = 'line' and @extent = 'unknown'"/>
+           <xsl:when test="$parm-leiden-style = 'panciera' and @unit = 'line' and @extent = 'unknown'"/>
          <xsl:when test="@unit='line'">
             <xsl:text>[</xsl:text>
          </xsl:when>
@@ -254,6 +255,19 @@
                      </xsl:otherwise>
                   </xsl:choose>
                </xsl:when>
+               <xsl:when test="$parm-edn-structure='medcyprus'">
+                  <xsl:choose>
+                     <xsl:when test="@unit='line' and $parm-edition-type!='diplomatic'">
+                        <xsl:text>– ? lines –</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@unit='line' and $parm-edition-type='diplomatic'">
+                        <xsl:text>– ? –</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise>   
+                        <xsl:text>.. ? ..</xsl:text>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:when>
                <xsl:when test="$parm-leiden-style = 'london' and not($parm-edition-type='diplomatic')">
                   <xsl:value-of select="$cur-dot"/>
                   <xsl:value-of select="$cur-dot"/>
@@ -300,7 +314,7 @@
 
          <xsl:when test="@quantity and @unit='character'">
             <xsl:choose>
-               <xsl:when test="$parm-edition-type = 'diplomatic' and $parm-edn-structure='medcyprus'">
+               <xsl:when test="$parm-edition-type='diplomatic' and $parm-edn-structure='medcyprus'">
                   <xsl:variable name="dots"
                      select="'............................................................................................................................................................'"/>
                   <xsl:value-of select="substring($dots, 1, number(@quantity))"/>
@@ -340,6 +354,15 @@
                      <xsl:when test="$parm-leiden-style = 'panciera'">
                         <xsl:text>c. </xsl:text>
                         <xsl:value-of select="@quantity"/>
+                     </xsl:when>
+                     <xsl:when test="$parm-edn-structure='medcyprus'">
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:text> ca </xsl:text>
+                        <xsl:value-of select="@quantity"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:value-of select="$cur-dot"/>
                      </xsl:when>
                      <xsl:when test="$parm-leiden-style = 'london'">
                         <xsl:value-of select="$cur-dot"/>
@@ -441,6 +464,43 @@
                   <xsl:text> - </xsl:text>
                   <xsl:value-of select="@atMost"/>
                </xsl:when>
+               <xsl:when test="$parm-edn-structure='medcyprus'">
+                  <xsl:choose>
+                     <xsl:when test="@unit='character'">
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:if test="$parm-edition-type!='diplomatic'">
+                           <xsl:text> ca </xsl:text>
+                        <xsl:value-of select="@atLeast"/>
+                        <xsl:text>-</xsl:text>
+                        <xsl:value-of select="@atMost"/>
+                           <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:if test="$parm-edition-type='diplomatic'">
+                           <xsl:value-of select="$cur-dot"/>
+                           <xsl:value-of select="$cur-dot"/>
+                           <xsl:value-of select="$cur-dot"/>
+                           <xsl:value-of select="$cur-dot"/>
+                        </xsl:if>
+                        <xsl:value-of select="$cur-dot"/>
+                        <xsl:value-of select="$cur-dot"/>
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:text>– </xsl:text>
+                        <xsl:if test="$parm-edition-type!='diplomatic'">
+                           <xsl:if test="@precision='low'">
+                              <xsl:text>ca </xsl:text>
+                           </xsl:if>
+                           <xsl:text> </xsl:text>
+                           <xsl:value-of select="@atLeast"/>
+                           <xsl:text>-</xsl:text>
+                           <xsl:value-of select="@atMost"/>
+                           <xsl:text> lines</xsl:text>
+                        </xsl:if>
+                        <xsl:text> –</xsl:text>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:when>
                <xsl:when test="$parm-leiden-style = 'london'">
                   <xsl:value-of select="$cur-dot"/>
                   <xsl:value-of select="$cur-dot"/>
@@ -502,6 +562,18 @@
                         </xsl:choose>
                      </xsl:otherwise>
                   </xsl:choose>
+               </xsl:when>
+               <xsl:when test="$parm-edn-structure='medcyprus'">
+                  <xsl:text>– </xsl:text>
+                  <xsl:if test="$parm-edition-type!='diplomatic'">
+                     <xsl:if test="@precision='low'">
+                        <xsl:text>ca </xsl:text>
+                     </xsl:if>
+                     <xsl:value-of select="@quantity"/>
+                     <xsl:text> line</xsl:text>
+                     <xsl:if test="number(@quantity) &gt; 1"><xsl:text>s</xsl:text></xsl:if>
+                  </xsl:if>
+                  <xsl:text> –</xsl:text>
                </xsl:when>
                <xsl:when test="$parm-leiden-style = 'london'">
                   <xsl:text>---</xsl:text>
