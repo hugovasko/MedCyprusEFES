@@ -7,11 +7,12 @@
             <titleStmt>
                 <title>Asinou 14th c. Inscription</title>
                 <author xml:id="tp">Theocharis Petrou</author>
+                <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp"> Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.041.001</idno>
+                <idno type="filename">MedCY.045.001</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
@@ -38,7 +39,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace ref="locations.xml#Niketari">church of Panagia (Our Lady) of Asinou, Niketari</origPlace>
+                            <origPlace ref="locations.xml#Niketari">Niketari, church of Panagia Phorbiotissa or Asinou</origPlace>
                             <origDate precision="medium">14th c.</origDate>
                         </origin>
                         <provenance when="2012"> Fig. 3.8 by Ševčenko 2012, 79 (photo courtesy of Dumbarton Oaks, As.L.67.203
