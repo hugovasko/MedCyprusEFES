@@ -26,7 +26,7 @@
                                 <support>
                                     <objectType>Painted Inscription</objectType>
                                     <rs type="placement">Bema, north wall</rs>
-                                    <dimensions/>
+                                    <dimensions unit="cm"><height>1,48 cm</height><width>61 cm</width><dim>36,5 cm (halo diameter)</dim></dimensions>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
