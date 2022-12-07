@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Dedicatory inscription</title>
+                <title>Funerary inscription</title>
                 <author xml:id="tp">Theocharis Petrou</author>
                 <editor xml:id="mx">Maria Xenaki</editor>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -44,7 +44,7 @@
                     <history>
                         <origin>
                             <origPlace ref="locations.xml#Lagoudera">Lagoudera, Panagia tou Araka or Arakiotissa </origPlace>
-                            <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192 (though the indiction year actually corresponds to 1193)</origDate>
+                            <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192</origDate>
                         </origin>
                         <provenance type="found"> Findspot and circumstances/context
                         </provenance>
