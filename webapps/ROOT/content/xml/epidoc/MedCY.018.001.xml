@@ -12,7 +12,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.016.001</idno>
+                <idno type="filename">MedCY.018.001</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
@@ -36,7 +36,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>church of Saint Nicholas the Roof, Kakopetria</origPlace>
+                            <origPlace ref="locations.xml#Kakopetria">Kakopetria, Saint Nicholas the Roof</origPlace>
                             <origDate notBefore="1267" notAfter="1333" precision="medium"></origDate>
                         </origin>
                         <provenance when="2022">
