@@ -36,7 +36,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>church of Saint Ephemianos or Theomonianos, Lysi</origPlace>
+                            <origPlace ref="locations.xml#Lysi">Lysi, Saint Ephemianos or Theomonianos</origPlace>
                             <origDate notBefore="1167" notAfter="1200" precision="medium"></origDate>
                         </origin>
                         <provenance when="2022">
