@@ -40,7 +40,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                             <origPlace ref="locations.xml#Koutsovendis">Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel </origPlace>
+                             <origPlace ref="locations.xml#KoutsovendisTrinity">Koutsovendis, Monastery of St John Chrysostom, Holy Trinity Chapel </origPlace>
                              <origDate notBefore="1095" notAfter="1103-08-31" precision="medium" evidence="prosopography titulature">ca 1100</origDate>
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Fig. 75 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
