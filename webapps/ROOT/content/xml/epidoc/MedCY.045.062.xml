@@ -39,7 +39,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace ref="locations.xml#Niketari">Niketari, Panagia Phorbiotissa or Asinou</origPlace>
+                            <origPlace ref="locations.xml#Asinou">Niketari, Panagia Phorbiotissa or Asinou</origPlace>
                             <origDate precision="high">1105/6</origDate>
                         </origin>
                         <provenance type="found"> Findspot and circumstances/context
