@@ -12,7 +12,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.024.009</idno>
+                <idno type="filename">MedCY.026.009</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
@@ -39,7 +39,7 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace ref="locations.xml#KatoPafos">Kato Pafos, Saint Solomoni catacomb</origPlace>
+                            <origPlace ref="locations.xml#Solomone">Kato Pafos, Saint Solomoni catacomb</origPlace>
                             <origDate notBefore="1101" notAfter="1200" precision="medium">12th century</origDate>
                         </origin>
                         <provenance when="2022">
