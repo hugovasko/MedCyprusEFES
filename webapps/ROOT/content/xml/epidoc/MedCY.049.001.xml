@@ -37,7 +37,7 @@
                     <history>
                         <origin>
                             <origPlace ref="locations.xml#Pelendri">Pelendri, church of the Holy Cross</origPlace>
-                            <origDate when="1178" evidence="internal"></origDate>
+                            <origDate when="1178" evidence="internal">1178</origDate>
                         </origin>                     
                         <provenance type="observed">
                         </provenance>
