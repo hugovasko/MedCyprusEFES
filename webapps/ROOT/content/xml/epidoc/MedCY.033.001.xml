@@ -73,7 +73,7 @@
                   <l n="2"><lb n="2"/> ἄναρχον ἀρχ<hi rend="ligature">ην </hi>υπεράρχιον φυσιν·    </l>
 <l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
 <l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou" sameAs="#Philokales">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="mentioned_places.xml#Cyprus">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" xml:id="Philokales" ref="#EumathiosPhilokales"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
-<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος <w>νωβ<supplied reason="lost">ε</supplied><choice><sic></sic></choice>λλισίμων</w></rs>·</l>
+<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος νωβ<supplied reason="lost">ε</supplied>λλισίμων</rs>·</l>
 <l><lb n="6"/>βάθρων ἀπ’αὐτῶν τὸν νεων ἤγειρέ σοι·</l>
 <l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
             </div>
