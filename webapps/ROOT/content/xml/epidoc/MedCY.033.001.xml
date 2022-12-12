@@ -69,7 +69,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
               <lg met="Dodecasyllable">
-                    <l n="1"><lb n="1"/> <g ref="#cross">+</g>Tην ἐν <hi rend="ligature">πρ</hi>οσώπ<choice><corr source="#mango1990">οις</corr><sic>ω</sic></choice> <hi rend="ligature">τρ</hi>ισὶ προσκυν<hi rend="ligature">ου</hi>μένην</l>
+                    <l n="1"><lb n="1"/> <g ref="#cross">+</g>Tην ἐν <w lemma="πρόσωπο"><hi rend="ligature">πρ</hi>οσώπ<choice><corr source="#mango1990">οις</corr><sic>ω</sic></choice></w> <w lemma="τρεῖς"><hi rend="ligature">τρ</hi>ισὶ </w><w lemma="προσκυνῶ">προσκυν<hi rend="ligature">ου</hi>μένην</w></l>
                   <l n="2"><lb n="2"/> ἄναρχον ἀρχ<hi rend="ligature">ην </hi>υπεράρχιον φυσιν·    </l>
 <l><lb n="3"/>ἄμαχον ἀλκὴν ὑπερούσιον μόνην· </l>
 <l n="4"><lb n="4"/>ποθῶν σφόδρα σε <rs type="office" ref="offices.xml#doux_Kyprou" sameAs="#Philokales">δ<hi rend="ligature">οὺ</hi>ξ <placeName ref="mentioned_places.xml#Cyprus">Κύπρ<hi rend="ligature">ου</hi></placeName></rs> <persName type="attested" xml:id="Philokales" ref="#EumathiosPhilokales"><name nymRef="#Φιλοκάλης" type="surname">Φιλοκάλ<supplied reason="omitted">ης</supplied></name></persName></l>
