@@ -73,9 +73,9 @@
                   <l n="2"><lb n="2"/> <w lemma="ἄναρχος">ἄναρχον</w> <w lemma="ἀρχὴ">ἀρχ<hi rend="ligature">ην</hi></w> <w lemma="ὑπεράρχιος">υπεράρχιον</w> <w lemma="φύσις">φυσιν</w>·    </l>
 <l><lb n="3"/><w lemma="ἄμαχος">ἄμαχον</w> <w lemma="ἀλκὴ">ἀλκὴν </w><w lemma="ὑπερούσιος">ὑπερούσιον</w> <w lemma="μόνη">μόνην</w>· </l>
 <l n="4"><lb n="4"/><w lemma="ποθῶ">ποθῶν </w><w lemma="σφόδρα">σφόδρα</w> <w lemma="σὺ">σε</w> <rs type="office" ref="offices.xml#doux_Kyprou" sameAs="#Philokales"><w lemma="δοὺξ">δ<hi rend="ligature">οὺ</hi>ξ </w><placeName ref="mentioned_places.xml#Cyprus"><w lemma="Κύπρος">Κύπρ<hi rend="ligature">ου</hi></w></placeName></rs> <persName type="attested" xml:id="Philokales" ref="#EumathiosPhilokales"><name nymRef="#Φιλοκάλης" type="surname"><w lemma="Φιλοκάλης">Φιλοκάλ<supplied reason="omitted">ης</supplied></w></name></persName></l>
-<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename">Ευμάθιος</name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><hi rend="ligature">πρ</hi>ώτιστος νωβ<supplied reason="lost">ε</supplied>λλισίμων</rs>·</l>
-<l><lb n="6"/>βάθρων ἀπ’αὐτῶν τὸν νεων ἤγειρέ σοι·</l>
-<l><lb n="7"/>πρὸς ἐξιλασμὸν ὧν κακῶς παρεσφάλη· </l></lg>
+<l n="5"><lb n="5"/><persName type="attested" sameAs="#Philokales"><name nymRef="#Εὐμάθιος" type="forename"><w lemma="Εὐμάθιος">Ευμάθιος</w></name></persName> <rs type="dignity" ref="offices.xml#protistos_nobelisimon"><w lemma="πρώτιστος"><hi rend="ligature">πρ</hi>ώτιστος</w> <w lemma="νοβελλίσιμος">νωβ<supplied reason="lost">ε</supplied>λλισίμων</w></rs>·</l>
+<l><lb n="6"/><w lemma="βάθρον">βάθρων</w> ἀπ’αὐτῶν τὸν <w lemma="νέος">νεων</w> <w lemma="ἐγείρω">ἤγειρέ</w> σοι·</l>
+<l><lb n="7"/>πρὸς <w lemma="ἐξιλασμός">ἐξιλασμὸν</w> ὧν κακῶς <w lemma="παρασφάλλω">παρεσφάλη</w>· </l></lg>
             </div>
             <div type="apparatus">
                 <listApp>
