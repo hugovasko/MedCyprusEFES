@@ -66,9 +66,11 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
+                    <lg met="Verse">
                <l> <lb n="1"/><g ref="#cross">+</g> Χιμῶν <gap reason="illegible" unit="character" atLeast="4"/>πόν σάρξ <hi rend="ligature">το</hi> πάσχον ενθάδε:
   <gap reason="lost" unit="character" atLeast="4"/>σχόν ακ<hi rend="ligature">ου</hi>σὶς <expan><abbr>κ</abbr><ex>αὶ</ex></expan> στεναγμω<gap reason="illegible" unit="character" quantity="2"/> <expan><abbr>μ</abbr><ex>α</ex><abbr>ρ</abbr><ex>τύρων</ex></expan>:</l>
  <l><lb n="2"/> <gap reason="illegible" unit="character" atLeast="3"/> oυκ ακο<supplied reason="lost">υσ</supplied>ης καρτερούσι τη βία: προς τα στέφι βλέπουσιν· <hi rend="ligature">οὐ</hi> πρὸς <hi rend="ligature">τοὺ</hi>ς πόν<hi rend="ligature">ου</hi>ς <supplied reason="lost"><g ref="#cross">+</g></supplied></l>
+               </lg> 
                 </ab>
             </div>
             <div type="apparatus">
