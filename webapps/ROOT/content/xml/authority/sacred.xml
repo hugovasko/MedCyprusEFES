@@ -23,30 +23,24 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q2619342</idno>                   
                 </person>
                 
-                <!--<person xml:id="Christ">
-                    <persName xml:lang="grc">Χριστός</persName>
-                    <persName xml:lang="en">Christ</persName>
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q642420</idno>
-                    <note>See also: Jesus Christ, Word</note>
-                </person>-->
-                
+                <person sameAs="#JesusChrist"><persName>Christ</persName></person>
+                                
                 <person xml:id="TrueCross">
                     <persName xml:lang="grc">Τίμιος Σταυρός</persName>
                     <persName xml:lang="en">True Cross</persName>
                     <persName xml:lang="grc" type="epithet" subtype="TrueCross" key="worshipful">προσκυνητός</persName>
                     <persName xml:lang="en" type="epithet" subtype="TrueCross" key="worshipful">worshipful</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
-                    <!--True - Timios is an adjective, but in this case it is actually part of the name of the entity-specific holy object. I'm not sure whether we should list it as an epithet or not. Not sure about worshipful either; it is an attribut of the Cross, but is it an epithet?-->
-                </person>
+                 </person>
                 
                 <person xml:id="Fathers">
-                    <persName xml:lang="grc">τριακόσιοι δεκαοκτὼ θεοφόροι Πατέρες</persName>
+                    <persName xml:lang="grc"> <seg>οἱ</seg> τριακόσιοι δεκαοκτὼ θεοφόροι Πατέρες</persName>
                     <persName xml:lang="en">318 Godbearing Fathers (of the First Ecumenical Council) </persName>
                     <!--<idno type="wikidata">Not listed</idno>-->
                 </person>
                 
                 <person xml:id="FortyMartyrs">
-                    <persName xml:lang="grc">οἱ Ἅγιοι Τεσσαράκοντα</persName>
+                    <persName xml:lang="grc"><seg>οἱ Ἅγιοι</seg> Τεσσαράκοντα</persName>
                     <persName xml:lang="en">Forty Martyrs of Sebaste</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q931446</idno>
                 </person>
@@ -62,8 +56,8 @@
                 </person>
                 
                 <person xml:id="GregoryNazianzenos">
-                    <persName xml:lang="grc">Ἅγιος Γρηγόριος</persName>
-                    <!--<persName xml:lang="en">Gregory, saint or Saint Gregory</persName>-->                   
+                    <persName xml:lang="grc"><seg>Ἅγιος</seg> Γρηγόριος</persName>
+                    <persName xml:lang="en"><seg>Saint</seg> Gregory</persName>                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q44011</idno>                   
                 </person>
                 
@@ -138,13 +132,10 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q37090</idno>
                 </person>
                 
-                <person xml:id="Word">
-                    <persName xml:lang="grc">Λόγος</persName>
+                <person sameAs="#JesusChrist"><persName xml:lang="grc">Λόγος</persName>
                     <persName xml:lang="en">Word of God</persName>
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q3896345</idno>
-                    <note>See also: Christ</note>
-                    <!--Logos is an epithet for Christ, but is also used separate as a name for Him. Keep separate listing?-->
                 </person>
+                
                 
             </listPerson>
         </body>
