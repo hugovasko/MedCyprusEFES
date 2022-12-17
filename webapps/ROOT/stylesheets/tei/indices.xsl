@@ -89,7 +89,7 @@
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
-      <xsl:if test="not(str[@name='index_surname'])"> <!-- i.e. not displayed in persons index -->
+      <xsl:if test="arr[@name='index_epithet']"> <!-- i.e. displayed only in sacred index -->
         <td><xsl:value-of select="str[@name='index_item_alt_name']" /></td>
       </xsl:if>
       <xsl:apply-templates select="arr[@name='index_epithet']" />
