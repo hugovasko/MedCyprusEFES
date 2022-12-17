@@ -10,8 +10,8 @@
       <xsl:param name="extent"/>
 
       <xsl:choose>
-          <xsl:when test="$parm-leiden-style = 'london'">
-            <i>
+          <xsl:when test="$parm-leiden-style = ('london','medcyprus')">
+            <i dir="ltr">
                <!-- Found in teispace.xsl -->
                <xsl:call-template name="space-content-1">
                   <xsl:with-param name="vacat" select="$vacat"/>
@@ -20,23 +20,27 @@
          </xsl:when>
           <xsl:when test="$parm-leiden-style = 'panciera'">
             <!-- Found in teispace.xsl -->
-            <xsl:call-template name="space-content-2">
+            <span dir="ltr">
+              <xsl:call-template name="space-content-2">
                <xsl:with-param name="vacat" select="$vacat"/>
                <xsl:with-param name="extent" select="$extent"/>
             </xsl:call-template>
+         </span>
          </xsl:when>
          <xsl:otherwise>
             <!-- Found in teispace.xsl -->
-            <xsl:call-template name="space-content-2">
+            <span dir="ltr">
+             <xsl:call-template name="space-content-2">
                <xsl:with-param name="vacat" select="$vacat"/>
                <xsl:with-param name="extent" select="$extent"/>
             </xsl:call-template>
+         </span>
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
 
    <xsl:template name="dip-space">
-      <em>
+      <em dir="ltr">
          <span class="smaller">
             <xsl:call-template name="space-content-1">
                <xsl:with-param name="vacat" select="'vacat '"/>

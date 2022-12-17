@@ -7,7 +7,6 @@
   <xsl:template match="text()[not(ancestor::t:note)]">
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
-     <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
       <xsl:choose>
          <!-- strip all spaces and punctuation in diplomatic edition -->
          
@@ -31,7 +30,7 @@
             </xsl:variable>
              <xsl:choose>
                 <!-- in MedCyprus diplomatic edition keep diacritics and transform sigma in lunate sigma -->
-                <xsl:when test="$parm-edn-structure='medcyprus'">
+                <xsl:when test="$parm-leiden-style='medcyprus'">
                    <xsl:value-of select="upper-case(normalize-unicode(translate(translate(translate(.,'&#x03f2;σςΣ','&#x03f9;&#x03f9;&#x03f9;&#x03f9;'),$apos,''), '··&#xA; ,.;‘’', ''),'NFD'))"/>
                 </xsl:when>
                 <xsl:otherwise>

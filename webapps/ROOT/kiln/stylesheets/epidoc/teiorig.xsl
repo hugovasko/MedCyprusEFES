@@ -6,11 +6,11 @@
   
     <xsl:template match="t:orig" priority="1">
         <xsl:param name="parm-edition-type" tunnel="yes" required="no"/>
-        <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
+        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
         <xsl:choose>
             <xsl:when test="parent::t:choice">
                 <xsl:choose>
-                        <xsl:when test="$parm-edn-structure='medcyprus' and $parm-edition-type!='diplomatic'"/>
+                        <xsl:when test="$parm-leiden-style='medcyprus' and $parm-edition-type!='diplomatic'"/>
                     <xsl:otherwise>
                         <xsl:apply-templates/>
                     </xsl:otherwise>

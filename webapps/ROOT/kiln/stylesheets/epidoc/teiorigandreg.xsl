@@ -10,7 +10,7 @@
        <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
        <xsl:choose>
-           <xsl:when test="$parm-edn-structure = 'rib' or ($parm-edn-structure='medcyprus' and $parm-edition-type!='diplomatic')">
+           <xsl:when test="$parm-edn-structure = 'rib' or ($parm-leiden-style='medcyprus' and $parm-edition-type!='diplomatic')">
                <!-- Ignore -->
            </xsl:when>
            <xsl:otherwise>
@@ -42,15 +42,15 @@
 
     <xsl:template match="t:choice/t:reg">
         <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
-        <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
+        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
        <xsl:choose>
-           <xsl:when test="$parm-edn-structure='medcyprus' and $parm-edition-type!='diplomatic'">
+           <xsl:when test="$parm-leiden-style='medcyprus' and $parm-edition-type!='diplomatic'">
                <xsl:apply-templates/>
            </xsl:when>
            <xsl:otherwise/>
        </xsl:choose>
    </xsl:template>
       <!-- reg is currently not displayed in text in any Leiden-style
-          (except "iospe", see under orig, above, and MedCyprus) -->
+          (except "iospe", see under orig, above, and "medcyprus") -->
    
 </xsl:stylesheet>

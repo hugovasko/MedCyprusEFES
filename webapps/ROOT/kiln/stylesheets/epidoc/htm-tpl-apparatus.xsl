@@ -134,11 +134,14 @@
   <!-- called from htm-teidivedition.xsl -->
   <xsl:template name="tpl-iospe-apparatus">
     <xsl:if test="not(descendant::t:div[@type='textpart'][@n]) and
-      (.//t:choice[child::t:corr] or .//t:supplied[@reason='omitted'] or .//t:subst or .//t:hi[@rend=('subscript','superscript')])">
+      (.//t:choice[child::t:corr] or (.//t:supplied[@reason='omitted'] and not($parm-leiden-style='medcyprus')) or .//t:subst or .//t:hi[@rend=('subscript','superscript')])">
       <xsl:variable name="listapp">
         <!-- generate a list of app entries, with line numbers for each (and render them later) -->
         <xsl:for-each
           select=".//(t:choice[child::t:corr]|t:supplied[@reason='omitted']|t:subst|t:hi[@rend=('subscript','superscript')])[not(ancestor::t:rdg)]">
+          <xsl:choose>
+            <xsl:when test="self::t:supplied[@reason='omitted'] and $parm-leiden-style='medcyprus'"/>
+            <xsl:otherwise>
           <xsl:element name="app">
             <!-- pseudo-id to avoid duplication of content words in miniapp -->
             <xsl:attribute name="psid" select="generate-id((ancestor::t:w|ancestor::t:name|ancestor::t:placeName|ancestor::t:num)[1])"/>
@@ -188,6 +191,8 @@
               </xsl:when>
             </xsl:choose>
           </xsl:element>
+          </xsl:otherwise>
+          </xsl:choose>
         </xsl:for-each>
       </xsl:variable>
       <p class="miniapp">

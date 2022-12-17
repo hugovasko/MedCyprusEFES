@@ -20,8 +20,10 @@
                    <xsl:text>+</xsl:text>
                </xsl:when>
                <xsl:when test="$leidenStyle='london'">
-                  <xsl:text>.</xsl:text> <!-- changed for medcyprus, it was &#xb7; -->
-               </xsl:when>
+                  <xsl:text>&#xb7;</xsl:text> </xsl:when>
+               <xsl:when test="$leidenStyle='medcyprus'">
+                 <xsl:text>.</xsl:text>
+              </xsl:when>
                <xsl:otherwise>
                    <xsl:text>.</xsl:text>
                </xsl:otherwise>
@@ -134,8 +136,7 @@
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-verse-lines" tunnel="yes" required="no"></xsl:param>
-      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
-       <xsl:choose>
+      <xsl:choose>
          <xsl:when
             test="$parm-leiden-style = ('ddbdp','dclp','sammelbuch') and @unit = 'line' and @extent = 'unknown'"/>
            <xsl:when test="$parm-leiden-style = 'panciera' and @unit = 'line' and @extent = 'unknown'"/>
@@ -153,7 +154,7 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if
-         test="$parm-leiden-style='london' and preceding-sibling::node()[1][@part='M' or @part='I'] and not($parm-edition-type='diplomatic')">
+         test="$parm-leiden-style= ('london','medcyprus') and preceding-sibling::node()[1][@part='M' or @part='I'] and not($parm-edition-type='diplomatic')">
          <xsl:text>-</xsl:text>
       </xsl:if>
 
@@ -189,7 +190,7 @@
       </xsl:if>
 
       <xsl:if
-         test="$parm-leiden-style='london' and following-sibling::node()[1][@part='M' or @part='F'] and not($parm-edition-type='diplomatic')">
+         test="$parm-leiden-style= ('london','medcyprus') and following-sibling::node()[1][@part='M' or @part='F'] and not($parm-edition-type='diplomatic')">
          <xsl:text>-</xsl:text>
       </xsl:if>
 
@@ -214,6 +215,14 @@
 
 
    <xsl:template name="extent-string">
+      <xsl:param name="parm-edition-type" tunnel="yes" required="no"/>
+      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
+      <!-- Found in htm|txt-teigap.xsl This allows, e.g. setting a text direction on the content. -->
+      <xsl:call-template name="extent-string-wrapper"/>
+   </xsl:template>
+   
+   <xsl:template name="extent-string-content">
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"/>
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
       <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
@@ -251,11 +260,11 @@
                      </xsl:when>
                      <!-- other reason illegible and lost/chars caught in the otherwise -->
                      <xsl:otherwise>
-                        <xsl:text> -ca.?- </xsl:text>
+                        <xsl:text>&#x2066;&#x0A;-ca.?-&#x0A;&#x2069;</xsl:text>
                      </xsl:otherwise>
                   </xsl:choose>
                </xsl:when>
-               <xsl:when test="$parm-edn-structure='medcyprus'">
+               <xsl:when test="$parm-leiden-style='medcyprus'">
                   <xsl:choose>
                      <xsl:when test="@unit='line' and $parm-edition-type!='diplomatic'">
                         <xsl:text>– ? lines –</xsl:text>
@@ -314,7 +323,7 @@
 
          <xsl:when test="@quantity and @unit='character'">
             <xsl:choose>
-               <xsl:when test="$parm-edition-type='diplomatic' and $parm-edn-structure='medcyprus'">
+               <xsl:when test="$parm-edition-type='diplomatic' and $parm-leiden-style='medcyprus'">
                   <xsl:variable name="dots"
                      select="'............................................................................................................................................................'"/>
                   <xsl:value-of select="substring($dots, 1, number(@quantity))"/>
@@ -355,7 +364,7 @@
                         <xsl:text>c. </xsl:text>
                         <xsl:value-of select="@quantity"/>
                      </xsl:when>
-                     <xsl:when test="$parm-edn-structure='medcyprus'">
+                     <xsl:when test="$parm-leiden-style='medcyprus'">
                         <xsl:value-of select="$cur-dot"/>
                         <xsl:value-of select="$cur-dot"/>
                         <xsl:text> ca </xsl:text>
@@ -407,7 +416,7 @@
                         </xsl:call-template>
                      </xsl:when>
                      <xsl:otherwise>
-                        <xsl:text> - - - </xsl:text>
+                        <xsl:text>&#x2066; - - - &#x2069;</xsl:text>
                      </xsl:otherwise>
                   </xsl:choose>
                </xsl:otherwise>
@@ -464,7 +473,7 @@
                   <xsl:text> - </xsl:text>
                   <xsl:value-of select="@atMost"/>
                </xsl:when>
-               <xsl:when test="$parm-edn-structure='medcyprus'">
+               <xsl:when test="$parm-leiden-style='medcyprus'">
                   <xsl:choose>
                      <xsl:when test="@unit='character'">
                         <xsl:value-of select="$cur-dot"/>
@@ -563,7 +572,7 @@
                      </xsl:otherwise>
                   </xsl:choose>
                </xsl:when>
-               <xsl:when test="$parm-edn-structure='medcyprus'">
+               <xsl:when test="$parm-leiden-style='medcyprus'">
                   <xsl:text>– </xsl:text>
                   <xsl:if test="$parm-edition-type!='diplomatic'">
                      <xsl:if test="@precision='low'">
@@ -595,7 +604,7 @@
                   </xsl:choose>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text> - - - - - - - - - - </xsl:text>
+                  <xsl:text>&#x2066; - - - - - - - - - - &#x2069;</xsl:text>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>

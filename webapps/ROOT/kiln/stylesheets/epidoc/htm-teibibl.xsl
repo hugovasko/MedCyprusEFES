@@ -271,8 +271,9 @@ bibliography. All examples only cater for book and article.
 	
 	<xsl:template match="t:ptr[@target]">
 		<xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
+		<xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
 		<xsl:choose>
-			<xsl:when test="$parm-edn-structure=('inslib', 'sample', 'medcyprus')">
+			<xsl:when test="$parm-edn-structure=('inslib', 'sample') or $parm-leiden-style = 'medcyprus'">
 			 <!-- if you are running this template outside EFES, change the path to the bibliography authority list accordingly -->
 				<xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
 				<xsl:variable name="bibl-ref" select="translate(@target, '#', '')"/>
@@ -326,8 +327,9 @@ bibliography. All examples only cater for book and article.
 	
 	<xsl:template match="t:title[not(ancestor::t:titleStmt)][not(@type='short')]" mode="#default inslib-dimensions inslib-placename sample-dimensions creta  medcyprus-location medcyprus-dimensions">
 		<xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
+		<xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
 		<xsl:choose>
-			<xsl:when test="$parm-edn-structure=('inslib', 'sample', 'medcyprus')">
+			<xsl:when test="$parm-edn-structure=('inslib', 'sample') or $parm-leiden-style = 'medcyprus'">
 				<i><xsl:apply-templates/></i>
 			</xsl:when>
 			<xsl:otherwise>

@@ -41,12 +41,20 @@
                   <xsl:text>——</xsl:text>
                </xsl:when>
                <xsl:when test="@rend = 'diple-obelismene' and @unit='undefined'">
-                  <!-- <xsl:message><xsl:text>    </xsl:text>paragraphos!</xsl:message> -->
+                  <!-- <xsl:message><xsl:text>    </xsl:text>diple-obelismene!</xsl:message> -->
                   <xsl:if test="following-sibling::node()[not(self::text() and normalize-space(self::text())='')][1]/self::t:lb[@break='no']">-</xsl:if>
                   <xsl:if test="not(parent::t:supplied)">
                      <br/>
                   </xsl:if>
-                  <xsl:text>>---</xsl:text>
+                  <xsl:text>⤚</xsl:text>
+               </xsl:when>
+               <xsl:when test="@rend = 'coronis' and @unit='undefined'">
+                  <!-- <xsl:message><xsl:text>    </xsl:text>coronis!</xsl:message> -->
+                  <xsl:if test="following-sibling::node()[not(self::text() and normalize-space(self::text())='')][1]/self::t:lb[@break='no']">-</xsl:if>
+                  <xsl:if test="not(parent::t:supplied)">
+                     <br/>
+                  </xsl:if>
+                  <xsl:text>⸎</xsl:text>
                </xsl:when>
                <xsl:when test="@rend = 'horizontal-rule'">
                   <xsl:if test="not(parent::t:supplied)">
@@ -56,7 +64,7 @@
                </xsl:when>
             </xsl:choose>
          </xsl:when>
-          <xsl:when test="$parm-edn-structure='medcyprus' and @unit=('column', 'surface')">
+          <xsl:when test="$parm-leiden-style='medcyprus' and @unit=('column', 'surface')">
              <xsl:text>|</xsl:text>
           </xsl:when>
          <xsl:otherwise>
@@ -68,7 +76,6 @@
    
    <xsl:template match="t:cb">
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
-      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:if test="$parm-leiden-style='iospe'">
          <xsl:element name="span">
             <xsl:attribute name="class" select="'textpartnumber'"/>
@@ -78,7 +85,7 @@
             <xsl:element name="br"/>
          </xsl:element>
       </xsl:if>
-      <xsl:if test="$parm-edn-structure='medcyprus'">
+      <xsl:if test="$parm-leiden-style='medcyprus'">
          <xsl:if test="preceding-sibling::t:*"><br/><br/></xsl:if>
          <xsl:text>Column </xsl:text>
          <xsl:value-of select="@n"/>

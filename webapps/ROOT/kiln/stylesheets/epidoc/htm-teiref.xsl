@@ -7,8 +7,9 @@
   
    <xsl:template match="t:ref" mode="#default inslib-dimensions inslib-placename sample-dimensions medcyprus-location medcyprus-dimensions">
       <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
+      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
       <xsl:choose>
-         <xsl:when test="$parm-edn-structure=('inslib', 'sample', 'medcyprus')">
+         <xsl:when test="$parm-edn-structure=('inslib', 'sample') or $parm-leiden-style = 'medcyprus'">
             <xsl:choose>
                <xsl:when test="@target">
                   <a href="{@target}" target="_blank"><xsl:apply-templates/></a>

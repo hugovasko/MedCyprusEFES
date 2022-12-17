@@ -10,7 +10,7 @@
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
       <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
-       <xsl:choose>
+      <xsl:choose>
          <!-- No html code needed for these -->
          <xsl:when
             test="@rend = 'diaeresis' or @rend = 'grave' or @rend = 'acute' or @rend = 'asper' or @rend = 'lenis' or @rend = 'circumflex'">
@@ -65,7 +65,7 @@
                   <xsl:when test="$parm-leiden-style=('petrae','iospe')">
                      <xsl:attribute name="class">petraeligature</xsl:attribute>
                   </xsl:when>
-                  <xsl:when test="$parm-edn-structure = 'inslib' or ($parm-edn-structure = 'medcyprus' and $parm-edition-type='diplomatic')">
+                  <xsl:when test="$parm-edn-structure = 'inslib' or ($parm-leiden-style = 'medcyprus' and $parm-edition-type='diplomatic')">
                      <xsl:attribute name="class">inslibligature</xsl:attribute>
                   </xsl:when>
                   <xsl:otherwise>
