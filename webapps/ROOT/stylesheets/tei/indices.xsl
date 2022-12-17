@@ -89,6 +89,9 @@
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
+      <xsl:if test="not(str[@name='index_surname'])"> <!-- i.e. not displayed in persons index -->
+        <td><xsl:value-of select="str[@name='index_item_alt_name']" /></td>
+      </xsl:if>
       <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_item_type']" />
       <xsl:apply-templates select="str[@name='index_item_role']" />
@@ -132,7 +135,18 @@
     <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
+        <xsl:apply-templates select="doc">
+          <xsl:sort>
+            <xsl:variable name="sort">
+              <xsl:choose>
+                <xsl:when test="str[@name='index_item_sort_name']"><xsl:value-of select="str[@name='index_item_sort_name']"/></xsl:when>
+                <xsl:when test="str[@name='index_item_name']"><xsl:value-of select="str[@name='index_item_name']"/></xsl:when>
+                <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+              </xsl:choose>
+            </xsl:variable>
+            <xsl:value-of select="translate(normalize-unicode(lower-case($sort),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/>
+          </xsl:sort>
+        </xsl:apply-templates>
       </tbody>
     </table>
   </xsl:template>

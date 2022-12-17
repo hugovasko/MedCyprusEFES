@@ -187,6 +187,8 @@
      multiValued="false" required="false" type="string" />
    <field name="index_item_type" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
+   <field name="index_item_sort_name" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
    <field name="origin_date_evidence" required="false" indexed="true"
           multiValued="true" stored="true" type="string" />
    <field name="index_epithet" type="string" required="false"
@@ -220,7 +222,7 @@
    <field name="index_number" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
    <field name="index_item_alt_name" stored="true" indexed="true"
-     multiValued="true" required="false" type="string" />
+     multiValued="false" required="false" type="string" />
    <field name="index_district" stored="true" indexed="true"
      multiValued="true" required="false" type="string" />
    <field name="index_diocese" stored="true" indexed="true"

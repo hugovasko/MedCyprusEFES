@@ -44,16 +44,41 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="doc-available($divineAL) = fn:true() and $idno">
-                <xsl:value-of select="$idno/tei:persName[1]" />
-                <xsl:if test="$idno/tei:persName[2]">
-                  <xsl:text> / </xsl:text>
-                  <xsl:value-of select="$idno/tei:persName[2]" />
-                </xsl:if>
+                <xsl:choose>
+                  <xsl:when test="$idno/tei:persName[@xml:lang='en']">
+                    <xsl:value-of select="$idno/tei:persName[@xml:lang='en'][1]" />
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="$idno/tei:persName[1]" />
+                  </xsl:otherwise>
+                </xsl:choose>
               </xsl:when>
               <xsl:otherwise>
                 <xsl:value-of select="$id" />
               </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_item_sort_name">
+            <xsl:choose>
+              <xsl:when test="doc-available($divineAL) = fn:true() and $idno">
+                <xsl:choose>
+                  <xsl:when test="$idno/tei:persName[@xml:lang='en']">
+                    <xsl:value-of select="normalize-space(string-join($idno/tei:persName[@xml:lang='en'][1]/text(), ''))" />
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="normalize-space(string-join($idno/tei:persName[1]/text(), ''))" />
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$id" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_item_alt_name">
+            <xsl:if test="doc-available($divineAL) = fn:true() and $idno/tei:persName[@xml:lang='grc']">
+              <xsl:value-of select="$idno/tei:persName[@xml:lang='grc'][1]" />
+            </xsl:if>
           </field>
           <field name="index_epithet">
             <xsl:for-each select="descendant::tei:addName[@nymRef or @key][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
