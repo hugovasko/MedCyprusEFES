@@ -237,6 +237,8 @@
                     
                     <bibl xml:id="Stylianou1946"><author><surname>Stylianou</surname> <forename>A.</forename></author>and <author><surname>Stylianou</surname> <forename>J.</forename></author>, <date>1946</date>, <title level="m">Ὁ ναὸς τοῦ ἁγίου Νικολάου τῆς Στέγης παρὰ τὴν Κακοπετριάν</title>, <title level="j">KS</title> <biblScope unit="volume">10</biblScope>, <biblScope unit="page">95-196</biblScope>.</bibl>
                     
+                    <bibl xml:id="Stylianou1951"><author><surname>Stylianou</surname> <forename>A.</forename></author>and <author><surname>Stylianou</surname> <forename>J.</forename></author>, <date>1951</date>, <title level="m">Ἐπανεξέτασις τῆς ἐν τῷ νάρθηκι τοῦ ναοῦ τοῦ ἀγίου Νικολάου τῆς Στέγης κτητορικῆς ἐπιγραφῆς</title>, <title level="j">KS</title> <biblScope unit="volume">15</biblScope>, <biblScope unit="page">83-8</biblScope>.</bibl>
+                    
                     <bibl xml:id="Stylianou1960"><author><surname>Stylianou</surname> <forename>A.</forename></author>and <author><surname>Stylianou</surname> <forename>J.</forename></author>, <date>1960</date>, <title level="a">Donors and Dedicatory Inscriptions, Supplicants and Supplications in the Painted Churches of Cyprus</title>, <title level="j">JÖBG</title> <biblScope unit="volume">9</biblScope>, <biblScope unit="page">97-128</biblScope>.</bibl>
                     
                     <bibl xml:id="Stylianou1973"><author><surname>Stylianou</surname> <forename>A.</forename></author>and <author><surname>Stylianou</surname> <forename>J.</forename></author>, <date>1973</date><title level="m">Παναγία Φορβιώτισσα, Ασίνου = Panagia Phorbiotissa, Asinou</title>, <pubPlace>Nicosia</pubPlace>.</bibl>
@@ -365,6 +367,8 @@
             <bibl copyOf="#Ševčenko2012"></bibl>
             
             <bibl copyOf="#Stylianou1946"></bibl>
+            
+            <bibl copyOf="#Stylianou1951"></bibl>
             
             <bibl copyOf="#Stylianou1960"></bibl>
             
