@@ -195,6 +195,13 @@
           <xsl:if test="ancestor::doc/str[@name='index_relation']!=''">
       <br/><b>Association with monument: </b><xsl:value-of select="ancestor::doc/str[@name='index_relation']"/>
           </xsl:if>
+          <xsl:if test="ancestor::doc/arr[@name='index_relationship']/str!=''">
+            <br/><b>Relationships: </b>
+            <xsl:for-each select="ancestor::doc/arr[@name='index_relationship']/str">
+              <a target="_blank" href="#{substring-after(., '#')}"><xsl:value-of select="substring-before(., '#')"/></a>
+              <xsl:if test="position()!=last()">; </xsl:if>
+            </xsl:for-each>
+          </xsl:if>
           <xsl:if test="ancestor::doc/str[@name='index_note']!=''">
       <br/><b>Notes: </b><xsl:value-of select="ancestor::doc/str[@name='index_note']"/>
           </xsl:if>
@@ -203,7 +210,7 @@
         <xsl:apply-templates select="."/><xsl:if test="position()!=last()"><br/></xsl:if>
       </xsl:for-each>
           </xsl:if>
-          <br/><b>URI of this person: </b> 
+          <br/><b>URI: </b> 
           <a href="https://medcyprus.ucy.ac.cy/en/indices/epidoc/persons.html#{ancestor::doc/str[@name='index_id']}">
             https://medcyprus.ucy.ac.cy/en/indices/epidoc/persons.html#<xsl:value-of select="ancestor::doc/str[@name='index_id']"/>
           </a>

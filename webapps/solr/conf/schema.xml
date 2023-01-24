@@ -207,6 +207,8 @@
      multiValued="false" required="false" type="string" />
    <field name="index_relation" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
+   <field name="index_relationship" stored="true" indexed="true"
+     multiValued="true" required="false" type="string" />
    <field name="index_inscription_date" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
    <field name="index_floruit" stored="true" indexed="true"

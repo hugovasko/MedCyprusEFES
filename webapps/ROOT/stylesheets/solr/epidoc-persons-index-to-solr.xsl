@@ -124,6 +124,16 @@
                   <xsl:value-of select="@role"/>
           </field>
           
+          <xsl:if test="document($personsAL)//tei:relation[replace(@active, '#','') = $id]">
+            <xsl:for-each select="document($personsAL)//tei:relation[replace(@active, '#','') = $id]">
+              <field name="index_relationship">
+                <xsl:value-of select="tei:desc[1]"/>
+                <xsl:text>#</xsl:text>
+                <xsl:value-of select="replace(@passive, '#','')"/>
+              </field>
+            </xsl:for-each>
+          </xsl:if>
+          
           <field name="index_id">
             <xsl:choose>
               <xsl:when test="$idno/@xml:id">
