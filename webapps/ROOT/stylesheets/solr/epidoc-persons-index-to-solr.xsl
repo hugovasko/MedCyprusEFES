@@ -42,7 +42,7 @@
                 <xsl:value-of select="$idno//tei:persName[@xml:lang='en'][1]/tei:forename"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="$id"/>
+                <xsl:value-of select="concat($id, ' !!!!')"/>
               </xsl:otherwise>
             </xsl:choose>
           </field>
@@ -119,10 +119,21 @@
                     <xsl:if test="position() != last()">; </xsl:if>
                   </xsl:for-each>
           </field>
-             
-                <field name="index_relation">
+          
+          <field name="index_relation">
                   <xsl:value-of select="@role"/>
-          </field> 
+          </field>
+          
+          <field name="index_id">
+            <xsl:choose>
+              <xsl:when test="$idno/@xml:id">
+                <xsl:value-of select="$idno/@xml:id"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$id"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
 
           <!--<field name="index_inscription_date">
             <xsl:value-of select="ancestor::tei:TEI/tei:teiHeader//tei:origDate"/>

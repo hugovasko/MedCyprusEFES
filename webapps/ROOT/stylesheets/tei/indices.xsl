@@ -158,7 +158,7 @@
   </xsl:template>
 
   <xsl:template match="str[@name='index_item_name']">
-    <th scope="row" class="item_name">
+    <th scope="row" class="item_name" id="{ancestor::doc/str[@name='index_id']}">
       <xsl:value-of select="."/>
       <!-- if persons index: show popup with info from persons.xml AL -->
       <xsl:if test="ancestor::doc[descendant::str[@name='index_surname']]">
@@ -166,7 +166,7 @@
         <button type="button" class="expander" onclick="$(this).next().toggleClass('shown'); $(this).text($(this).next().hasClass('shown') ? '[-]' : '[+]');">[+]</button>
         <span class="expanded">
           <b>Name: </b><xsl:value-of select="ancestor::doc/str[@name='index_item_name']"/> <xsl:text> </xsl:text> <xsl:value-of select="ancestor::doc/str[@name='index_surname']"/>
-          <br/><b>Greek name: </b><xsl:for-each select="ancestor::doc/arr[@name='index_item_alt_name']/str"><xsl:apply-templates select="."/><xsl:if test="position()!=last()">, </xsl:if></xsl:for-each>
+          <br/><b>Greek name: </b><xsl:value-of select="ancestor::doc/str[@name='index_item_alt_name']"/>
           
           <xsl:if test="ancestor::doc/str[@name='index_birth']!=''">
           <br/><b>Birth: </b><xsl:value-of select="ancestor::doc/str[@name='index_birth']"/>
@@ -203,6 +203,10 @@
         <xsl:apply-templates select="."/><xsl:if test="position()!=last()"><br/></xsl:if>
       </xsl:for-each>
           </xsl:if>
+          <br/><b>URI of this person: </b> 
+          <a href="https://medcyprus.ucy.ac.cy/en/indices/epidoc/persons.html#{ancestor::doc/str[@name='index_id']}">
+            https://medcyprus.ucy.ac.cy/en/indices/epidoc/persons.html#<xsl:value-of select="ancestor::doc/str[@name='index_id']"/>
+          </a>
         </span>
       </xsl:if>
     </th>
