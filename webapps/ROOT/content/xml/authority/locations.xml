@@ -59,7 +59,7 @@
                     <placeName xml:lang="el">Άγιος Σωζόμενος, Άγιος Σωζόμενος</placeName>
                     <placeName type="district" ref="district.xml#nicosia">Nicosia</placeName>
                     <placeName type="diocese" ref="diocese.xml#trimythous">Bishopric of Trimythous</placeName>
-                    <location><geo>34.734564431148705, 33.43608826042591</geo></location>
+                    <location><geo>35.067463372392375, 33.43608826042591</geo></location>
                     <desc type="construction"><date notBefore="0901" notAfter="1000" precision="medium">10th century</date></desc>
                     <desc type="function">Anchorite cell and burial place, pilgrimage</desc>
                     <desc type="context">Rural</desc>
