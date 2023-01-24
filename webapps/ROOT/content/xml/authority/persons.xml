@@ -87,10 +87,20 @@
                         <idno type="wikidata"></idno>
                         <idno type="PBW">...</idno>-->
                     </person>
-                    <relation active="#Leon" passive="#Authentes" ref="snap:sonOf">
+                    <relation active="#Leon" ref="snap:sonOf" passive="#Authentes">
                         <desc>son of Authentes</desc>
                     </relation>
-                    <relation active="#Authentes" passive="#Leon" ref="snap:fatherOf">
+                    
+                    <person xml:id="Authentes">
+                        <persName xml:lang="en"><forename>Authentes</forename></persName>
+                        <persName xml:lang="grc">Αὐθέντης</persName>
+                        <!--<note>...</note>
+                        <floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation"></occupation>
+                        <idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
+                    </person>
+                    <relation active="#Authentes" ref="snap:fatherOf" passive="#Leon">
                         <desc>father of Leon</desc>
                     </relation>
                     
