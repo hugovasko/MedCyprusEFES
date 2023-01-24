@@ -991,25 +991,26 @@
                 <place xml:id="KoutsoventisTrinity" n="33">
                     <placeName xml:lang="en">Koutsoventis, Monastery of St John Chrysostom, Holy Trinity chapel</placeName>
                     <placeName xml:lang="en">Koutsovendes, Monastery of Saint John Chrysostom, Holy Trinity chapel</placeName>
-                    <placeName xml:lang="el">...</placeName>
-                    <placeName type="district" ref="district.xml#...">...</placeName>
-                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <placeName xml:lang="el">Κουτσοβέντης, Μοναστήρι Αγίου Ιωάννη Χρυσοστόμου, Παρεκκλήσιο Αγίας Τριάδος</placeName>
+                    <placeName type="district" ref="district.xml#Kyrenia">Kyrenia</placeName>
+                    <placeName type="diocese" ref="diocese.xml#Kyrenia">Bishopric of Kyrenia, Dependency (metochi) of the Patriarchate of Jerusalem.</placeName>
                     <location><geo>35.275, 33.418</geo></location>
-                    <desc type="construction"><date>...</date></desc>
-                    <desc type="function">...</desc>
-                    <desc type="context">...</desc>
-                    <desc type="architectural">...</desc>
+                    <desc type="construction"><date notBefore="1067" notAfter="1133" precision="medium">ca. 1100</date></desc>
+                    <desc type="function">Monastic</desc>
+                    <desc type="context">Rural</desc>
+                    <desc type="architectural">Single-aisled domed-hall church</desc>
                     <desc type="mural">
-                        <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
+                        <desc type="layer" n="1">1st layer: <date notBefore="1101" notAfter="1133" precision="medium">bema, dome, nave</date> ...</desc>
                     </desc>
-                    <desc type="conservation">...</desc>
-                    <desc type="donors">...</desc>
-                    <desc type="painter">...</desc>
-                    <desc type="graffiti">...</desc>
-                    <idno type="IBCC">...</idno>
-                    <idno type="HGC">https://cyprusgazetteer.org/146427/189/</idno>
-                    <idno type="geonames">...</idno>
+                    <desc type="conservation">Partially preserved</desc>
+                    <desc type="donors">Eumathios Philokales</desc>
+                    <desc type="painter">Uknown</desc>
+                    <desc type="graffiti">See <ref target="http://grafmedia.cy.example.com/id/0101010">Grafmedia</ref></desc>
+                    <idno type="IBCC">http://ibcc.dighum.kcl.ac.uk/entries/b0064.html</idno>
+                    <idno type="HGC">http://www.cyprusgazetteer.org/146427/190/</idno>
+                    <idno type="geonames">https://www.geonames.org/146427/koutsoventis.html</idno>
                     <listBibl type="inscriptions">
+                        <bibl><ptr target="bibliography.xml#MangoHawkinsBoyd1990"/>Mango, Hawkins, Boyd 1990,<citedRange> 63-94</citedRange></bibl>
                         <bibl ana="unpublished"/>
                     </listBibl>
                     <listBibl type="monument">
