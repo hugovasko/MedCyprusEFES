@@ -22,7 +22,7 @@
             <listBibl xml:id="abbreviations">
                 <head>Abbreviations</head>
                 
-                <bibl xml:id="ARDAC"><title type="short">ARDAC</title><date>1963</date><date>1968</date><title level="j">Annual Report of the Department of Antiquities, Cyprus</title></bibl>
+                <bibl xml:id="ARDAC"><title type="short">ARDAC</title> <title level="j">Annual Report of the Department of Antiquities, Cyprus</title></bibl>
                 <bibl xml:id="BBBS"><title type="short">BBBS</title> <title level="j">Bulletin of British Byzantine Studies</title></bibl>
                 <bibl xml:id="BMGS"><title type="short">BMGS</title> <title level="j">Byzantine and Modern Greek Studies</title></bibl>
                 <bibl xml:id="DOP"><title type="short">DOP</title> <title level="j">Dumbarton Oaks Papers</title></bibl>
