@@ -36,7 +36,7 @@
                     
                     <person xml:id="Eirene">
                         <persName xml:lang="en"><forename>Eirene</forename></persName>
-                        <persName xml:lang="grc"><forename>Εἰρήνη</forename></persName>
+                        <persName xml:lang="grc">Εἰρήνη</persName>
                         <floruit notBefore="1201" notAfter="1300">13th century</floruit>                     
                         <note>Founder of the church of Panagia, Moutoullas, and donor of its 1280 murals</note>
                     </person>
