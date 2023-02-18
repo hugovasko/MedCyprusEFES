@@ -14,15 +14,6 @@
         <body>
             <div type="commentary">
                 <listPerson>
-                    <person xml:id="Ioannis">
-                        <persName xml:lang="en"><forename>Ioannis</forename></persName>
-                        <persName xml:lang="grc">Ιωάννης</persName>
-                        <note>founder of the monastery of Saint Nicholas the Roof at Kakopetria</note>
-                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
-                        <occupation type="occupation">...</occupation>
-                        <idno type="wikidata"></idno>
-                        <idno type="PBW">...</idno>-->
-                    </person>
                     
                     <person xml:id="AlexiosKomnenos">
                         <persName xml:lang="en"><forename>Alexios I</forename> <surname>Komnenos</surname></persName>
@@ -41,6 +32,13 @@
                         <persName xml:lang="grc"><forename>Ἀναστασία</forename> <surname>Σαραμαλύνα</surname></persName>
                         <floruit notBefore="1201" notAfter="1300">13th century</floruit>                
                         <note>Donor of the mural panel of St Anastasia the Deliverer from Poisons in the narthex of Panagia Phorbiotissa or Asinou, Niketari</note>
+                    </person>
+                    
+                    <person xml:id="Eirene">
+                        <persName xml:lang="en"><forename>Eirene</forename></persName>
+                        <persName xml:lang="grc"><forename>Εἰρήνη</forename></persName>
+                        <floruit notBefore="1201" notAfter="1300">13th century</floruit>                     
+                        <note>Founder of the church of Panagia, Moutoullas, and donor of its 1280 murals</note>
                     </person>
                     
                     <person xml:id="EumathiosPhilokales">
@@ -75,6 +73,16 @@
                         <floruit notBefore="..." notAfter="...">...</floruit>-->
                         <occupation type="occupation">priest</occupation>
                         <!--<idno type="wikidata"></idno>
+                        <idno type="PBW">...</idno>-->
+                    </person>
+                    
+                    <person xml:id="Ioannis">
+                        <persName xml:lang="en"><forename>Ioannis</forename></persName>
+                        <persName xml:lang="grc">Ιωάννης</persName>
+                        <note>founder of the monastery of Saint Nicholas the Roof at Kakopetria</note>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
+                        <occupation type="occupation">...</occupation>
+                        <idno type="wikidata"></idno>
                         <idno type="PBW">...</idno>-->
                     </person>
                     
