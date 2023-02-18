@@ -40,6 +40,9 @@
                         <floruit notBefore="1201" notAfter="1300">13th century</floruit>                     
                         <note>Founder of the church of Panagia, Moutoullas, and donor of its 1280 murals</note>
                     </person>
+                    <relation active="#Eirene" ref="snap:wifeOf" passive="#IoannesGerakiotes">
+                        <desc>wife of Ioannes Gerakiotes</desc>
+                    </relation>
                     
                     <person xml:id="EumathiosPhilokales">
                         <persName xml:lang="en"><forename>Eumathios</forename> <surname>Philokales</surname></persName>
@@ -92,6 +95,9 @@
                         <floruit notBefore="1201" notAfter="1300">13th century</floruit>                     
                         <note>Founder of the church of Panagia, Moutoullas, and donor of its 1280 murals</note>
                     </person>
+                    <relation active="#IoannesGerakiotes" ref="snap:husbandOf" passive="#Eirene">
+                        <desc>husband of Eirene</desc>
+                    </relation>
                     
                     <person xml:id="Leon">
                         <persName xml:lang="en"><forename>Leon</forename> <surname>Authentes</surname></persName>
