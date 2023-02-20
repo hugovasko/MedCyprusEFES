@@ -1015,9 +1015,9 @@
                         <bibl><ptr target="bibliography.xml#VisCult"/>VisCult<citedRange> 2, 1359-63</citedRange></bibl>
                     </listBibl>
                     <listBibl type="monument">
-                        <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1963<citedRange>11</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1963<citedRange>1963, 11</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Papageorgiou1964"/>Papageorgiou 1964<citedRange>214-6, 352</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1968<citedRange>11</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1968<citedRange>1968, 11</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Winfield1972"/>Winfield 1972<citedRange>285-91</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#MangoHawkinsBoyd1990"/>Mango, Hawkins, Boyd 1990<citedRange>63-94</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Stylianou1997"/>Stylianou and Stylianou 1997<citedRange>456-63</citedRange></bibl>
