@@ -63,9 +63,9 @@
                         <persName xml:lang="en"><forename>Germanos</forename></persName>
                         <persName xml:lang="grc">Γερμανός</persName>
                         <note>hieromonk of the monastery of Saint Nicholas the Roof at Kakopetria</note>
-                        <!--<floruit notBefore="..." notAfter="...">...</floruit>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>-->
                         <occupation type="occupation">hieromonk</occupation>
-                        <idno type="wikidata"></idno>
+                        <!--<idno type="wikidata"></idno>
                         <idno type="PBW">...</idno>-->
                     </person>
                     
