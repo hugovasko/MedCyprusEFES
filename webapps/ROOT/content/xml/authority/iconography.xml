@@ -56,6 +56,13 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
+                <item><list type="Angelic_Powers">
+                    <head>Angelic Powers</head>
+                    <item xml:id="saint_michael"> 
+                        <term xml:lang="en">Archangel Michael</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
                 <item xml:id="saint_michael"> 
                     <term xml:lang="en">Saint Michael</term>
                 </item>
