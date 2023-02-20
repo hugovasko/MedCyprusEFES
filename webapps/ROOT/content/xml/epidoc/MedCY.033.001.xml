@@ -108,7 +108,7 @@ Regarding the content of the inscription, it is a foundation inscription of the 
             </div>
             <div type="bibliography">
                 <listBibl><bibl><ptr target="MangoHawkinsBoyd1990"/></bibl>
-                <bibl><ptr target="Rhoby2009"/>,<citedRange>319-322</citedRange></bibl>
+                <bibl><ptr target="Rhoby2009"/>,<citedRange> 319-322</citedRange></bibl>
                 <!-- How do we write specific pages of each bibliography reference? I tried this: <bibl><ptr target="#Chotzakoglou2005"/>,<citedRange>596</citedRange></bibl>but it shows me also the whole pages of the reference -->
                 <bibl><ptr target="VisCult"/><citedRange> 2, 1359-63</citedRange></bibl>
                 </listBibl>
