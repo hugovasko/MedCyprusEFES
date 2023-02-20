@@ -1012,7 +1012,7 @@
                     <listBibl type="inscriptions">
                         <bibl><ptr target="bibliography.xml#MangoHawkinsBoyd1990"/>Mango, Hawkins, Boyd 1990<citedRange> 63-94</citedRange></bibl>
                         <bibl><ptr target="bibliography.xml#Rhoby2009"/>Rhoby 2009<citedRange>319-22</citedRange></bibl>
-                        <bibl><ptr target="bibliography.xml#VisCult2022"/>VisCult 2022<citedRange> 2, 1359-63</citedRange></bibl>
+                        <bibl><ptr target="bibliography.xml#VisCult"/>VisCult<citedRange> 2, 1359-63</citedRange></bibl>
                     </listBibl>
                     <listBibl type="monument">
                         <bibl><ptr target="bibliography.xml#ARDAC"/>ARDAC 1963<citedRange>11</citedRange></bibl>
