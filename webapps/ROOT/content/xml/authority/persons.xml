@@ -128,10 +128,10 @@
                     <person xml:id="Laurentios">
                         <persName xml:lang="en"><forename>Laurentios</forename></persName>
                         <persName xml:lang="grc">Λαυρέντιος</persName>
-                        <!--<note>...</note>
-                        <floruit notBefore="..." notAfter="...">...</floruit>
-                        <occupation type="occupation"></occupation>
-                        <idno type="wikidata"></idno>
+                        <note>hieromonk and abbot</note>
+                        <!--<floruit notBefore="..." notAfter="...">...</floruit>-->
+                        <occupation type="occupation">hieromonk and abbot</occupation>
+                       <!-- <idno type="wikidata"></idno>
                         <idno type="PBW">...</idno>-->
                     </person>
                     
