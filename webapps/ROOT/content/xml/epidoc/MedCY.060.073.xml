@@ -60,7 +60,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                   <lb n="1" /><milestone unit="column" n="left"/>Ὁ προφήτης <milestone unit="column" n="right"/> Ἱερεμίας
+                   <lb n="1" /><milestone unit="column" n="left"/><persName type="sacred" key="Jeremiah"><name nymRef="Ἱερεμίας">Ὁ προφήτης <milestone unit="column" n="right"/> Ἱερεμίας</name></persName>
                 </ab>
             </div>
             <div type="apparatus">
