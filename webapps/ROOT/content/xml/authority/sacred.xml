@@ -100,7 +100,7 @@
                 </person>
                 
                 <person xml:id="Jeremiah">
-                    <persName xml:lang="grc"><seg>Προφήτης</seg>Ἱερεμίας</persName>
+                    <persName xml:lang="grc">Προφήτης Ἱερεμίας</persName>
                     <persName xml:lang="en"><seg>Prophet</seg> Jeremiah</persName>                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q158825</idno>                   
                 </person>
