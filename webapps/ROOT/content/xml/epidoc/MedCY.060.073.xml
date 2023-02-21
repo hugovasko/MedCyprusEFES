@@ -60,8 +60,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                   <lb n="1" rend="top-to-bottom"/><persName>Ο ΠΡΟ 
-                   <lb n="2" break="no" rend="left-to-right"/>ΦΗ<space/>ΤΗΣ</persName>
+                   <lb n="1" /><milestone unit="column" n="left"/>Ὁ προφήτης <milestone unit="column" n="right"/> Ἱερεμίας
                 </ab>
             </div>
             <div type="apparatus">
