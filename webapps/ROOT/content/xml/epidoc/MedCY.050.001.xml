@@ -5,13 +5,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Angels escort</title>
+                <title>Paul's letters verses</title>
                 <author xml:id="tp">Theocharis Petrou</author>
                 <editor xml:id="mgp"> Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.050.030</idno>
+                <idno type="filename">MedCY.050.001</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
@@ -23,9 +23,10 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <objectType>Painted Inscription</objectType>
-                                    <rs type="placement">Dome, lower register</rs>
-                                    <dimensions unit="cm"><height>? cm </height> <width>? cm</width></dimensions>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Dome, lower register</rs>
+                                    <dimensions unit="cm"><height> n/a </height></dimensions>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
