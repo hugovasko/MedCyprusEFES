@@ -62,8 +62,8 @@
                 </person>
                 
                 <person xml:id="Helena">
-                    <persName xml:lang="grc"><seg>Ἁγία</seg>Ἑλένη</persName>
-                    <persName xml:lang="en"><seg>Saint</seg>Helena</persName>
+                    <persName xml:lang="grc"><seg>Ἁγία</seg> Ἑλένη</persName>
+                    <persName xml:lang="en"><seg>Saint</seg> Helena</persName>
                     <!--<persName xml:lang="en">Helena, saint or Saint Helena</persName>-->                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q170164</idno>                   
                 </person>
@@ -101,7 +101,7 @@
                 </person>
                 
                 <person xml:id="Jeremiah">
-                    <persName xml:lang="grc"><seg>Προφήτης</seg>Ἱερεμίας</persName>
+                    <persName xml:lang="grc"><seg>Προφήτης</seg> Ἱερεμίας</persName>
                     <persName xml:lang="en"><seg>Prophet</seg> Jeremiah</persName>                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q158825</idno>                   
                 </person>
@@ -114,7 +114,8 @@
                 </person>
                 
                 <person xml:id="Themonianos">
-                    <persName xml:lang="grc">Ὅσιος Θεμωνιανός</persName>
+                    <persName xml:lang="grc"><seg>Ὅσιος</seg> Θεμωνιανός</persName>
+                    <persName xml:lang="en"><seg>Themonianos,</seg> saint</persName>
                     <!--<persName xml:lang="en">Themonianos, saint or Saint Themonianos</persName>-->                   
                     <idno type="wikidata">Not listed</idno>                   
                 </person>
