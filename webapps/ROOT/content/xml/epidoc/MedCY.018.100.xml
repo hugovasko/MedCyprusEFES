@@ -57,7 +57,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#cryptograms">Dedicatory Inscription</term>
+                    <term type="textType" ref="text_types.xml#Dedicatory">Dedicatory Inscription</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
