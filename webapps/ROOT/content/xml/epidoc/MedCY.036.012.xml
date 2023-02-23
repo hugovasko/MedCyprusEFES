@@ -7,12 +7,12 @@
             <titleStmt>
                 <title>Virgin Eleousa's scroll</title>
                 <author xml:id="tp">Theocharis Petrou</author>
-                <editor xml:id="mx">Maria Xenaki</editor>
+                <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.036.012</idno>
+                <idno type="filename">MedCY.036.102</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence>
                 </availability>
@@ -26,9 +26,10 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <objectType>Painted inscription</objectType>.
-                                    <rs type="placement">Naos, northeastern pilaster, west face</rs>
-                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                    <rs type="inscription-support">
+<rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+      <rs type="placement-building">Naos, northeastern pilaster, west face</rs> 
+        <dimensions unit="cm"><height>58,5 cm (text height) </height><width>13 cm (lines) </width></dimensions>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
@@ -36,7 +37,7 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Black and red letters against white background <height unit="cm">?</height>
+                            <handNote>Black and red letters against green background <height unit="cm">2,5-3,5 cm</height>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -45,7 +46,7 @@
                             <origPlace ref="locations.xml#Lagoudera">Lagoudera, Panagia tou Araka or Arakiotissa </origPlace>
                             <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192 (though the indiction year actually corresponds to 1193)</origDate>
                         </origin>                        
-                        <provenance type="observed" resp="#tp">
+                        <provenance type="observed" resp="#tp">26-27, 29/09/2022
                         </provenance>
                     </history>
                 </msDesc>
@@ -54,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#Hymnographical">Hymnographical citation</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
