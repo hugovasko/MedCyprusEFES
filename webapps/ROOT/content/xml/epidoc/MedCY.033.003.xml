@@ -55,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#Liturgicalcitation">Liturgical citation</term>
+                    <term type="textType" ref="text_types.xml#Liturgical">Liturgical citation</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
