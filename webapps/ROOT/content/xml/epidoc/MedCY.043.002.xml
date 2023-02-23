@@ -56,7 +56,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#cryptograms">Cryptograms</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
