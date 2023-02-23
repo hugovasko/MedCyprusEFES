@@ -23,10 +23,11 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>
-                                    <objectType>Painted Inscription</objectType>
-                                    <rs type="placement">Bema, south wall</rs>
-                                    <dimensions unit="cm"><height>2,10 cm</height><width>61 cm</width></dimensions>
+                                <support>                             
+                                      <rs type="inscription-support">
+                                       <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Bema, south wall</rs>
+                                    <dimensions unit="cm"><height>2,10 cm</height><width>61 cm</width></dimensions>   
                                 </support>
                             </supportDesc>
                             <layoutDesc>
@@ -54,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#liturgical">Liturgical citation</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
