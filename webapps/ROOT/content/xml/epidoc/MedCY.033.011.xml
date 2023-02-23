@@ -23,11 +23,15 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support><objectType>Painted Inscription</objectType>
-                              <rs type="placement">Nave, east face of the southwest pier</rs></support>
+                                <support>
+                                  <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Nave, east face of the southwest pier</rs>
+                                    <dimensions unit="cm"><height></height><width></width><dim></dim></dimensions>  
+                                </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>description of text field/campus</layout>
+                                <layout>The inscription appears on Prophet Ezekiel's curving scroll, on his both hands</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
@@ -54,7 +58,7 @@ Very good preservation condition. <height unit="cm">? cm</height>
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#biblical">Biblical citation</term>
                 </keywords>
             </textClass>
             <creation>Mango, Hawkins, Boyd 1990</creation>
