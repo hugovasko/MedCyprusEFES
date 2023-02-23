@@ -27,7 +27,7 @@
                                   <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
                                     <rs type="placement-building">Nave, east face of the southwest pier</rs>
-                                    <dimensions unit="cm"> n/a<height></height><width></width><dim></dim></dimensions>  
+                                    <dimensions unit="cm"><height>n/a</height><width></width><dim></dim></dimensions>  
                                 </support>
                             </supportDesc>
                             <layoutDesc>
