@@ -24,9 +24,12 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Painted Inscription<objectType/>. 
-                                    <rs type="placement">Bema, prothesis conch</rs>
-                                    <dimensions unit="cm"><height> 2-14,5 cm (letters)</height><width></width></dimensions></support>
+                                <support>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Bema, prothesis conch</rs>
+                                    <dimensions unit="cm"><height> 2-14,5 cm (letters)</height></dimensions>
+                                    </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>On either side and in-between the arms of a cross.</layout>
