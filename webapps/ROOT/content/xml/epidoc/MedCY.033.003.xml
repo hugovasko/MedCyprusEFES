@@ -24,9 +24,10 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <objectType>Painted Inscription</objectType>
-                                    <rs type="placement">Bema, north wall</rs>
-                                    <dimensions unit="cm"><height>1,48 cm</height><width>61 cm</width><dim>36,5 cm (halo diameter)</dim></dimensions>
+                                   <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Bema, north wall</rs>
+                                    <dimensions unit="cm"><height>1,48 cm</height><width>61 cm</width><dim>36,5 cm (halo diameter)</dim></dimensions>                                    
                                 </support>
                             </supportDesc>
                             <layoutDesc>
@@ -34,7 +35,7 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>description of letters, possibly including <height>letter-heights</height>
+                            <handNote>Black letters against white background. The inscription is written entirely in majuscule.<height>n/a</height>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -54,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#Liturgicalcitation">Liturgical citation</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
