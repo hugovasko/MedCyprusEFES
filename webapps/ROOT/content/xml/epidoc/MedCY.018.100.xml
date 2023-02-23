@@ -48,12 +48,20 @@
                         </origin>
                         <provenance when="2022">
                         </provenance>
-                        <provenance type="observed" resp="#tp">
+                        <provenance type="observed" resp="#tp">05/07/2022, 04/10/2022
                         </provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#cryptograms">Dedicatory Inscription</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
     </teiHeader>
     <facsimile>
         <graphic url="..."/>
