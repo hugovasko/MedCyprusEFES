@@ -12,7 +12,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.036.001</idno>
+                <idno type="filename">MedCY.036.131</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence>
                 </availability>
@@ -26,17 +26,18 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <objectType>Painted inscription</objectType>.
-                                    <rs type="placement">Naos, north wall, above the lintel of the north door</rs>
-                                    <dimensions unit="cm"><height>?</height><width>?</width></dimensions>
+                                   <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Naos, north wall, above the lintel of the north entrance door</rs>
+                                    <dimensions unit="cm"><height>8 cm</height><width>93 cm, 90 cm, 33 cm </width><dim></dim></dimensions>                                    
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>Below the image of the Holy Tile, within the same frame</layout>
+                                <layout>Within the panel of the Holy Tile representation</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>White letters against a blue background <height unit="cm">?</height>
+                            <handNote>White letters against a blue background, <height unit="cm">2-4 cm</height>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -45,7 +46,7 @@
                             <origPlace ref="locations.xml#Lagoudera">Lagoudera, Panagia tou Araka or Arakiotissa </origPlace>
                             <origDate when="1192-12" evidence="internal-date">Indiction 11, December 1192 (though the indiction year actually corresponds to 1193)</origDate>
                         </origin>                        
-                        <provenance type="observed" resp="#tp">
+                        <provenance type="observed" resp="#tp"> 26-27,29 /09/2022
                         </provenance>
                     </history>
                 </msDesc>
@@ -54,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#Dedicatory">Dedicatory inscription</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
