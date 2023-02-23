@@ -24,7 +24,8 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <objectType>Painted Inscription</objectType>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
                                     <rs type="placement">Naos, southeast pier, west face, lower register</rs>
                                     <dimensions unit="cm"><height>67 cm (panel)</height><width>88 cm (panel)</width></dimensions>
                                 </support>
@@ -54,7 +55,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#Dedicatory">Dedicatory inscription</term>
                 </keywords>
             </textClass>
             <creation>Mango, Hawkins, Boyd 1990 </creation>            
