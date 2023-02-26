@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Dedicatory Inscription</title>
+                <title>Donation Inscription</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,13 +26,13 @@
     <support>
       <rs type="inscription-support">
 <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-      <rs type="placement-building">Narthex, northeastern recess</rs> 
+      <rs type="placement-building">Narthex, northeastern recess, lower register</rs> 
         <dimensions unit="cm"><height>3 cm (letters)</height><width>21,5-62 cm (lines)</width></dimensions>
     </support>
   </supportDesc>
 
   <layoutDesc>
-    <layout>Beneath the large figure of Archangel Michael
+    <layout>Framed by the portrait of a kneeling couple, in all probability <rs type="iconography" ref="iconography.xml#John_MedCY018">John</rs> (r.), mentioned in the inscription, and his <rs type="iconography" ref="iconography.xml#wife_MedCY018">wife</rs> (l.). 
        </layout>
   </layoutDesc>
 </objectDesc>
@@ -57,7 +57,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#Dedicatory">Dedicatory inscription</term>
+                    <term type="textType" ref="text_types.xml#donation">Donation inscription</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
