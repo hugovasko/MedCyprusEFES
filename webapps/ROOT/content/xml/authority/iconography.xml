@@ -101,7 +101,45 @@
                     </item>
                     <!-- ... -->
                 </list></item>
-                   <!-- ... -->
+                <item><list type="Stylites">
+                    <head>Stylites</head>
+                    <item xml:id="daniel_stylite"> 
+                        <term xml:lang="en">Daniel</term>
+                    </item>
+                    <!-- ... -->
+                </list></item> 
+                <item><list type="Military_Saints">
+                    <head>Prophets</head>
+                    <item xml:id="george"> 
+                        <term xml:lang="en">George</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+                <item><list type="doctors">
+                    <head>Doctor saints (Anargyroi)</head>
+                    <item xml:id="damian"> 
+                        <term xml:lang="en">Damian</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+                <item><list type="Martyrs">
+                    <head>Martyrs</head>
+                    <item xml:id="anastasia_poison"> 
+                        <term xml:lang="en">Anastasia the Poison-curer (Pharmakolytria) </term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+                <item><list type="Imperial">
+                    <head>Imperial saints</head>
+                    <item xml:id="constantine"> 
+                        <term xml:lang="en">Constantine</term>
+                    </item>
+                    <item xml:id="helena"> 
+                        <term xml:lang="en">Helena</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+            <!-- ... -->
             </list>
             
             <list type="supplicants">
