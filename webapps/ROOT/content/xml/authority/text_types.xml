@@ -22,6 +22,9 @@
                     <term xml:lang="en">building</term>
                 </item>
                 <item xml:id="doc2">
+                    <term xml:lang="en">donation</term>
+                </item>
+                <item xml:id="doc3">
                     <term xml:lang="en">epitaph</term>
                 </item>
             </list>
