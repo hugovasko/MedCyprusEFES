@@ -144,10 +144,31 @@
             
             <list type="supplicants">
                 <head>Supplicants</head>
-                <item xml:id="something_else"> 
-                    <term xml:lang="en">...</term>
-                </item>
-                <!-- ... -->
+                <item><list type="donor_portrait">
+                    <head>Donor portraits</head>
+                    <item xml:id="John_MedCY018"> 
+                        <term xml:lang="en">John (MedCY018)</term>
+                    </item>
+                    <item xml:id="wife_MedCY018"> 
+                        <term xml:lang="en">wife of John (MedCY018)</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+                <item><list type="funerary_portrait">
+                    <head>Funerary portraits</head>
+                    <item xml:id="name"> 
+                        <term xml:lang="en">Name</term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+                <item><list type="other_supplicants">
+                    <head>Other supplicants</head>
+                    <item xml:id="unidentified_MedCY047"> 
+                        <term xml:lang="en">unidentified male figure (MedCY047) <!--number of monument to facilitate identification? Can the number be "live"?--> </term>
+                    </item>
+                    <!-- ... -->
+                </list></item>
+            <!-- ... -->
             </list>
         </body>
     </text>
