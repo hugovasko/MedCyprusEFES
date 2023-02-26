@@ -32,7 +32,7 @@
                                     </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>On either side and in-between the arms of a cross.</layout>
+                                <layout>On either side and in-between the arms of a <rs type="iconography" ref="iconography.xml#cross_processionial">processional cross</rs> on a tall shaft.</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
@@ -56,7 +56,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#cryptograms">Cryptograms</term>
+                    <term type="textType" ref="text_types.xml#cryptogram">Cryptograms</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
