@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Controlled vocabulary of iconography for MedCyprus</title>
+                <title>Iconographic Index</title>
             </titleStmt>
             <publicationStmt>
                 <p/>
@@ -18,25 +18,31 @@
         <body>
             <list type="christological_narrative">
                 <head>Christological narrative scenes</head>
-                <item xml:id="nativity"> 
-                    <term xml:lang="en">Nativity</term>
-                </item>
                 <item xml:id="crucifixion"> 
                     <term xml:lang="en">Crucifixion</term>
+                </item>
+                <item xml:id="nativity"> 
+                    <term xml:lang="en">Nativity</term>
                 </item>
                 <!-- ... -->
             </list>
             
             <list type="mariological_narrative">
                 <head>Mariological narrative scenes</head>
-                <item xml:id="something"> 
-                    <term xml:lang="en">...</term>
+                <item xml:id="birth_Virgin"> 
+                    <term xml:lang="en">Birth of the Virgin</term>
+                </item>
+                <item xml:id="presentation_Virgin"> 
+                    <term xml:lang="en">Presentation of the Virgin to the Temple</term>
                 </item>
                 <!-- ... -->
             </list>
             
             <list type="other_compositions">
                 <head>Other compositions</head>
+                <item xml:id="deesis"> 
+                    <term xml:lang="en">Deesis</term>
+                </item>
                 <item xml:id="last_judgment"> 
                     <term xml:lang="en">Last Judgment</term>
                 </item>
@@ -47,9 +53,13 @@
                 <head>Sacred objects</head>
                 <item xml:id="cross"> 
                     <term xml:lang="en">Cross</term>
+                    <!--Do we want to distinguish type of crosses? E.g., Patriarchal, Latin, etc.?-->
                 </item>
                 <item xml:id="keramidion"> 
                     <term xml:lang="en">Keramidion</term>
+                </item>
+                <item xml:id="mandylion"> 
+                    <term xml:lang="en">Mandylion</term>
                 </item>
                 <!-- ... -->
             </list>
@@ -63,10 +73,7 @@
                     </item>
                     <!-- ... -->
                 </list></item>
-                <item xml:id="saint_michael"> 
-                    <term xml:lang="en">Saint Michael</term>
-                </item>
-                <!-- ... -->
+                   <!-- ... -->
             </list>
             
             <list type="supplicants">
