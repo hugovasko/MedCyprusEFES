@@ -143,7 +143,7 @@
             </list>
             
             <list type="supplicants">
-                <head>Supplicants</head>
+                <head>Supplicants</head> <!--number of monument to facilitate identification? Can the number be "live"?--> 
                 <item><list type="donor_portrait">
                     <head>Donor portraits</head>
                     <item xml:id="John_MedCY018"> 
@@ -164,7 +164,7 @@
                 <item><list type="other_supplicants">
                     <head>Other supplicants</head>
                     <item xml:id="unidentified_MedCY047"> 
-                        <term xml:lang="en">unidentified male figure (MedCY047) <!--number of monument to facilitate identification? Can the number be "live"?--> </term>
+                        <term xml:lang="en">unidentified male figure (MedCY047)</term>
                     </item>
                     <!-- ... -->
                 </list></item>
