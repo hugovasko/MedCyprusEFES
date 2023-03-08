@@ -64,7 +64,7 @@
                 </person>
                 
                 <person xml:id="Helena">
-                    <persName xml:lang="grc"><seg> ἁγία</seg>Ἑλένη</persName>
+                    <persName xml:lang="grc"><seg>ἁγία</seg> Ἑλένη</persName>
                     <persName xml:lang="en">Helena, saint</persName>
                     <!--<persName xml:lang="en">Helena, saint or Saint Helena</persName>-->                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q170164</idno>                   
@@ -95,7 +95,7 @@
                 </person>
                 
                 <person xml:id="Nicholas">
-                    <persName xml:lang="grc"><seg>ἅγιος</seg>Νικόλαος</persName>
+                    <persName xml:lang="grc"><seg>ἅγιος</seg> Νικόλαος</persName>
                     <persName xml:lang="en">Nicholas, saint</persName>
                     <persName xml:lang="grc" type="epithet" subtype="Nicholas">τῆς Στέγης</persName>
                     <persName xml:lang="en" type="epithet" subtype="Nicholas">of the Roof</persName>
@@ -103,7 +103,7 @@
                 </person>
                 
                 <person xml:id="Jeremiah">
-                    <persName xml:lang="grc"><seg>προφήτης</seg>Ἱερεμίας</persName>
+                    <persName xml:lang="grc"><seg>προφήτης</seg> Ἱερεμίας</persName>
                     <persName xml:lang="en">Jeremiah, prophet</persName>                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q158825</idno>                   
                 </person>
