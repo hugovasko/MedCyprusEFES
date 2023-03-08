@@ -5,14 +5,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Forty Martyrs of Sebaste’s poem</title>
+                <title>Forty Martyrs of Sebaste</title>
                 <author xml:id="tp">Theocharis Petrou</author>
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.045.096</idno>
+                <idno type="filename">MedCY.045.095</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
@@ -24,16 +24,19 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support>Painted inscription <material/>
-                                    <rs type="placement">Naos, northwest recess, lunette </rs>,
-                                    <dimensions unit="cm"><height>4 cm </height> <width></width></dimensions></support>
+                                <support>
+                                    <rs type="inscription-support">
+<rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+      <rs type="placement-building">Naos, northwest recess, lunette</rs> 
+        <dimensions unit="cm"><height></height><width></width></dimensions>
+                                </support>                               
                             </supportDesc>
                             <layoutDesc>
-                                <layout></layout>
+                                <layout>below the metrical inscription</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>White letters against blue background. Partially preserved, faded<height>, 4 cm</height>
+                            <handNote>White letters against blue background. Badly damaged. Partially preserved.<height unit="cm"> 4 cm</height>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -44,7 +47,7 @@
                         </origin>
                         <provenance type="found"> Findspot and circumstances/context
                         </provenance>
-                        <provenance type="observed">
+                        <provenance type="observed" resp="#tp">31/08/2023
                         </provenance>
                     </history>
                 </msDesc>
@@ -53,7 +56,7 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#...">...</term>
+                    <term type="textType" ref="text_types.xml#Caption">Caption</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
@@ -66,10 +69,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lg>
-               <l><lb n="1"/><g ref="#cross">+</g> Χιμῶν <gap reason="illegible" unit="character" atLeast="4"/>πόν σάρξ <hi rend="ligature">το</hi> πάσχον ενθάδε:</l><l><gap reason="lost" unit="character" atLeast="4"/>σχόν ακ<hi rend="ligature">ου</hi>σὶς <expan><abbr>κ</abbr><ex>αὶ</ex></expan> στεναγμω<gap reason="illegible" unit="character" quantity="2"/> <expan><abbr>μ</abbr><ex>α</ex><abbr>ρ</abbr><ex>τύρων</ex></expan>:</l>
- <l><lb n="2"/> <gap reason="illegible" unit="character" atLeast="3"/> oυκ ακο<supplied reason="lost">υσ</supplied>ης καρτερούσι τη βία: </l><l>προς τα στέφι βλέπουσιν· <hi rend="ligature">οὐ</hi> πρὸς <hi rend="ligature">τοὺ</hi>ς πόν<hi rend="ligature">ου</hi>ς <supplied reason="lost"><g ref="#cross">+</g></supplied></l>
-               </lg> 
+               <lb n="1"/> Οι αγ<supplied reason="lost">ιοι</supplied><space quantity="3" unit="character"></space>τεσ<supplied reason="lost">σαράκοντα</supplied>
                 </ab>
             </div>
             <div type="apparatus">
