@@ -56,16 +56,16 @@
                 </person>
                 
                 <person xml:id="GregoryNazianzenos">
-                    <persName xml:lang="grc"><seg>Ἅγιος</seg> Γρηγόριος </persName>
-                    <persName xml:lang="en">Gregory the Theologian / Nazianzenos, <seg>saint</seg> </persName> 
+                    <persName xml:lang="grc"> Γρηγόριος, <seg>ἅγιος</seg> </persName>
+                    <persName xml:lang="en">Gregory the Theologian / Nazianzenos, <seg>saint </seg></persName> 
                     <persName xml:lang="grc" type="epithet" subtype="GregoryNazianzenos" key="Theologian">ὁ Θεολόγος</persName>
                     <persName xml:lang="en" type="epithet" subtype="GregoryNazianzenos" key="Theologian">Theologian</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q44011</idno>                   
                 </person>
                 
                 <person xml:id="Helena">
-                    <persName xml:lang="grc"><seg>Ἁγία</seg> Ἑλένη</persName>
-                    <persName xml:lang="en"><seg>Saint</seg> Helena</persName>
+                    <persName xml:lang="grc">Ἑλένη,<seg> ἁγία</seg></persName>
+                    <persName xml:lang="en">Helena, <seg>saint</seg></persName>
                     <!--<persName xml:lang="en">Helena, saint or Saint Helena</persName>-->                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q170164</idno>                   
                 </person>
@@ -95,16 +95,16 @@
                 </person>
                 
                 <person xml:id="Nicholas">
-                    <persName xml:lang="grc">Ἅγιος Νικόλαος</persName>
-                    <!--<persName xml:lang="en">Nicholas, saint or Saint Nicholas</persName>-->
+                    <persName xml:lang="grc">Νικόλαος, <seg>ἅγιος</seg></persName>
+                    <persName xml:lang="en">Nicholas, <seg>saint</seg></persName>
                     <persName xml:lang="grc" type="epithet" subtype="Nicholas">τῆς Στέγης</persName>
                     <persName xml:lang="en" type="epithet" subtype="Nicholas">of the Roof</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q44269</idno>                   
                 </person>
                 
                 <person xml:id="Jeremiah">
-                    <persName xml:lang="grc"><seg>Προφήτης</seg> Ἱερεμίας</persName>
-                    <persName xml:lang="en"><seg>Prophet</seg> Jeremiah</persName>                   
+                    <persName xml:lang="grc">Ἱερεμίας, <seg>προφήτης</seg></persName>
+                    <persName xml:lang="en"><seg>Jeremiah, </seg>prophet</persName>                   
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q158825</idno>                   
                 </person>
                 
@@ -116,8 +116,8 @@
                 </person>
                 
                 <person xml:id="Themonianos">
-                    <persName xml:lang="grc"><seg>Ὅσιος</seg> Θεμωνιανός</persName>
-                    <persName xml:lang="en"><seg>Themonianos,</seg> saint</persName>
+                    <persName xml:lang="grc">Θεμωνιανός, <seg>ὅσιος</seg></persName>
+                    <persName xml:lang="en">Themonianos, <seg>saint</seg> </persName>
                     <!--<persName xml:lang="en">Themonianos, saint or Saint Themonianos</persName>-->                   
                     <idno type="wikidata">Not listed</idno>                   
                 </person>
