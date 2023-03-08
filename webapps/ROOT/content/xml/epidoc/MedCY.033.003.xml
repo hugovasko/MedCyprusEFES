@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Saint Basil's scroll</title>
+                <title>Unidentified Saint's scroll</title>
             <author xml:id="tp">Theocharis Petrou</author>
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp"> Maria G. Parani</editor>
@@ -31,7 +31,7 @@
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>The inscription appears on Saint Basil's curving scroll, on his both hands</layout>
+                                <layout>The inscription appears on Saint's curving scroll, on his both hands</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
