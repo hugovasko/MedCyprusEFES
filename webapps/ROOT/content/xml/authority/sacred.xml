@@ -57,7 +57,7 @@
                 
                 <person xml:id="GregoryNazianzenos">
                     <persName xml:lang="grc"><seg>Ἅγιος</seg> Γρηγόριος </persName>
-                    <persName xml:lang="en"><seg>Saint</seg> Gregory</persName> 
+                    <persName xml:lang="en">Gregory the Theologian / Nazianzenos, <seg>saint</seg> </persName> 
                     <persName xml:lang="grc" type="epithet" subtype="GregoryNazianzenos" key="Theologian">ὁ Θεολόγος</persName>
                     <persName xml:lang="en" type="epithet" subtype="GregoryNazianzenos" key="Theologian">Theologian</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q44011</idno>                   
