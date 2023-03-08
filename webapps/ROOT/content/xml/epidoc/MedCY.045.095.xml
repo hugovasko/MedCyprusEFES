@@ -69,7 +69,7 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-               <lb n="1"/> Οι αγ<supplied reason="lost">ιοι</supplied><space quantity="5" unit="character"></space>τεσ<supplied reason="lost">σαράκοντα</supplied>
+               <lb n="1"/> <persName type="sacred" key="FortyMartyrs"><name nymRef="οἱ ἅγιοι Τεσσαράκοντα"></name>Οι αγ<supplied reason="lost">ιοι</supplied><space quantity="5" unit="character"></space>τεσ<supplied reason="lost">σαράκοντα</supplied></persName>
                 </ab>
             </div>
             <div type="apparatus">
