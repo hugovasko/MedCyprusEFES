@@ -1,0 +1,47 @@
+**SSL**
+sudo yum -y install mod_ssl
+cd /etc/pki/tls/private
+sudo openssl req -new -newkey rsa:2048 -keyout jetty.key -out jetty.csr
+// it creates a file xxx.csr with the certificate request and a file xxx.key with the encrypted private key
+
+// after having requested a SSL certificate, to install it:
+// copy the .cer certificate(s) [CERT_FILE, CHAIN_CERT_FILE] in /etc/pki/tls/certs/
+
+sudo nano /etc/httpd/conf.d/ssl.conf
+// add the following:
+DocumentRoot "/var/www/html/xxx"
+ServerName xxx.com:443
+SSLEngine on
+SSLCertificateFile /etc/pki/tls/certs/CERT_FILE
+SSLCertificateKeyFile /etc/pki/tls/private/jetty.key
+SSLCertificateChainFile /etc/pki/tls/certs/CHAIN_CERT_FILE
+
+sudo nano /etc/httpd/sites-available/xxx.conf
+// add the following:
+NameVirtualHost *:443
+<VirtualHost *:80>
+...
+</VirtualHost>
+<VirtualHost *:443>
+ServerName xxx.com
+DocumentRoot /var/www/html/xxx
+ProxyVia Off
+ProxyPreserveHost On
+ProxyRequests Off
+ProxyPass / http://localhost:9999/
+ProxyPassReverse / http://localhost:9999/
+SSLEngine on
+SSLCertificateFile /etc/pki/tls/certs/CERT_FILE
+SSLCertificateKeyFile /etc/pki/tls/private/jetty.key
+SSLCertificateChainFile /etc/pki/tls/certs/CHAIN_CERT_FILE
+</VirtualHost>
+
+systemctl restart httpd
+firewall-cmd --add-service=https --permanent
+firewall-cmd --add-service=http --permanent [only if it is needed to keep also http]
+firewall-cmd --reload
+yum install ca-certificates
+update-ca-trust force-enable
+sudo cp /etc/pki/tls/certs/CHAINCERT_FILE /etc/pki/ca-trust/source/anchors/
+update-ca-trust extract
+sudo update-ca-trust
