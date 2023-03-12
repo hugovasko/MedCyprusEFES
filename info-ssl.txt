@@ -1,7 +1,7 @@
 **SSL**
 sudo yum -y install mod_ssl
 cd /etc/pki/tls/private
-sudo openssl req -new -newkey rsa:2048 -keyout jetty.key -out jetty.csr
+sudo openssl req -new -newkey rsa:2048 -keyout xxx.key -out xxx.csr
 // it creates a file xxx.csr with the certificate request and a file xxx.key with the encrypted private key
 
 // after having requested a SSL certificate, to install it:
@@ -45,3 +45,12 @@ update-ca-trust force-enable
 sudo cp /etc/pki/tls/certs/CHAINCERT_FILE /etc/pki/ca-trust/source/anchors/
 update-ca-trust extract
 sudo update-ca-trust
+
+
+**For MedCyprus**
+MedCyprusEFES
+medcyprus.ucy.ac.cy
+jetty.key, jetty.csr
+CERT: medcyprus_ucy_ac_cy_cert.cer
+CHAIN_CERT: medcyprus_ucy_ac_cy.cer
+[UCY VPN, sslvpn.ucy.ac.cy]
