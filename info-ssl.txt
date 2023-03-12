@@ -54,3 +54,4 @@ jetty.key, jetty.csr
 CERT: medcyprus_ucy_ac_cy_cert.cer
 CHAIN_CERT: medcyprus_ucy_ac_cy.cer
 [UCY VPN, sslvpn.ucy.ac.cy]
+[screen; visudo; gh cli + token, clone; crontab: pull, re-harvest (?), re-index]
