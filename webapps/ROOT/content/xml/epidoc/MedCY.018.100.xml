@@ -32,7 +32,7 @@
   </supportDesc>
 
   <layoutDesc>
-    <layout>Framed by the portrait of a kneeling couple, in all probability <rs type="iconography" ref="iconography.xml#John_MedCY018">John</rs> (r.), mentioned in the inscription, and his <rs type="iconography" ref="iconography.xml#wife_MedCY018">wife</rs> (l.). 
+    <layout>Framed by the portrait of a kneeling couple, in all probability John (r.), mentioned in the inscription, and his wife (1.)
        </layout>
   </layoutDesc>
 </objectDesc>
@@ -40,6 +40,10 @@
                             <handNote>White letters against green background. The inscription is written entirely in majuscule. Lines are ruled top and bottom. Accents and breathings non systematic. The inscription, except the beginning of the first two lines, is clear, legible and consists of bold letters. However, the thickness of the letters in some places varies, while all eight lines have a slight slope to the upper right. Throughout the inscription there are ligatures of the letters ΟΥ, ΤΗ, ΓΗ, ΑΝ, ΝΤΗ, ΝΗ, ΜΑ, ΝΑ, ΗΝΑ, ΤΑ. The ligature of the letters OY varies and is presented with four different ways. Good preservation condition. <height unit="cm">3 cm</height>
                             </handNote>
                         </handDesc>
+                        <decoDesc>
+                            <p><rs type="iconography" ref="iconography.xml#John_MedCY018">John</rs>
+                            <rs type="iconography" ref="iconography.xml#wife_MedCY018"></rs></p>
+                            </decoDesc>
                     </physDesc>
                     <history>
                         <origin>
