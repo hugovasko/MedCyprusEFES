@@ -7,11 +7,12 @@
             <titleStmt>
                 <title>Saint Gregory the Theologian </title>
                 <author xml:id="tp">Theocharis Petrou</author>
+                <author xml:id="mx"></author>
                 <editor xml:id="mgp"> Maria G. Parani</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.050.001</idno>
+                <idno type="filename">MedCY.050.007</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
