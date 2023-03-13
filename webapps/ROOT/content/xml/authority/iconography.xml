@@ -66,6 +66,10 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
+                <item xml:id="Matthew_MedCY.056">
+                    <term xml:lang="en">Matthew the Evangelist (MedCY.056)</term>
+                </item>
+                
                 <item><list type="Angelic_Powers">
                     <head>Angelic Powers</head>
                     <item xml:id="michael"> 
