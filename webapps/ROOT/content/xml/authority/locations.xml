@@ -1682,14 +1682,14 @@
                 <place xml:id="Sotira" n="56">
                     <placeName xml:lang="en">Sotira (Ammochostou), Transfiguration</placeName>
                     <placeName xml:lang="en">Sotera (Famagusta), Transfiguration</placeName>
-                    <placeName xml:lang="el">...</placeName>
-                    <placeName type="district" ref="district.xml#...">...</placeName>
-                    <placeName type="diocese" ref="diocese.xml#...">...</placeName>
+                    <placeName xml:lang="el">Σωτήρα (Αμμοχώστου)</placeName>
+                    <placeName type="district" ref="district.xml#Famagusta">Famagusta</placeName>
+                    <placeName type="diocese" ref="diocese.xml#constantia">Bishopric of Constantia and Famagusta</placeName>
                     <location><geo>35.02873782723978, 33.95298959004183</geo></location>
                     <desc type="construction"><date>...</date></desc>
-                    <desc type="function">...</desc>
-                    <desc type="context">...</desc>
-                    <desc type="architectural">...</desc>
+                    <desc type="function">parochial; funerary; </desc>
+                    <desc type="context">rural</desc>
+                    <desc type="architectural">Single-aisled cross-in-square church with dome, on the ruins of an early Christian basilica</desc>
                     <desc type="mural">
                         <desc type="layer" n="1">1st layer: <date>...</date> ...</desc>
                     </desc>
