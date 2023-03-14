@@ -87,6 +87,12 @@
                     <note>See also: Christ, Word</note>
                 </person>
                 
+                <person xml:id="Matthew">
+                    <persName xml:lang="grc"><seg>ἅγιος</seg>Ματθαῖος</persName>
+                    <persName xml:lang="en">Matthew, the Evangelist</persName>                   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q43600</idno>                   
+                </person>
+                
                 <person xml:id="MeterTheou">
                     <persName xml:lang="grc">Μήτηρ Θεοῦ</persName>
                     <persName xml:lang="en">Mother of God</persName>
