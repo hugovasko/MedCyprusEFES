@@ -35,7 +35,7 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>White letters against red background. The inscription is written entirely in majuscule with the size of some characters varying.  Accents and breathings non systematic. The word ὁ ἅγιος has been lost. Throughout the inscription there is the ligature of the letters AT. Poor condition. Exfoliated . <height unit="cm">n/a</height>
+                            <handNote>White letters against red background. The inscription is written entirely in majuscule with the size of some characters varying.  Accents and breathings non systematic. The inscription ὁ ἅγιος has been lost. Throughout the inscription there is the ligature of the letters AT. Poor condition. Exfoliated . <height unit="cm">n/a</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
@@ -71,7 +71,10 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/>
+                    <lb n="1"/><milestone unit="column" n="left"/><supplied reason="lost">Ὁ</supplied><milestone unit="column" n="right"/><persName type="sacred" key="Matthew">Μαθαῖος</persName>
+                    <lb n="2"/><milestone unit="column" n="left"/><w lemma="ἅγιος"><supplied reason="lost">ἅ</supplied><milestone unit="column" n="left"/>o εβαγγε<hi rend="ligature">λη</hi>στ<supplied reason="omitted">ης</supplied>
+                    <lb n="3" break="no"/><supplied reason="lost">γι</supplied>
+                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></w>
                 </ab>
             </div>
             <div type="apparatus">
