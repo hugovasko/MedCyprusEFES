@@ -88,8 +88,10 @@
                 </person>
                 
                 <person xml:id="Matthew">
-                    <persName xml:lang="grc"><seg>ἅγιος</seg>Ματθαῖος</persName>
-                    <persName xml:lang="en">Matthew, the Evangelist</persName>                   
+                    <persName xml:lang="grc"><seg>Ἀπόστολος</seg> Ματθαῖος</persName>
+                    <persName xml:lang="en">Matthew, the Evangelist</persName>        
+                    <persName xml:lang="grc" type="epithet" subtype="Matthew" key="Evangelist">ὁ Εὐαγγελιστῆς</persName>
+                    <persName xml:lang="en" type="epithet" subtype="Matthew" key="Evangelist">Evangelist</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q43600</idno>                   
                 </person>
                 
