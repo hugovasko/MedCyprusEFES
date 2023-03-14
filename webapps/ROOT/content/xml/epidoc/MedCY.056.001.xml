@@ -87,6 +87,8 @@
                 <p>commentary</p>
             </div>
             <div type="bibliography">
+                <listBibl> <bibl ana="unpublished"></bibl>
+                </listBibl>
                 <p>bibliography of previous editions, discussion, etc.</p>
             </div>
         </body>
