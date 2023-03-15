@@ -67,7 +67,7 @@
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
                     <lb n="1"/><g ref="#cross">+</g><supplied reason="lost">Ἀνοικο</supplied>δο<unclear>μ</unclear><supplied reason="lost">ήθη ο θείος και πα</supplied>
-<lb n="2" break="no"/><choice><corr>ν</corr><sic>σ</sic></choice>σεπτος ναο<unclear>ς</unclear><supplied reason="lost"> της υπεραγίας</supplied> 
+<lb n="2" break="no"/><choice><corr>ν</corr><sic>σ</sic></choice>σεπτος ναο<unclear>ς</unclear><supplied reason="lost"> της <addName type="epithet" key="hyperagia">υπεραγίας</addName></supplied> 
 <lb n="3"/><addName type="epithet" key="despoina">δεσπ<supplied reason="omitted">o</supplied>ίνης</addName> η<unclear>μ</unclear><supplied reason="lost">ων <persName type="sacred" key="Theotokos">θεοτοκου</persName> δια</supplied>
 <lb n="4"/>σ<choice><corr>υν</corr><sic>η</sic></choice>δρομης: και πο<unclear>λ</unclear><supplied reason="lost">λου</supplied> <unclear>π</unclear><choice><corr>ο</corr><sic>ω</sic></choice> 
 <lb n="5" break="no"/>θου <persName type="attested" role="founder" ref="#IoannesGerakiotes"><name nymRef="Ἰωάννης" type="forename"><expan><abbr>Ιω</abbr><ex>αννου</ex></expan></name>: του <name nymRef="Γερακιώτης" type="surname"><del rend="erasure">
