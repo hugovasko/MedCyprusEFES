@@ -23,6 +23,16 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q2619342</idno>                   
                 </person>
                 
+                <person xml:id="Christ">
+                    <persName xml:lang="grc">Χριστός</persName>
+                    <persName xml:lang="en">Christ</persName>
+                    <persName xml:lang="grc" type="epithet" subtype="Christ" key="SonofGod">Υἱὸς Θεοῦ</persName>
+                    <persName xml:lang="en" type="epithet" subtype="Christ" key="SonofGod">Son of God</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q642420</idno>
+                    <!--This is very tricky. Jesus and Christ, together or separately? Or, together AND separately, depending on the content of the inscriptions. How about Son of God? Name or epithet?-->
+                    <note>See also: Jesus Christ, Word</note>
+                </person>
+                
                 <person sameAs="#JesusChrist"><persName>Christ</persName></person>
                                 
                 <person xml:id="TrueCross">
