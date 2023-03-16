@@ -38,11 +38,14 @@
                             <handNote>White letters against blue background. The inscription is written entirely in majuscule. Lines are ruled top and bottom. Accents and breathings non systematic. The end of each verse is marked with a dot. The inscription, after the conservation of the wall paintings between 1963-1968, is clear, legible and consists of bold letters. However, the size as well as the thickness of the letters in some places varies, while all seven lines have a slight slope to the right. The letters of the words: Tη̣ν ἐν προcώ̣πω̣̣ τριcὶ (L. 1), τὸν νεων ἤγειρε cοι·(L. 6), κακῶc παρεcφάλη·(L. 7), in relation with the rest, are thinner and slightly compressed for space reasons. Throughout the inscription there are ligatures of the letters ΟΥ, ΗΝ, ΤΡ, ΠΡ. The letter ε of the word νωβε̣λλιcίμων (L. 5) was lost, while the letters ω and β at the beginning of the word are faded. Very good preservation condition. Two letters of the last word at the end of the fifth line are faded and one other is completely lost. <height unit="cm">5 cm</height>
                             </handNote>
                         </handDesc>
+                        <decoDesc>
+                            <p>Painted Inscription</p>
+                        </decoDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace ref="locations.xml#KoutsoventisTrinity">Koutsoventis, Monastery of St John Chrysostom, Holy Trinity chapel</origPlace>
-                             <origDate notBefore="1095" notAfter="1103-08-31" precision="medium" evidence="prosopography titulature">ca 1100</origDate>
+                             <origDate><!--notBefore="1095" notAfter="1103-08-31" precision="medium" evidence="prosopography titulature">-->ca 1100</origDate>
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Figs. 83, 84 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
                         </provenance>
