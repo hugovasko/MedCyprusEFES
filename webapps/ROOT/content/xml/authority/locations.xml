@@ -995,7 +995,7 @@
                     <placeName type="district" ref="district.xml#Kyrenia">Kyrenia</placeName>
                     <placeName type="diocese" ref="diocese.xml#Kyrenia">Bishopric of Kyrenia, Dependency (metochi) of the Patriarchate of Jerusalem.</placeName>
                     <location><geo>35.275, 33.418</geo></location>
-                    <desc type="construction"><date notBefore="1067" notAfter="1133" precision="medium">ca. 1100</date></desc>
+                    <!--<desc type="construction"><date notBefore="1067" notAfter="1133" precision="medium">ca. 1100</date></desc>-->
                     <desc type="function">Monastic</desc>
                     <desc type="context">Rural</desc>
                     <desc type="architectural">Single-aisled domed-hall church</desc>
