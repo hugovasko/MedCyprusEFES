@@ -66,9 +66,7 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
-                <item xml:id="Matthew_MedCY.056">
-                    <term xml:lang="en">Matthew the Evangelist (MedCY.056)</term>
-                </item>
+                
                 
                 <item><list type="Angelic_Powers">
                     <head>Angelic Powers</head>
@@ -89,6 +87,9 @@
                     <item xml:id="andrew"> 
                         <term xml:lang="en">Andrew</term>
                     </item>
+                    <item xml:id="Matthew">
+                        <term xml:lang="en">Matthew the Evangelist</term>
+                    </item>
                     <!-- ... -->
                 </list></item>
                 <item><list type="Ecclesiastics">
@@ -97,10 +98,10 @@
                         <term xml:lang="en">Basil of Caesarea</term>
                     </item>
                     <item xml:id="unidentified_prelate_MedCY033.003"> 
-                        <term xml:lang="en">Prelate, unidentified (MedCY033.003)</term>
+                        <term xml:lang="en">Prelate, unidentified</term>
                     </item>
                     <item xml:id="unidentified_prelate_MedCY033.004"> 
-                        <term xml:lang="en">Prelate, unidentified (MedCY033.004)</term>
+                        <term xml:lang="en">Prelate, unidentified</term>
                     </item>
                     <!-- ... -->
                 </list></item>
@@ -157,10 +158,10 @@
                 <item><list type="donor_portrait">
                     <head>Donor portraits</head>
                     <item xml:id="John_MedCY018"> 
-                        <term xml:lang="en">John (MedCY018)</term>
+                        <term xml:lang="en">John (<ref target="locations.xml#MedCY018">MedCY018</ref>)</term>
                     </item>
                     <item xml:id="wife_MedCY018"> 
-                        <term xml:lang="en">wife of John (MedCY018)</term>
+                        <term xml:lang="en">wife of John (<ref target="locations.xml#MedCY018">MedCY018</ref>)</term>
                     </item>
                     <!-- ... -->
                 </list></item>
