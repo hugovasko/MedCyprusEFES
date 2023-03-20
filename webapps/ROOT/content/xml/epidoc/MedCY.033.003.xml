@@ -26,12 +26,12 @@
                                 <support>
                                    <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Bema, north wall</rs>
+                                    <rs type="placement-building">Bema, north wall, register above dado zone.</rs>
                                     <dimensions unit="cm"><height>1,48 cm</height><width>61 cm</width><dim>36,5 cm (halo diameter)</dim></dimensions>                                    
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>The inscription appears on Saint's curving scroll, on his both hands</layout>
+                                <layout>The inscription appears on the open scroll held in both hands by an unidentified, co-officiating bishop.s</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
@@ -46,7 +46,7 @@
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Figs. 72, 74 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
                         </provenance>
-                        <provenance type="observed">n/a
+                        <provenance type="observed">currently, inaccessible
                         </provenance>
                     </history>
                 </msDesc>
