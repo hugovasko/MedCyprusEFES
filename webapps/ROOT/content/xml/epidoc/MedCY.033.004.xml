@@ -26,16 +26,16 @@
                                 <support>                             
                                       <rs type="inscription-support">
                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Bema, south wall</rs>
+                                    <rs type="placement-building">Bema, south wall, register above dado zone. </rs>
                                     <dimensions unit="cm"><height>2,10 cm</height><width>61 cm</width></dimensions>   
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>The inscription appears on Unidentified Bishop's scroll</layout>
+                                <layout>The inscription appears on the open scroll held in both hands by an unidentified, co-officiating bishop.</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Black letters against white background. Badly damaged. Very fragmentary <height></height>
+                            <handNote>Black letters against white background. Badly damaged. Very fragmentary. <height></height>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -46,7 +46,7 @@
                         </origin>
                         <provenance when="1969"> Not accessible since it is located in a military area in occupied Cyprus. Fig. 75 by Mango, Hawkins, Boyd 1990, Studied and photographed in 1969.
                         </provenance>
-                        <provenance type="observed">n/a
+                        <provenance type="observed">currently, inaccessible
                         </provenance>
                     </history>
                 </msDesc>
