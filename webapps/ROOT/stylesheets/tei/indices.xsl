@@ -276,17 +276,55 @@
         <xsl:variable name="bibl" select="document($bibliography-al)//tei:bibl[@xml:id=$bibl-id][not(@sameAs)]"/>
         <a href="{concat('../../concordance/bibliography/',$bibl-id,'.html')}" target="_blank">
           <xsl:choose>
-            <xsl:when test="doc-available($bibliography-al) = fn:true() and $bibl//tei:surname and $bibl//tei:date">
-              <xsl:for-each select="$bibl//tei:surname[not(parent::*/preceding-sibling::tei:title)]">
-                <xsl:apply-templates select="."/>
-                <xsl:if test="position()!=last()"> – </xsl:if>
-              </xsl:for-each>
-              <xsl:text> </xsl:text>
-              <xsl:apply-templates select="$bibl//tei:date"/>
+            <xsl:when test="doc-available($bibliography-al) = fn:true()">
+              <xsl:choose>
+                <xsl:when test="$bibl">
+                  <xsl:choose>
+                    <xsl:when test="$bibl//tei:bibl[@type = 'abbrev']">
+                      <xsl:apply-templates select="$bibl//tei:bibl[@type = 'abbrev'][1]"/>
+                    </xsl:when>
+                    <xsl:when test="$bibl//tei:title[@type = 'short']">
+                      <xsl:apply-templates select="$bibl//tei:title[@type = 'short'][1]"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:choose>
+                        <xsl:when test="$bibl[ancestor::tei:div[@xml:id = 'authored_editions']]">
+                          <xsl:for-each
+                            select="$bibl//tei:name[@type = 'surname'][not(parent::*/preceding-sibling::tei:title[not(@type = 'short')])]">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()"> – </xsl:if>
+                          </xsl:for-each>
+                          <xsl:if test="$bibl//tei:date/text()">
+                            <xsl:text> </xsl:text>
+                            <xsl:value-of select="$bibl//tei:date"/>
+                          </xsl:if>
+                        </xsl:when>
+                        <xsl:when test="$bibl[ancestor::tei:div[@xml:id = 'series_collections']]">
+                          <i>
+                            <xsl:value-of select="$bibl/@xml:id"/>
+                          </i>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:for-each
+                            select="$bibl//tei:*[(self::tei:name and @type = 'surname') or self::tei:surname][not(parent::*/preceding-sibling::tei:title[not(@type = 'short')])]">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()"> – </xsl:if>
+                          </xsl:for-each>
+                          <xsl:if test="$bibl//tei:date/text()">
+                            <xsl:text> </xsl:text>
+                            <xsl:value-of select="$bibl//tei:date"/>
+                          </xsl:if>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="upper-case(substring($bibl-id, 1, 1))"/>
+                  <xsl:value-of select="substring($bibl-id, 2)"/>
+                </xsl:otherwise>
+              </xsl:choose>  
             </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="$bibl-id"/>
-            </xsl:otherwise>
           </xsl:choose>
         </a>
       <xsl:if test="contains(., ',')">

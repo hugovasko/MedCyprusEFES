@@ -16,7 +16,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type='iconography']" group-by=".">
+      <xsl:for-each-group select="//tei:rs[@type='iconography']" group-by="@ref">
         <xsl:variable name="id">
           <xsl:choose>
             <xsl:when test="contains(@ref, '#')">

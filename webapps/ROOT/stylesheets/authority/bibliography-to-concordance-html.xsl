@@ -192,6 +192,17 @@
                         <xsl:value-of select="$bibl/@xml:id"/>
                       </i>
                     </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:for-each
+                        select="$bibl//tei:*[(self::tei:name and @type = 'surname') or self::tei:surname][not(parent::*/preceding-sibling::tei:title[not(@type = 'short')])]">
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position() != last()"> – </xsl:if>
+                      </xsl:for-each>
+                      <xsl:if test="$bibl//tei:date/text()">
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="$bibl//tei:date"/>
+                      </xsl:if>
+                    </xsl:otherwise>
                   </xsl:choose>
                 </xsl:otherwise>
               </xsl:choose>
