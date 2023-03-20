@@ -68,17 +68,25 @@
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
               <ab>
-                    <lb n="1"/><persName type="sacred" key="GregoryNazianzenos"><name nymRef="Γρηγόριος"></name><addName type="epithet" key="Theologian">Ὁ
+                  <cb n="a"/>
+                    <lb n="1"/><persName type="sacred" key="GregoryNazianzenos">Ὁ
                     <lb n="2"/>ἅ
                     <lb n="3" break="no" />γι
                     <lb n="4" break="no"/>ος
-                    <lb n="5"/><hi rend="ligature">Γρ</hi> <milestone unit="column" n="1"></milestone>Ὁ
-                    <lb n="6" break="no"/>η <milestone unit="column" n="1"></milestone>Θ
-                    <lb n="7" break="no"/>γό <milestone unit="column" n="1"></milestone>ε
-                    <lb n="8" break="no"/>ρι<milestone unit="column" n="1"></milestone>ο
-                    <lb n="9" break="no"/>ο <milestone unit="column" n="1"></milestone>λ
-                    <lb n="10"/>ς <milestone unit="column" n="1"></milestone>ό
-                    <lb n="11"/> <milestone unit="column" n="1"></milestone>γος</addName></persName>
+                    <lb n="5"/><name nymRef="Γρηγόριος"><hi rend="ligature">Γρ</hi>
+                    <lb n="6" break="no"/>η 
+                    <lb n="7" break="no"/>γό 
+                    <lb n="8" break="no"/>ρι
+                    <lb n="9" break="no"/>ο
+                    <lb n="10" break="no"/>ς</name> 
+                  <cb n="b"/>
+                  <lb n="5"/>Ὁ
+                  <lb n="6"/><addName type="epithet" key="Theologian">Θ
+                  <lb n="7" break="no"/>ε
+                  <lb n="8" break="no"/>ο
+                  <lb n="9" break="no"/>λ
+                  <lb n="10" break="no"/>ό
+                  <lb n="11" break="no"/>γος</addName></persName>
               </ab>
             </div>
             <div type="apparatus">
