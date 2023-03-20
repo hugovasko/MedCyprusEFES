@@ -65,8 +65,8 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="Koutsoventisfig.1.jpg"><desc>Southeast pier, west face (Mango, Hawkins, Boyd 1990, fig.83)</desc></graphic>
-        <graphic url="Koutsoventisfig.2.jpg"><desc>Southeast pier, west face, inscription (Mango, Hawkins, Boyd 1990, fig.84)</desc></graphic>
+        <graphic url="Koutsoventis1.jpg"><desc>Southeast pier, west face (Mango, Hawkins, Boyd 1990, fig.83)</desc></graphic>
+        <graphic rend="primary" url="Koutsoventis2.jpg"><desc>Southeast pier, west face, inscription (Mango, Hawkins, Boyd 1990, fig.84)</desc></graphic>
     </facsimile>
     
     <text>

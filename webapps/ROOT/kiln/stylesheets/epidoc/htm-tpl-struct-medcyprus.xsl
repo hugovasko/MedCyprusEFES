@@ -74,7 +74,10 @@
        <br/><b>Letters: </b>
        <xsl:apply-templates select="//t:handDesc" mode="medcyprus-dimensions"/>
        <br/><b>Iconography: </b>
-       <xsl:apply-templates select="//t:decoDesc" mode="medcyprus-dimensions"/>
+       <xsl:for-each select="//t:rs[@type='iconography']">
+         <xsl:apply-templates select="." mode="medcyprus-dimensions"/>
+         <xsl:if test="position()!=last()">; </xsl:if>
+       </xsl:for-each>
      </p>
      
      <p><b>Visit to the monument: </b>
@@ -160,6 +163,17 @@
            <xsl:apply-templates select="$edtxt" mode="sqbrackets"/>
          </div>
        </section>
+       <xsl:if test="//t:facsimile//t:graphic[@rend='primary'][1]">
+         <section>
+           <p class="title" data-section-title="data-section-title">
+             <a href="#"><i18n:text i18n:key="epidoc-xslt-medcyprus-image">Image</i18n:text></a></p>
+           <div class="content" id="primary_image" data-section-content="data-section-content">
+             <a href="/images/{//t:facsimile//t:graphic[@rend='primary'][1]/@url}" target="_blank">
+               <img src="/images/{//t:facsimile//t:graphic[@rend='primary'][1]/@url}" style="max-width:100%"/>
+             </a>
+           </div>
+         </section>
+       </xsl:if>
      </div>
 
      <div id="apparatus">
