@@ -27,13 +27,13 @@
       <rs type="inscription-support">
 <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
       <rs type="placement-building">Narthex, northeastern recess, lower register</rs> 
-        <dimensions unit="cm"><height>3 cm (letters)</height><width>21,5-62 cm (lines)</width></dimensions>
+        
     </support>
   </supportDesc>
 
   <layoutDesc>
-    <layout>Framed by the portrait of a kneeling couple, in all probability <p><rs type="iconography" ref="iconography.xml#John_MedCY018">John</rs></p> (r.), mentioned in the inscription, and his <p><rs type="iconography" ref="iconography.xml#wife_MedCY018">wife</rs></p> (l.). 
-       </layout>
+    <layout>Framed by the portrait of a kneeling couple, in all probability <rs type="iconography" ref="iconography.xml#John_MedCY018">John</rs> (r.), mentioned in the inscription, and his <rs type="iconography" ref="iconography.xml#wife_MedCY018">wife</rs>  (l.). 
+       <dimensions unit="cm"><height>...</height><width>21,5 (line 8)-62 cm (line 1)</width></dimensions></layout>
   </layoutDesc>
 </objectDesc>
  <handDesc>
