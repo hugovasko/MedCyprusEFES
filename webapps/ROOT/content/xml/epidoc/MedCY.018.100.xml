@@ -27,7 +27,7 @@
       <rs type="inscription-support">
 <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
       <rs type="placement-building">Narthex, northeastern recess, lower register</rs> 
-        <dimensions unit="cm"><height>3 cm (letters)</height><width>21,5-62 cm (lines)</width></dimensions>
+        <!--<dimensions unit="cm"><height>3 cm (letters)</height><width>21,5-62 cm (lines)</width></dimensions>-->
     </support>
   </supportDesc>
 
