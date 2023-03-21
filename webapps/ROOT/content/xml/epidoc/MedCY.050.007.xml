@@ -62,7 +62,9 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="..."/>
+          <graphic url="05000703.jpg"><desc>Bema, semicylindrical wall, north side, second figure</desc></graphic>
+        <graphic rend="primary" url="05000701.jpg"><desc>Bema, semicylindrical wall, north side, second figure, inscription detail</desc></graphic>
+        <graphic rend="primary" url="05000702.jpg"><desc>Bema, semicylindrical wall, north side, second figure, inscription detail</desc></graphic>
     </facsimile>
     <text>
         <body>
