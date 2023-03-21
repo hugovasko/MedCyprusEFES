@@ -19,19 +19,19 @@
             <list>
                 <!-- to be populated -->
                 <item xml:id="doc1"> 
-                    <term xml:lang="en">Building</term>
+                    <term xml:lang="en">building</term>
                 </item>
                 <item xml:id="doc2">
-                    <term xml:lang="en">Cryptogram</term>
+                    <term xml:lang="en">cryptogram</term>
                 </item>
                 <item xml:id="doc3">
-                    <term xml:lang="en">Donation</term>
+                    <term xml:lang="en">donation</term>
                 </item>
                 <item xml:id="doc4">
-                    <term xml:lang="en">Epitaph</term>
+                    <term xml:lang="en">epitaph</term>
                 </item>
                     <item xml:id="doc5">
-                        <term xml:lang="en">Caption</term>
+                        <term xml:lang="en">caption</term>
                 </item>
             </list>
         </body>
