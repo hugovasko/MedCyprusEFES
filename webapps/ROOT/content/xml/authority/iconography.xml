@@ -66,9 +66,7 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
-                <item xml:id="GregoryNazianzenos">
-                    <term xml:lang="en">Gregory the Theologian</term>
-                </item>
+              
                 
                 <item><list type="Angelic_Powers">
                     <head>Angelic Powers</head>
@@ -98,6 +96,9 @@
                     <head>Ecclesiastics (prelates, priests, deacons)</head>
                     <item xml:id="basil"> 
                         <term xml:lang="en">Basil of Caesarea</term>
+                    </item>
+                    <item xml:id="GregoryNazianzenos">
+                        <term xml:lang="en">Gregory the Theologian</term>
                     </item>
                     <item xml:id="unidentified_prelate_MedCY033.003"> 
                         <term xml:lang="en">Prelate, unidentified</term>
