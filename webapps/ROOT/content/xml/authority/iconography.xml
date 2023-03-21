@@ -66,7 +66,9 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
-                
+                <item xml:id="GregoryNazianzenos">
+                    <term xml:lang="en">Gregory the Theologian</term>
+                </item>
                 
                 <item><list type="Angelic_Powers">
                     <head>Angelic Powers</head>
