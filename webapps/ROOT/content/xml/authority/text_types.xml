@@ -30,6 +30,9 @@
                 <item xml:id="doc4">
                     <term xml:lang="en">epitaph</term>
                 </item>
+                    <item xml:id="doc5">
+                        <term xml:lang="en">caption</term>
+                </item>
             </list>
         </body>
     </text>
