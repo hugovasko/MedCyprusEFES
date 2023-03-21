@@ -104,7 +104,8 @@
                 <p></p>
             </div>
             <div type="bibliography">
-                <listBibl> <bibl></bibl>
+                <listBibl><bibl><ptr target="MangoHawkins1962"/></bibl>
+                    <bibl><ptr target="Vorkas2004"/></bibl>
                 </listBibl>
                 <p>bibliography of previous editions, discussion, etc.</p>
             </div>
