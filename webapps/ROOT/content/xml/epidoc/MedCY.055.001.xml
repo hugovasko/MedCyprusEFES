@@ -74,19 +74,12 @@
                 <ab>
                   <cb n="a"/>
                     <lb n="1"/><persName type="sacred" key="Matthew"><name nymRef="Ματθαῖος"><supplied reason="lost">Ὁ</supplied>
-                    <lb n="2"/><supplied reason="lost">ἅ</supplied>
+                    <lb n="2"/><w lemma="ἅγιος"><supplied reason="lost">ἅ</supplied>
                     <lb n="3" break="no" /><supplied reason="lost">γι</supplied>
-                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></name>
+                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></w></name>
                   <cb n="b"/>
                   <lb n="1"/>Mαθαῖος
-                  <lb n="2"/><addName type="epithet" key="Evangelist">ὁ ἐβαγγε<hi rend="ligature">λη</hi>στ<supplied reason="omitted">ής</supplied>
-                  </addName></persName>
-               
-                    
-                    <!--<lb n="1"/><milestone unit="column" n="left"/><supplied reason="lost">Ὁ</supplied><milestone unit="column" n="right"/><persName type="sacred" key="Matthew"><name nymRef="Ματθαῖος"></name><addName type="epithet" key="Evangelist"></addName>Μαθαῖος</persName>
-                    <lb n="2"/><milestone unit="column" n="left"/><w lemma="ἅγιος"><supplied reason="lost">ἅ</supplied><milestone unit="column" n="left"/>o εβαγγε<hi rend="ligature">λη</hi>στ<supplied reason="omitted">ης</supplied>
-                    <lb n="3" break="no"/><supplied reason="lost">γι</supplied>
-                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></w>-->
+                  <lb n="2"/><addName type="epithet" key="Evangelist"><w lemma="εὐαγγελιστής">ὁ ἐβαγγε<hi rend="ligature">λη</hi>στ<supplied reason="omitted">ής</supplied></w></addName></persName>
                 </ab>
             </div>
             <div type="apparatus">
