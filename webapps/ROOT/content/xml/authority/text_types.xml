@@ -33,6 +33,9 @@
                     <item xml:id="doc5">
                         <term xml:lang="en">Caption</term>
                 </item>
+                <item xml:id="doc6">
+                    <term xml:lang="en">Biblical citation</term>
+                </item>
             </list>
         </body>
     </text>
