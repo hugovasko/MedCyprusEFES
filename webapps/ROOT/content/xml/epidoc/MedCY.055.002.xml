@@ -66,13 +66,12 @@
     </teiHeader>
     <facsimile>
          <graphic url="055-002-01.jpg"><desc>Naos, southeastern pilaster, upper register, north face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-002-01.jpg"><desc>Naos, southeastern pilaster, upper register, north face, inscription detail</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><g ref="#cross">+</g><w lemma="βίβλος">Βί
+                    <lb n="1"/><g ref="#cross">+</g><w lemma="βίβλος">Β<choice><orig>ι</orig><reg>ί</reg></choice>
                     <lb n="2" break="no"/>βλος</w>
                     <lb n="3"/><w lemma="Γένεσις"><expan><abbr>Γεν</abbr><ex>έσεως</ex></expan></w>
                 </ab>
