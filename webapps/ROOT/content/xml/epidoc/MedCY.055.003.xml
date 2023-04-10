@@ -39,7 +39,7 @@
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#constantine_ormideia">Constantine of Ormideia</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#constantineormideia">Constantine of Ormideia</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -68,7 +68,7 @@
          <graphic url="055-003-02.jpg"><desc>Naos, southeastern pilaster, lower register, north face, inscription detail</desc></graphic>
         <graphic rend="primary" url="055-003-01.jpg"><desc>Naos, southeastern pilaster, lower register, north face</desc></graphic>
         <graphic rend="secondary" url="055-003-03.jpeg"><desc>Naos, southeastern pilaster, lower register, north face, inscription detail</desc></graphic>
-        <graphic rend="tertiary" url="055-003-04.jpeg"><desc>Naos, southeastern pilaster, lower register, north face, inscription detail</desc></graphic>
+        <!--><graphic rend="tertiary" url="055-003-04.jpeg"><desc>Naos, southeastern pilaster, lower register, north face, inscription detail</desc></graphic>-->
     </facsimile>
     <text>
         <body>
