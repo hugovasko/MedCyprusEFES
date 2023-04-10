@@ -127,6 +127,10 @@
                     <item xml:id="george"> 
                         <term xml:lang="en">George</term>
                     </item>
+                    
+                    <item xml:id="constantineormideia">
+                        <term xml:lang="en">Constantine of Ormideia</term>
+                    </item>
                     <!-- ... -->
                 </list></item>
                 <item><list type="doctors">
