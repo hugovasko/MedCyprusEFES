@@ -23,6 +23,12 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q2619342</idno>                   
                 </person>
                 
+                <person xml:id="gabriel">
+                    <persName xml:lang="grc"><seg>Ἀρχάγγελος</seg> Γαβριήλ</persName>
+                    <persName xml:lang="en">Gabriel, archangel</persName>   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q81989</idno>                   
+                </person>
+                
                 <person xml:id="Christ">
                     <persName xml:lang="grc">Χριστός</persName>
                     <persName xml:lang="en">Christ</persName>
@@ -118,6 +124,12 @@
                     <persName xml:lang="en">Mother of God</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
                     <note>See also: Theotokos, the Virgin</note>
+                </person>
+                
+                <person xml:id="michael">
+                    <persName xml:lang="grc"><seg>Ἀρχάγγελος</seg> Μιχαήλ</persName>
+                    <persName xml:lang="en">Michael, archangel</persName>   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q45581</idno>                   
                 </person>
                 
                 <person xml:id="Nicholas">
