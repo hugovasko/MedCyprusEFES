@@ -74,7 +74,11 @@
                         <term xml:lang="en">Archangel Michael</term>
                     </item>
                     <!-- ... -->
+                    <item xml:id="gabriel"> 
+                        <term xml:lang="en">Archangel Gabriel</term>
+                    </item>
                 </list></item>
+                
                 <item><list type="Prophets">
                     <head>Prophets</head>
                     <item xml:id="daniel"> 
