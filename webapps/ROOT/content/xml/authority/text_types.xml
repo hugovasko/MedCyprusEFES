@@ -36,6 +36,9 @@
                 <item xml:id="doc6">
                     <term xml:lang="en">Biblical citation</term>
                 </item>
+                <item xml:id="doc7">
+                    <term xml:lang="en">Hymnographical citation</term>
+                </item>
             </list>
         </body>
     </text>
