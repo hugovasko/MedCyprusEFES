@@ -12,7 +12,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
-                <idno type="filename">MedCY.055.005</idno>
+                <idno type="filename">MedCY.055.006</idno>
                 <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
             </publicationStmt>
             <sourceDesc>
@@ -26,12 +26,12 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, northeastern pilaster, upper register, west face</rs>
+                                    <rs type="placement-building">Naos, southeastern pilaster, upper register, west face</rs>
                                     <dimensions unit="cm"><height>n/a</height></dimensions>
                                     </support>
                             </supportDesc>
                              <layoutDesc>
-                                <layout>On the left of archangel's head</layout>
+                                <layout>On the right of the Virgin's head</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
@@ -39,7 +39,7 @@
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#gabriel">Archangel Gabriel</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#virgin">Virgin from Annunciation</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -65,28 +65,28 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-005-02.jpg"><desc>Naos, northeastern pilaster, upper register, west face</desc></graphic>
-        <graphic rend="primary" url="055-005-01.jpg"><desc>Naos, southeastern pilaster, upper register, west face, inscription detail</desc></graphic>
+         <graphic url="055-006-02.jpg"><desc>Naos, southeastern pilaster, upper register, west face</desc></graphic>
+        <graphic rend="primary" url="055-006-01.jpg"><desc>Naos, southeastern pilaster, upper register, west face, inscription detail</desc></graphic>
+        <graphic rend="secondary" url="055-006-03"><desc>Naos, southeastern pilaster, upper register, west face</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><w lemma="χαίρω">Χαῖρε </w><addName type="epithet" subtype="Maria" key="kecharitomene"><w lemma="κεχαριτωμένη">και
-                    <lb n="2" break="no"/>χαριτομέ
-                    <lb n="3" break="no"/><hi rend="ligature">νη</hi></w></addName> <persName type="sacred" key="Maria">Μαρία</persName>
-                    <lb n="4"/>ὁ <persName type="divine" key="Lord"><w lemma="Κύριος"><expan><abbr rend="supraline">Κ</abbr><ex>ύριο</ex><abbr rend="supraline">ς</abbr> </expan></w></persName>μετ
-                    <lb n="5" break="no"/>ὰ σ<hi rend="ligature">οῦ</hi>
+                    <lb n="1"/><supplied reason="lost"><w lemma="ὁρῶ">Ἰδο<choice><orig>ὺ</orig><reg>ῦ</reg></choice></w> ἡ <persName type="sacred" key="DouleKyriou" ><w lemma="δούλη">δούλη</w></persName></supplied>
+                    <lb n="2"/><supplied reason="lost"><persName type="divine" key="Lord"><w lemma="Κύριος"><expan><abbr rend="supraline">Κ</abbr><ex>υρίο</ex><abbr rend="supraline">υ</abbr></expan></w></persName>· γένοιτό</supplied>
+                    <lb n="3"/><supplied reason="lost">μοι</supplied> κατὰ
+                    <lb n="4"/>τὸ ῥῆμά σ<hi rend="ligature">ου</hi>.
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Hail, Mary, full of grace. The Lord is with you.</p>
+                <p>I am the Lord’s servant. May your word to me be fulfilled</p>
             </div>
             <div type="commentary">
-                <p>Pending "The inscription reproduces the dialoque between the Archangel Gabriel and the Virgin according to Lc 1:28, 38. The addition of the name of the Virgin after Χαῖρε κεχαριτωμένη, which is absent  in the evangelical text, appears also in the inscription of Moutoullas''</p>
+                <p>The inscription reproduces the dialoque between the Archangel Gabriel and the Virgin according to Lc 1:28, 38. </p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>

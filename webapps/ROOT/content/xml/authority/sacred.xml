@@ -49,6 +49,13 @@
                     <idno type="wikidata">Not listed</idno>                   
                 </person>
                 
+                <person xml:id="DouleKyriou">
+                    <persName xml:lang="grc">Δούλη Κυρίου</persName>
+                    <persName xml:lang="en">Lord's servant</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q869974</idno>
+                    <note>See also: Theotokos, the Virgin, Maria</note>
+                </person>
+                
                 <person xml:id="TrueCross">
                     <persName xml:lang="grc">Τίμιος Σταυρός</persName>
                     <persName xml:lang="en">True Cross</persName>
@@ -117,7 +124,7 @@
                     <persName xml:lang="grc" type="epithet" subtype="Maria" key="kecharitomene">κεχαριτωμένη</persName>
                     <persName xml:lang="en" type="epithet" subtype="Maria" key="kecharitomene">full of grace</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
-                    <note>See also: Mother of God, Theotokos, Virgin</note>
+                    <note>See also: Mother of God, Theotokos, Virgin, </note>
                 </person>
                 
                 <person xml:id="Matthew">
@@ -132,7 +139,7 @@
                     <persName xml:lang="grc">Μήτηρ Θεοῦ</persName>
                     <persName xml:lang="en">Mother of God</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
-                    <note>See also: Theotokos, the Virgin</note>
+                    <note>See also: Theotokos, the Virgin, Maria</note>
                 </person>
                 
                 <person xml:id="michael">

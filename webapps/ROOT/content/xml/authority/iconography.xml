@@ -36,6 +36,9 @@
                     <term xml:lang="en">Presentation of the Virgin to the Temple</term>
                 </item>
                 <!-- ... -->
+                <item xml:id="annunciation">
+                    <term xml:lang="en">Annunciation</term>
+                </item>
             </list>
             
             <list type="other_compositions">
@@ -66,6 +69,13 @@
             
             <list type="individual_saintly_figures">
                 <head>Individual saintly figures</head>
+                <item xml:id="christ">
+                <term xml:lang="en">Christ</term>
+                    </item>
+                
+                <item xml:id="virgin">
+                <term xml:lang="en">Virgin</term>
+                </item>
               
                 
                 <item><list type="Angelic_Powers">
