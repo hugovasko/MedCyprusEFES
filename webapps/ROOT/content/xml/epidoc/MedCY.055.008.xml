@@ -65,8 +65,8 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-008-01.jpg"><desc>Naos, southwestern pilaster, lower register, north face</desc></graphic>
-        <graphic rend="primary" url="055-008-02.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+         <graphic url="055-008-01.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+        <graphic rend="primary" url="055-008-02.jpg"><desc>Naos, southwestern pilaster, lower register, north face</desc></graphic>
         <graphic rend="secondary" url="055-008-03.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
     </facsimile>
     <text>
@@ -90,7 +90,7 @@
                 <p>Saint Paul</p>
             </div>
             <div type="commentary">
-                <p>Round omicron attached to nearly round final sigma οn the forth line of column a. "Παῦλος" is divided into two lines corresponding to the 1st and 4th lines of column a.</p>
+                <p>In line 4 of column a, round omicron attached to nearly round final sigma . "Παῦλος" is divided into two lines corresponding to the 1st and 4th lines of column a.</p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>
