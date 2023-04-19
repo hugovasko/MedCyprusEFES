@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Apostle Paul's scroll</title>
+                <author xml:id="tp">Theocharis Petrou</author> 
+                <author xml:id="mx">Maria Xenaki</author>
+                <editor xml:id="mgp">Maria G. Parani</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>University of Cyprus - MedCyprus</authority>
+                <idno type="filename">MedCY.055.009</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>n/a</repository>
+                    </msIdentifier>
+                    <physDesc>
+                       <objectDesc> 
+                           <supportDesc>
+                                <support>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Naos, southwestern pilaster, lower register, north face</rs>
+                                    <dimensions unit="cm"><height>66 cm</height><width>18 cm</width></dimensions>scroll dimensions
+                                    </support>
+                            </supportDesc>
+                             <layoutDesc>
+                                <layout>The inscription appears on the open scroll held in the left hand by the apostle.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Black letters against white background between ochre colour grooves. The inscription is written in majuscule with a sporadic use of minuscule letters (α, ι, ο, τ). Lines are ruled top and bottom. Almost systematic use of accents and breathings. Good condition. <height unit="cm">4-5 cm</height>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <p><rs type="iconography" ref="iconography.xml#paul">Paul</rs></p>
+                            </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="locations.xml#Sotira">Sotira (Ammochostou), Transfiguration</origPlace>
+                            <origDate notBefore="1201" notAfter="1300">13th century</origDate>
+                        </origin>
+                        <provenance when="2022">
+                        </provenance>
+                        <provenance type="observed" resp="#tp">24/02/2022
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#doc6">Biblical citation</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+         <graphic url="055-009-02.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+        <graphic rend="primary" url="055-009-01.jpg"><desc>Naos, southwestern pilaster, lower register, north face, scroll</desc></graphic>
+        <graphic rend="secondary" url="055-009-03.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+        <graphic rend="3" url="055-009-04.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+        <graphic rend="4" url="055-009-05.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+         <graphic rend="5" url="055-009-06.jpg"><desc>Naos, southwestern pilaster, lower register, north face</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    Pending
+                </ab>
+            </div>
+            <div type="apparatus">
+                <p>n/a</p>
+            </div>
+            <div type="translation">
+                <p>Pending</p>
+            </div>
+            <div type="commentary">
+                <p>Pending</p>
+            </div>
+            <div type="bibliography">
+                <listBibl> <bibl>Unpublished</bibl>
+                </listBibl>
+                <p>bibliography of previous editions, discussion, etc.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
