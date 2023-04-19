@@ -39,7 +39,7 @@
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#virgin">Mamas</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#mamas">Mamas</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
