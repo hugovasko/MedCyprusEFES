@@ -134,7 +134,7 @@
                 </person>
                 
                 <person xml:id="Matthew">
-                    <persName xml:lang="grc"><seg>Ἀπόστολος</seg> Ματθαῖος</persName>
+                    <persName xml:lang="grc"><seg>ἀπόστολος</seg> Ματθαῖος</persName>
                     <persName xml:lang="en">Matthew, the Evangelist</persName>        
                     <persName xml:lang="grc" type="epithet" subtype="Matthew" key="Evangelist">ὁ Εὐαγγελιστῆς</persName>
                     <persName xml:lang="en" type="epithet" subtype="Matthew" key="Evangelist">Evangelist</persName>
@@ -168,11 +168,10 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q158825</idno>                   
                 </person>
                 
-                <person xml:id="Virgin">
-                    <persName xml:lang="grc">ἡ Παρθένος</persName>
-                    <persName xml:lang="en">the Virgin</persName>
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
-                    <note>See also: Mother of God, Theotokos, Maria</note>
+                <person xml:id="Paul">
+                    <persName xml:lang="grc"><seg>ἀπόστολος</seg> Παῦλος</persName>
+                    <persName xml:lang="en">Paul, the apostle</persName> 
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q9200</idno>                   
                 </person>
                 
                 <person xml:id="Themonianos">
@@ -208,6 +207,12 @@
                     <persName xml:lang="en">Word of God</persName>
                 </person>
                 
+                <person xml:id="Virgin">
+                    <persName xml:lang="grc">ἡ Παρθένος</persName>
+                    <persName xml:lang="en">the Virgin</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q345</idno>
+                    <note>See also: Mother of God, Theotokos, Maria</note>
+                </person>
                 
             </listPerson>
         </body>
