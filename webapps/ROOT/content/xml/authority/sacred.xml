@@ -118,6 +118,12 @@
                     <note>See also: Christ, Word</note>
                 </person>
                 
+                <person xml:id="Mamas">
+                    <persName xml:lang="grc"><seg>ἅγιος</seg> Μάμας</persName>
+                    <persName xml:lang="en">Mamas, saint</persName> 
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q532019</idno>                   
+                </person>
+                
                 <person xml:id="Maria">
                     <persName xml:lang="grc">Μαρία</persName>
                     <persName xml:lang="en">Maria, Virgin Mary</persName>
