@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Apostle Peter's scroll</title>
+                <author xml:id="tp">Theocharis Petrou</author> 
+                <author xml:id="mx">Maria Xenaki</author>
+                <editor xml:id="mgp">Maria G. Parani</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>University of Cyprus - MedCyprus</authority>
+                <idno type="filename">MedCY.055.011</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>n/a</repository>
+                    </msIdentifier>
+                    <physDesc>
+                       <objectDesc> 
+                           <supportDesc>
+                                <support>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Naos, northwestern pilaster, lower register, south face</rs>
+                                    <dimensions unit="cm"><height>60 cm</height><width>14 cm (scroll)</width></dimensions>
+                                    </support>
+                            </supportDesc>
+                             <layoutDesc>
+                                <layout>The inscription appears on the open scroll held in the left hand by the apostle.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written in majuscule with a sporadic use of minuscule letters (α, ο). Almost systematic use of accents and breathings. Damaged. Lines 8-10 not survived. <height unit="cm">4 cm</height>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <p><rs type="iconography" ref="iconography.xml#peter">Peter</rs></p>
+                            </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="locations.xml#Sotira">Sotira (Ammochostou), Transfiguration</origPlace>
+                            <origDate notBefore="1201" notAfter="1300">13th century</origDate>
+                        </origin>
+                        <provenance when="2022">
+                        </provenance>
+                        <provenance type="observed" resp="#tp">24/02/2022
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#doc6">Biblical citation</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+         <graphic url="055-011-02.jpg"><desc>Naos, northwestern pilaster, lower register, south face, inscription</desc></graphic>
+        <graphic rend="primary" url="055-011-01.jpg"><desc>Naos, northwestern pilaster, lower register, south face, scroll</desc></graphic>
+        <graphic rend="secondary" url="055-011-03.jpg"><desc>Naos, northwestern pilaster, lower register, south face, general view</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>Pending
+                    <!--<lb n="1"/><g ref="#cross">+</g><w lemma="ἀδελφός"><choice><orig>A</orig><reg>Ἀ</reg></choice>δελ
+                    <lb n="2" break="no"/>φοί</w>· <w lemma="δόξα">δό
+                    <lb n="3" break="no"/>ξα</w> κ<hi rend="ligature">α<choice><orig>ι</orig><reg>ὶ</reg></choice></hi>
+                    <lb n="4"/><w lemma="τιμή"><hi rend="ligature">τη</hi>μὶ</w> κ<choice><orig>ε</orig><reg>ὲ</reg></choice>
+                    <lb n="5"/><w lemma="εἰρήνη">ὑρί<hi rend="ligature">νη</hi></w> <w lemma="πᾶς"><hi rend="ligature">π</hi>αντὶ</w>
+                    <lb n="6"/>τ<choice><orig>ο</orig><reg>οͅ</reg></choice> <w lemma="ἐργάζομαι">ἐργαζο
+                    <lb n="7" break="no"/>μέν<choice><orig>ο</orig><reg>οͅ</reg></choice></w>
+                    <lb n="8"/><hi rend="ligature">τ<choice><orig>ο</orig><reg>ὸ</reg></choice></hi> <w lemma="ἀγαθός"><choice><orig>ἁ</orig><reg>ἀ</reg></choice>γα
+                    <lb n="9" break="no"/>θών</w>.
+                    <lb n="10"/><g ref="#cross">+</g><g ref="#cross">+</g>-->
+                </ab>
+            </div>
+            <div type="apparatus">
+                <p>n/a</p>
+            </div>
+            <div type="translation">
+                <p>Pending</p>
+            </div>
+            <div type="commentary">
+                <p>Pending</p>
+            </div>
+            <div type="bibliography">
+                <listBibl> <bibl>Unpublished</bibl>
+                </listBibl>
+                <p>bibliography of previous editions, discussion, etc.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
