@@ -56,14 +56,6 @@
                     <note>See also: Theotokos, the Virgin, Maria</note>
                 </person>
                 
-                <person xml:id="TrueCross">
-                    <persName xml:lang="grc">Τίμιος Σταυρός</persName>
-                    <persName xml:lang="en">True Cross</persName>
-                    <persName xml:lang="grc" type="epithet" subtype="TrueCross" key="worshipful">προσκυνητός</persName>
-                    <persName xml:lang="en" type="epithet" subtype="TrueCross" key="worshipful">worshipful</persName>
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
-                 </person>
-                
                 <person xml:id="Fathers">
                     <persName xml:lang="grc"> <seg>οἱ</seg> τριακόσιοι δεκαοκτὼ θεοφόροι Πατέρες</persName>
                     <persName xml:lang="en">318 Godbearing Fathers (of the First Ecumenical Council) </persName>
@@ -174,6 +166,12 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q9200</idno>                   
                 </person>
                 
+                <person xml:id="Peter">
+                    <persName xml:lang="grc"><seg>ἀπόστολος</seg> Πέτρος</persName>
+                    <persName xml:lang="en">Peter, the apostle</persName> 
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q33923</idno>                   
+                </person>
+                
                 <person xml:id="Themonianos">
                     <persName xml:lang="grc"><seg>ὅσιος </seg>Θεμωνιανός</persName>
                     <persName xml:lang="en">Themonianos, saint</persName>
@@ -195,6 +193,14 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q208542</idno>
                     <note>See also: Mother of God, the Virgin, Maria</note>
                     <!--Theotokos is actually an epithet, but it is used often as a name for the Virgin Mary. List separately?-->
+                </person>
+                
+                <person xml:id="TrueCross">
+                    <persName xml:lang="grc">Τίμιος Σταυρός</persName>
+                    <persName xml:lang="en">True Cross</persName>
+                    <persName xml:lang="grc" type="epithet" subtype="TrueCross" key="worshipful">προσκυνητός</persName>
+                    <persName xml:lang="en" type="epithet" subtype="TrueCross" key="worshipful">worshipful</persName>
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q380356</idno>
                 </person>
                 
                 <person xml:id="Trinity">
