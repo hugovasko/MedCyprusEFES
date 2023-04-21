@@ -109,6 +109,11 @@
                     <item xml:id="paul"> 
                         <term xml:lang="en">Paul</term>
                     </item>
+                    
+                    <item xml:id="peter"> 
+                        <term xml:lang="en">Peter</term>
+                    </item>
+                    
                 </list></item>
                 
                 <item><list type="Ecclesiastics">
