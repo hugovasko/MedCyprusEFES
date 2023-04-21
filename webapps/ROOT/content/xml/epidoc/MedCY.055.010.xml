@@ -72,15 +72,15 @@
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
-                <ab><!--
+                <ab>
                     <cb n="a"/>
-                    <lb n="1"/><persName type="sacred" key="Paul"><w lemma="ἅγιος">Ὁ
-                    <lb n="2"/>ἅ
-                    <lb n="3" break="no" />γι
-                    <lb n="4" break="no"/>ος</w>
+                    <lb n="1"/><persName type="sacred" key="Peter"><w lemma="ἅγιος"><supplied reason="lost">Ὁ</supplied>
+                    <lb n="2"/><supplied reason="lost">ἅ</supplied>
+                    <lb n="3" break="no" /><supplied reason="lost">γι</supplied>
+                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></w>
                     <cb n="b"/>
-                    <lb n="1"/><name nymRef="Παῦλος">Παῦ
-                    <lb n="4" break="no"/>λος</name></persName>-->
+                    <lb n="1"/><name nymRef="Πέτρος">Πέ
+                    <lb n="2" break="no"/>τ<supplied reason="lost">[ρος]</supplied></name></persName>
                 </ab>
             </div>
             <div type="apparatus">
