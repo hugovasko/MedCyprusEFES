@@ -23,12 +23,6 @@
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q2619342</idno>                   
                 </person>
                 
-                <person xml:id="gabriel">
-                    <persName xml:lang="grc"><seg>Ἀρχάγγελος</seg> Γαβριήλ</persName>
-                    <persName xml:lang="en">Gabriel, archangel</persName>   
-                    <idno type="wikidata">https://www.wikidata.org/wiki/Q81989</idno>                   
-                </person>
-                
                 <person xml:id="Christ">
                     <persName xml:lang="grc">Χριστός</persName>
                     <persName xml:lang="en">Christ</persName>
@@ -49,6 +43,12 @@
                     <idno type="wikidata">Not listed</idno>                   
                 </person>
                 
+                <person xml:id="David">
+                    <persName xml:lang="grc"><seg>προφήτης</seg> Δαυΐδ</persName>
+                    <persName xml:lang="en">David, prophet</persName>                   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q41370</idno>                   
+                </person>
+                
                 <person xml:id="DouleKyriou">
                     <persName xml:lang="grc">Δούλη Κυρίου</persName>
                     <persName xml:lang="en">Lord's servant</persName>
@@ -66,6 +66,12 @@
                     <persName xml:lang="grc"><seg>οἱ ἅγιοι</seg> Τεσσαράκοντα</persName>
                     <persName xml:lang="en">Forty Martyrs of Sebaste</persName>
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q931446</idno>
+                </person>
+                
+                <person xml:id="gabriel">
+                    <persName xml:lang="grc"><seg>Ἀρχάγγελος</seg> Γαβριήλ</persName>
+                    <persName xml:lang="en">Gabriel, archangel</persName>   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q81989</idno>                   
                 </person>
                 
                 <person xml:id="God">
@@ -170,6 +176,12 @@
                     <persName xml:lang="grc"><seg>ἀπόστολος</seg> Πέτρος</persName>
                     <persName xml:lang="en">Peter, the apostle</persName> 
                     <idno type="wikidata">https://www.wikidata.org/wiki/Q33923</idno>                   
+                </person>
+                
+                <person xml:id="Solomon">
+                    <persName xml:lang="grc"><seg>προφήτης</seg> Σολομών</persName>
+                    <persName xml:lang="en">Solomon, prophet</persName>                   
+                    <idno type="wikidata">https://www.wikidata.org/wiki/Q37085</idno>                   
                 </person>
                 
                 <person xml:id="Themonianos">
