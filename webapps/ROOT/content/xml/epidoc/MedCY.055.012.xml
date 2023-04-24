@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Prophet Solomon</title>
+                <author xml:id="tp">Theocharis Petrou</author> 
+                <author xml:id="mx">Maria Xenaki</author>
+                <editor xml:id="mgp">Maria G. Parani</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>University of Cyprus - MedCyprus</authority>
+                <idno type="filename">MedCY.055.012</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License</licence></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>n/a</repository>
+                    </msIdentifier>
+                    <physDesc>
+                       <objectDesc> 
+                           <supportDesc>
+                                <support>
+                                    <rs type="inscription-support">
+                                        <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
+                                    <rs type="placement-building">Naos, southwestern pilaster, upper register, north face</rs>
+                                    <dimensions unit="cm"><height>n/a</height></dimensions>
+                                    </support>
+                            </supportDesc>
+                             <layoutDesc>
+                                <layout>On either side of prophet's head</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>White letters against blue background. Accents and breathings<height unit="cm">n/a</height>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <p><rs type="iconography" ref="iconography.xml#solomon">Solomon</rs></p>
+                            </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="locations.xml#Sotira">Sotira (Ammochostou), Transfiguration</origPlace>
+                            <origDate notBefore="1201" notAfter="1300">13th century</origDate>
+                        </origin>
+                        <provenance when="2022">
+                        </provenance>
+                        <provenance type="observed" resp="#tp">24/02/2022
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term type="textType" ref="text_types.xml#doc5">Caption</term>
+                </keywords>
+            </textClass>
+            <creation>...</creation>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+         <graphic url="055-012-02.jpg"><desc>Naos, southwestern pilaster, upper register, north face, general view</desc></graphic>
+        <graphic rend="primary" url="055-012-01.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
+        <graphic rend="secondary" url="055-012-03.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                  <cb n="a"/>
+                    <lb n="1"/><persName type="sacred" key="Solomon">Ὁ
+                    <lb n="2"/><w lemma="προφήτης"><expan><abbr rend="supraline">πρ</abbr><ex>ο</ex><abbr rend="supraline">φ</abbr><ex>ή</ex><abbr rend="supraline">τ</abbr><ex>ης</ex></expan></w>
+                  <cb n="b"/>
+                  <lb n="1"/><name nymRef="Σολομών">Σο</name>
+                  <lb n="2" break="no"/>λ<supplied reason="lost">ο</supplied>
+                        <lb n="3" break="no"/><supplied reason="lost">μὼν</supplied>
+                    </persName>
+                </ab>
+            </div>
+            <div type="apparatus">
+                <p>n/a</p>
+            </div>
+            <div type="translation">
+                <p>Prophet Solomon</p>
+            </div>
+            <div type="commentary">
+                <p>The prophet's name is badly damaged and partially preserved. The word ὁ προφήτης is fully rendered by an abbreviation.  </p>
+            </div>
+            <div type="bibliography">
+                <listBibl> <bibl>Unpublished</bibl>
+                </listBibl>
+                <p>bibliography of previous editions, discussion, etc.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
