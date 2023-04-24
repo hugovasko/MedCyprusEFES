@@ -94,6 +94,14 @@
                     <item xml:id="daniel"> 
                         <term xml:lang="en">Daniel</term>
                     </item>
+                    
+                    <item xml:id="david"> 
+                        <term xml:lang="en">David</term>
+                    </item>
+                    
+                    <item xml:id="solomon"> 
+                        <term xml:lang="en">Solomon</term>
+                    </item>
                     <!-- ... -->
                 </list></item>
                 
@@ -102,10 +110,12 @@
                     <item xml:id="andrew"> 
                         <term xml:lang="en">Andrew</term>
                     </item>
+                    
                     <item xml:id="Matthew">
                         <term xml:lang="en">Matthew the Evangelist</term>
                     </item>
                     <!-- ... -->
+                    
                     <item xml:id="paul"> 
                         <term xml:lang="en">Paul</term>
                     </item>
