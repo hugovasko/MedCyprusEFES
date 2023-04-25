@@ -10,6 +10,9 @@
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
             </titleStmt>
+            <place xml:id="Sozomenos" n="2">
+                <location><geo>35.067463372392375, 33.43608826042591</geo></location>
+            </place>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
                 <idno type="filename">MedCY.026.009</idno>

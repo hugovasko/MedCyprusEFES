@@ -10,6 +10,9 @@
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp"> Maria G. Parani</editor>
             </titleStmt>
+            <place xml:id="Agridia" n="3">
+                <location><geo>35.630966, 34.449377</geo></location>
+            </place>
             <publicationStmt>
                 <authority>University of Cyprus - MedCyprus</authority>
                 <idno type="filename">MedCY.033.001</idno>
