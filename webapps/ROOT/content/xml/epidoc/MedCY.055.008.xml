@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Paul the Apostle</title>
+                <title>Annunciation, the Virgin's response to Gabriel</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,20 +26,20 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, southwestern pilaster, lower register, north face</rs>
+                                    <rs type="placement-building">Naos, southeastern pilaster, upper register, west face</rs>
                                     <dimensions unit="cm"><height>n/a</height></dimensions>
                                     </support>
                             </supportDesc>
                              <layoutDesc>
-                                <layout>On either side of apostle's head</layout>
+                                <layout>On the right of the Virgin's head</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>White letters against red background. The inscription is written entirely in majuscule. Accents and breathings systematic. Partially exfoliated. <height unit="cm">4-5 cm</height>
+                            <handNote>White letters against blue background. Damaged. Partially preserved. <height unit="cm">n/a</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#paul">Paul</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#virgin">Virgin from Annunciation</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -58,39 +58,35 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#doc5">Caption</term>
+                    <term type="textType" ref="text_types.xml#doc7">Hymnographical citation</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-008-01.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-008-02.jpg"><desc>Naos, southwestern pilaster, lower register, north face</desc></graphic>
-        <graphic rend="secondary" url="055-008-03.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
+         <graphic url="055-008-02.jpg"><desc>Naos, southeastern pilaster, upper register, west face</desc></graphic>
+        <graphic rend="primary" url="055-008-01.jpg"><desc>Naos, southeastern pilaster, upper register, west face, inscription detail</desc></graphic>
+        <graphic rend="secondary" url="055-008-03.jpg"><desc>Naos, southeastern pilaster, upper register, west face</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <cb n="a"/>
-                    <lb n="1"/><persName type="sacred" key="Paul"><w lemma="ἅγιος">Ὁ
-                    <lb n="2"/>ἅ
-                    <lb n="3" break="no" />γι
-                    <lb n="4" break="no"/>ος</w>
-                    <cb n="b"/>
-                    <lb n="1"/><name nymRef="Παῦλος">Παῦ
-                    <lb n="4" break="no"/>λος</name></persName>
+                    <lb n="1"/><supplied reason="lost"><w lemma="ὁρῶ">Ἰδοὺ</w> ἡ <persName type="sacred" key="DouleKyriou" ><w lemma="δούλη">δούλη</w></persName></supplied>
+                    <lb n="2"/><supplied reason="lost"><persName type="divine" key="Lord"><w lemma="Κύριος"><expan><abbr rend="supraline">Κ</abbr><ex>υρίο</ex><abbr rend="supraline">υ</abbr></expan></w></persName>· γένοιτό</supplied>
+                    <lb n="3"/><supplied reason="lost">μοι</supplied> κατὰ
+                    <lb n="4"/>τὸ ῥῆμά σ<hi rend="ligature">ου</hi>.
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Saint Paul</p>
+                <p>I am the Lord’s servant. May your word to me be fulfilled.</p>
             </div>
             <div type="commentary">
-                <p>In the column a (line 4), a round omicron attached to nearly round final sigma . "Παῦλος" is divided into two lines corresponding to the 1st and 4th lines of column a.</p>
+                <p>The inscription is based in the dialoque between the Archangel Gabriel and the Virgin according to Lc 1:28, 38. </p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>

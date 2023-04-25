@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Prophet Solomon's scroll</title>
+                <title>Apostle Peter's scroll</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,20 +26,20 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, southwestern pilaster, upper register, north face</rs>
-                                    <dimensions unit="cm"><height>n/a</height></dimensions>
+                                    <rs type="placement-building">Naos, northwestern pilaster, lower register, south face</rs>
+                                    <dimensions unit="cm"><height>60 cm</height><width>14 cm (scroll)</width></dimensions>
                                     </support>
                             </supportDesc>
                              <layoutDesc>
-                                <layout>The inscription appears on the open scroll held in the left hand by the prophet.</layout>
+                                <layout>The inscription appears on the open scroll held in the left hand by the apostle.</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written entirely in majuscule. Sporadic accents. Iota is decorated with a star. Round omicron attached to nearly round final sigma. Good condition. <height unit="cm">4 cm</height>
+                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written in majuscule with a sporadic use of minuscule letters (α, ο). Throughout the inscription there are ligatures of the letters ΙΜ, ΑΙ. In line 5 and 7 the ligature ΑΙ is written with a minuscule alpha attached to a long iota. Non systematic use of accents and breathings. Damaged. Lines 8-10 not survived. <height unit="cm">4 cm</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#solomon">Solomon</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#peter">Peter</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -65,26 +65,33 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-013-02.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-013-01.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription </desc></graphic>
+         <graphic url="055-013-01.jpg"><desc>Naos, northwestern pilaster, lower register, south face, scroll</desc></graphic>
+        <graphic rend="primary" url="055-013-02.jpg"><desc>Naos, northwestern pilaster, lower register, south face, inscription</desc></graphic>
+        <graphic rend="secondary" url="055-013-03.jpg"><desc>Naos, northwestern pilaster, lower register, south face, general view</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                  <lb n="1"/><w lemma="ὁρῶ"><choice><orig>Ι</orig><reg>Ἰ</reg></choice>δο<choice><orig>υ</orig><reg>ὺ</reg></choice></w> <choice><orig>η</orig><reg>ἡ</reg></choice>
-                  <lb n="2"/><persName type="sacred" key="Virgin"><w lemma="Παρθένος">Παρθαί
-                  <lb n="3" break="no"/>νος</w></persName>
+                    <lb n="1"/><w lemma="ἀδελφός"><choice><orig>Α</orig><reg>Ἀ</reg></choice>δελφο<supplied reason="lost"><choice><orig>ι</orig><reg>ὶ</reg></choice></supplied></w>
+                    <lb n="2"/><w lemma="παρακαλῶ">παρακ<unclear>α</unclear>                    
+                    <lb n="3" break="no"/>λ<choice><orig>ο</orig><reg>ῶ</reg></choice></w> <w lemma="σύ"><hi rend="ligature">ἡμ</hi><choice><orig>α</orig><reg>ᾶ</reg></choice><supplied reason="lost">ς</supplied></w>
+                    <lb n="4"/>ος <w lemma="πάροικος">παρι<unclear>κου</unclear><supplied reason="lost">ς</supplied></w>
+                    <lb n="5"/>κα<choice><orig>ι</orig><reg>ὶ</reg></choice> <w lemma="παρεπίδημος">παρα<supplied reason="lost">ι</supplied>
+                    <lb n="6" break="no"/>πιδ<hi rend="ligature"><choice><orig>η</orig><reg>ή</reg></choice>μ</hi><supplied reason="lost">ους</supplied></w>
+                    <lb n="7"/><w lemma="ἀπέχω"><choice><orig>α</orig><reg>ἀ</reg></choice>π<choice><orig>ε</orig><reg>έ</reg></choice>χαι<unclear>σθ</unclear><supplied reason="lost">αι</supplied></w>
+                    <lb n="8"/><supplied reason="lost">τ</supplied>ων <w lemma="σαρκικός">σαρ<unclear>κ</unclear><supplied reason="lost">ι</supplied>
+                    <lb n="9" break="no"/><supplied reason="lost">κ</supplied><choice><orig><unclear>ω</unclear></orig><reg><unclear>ῶ</unclear></reg></choice>ν</w>
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Behold, the Virgin (will conceive and give birth to a son, and they will call him Emmanuel)</p>
+                <p>Brothers, I urge you, as foreigners and exiles, to abstain from sinful [desires].</p>
             </div>
             <div type="commentary">
-                <p>The inscription is from Isaiah 7:14 and refers to Christ's conception and birth; the text reappears in Matthew 1:23. The word Παρθένος is misspelled.  </p>
+                <p>The inscription is from Peter's Epistle I, 2:11: Ἀγαπητοί, παρακαλῶ ὡς παροίκους καὶ παρεπιδήμους ἀπἐχεσθαι τῶν σαρκικῶν ἐπιθυμιῶν. However, the incipit Ἀδελφοί, παρακαλῶ ὑμᾶς, originates from Paul's epistles. The words ὑμᾶς, ὡς, παροίκους, παρεπιδήμους, ἀπέχεσθαι are misspelled.</p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>

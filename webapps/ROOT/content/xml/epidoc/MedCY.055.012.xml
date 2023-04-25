@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Prophet Solomon</title>
+                <title>Peter the Apostle</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,20 +26,20 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, southwestern pilaster, upper register, north face</rs>
+                                    <rs type="placement-building">Naos, northwestern pilaster, lower register, south face</rs>
                                     <dimensions unit="cm"><height>n/a</height></dimensions>
                                     </support>
                             </supportDesc>
                              <layoutDesc>
-                                <layout>On either side of prophet's head</layout>
+                                <layout>On either side of apostle's head</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>White letters against blue background. Accents and breathings. <height unit="cm">n/a</height>
+                            <handNote>White letters against red background. The inscription is badly damaged and only few letters have survived. Based on the other inscriptions on the monument, the saint's caption would also be written entirely in majuscule. <height unit="cm">n/a</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#solomon">Solomon</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#peter">Peter</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -65,32 +65,32 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-012-01.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-012-02.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription </desc></graphic>
-        <graphic rend="secondary" url="055-012-03.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
+         <graphic url="055-012-01.jpg"><desc>Naos, northwestern pilaster, lower register, south face, inscription detail</desc></graphic>
+        <graphic rend="primary" url="055-012-02.jpg"><desc>Naos, northwestern pilaster, lower register, south face</desc></graphic>
+        <graphic rend="secondary" url="055-012-03.jpg"><desc>Naos, northwestern pilaster, lower register, south face, inscription detail</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                  <cb n="a"/>
-                    <lb n="1"/><persName type="sacred" key="Solomon">Ὁ
-                    <lb n="2"/><w lemma="προφήτης"><expan><abbr rend="supraline">πρ</abbr><ex>ο</ex><abbr rend="supraline">φ</abbr><ex>ή</ex><abbr rend="supraline">τ</abbr><ex>ης</ex></expan></w>
-                  <cb n="b"/>
-                  <lb n="1"/><name nymRef="Σολομών">Σο</name>
-                  <lb n="2" break="no"/>λ<supplied reason="lost">ο</supplied>
-                        <lb n="3" break="no"/><supplied reason="lost">μών</supplied>
-                    </persName>
+                    <cb n="a"/>
+                    <lb n="1"/><persName type="sacred" key="Peter"><w lemma="ἅγιος"><supplied reason="lost">Ὁ</supplied>
+                    <lb n="2"/><supplied reason="lost">ἅ</supplied>
+                    <lb n="3" break="no" /><supplied reason="lost">γι</supplied>
+                    <lb n="4" break="no"/><supplied reason="lost">ος</supplied></w>
+                    <cb n="b"/>
+                    <lb n="1"/><name nymRef="Πέτρος">Πέ
+                    <lb n="2" break="no"/>τ<supplied reason="lost">ρος</supplied></name></persName>
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Prophet Solomon</p>
+                <p>Saint Peter</p>
             </div>
             <div type="commentary">
-                <p>The prophet's name is badly damaged and partially preserved. The word ὁ προφήτης is fully rendered by an abbreviation.  </p>
+                <p>The inscription is badly preserved and only few letters have survived</p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>

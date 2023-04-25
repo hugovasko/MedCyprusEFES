@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Apostle Paul's scroll</title>
+                <title>Saint Mamas</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,20 +26,20 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, southwestern pilaster, lower register, north face</rs>
-                                    <dimensions unit="cm"><height>66 cm</height><width>18 cm (scroll)</width></dimensions>
+                                    <rs type="placement-building">Naos, southeastern pilaster, lower register, west face</rs>
+                                    <dimensions unit="cm"><height>n/a</height></dimensions>
                                     </support>
                             </supportDesc>
                              <layoutDesc>
-                                <layout>The inscription appears on the open scroll held in the left hand by the apostle.</layout>
+                                <layout>On either side of saint's head</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written in majuscule with a sporadic use of minuscule letters (α, ι, ο, τ). Throughout the inscription there are ligatures of the letters ΑΙ, ΤΗ, ΝΗΠ, ΤΟ. In line 3 the ligature ΑΙ is written with a minuscule alpha attached to a long iota. Almost systematic use of accents and breathings. A cross with dots in the angles marks the beginning of the text. Double point after Ἀδελφοί and after ἀγαθόν. Two cross-like elements are placed at the very end of the text, a feature that we encounter in books and archival documents. Good condition. <height unit="cm">4-5 cm</height>
+                            <handNote>White letters against blue background. Badly damaged. Partially preserved. <height unit="cm">3,5 cm</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#paul">Paul</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#mamas">Mamas</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -58,44 +58,36 @@
         <profileDesc>
             <textClass>
                 <keywords>
-                    <term type="textType" ref="text_types.xml#doc6">Biblical citation</term>
+                    <term type="textType" ref="text_types.xml#doc5">Caption</term>
                 </keywords>
             </textClass>
             <creation>...</creation>
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-009-02.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-009-01.jpg"><desc>Naos, southwestern pilaster, lower register, north face, scroll</desc></graphic>
-        <graphic rend="secondary" url="055-009-03.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
-        <graphic rend="3" url="055-009-04.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
-        <graphic rend="4" url="055-009-05.jpg"><desc>Naos, southwestern pilaster, lower register, north face, inscription detail</desc></graphic>
-         <graphic rend="5" url="055-009-06.jpg"><desc>Naos, southwestern pilaster, lower register, north face</desc></graphic>
+         <graphic url="055-009-01.jpg"><desc>Naos, southeastern pilaster, lower register, west face</desc></graphic>
+        <graphic rend="primary" url="055-009-02.jpg"><desc>Naos, southeastern pilaster, lower register, west face, inscription detail</desc></graphic>
+        <graphic rend="secondary" url="055-009-03.jpg"><desc>Naos, southeastern pilaster, lower register, west face, inscription detail</desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                    <lb n="1"/><g ref="#cross">+</g><w lemma="ἀδελφός"><choice><orig>A</orig><reg>Ἀ</reg></choice>δελ
-                    <lb n="2" break="no"/>φοί</w>· <w lemma="δόξα">δό
-                    <lb n="3" break="no"/>ξα</w> κ<hi rend="ligature">α<choice><orig>ι</orig><reg>ὶ</reg></choice></hi>
-                    <lb n="4"/><w lemma="τιμή"><hi rend="ligature">τη</hi>μὶ</w> κ<choice><orig>ε</orig><reg>ὲ</reg></choice>
-                    <lb n="5"/><w lemma="εἰρήνη">ὑρί<hi rend="ligature">νη</hi></w> <w lemma="πᾶς"><hi rend="ligature">π</hi>αντὶ</w>
-                    <lb n="6"/>τ<choice><orig>ο</orig><reg>οͅ</reg></choice> <w lemma="ἐργάζομαι">ἐργαζο
-                    <lb n="7" break="no"/>μέν<choice><orig>ο</orig><reg>οͅ</reg></choice></w>
-                    <lb n="8"/><hi rend="ligature">τ<choice><orig>ο</orig><reg>ὸ</reg></choice></hi> <w lemma="ἀγαθός"><choice><orig>ἁ</orig><reg>ἀ</reg></choice>γα
-                    <lb n="9" break="no"/>θών</w>.
-                    <lb n="10"/><g ref="#cross">+</g><g ref="#cross">+</g>
+                    <cb n="a"/>
+                    <lb n="1"/><persName type="sacred" key="Mamas"><w lemma="ἅγιος"><expan><abbr rend="supraline">Ὁ ἅ</abbr><ex>γιος</ex></expan></w>
+                        <cb n="b"/>
+                        <lb n="1"/><name nymRef="Μάμας"><supplied reason="lost">Μάμας</supplied></name>
+                     </persName>
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Brothers, glory and honor and peace to every man who works good.</p>
+                <p>Saint Mamas</p>
             </div>
             <div type="commentary">
-                <p>The verse is taken from the Rom 2:10. The words τιμή, εἰρήνη, ἐργαζομένῳ, as well as the conjuction καί and the article τῷ are misspelled.</p>
+                <p>Only the abbreviation of the word "ὁ ἅγιος" on the column a has survived. The saint's name is identified by his iconography.</p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>

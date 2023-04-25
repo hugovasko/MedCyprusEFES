@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Prophet David's scroll</title>
+                <title>Prophet Solomon's scroll</title>
                 <author xml:id="tp">Theocharis Petrou</author> 
                 <author xml:id="mx">Maria Xenaki</author>
                 <editor xml:id="mgp">Maria G. Parani</editor>
@@ -26,7 +26,7 @@
                                 <support>
                                     <rs type="inscription-support">
                                         <rs type="execution">Painted</rs> on a <material>plastered</material> <objectType>wall surface</objectType>.</rs>
-                                    <rs type="placement-building">Naos, northwestern pilaster, upper register, south face</rs>
+                                    <rs type="placement-building">Naos, southwestern pilaster, upper register, north face</rs>
                                     <dimensions unit="cm"><height>n/a</height></dimensions>
                                     </support>
                             </supportDesc>
@@ -35,11 +35,11 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written in majuscule letters, except the α from the ligature ΑΙ. Sporadic accents. In the middle of the horizontal bar of Π letter, there is a short, thin line, very frequent in Sotera. Round omicron attached to nearly round final sigma. Good condition. <height unit="cm">4 cm</height>
+                            <handNote>Black letters against white background between two ruled ochre coloured lines. The inscription is written entirely in majuscule. Sporadic accents. Iota is decorated with a star. Round omicron attached to nearly round final sigma. Good condition. <height unit="cm">4 cm</height>
                             </handNote>
                         </handDesc>
                         <decoDesc>
-                            <p><rs type="iconography" ref="iconography.xml#david">David</rs></p>
+                            <p><rs type="iconography" ref="iconography.xml#solomon">Solomon</rs></p>
                             </decoDesc>
                     </physDesc>
                     <history>
@@ -65,25 +65,26 @@
         </profileDesc>
     </teiHeader>
     <facsimile>
-         <graphic url="055-013-02.jpg"><desc>Naos, northwestern pilaster, upper register, south face, inscription detail</desc></graphic>
-        <graphic rend="primary" url="055-013-01.jpg"><desc>Naos, northwestern pilaster, upper register, south face, inscription </desc></graphic>
+         <graphic url="055-015-02.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription detail</desc></graphic>
+        <graphic rend="primary" url="055-015-01.jpg"><desc>Naos, southwestern pilaster, upper register, north face, inscription </desc></graphic>
     </facsimile>
     <text>
         <body>
             <div type="edition" xml:space="preserve" xml:lang="grc">
                 <ab>
-                  <lb n="1"/>Ἡ <persName type="sacred" key="Virgin"><w lemma="Παρθένος">παρθαί
-                  <lb n="2" break="no"/>νος</w></persName> <w lemma="σήμερον"><expan><abbr rend="supraline">σύμ<hi rend="ligature">αι</hi></abbr><ex>ρον</ex></expan></w>
+                  <lb n="1"/><w lemma="ὁρῶ"><choice><orig>Ι</orig><reg>Ἰ</reg></choice>δο<choice><orig>υ</orig><reg>ὺ</reg></choice></w> <choice><orig>η</orig><reg>ἡ</reg></choice>
+                  <lb n="2"/><persName type="sacred" key="Virgin"><w lemma="Παρθένος">Παρθαί
+                  <lb n="3" break="no"/>νος</w></persName>
                 </ab>
             </div>
             <div type="apparatus">
                 <p>n/a</p>
             </div>
             <div type="translation">
-                <p>Today the Virgin...</p>
+                <p>Behold, the Virgin (will conceive and give birth to a son, and they will call him Emmanuel)</p>
             </div>
             <div type="commentary">
-                <p>The inscription is from the kontakion of Romanos the Melodist and refers to Christ's birth by the Virgin; The words Παρθένος and σήμερον are misspelled.  </p>
+                <p>The inscription is from Isaiah 7:14 and refers to Christ's conception and birth; the text reappears in Matthew 1:23. The word Παρθένος is misspelled.  </p>
             </div>
             <div type="bibliography">
                 <listBibl> <bibl>Unpublished</bibl>
