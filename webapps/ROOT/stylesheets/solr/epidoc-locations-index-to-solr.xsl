@@ -69,6 +69,9 @@
 
   <xsl:template match="/">
     <add>
+      <xsl:result-document href="map_points.json" method="text">
+        <xsl:value-of select="$map_points" />
+      </xsl:result-document>
       <xsl:for-each-group select="//tei:origPlace[@ref]|//tei:repository[@ref]" group-by="@ref">
         <xsl:variable name="id">
           <xsl:choose>
